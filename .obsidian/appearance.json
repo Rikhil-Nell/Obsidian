@@ -1,0 +1,14 @@
+{
+  "accentColor": "",
+  "cssTheme": "Obsidianite",
+  "interfaceFontFamily": "Rubik",
+  "enabledCssSnippets": [
+    "img",
+    "S - Images Adjustments",
+    "rounded image edges",
+    "text_align"
+  ],
+  "textFontFamily": "Rubik",
+  "monospaceFontFamily": "Rubik",
+  "theme": "obsidian"
+}

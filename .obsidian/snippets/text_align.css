@@ -1,0 +1,7 @@
+.callout[data-callout="quote"] {
+    width: 100%;
+    float: justified;
+}
+div:has(> .callout[data-callout="quote"]) + * {
+    clear: justified;
+}

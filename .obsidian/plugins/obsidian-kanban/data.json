@@ -1,0 +1,15 @@
+{
+  "show-checkboxes": true,
+  "tag-colors": [
+    {
+      "tagKey": "#Transformers",
+      "color": "rgba(190, 15, 214, 1)",
+      "backgroundColor": "rgba(183, 15, 247, 0.15)"
+    }
+  ],
+  "move-tags": true,
+  "move-dates": true,
+  "link-date-to-daily-note": true,
+  "date-colors": [],
+  "show-relative-date": false
+}
