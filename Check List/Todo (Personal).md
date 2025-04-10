@@ -6,28 +6,26 @@ kanban-plugin: board
 
 ## To-do
 
-- [ ] Complete Hugging face Agent and NLP course
-- [ ] ANN course NVIDIA
-- [ ] Build Agentic framework
-- [ ] Satellite Debry detection (IITM)
 - [ ] WebDNN project
 - [ ] Screen Tracking Inference chatbot
 - [ ] GPT TARS
 - [ ] Learning Triton
-- [ ] Costal Anomaly Detection
 
 
 ## In Progress
 
+- [x] Internship: Smart Speech customer response
 - [x] VISU Robot
-- [x] Completing IIIT course
-- [x] Engineering Drawing OCR
-- [x] Learning pydantic, logfire, deepseek groq
 - [x] Completing Min of meeting project
 - [x] Multi Agent Village
+- [x] Build Agentic framework
+- [x] Completing IIIT course
+- [x] ANN course NVIDIA
+- [x] Complete Hugging face Agent and NLP course
+- [x] MCP servers
 
 
-## Done
+## Completed-1
 
 - [x] Basic Networking
 - [x] Discord langgraph bot
@@ -42,16 +40,22 @@ kanban-plugin: board
 - [x] Prepare to conduct an ML/LLM boot camp
 - [x] Learn dunder and decorators
 - [x] Learn Docker
-- [x] Learn DeepGram
 - [x] Win the HACKSRM hackathon
-- [x] Learn Websockets
-- [x] Gladia, DeepGram
-- [x] AssemblyAI
-- [x] Server side deployment, CI CD pipelines
+
+
+## Completed-2
+
 - [x] Wrap up the Discord Chatbot
-- [x] LiveKit
+- [x] Server side deployment, CI CD pipelines
 - [x] Learn UV and Ruff
 - [x] Learn Pydantic, PydanticAI and FASTAPI
+- [x] Complete SmartSpeech POC
+- [x] Learning pydantic, logfire, deepseek groq
+- [x] LiveKit
+- [x] AssemblyAI
+- [x] Gladia, DeepGram
+- [x] Learn Websockets
+- [x] Conduct two session on AI and LLMS
 
 
 ## Failed
@@ -62,6 +66,9 @@ kanban-plugin: board
 - [x] Read the Chemistry Project Documentation
 - [x] Toycathon
 - [x] Semen Analysis Project
+- [x] Engineering Drawing OCR
+- [ ] Costal Anomaly Detection
+- [ ] Satellite Debry detection (IITM)
 
 
 ## Discord Chatbot
@@ -77,6 +84,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,null,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,null,false]}
 ```
 %%

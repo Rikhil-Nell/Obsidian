@@ -6,14 +6,11 @@ kanban-plugin: board
 
 ## To do
 
-- [ ] ADC Lab Manual
-- [ ] Stats Assignment march 4th
 
 
 ## In progress
 
-- [x] MPMC notes for open notebook exam
-- [x] STS assignment
+- [x] ADC Lab Manual
 
 
 ## Done
@@ -22,11 +19,14 @@ kanban-plugin: board
 - [x] Entrepreneurship Chart
 - [x] Probability quiz
 - [x] ECE Quiz (Online)
-- [x] Physics Assignment (Quiz)
 - [x] Documenting Ethics and Values contribution
+- [x] MPMC notes for open notebook exam
 - [x] Resume
+- [x] Physics Assignment (Quiz)
 - [x] Milestone-3
 - [x] ITP Quiz 3
+- [x] STS assignment
+- [x] Stats Assignment march 4th
 
 
 ## Failed
