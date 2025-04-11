@@ -1,23 +1,23 @@
-| Function     | Arguments                                           | When to Use                                                                 | Example |
-|--------------|-----------------------------------------------------|------------------------------------------------------------------------------|---------|
-| `mean()`     | `x`                                                 | To calculate average of a numeric vector                                   | `mean(c(1,2,3))` |
-| `sd()`       | `x`                                                 | To calculate standard deviation                                            | `sd(c(1,2,3))` |
-| `var()`      | `x`                                                 | To calculate variance                                                      | `var(c(1,2,3))` |
-| `plot()`     | `x`, `y`, `type`, `main`, `xlab`, `ylab`, `col`     | To create scatter plots, line graphs, etc.                                 | `plot(x, y, type="l", col="blue")` |
-| `dbinom()`   | `x`, `size`, `prob`                                 | Discrete probability (P(X=x)) in binomial distribution                     | `dbinom(3, 10, 0.5)` |
-| `pbinom()`   | `q`, `size`, `prob`, `lower.tail`                   | Cumulative binomial probability (P(X ≤ x))                                 | `pbinom(3, 10, 0.5)` |
-| `dpois()`    | `x`, `lambda`                                       | P(X = x) for Poisson distribution                                          | `dpois(2, 1.5)` |
-| `ppois()`    | `q`, `lambda`, `lower.tail`                         | Cumulative Poisson (P(X ≤ x))                                              | `ppois(3, 1.5)` |
-| `pnorm()`    | `q`, `mean`, `sd`, `lower.tail`                     | Cumulative Normal probability                                              | `pnorm(60, mean=50, sd=6.3)` |
-| `qnorm()`    | `p`, `mean`, `sd`                                   | Get Z-score or value for given probability                                | `qnorm(0.95, 50, 6.3)` |
-| `cor()`      | `x`, `y`, `method`                                  | Get correlation (Pearson/Spearman/Kendall)                                | `cor(x, y, method="spearman")` |
-| `cov()`      | `x`, `y`                                            | Get covariance between two variables                                      | `cov(x, y)` |
-| `lm()`       | `formula`, `data`                                   | Fit linear regression model                                                | `lm(y ~ x)` |
-| `predict()`  | `model`, `newdata`                                  | Predict using linear model                                                 | `predict(model, newdata=data.frame(x=37))` |
-| `t.test()`   | `x`, `y`, `paired`, `var.equal`, `alternative`      | Compare means; single or two-sample t-test                                | `t.test(x, y, paired=TRUE)` |
-| `var.test()` | `x`, `y`, `alternative`                             | Compare variances of two samples                                           | `var.test(x, y)` |
-| `z.test()`   | `x`, `mu`, `sigma.x`, `alternative`                 | One-sample z-test (from `BSDA` package)                                   | `z.test(x, mu=50, sigma.x=5)` |
-| `$p.value`   | Accessed from test result object                    | To extract p-value from any test (t, z, var, etc.)                         | `result$p.value` |
+| Function     | Arguments                                       | When to Use                                            | Example                                    |
+| ------------ | ----------------------------------------------- | ------------------------------------------------------ | ------------------------------------------ |
+| `mean()`     | `x`                                             | To calculate average of a numeric vector               | `mean(c(1,2,3))`                           |
+| `sd()`       | `x`                                             | To calculate standard deviation                        | `sd(c(1,2,3))`                             |
+| `var()`      | `x`                                             | To calculate variance                                  | `var(c(1,2,3))`                            |
+| `plot()`     | `x`, `y`, `type`, `main`, `xlab`, `ylab`, `col` | To create scatter plots, line graphs, etc.             | `plot(x, y, type="l", col="blue")`         |
+| `dbinom()`   | `x`, `size`, `prob`                             | Discrete probability (P(X=x)) in binomial distribution | `dbinom(3, 10, 0.5)`                       |
+| `pbinom()`   | `q`, `size`, `prob`, `lower.tail`               | Cumulative binomial probability (P(X ≤ x))             | `pbinom(3, 10, 0.5)`                       |
+| `dpois()`    | `x`, `lambda`                                   | P(X = x) for Poisson distribution                      | `dpois(2, 1.5)`                            |
+| `ppois()`    | `q`, `lambda`, `lower.tail`                     | Cumulative Poisson (P(X ≤ x))                          | `ppois(3, 1.5)`                            |
+| `pnorm()`    | `q`, `mean`, `sd`, `lower.tail`                 | Cumulative Normal probability                          | `pnorm(60, mean=50, sd=6.3)`               |
+| `qnorm()`    | `p`, `mean`, `sd`                               | Get Z-score or value for given probability             | `qnorm(0.95, 50, 6.3)`                     |
+| `cor()`      | `x`, `y`, `method`                              | Get correlation (Pearson/Spearman/Kendall)             | `cor(x, y, method="spearman")`             |
+| `cov()`      | `x`, `y`                                        | Get covariance between two variables                   | `cov(x, y)`                                |
+| `lm()`       | `formula`, `data`                               | Fit linear regression model                            | `lm(y ~ x)`                                |
+| `predict()`  | `model`, `newdata`                              | Predict using linear model                             | `predict(model, newdata=data.frame(x=37))` |
+| `t.test()`   | `x`, `y`, `paired`, `var.equal`, `alternative`  | Compare means; single or two-sample t-test             | `t.test(x, y, paired=TRUE)`                |
+| `var.test()` | `x`, `y`, `alternative`                         | Compare variances of two samples                       | `var.test(x, y)`                           |
+| `z.test()`   | `x`, `mu`, `sigma.x`, `alternative`             | One-sample z-test (from `BSDA` package)                | `z.test(x, mu=50, sigma.x=5)`              |
+| `$p.value`   | Accessed from test result object                | To extract p-value from any test (t, z, var, etc.)     | `result$p.value`                           |
 
 
 #### `mean(x)`
