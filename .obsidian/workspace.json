@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "b4e3911df39b8f7c",
+        "id": "dc85a2480aa550a7",
         "type": "tabs",
         "children": [
           {
-            "id": "1a5aaa3a588cc753",
+            "id": "f44b60ccbb8728dd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TCL.md",
-                "mode": "source",
+                "file": "FASTAPI/Sample Project Structure.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "TCL"
+              "title": "Sample Project Structure"
             }
           }
         ],
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:Networking",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/001 Linear Regression.md",
+                "file": "STS FAT.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 001 Linear Regression"
+              "title": "Backlinks for STS FAT"
             }
           },
           {
@@ -152,8 +152,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -162,8 +162,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -172,14 +172,14 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Transformers/002 Attention.md"
+                "file": "STS FAT.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 002 Attention"
+              "title": "File properties for STS FAT"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -188,6 +188,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -195,61 +196,61 @@
       "markdown-importer:Open format converter": false,
       "templates:Insert template": false,
       "daily-notes:Open today's daily note": false,
+      "audio-recorder:Start/stop recording": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-kanban:Create new board": false,
-      "audio-recorder:Start/stop recording": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "1a5aaa3a588cc753",
+  "active": "20a3e6dea3ad6956",
   "lastOpenFiles": [
-    "TCL.md",
-    "Perl.md",
-    "Bash.md",
-    "Stats Tests.md",
-    "R.md",
-    "Stats.md",
+    "FASTAPI/Sample Project Structure.md",
+    "FASTAPI/Mastering Production Ready Backends with FastAPI An Exhaustive Guide.md",
+    "Accelerated Computing/Lecture 1.md",
+    "Files/Physics 2nd Year.pdf",
+    "Files/Let Us C.pdf",
+    "Files/Lab manual control systems.pdf",
+    "Files/Fundamentals of Electric Circuits TextBook.pdf",
+    "Files/Aurélien Géron - Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow_ Concepts, Tools, and Techniques to Build Intelligent Systems-O'Reilly Media (2022).pdf",
+    "Files",
+    "FPGA Lab.md",
+    "FASTAPI",
+    "Experiment-3.md",
+    "Event Ideas.md",
+    "Control Systems Lab.md",
+    "Communication System Lab.md",
+    "Clink/KPI Analysis Results (Manual).md",
+    "Clink/KPI Analysis Results (AI).md",
+    "Clink/creative response.md",
+    "Clink/Coupons.md",
+    "Clink",
+    "CI-CD.md",
+    "Battery Report.md",
+    "Accelerated Computing",
+    "Image Generation Prompt.md",
+    "Industrial Report.md",
+    "Physics Prep.md",
     "README.md",
-    "MPMC Codes.md",
-    "Check List/Todo (Coursework).md",
+    "script.md",
     "Ultimate Tech Pouch Setup.md",
-    "Stats.pdf",
-    "tex2pdf.-934e9cce1edb2600/input.pdf",
-    "tex2pdf.-934e9cce1edb2600/input.aux",
-    "tex2pdf.-934e9cce1edb2600/input.log",
-    "tex2pdf.-934e9cce1edb2600/input.tex",
-    "tex2pdf.-934e9cce1edb2600",
-    "Check List/Todo (Personal).md",
-    "Untitled",
-    "Transformers/002 Attention.md",
-    "Excalidraw/Attention_Head_Steps.excalidraw.md",
-    "Excalidraw/Attention.excalidraw.md",
-    "Transformers/001 Embedding.md",
-    "Excalidraw/Embedding 2.md",
-    "Transformers/003 Multi-Layer Perceptron.md",
-    "Images/Pasted image 20250301175636.png",
-    "Images/Pasted image 20250301175437.png",
-    "Backend Roadmap.md",
-    "Untitled.canvas",
-    "Toycathon.md",
-    "Microprocessor Architecture Deep Dive.md",
-    "2 Month Goal.md",
-    "Images/Pasted image 20250301172056.png",
-    "Images/Pasted image 20250301172040.png",
-    "Images/Pasted image 20250301171318.png",
-    "Images/Pasted image 20250301170859.png",
-    "Pydantic/001 Basics.md",
-    "Pydantic/000 MOC (Pydantic).md",
-    "Networking/000 MOC (Networking).md",
-    "Pydantic",
+    "Untitled.md",
     "My Second Brain.md",
-    "Transformers/000 MOC (Transfomers).md",
-    "Micro Processors",
-    "Images/Pasted Image 20241225080940_684.png",
-    "Images/Pasted image 20241225080512.png",
-    "PDF's/Aurélien Géron - Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow_ Concepts, Tools, and Techniques to Build Intelligent Systems-O'Reilly Media (2022).pdf",
-    "Images/Pasted image 20241222204644.png",
-    "tex2pdf.-ee9f7c33b7c1072b/d8bbed1aeaf477e588afff5c02fcee4b35d4d513.png",
+    "Internship Companies.md",
+    "OSC Server Revamp.md",
+    "STS4005/001 Max Equilibrium Sum.md",
+    "STS4005/000 Mail Format.md",
+    "STS4005/PDF's/001 Max Equilibrium Sum.pdf",
+    "Images/Pasted image 20251216211222.png",
+    "Images/Pasted image 20251126085059.png",
+    "Images/Pasted image 20251126085017.png",
+    "Images/Pasted image 20251126084851.png",
+    "Images/Pasted image 20251126084838.png",
+    "Images/Pasted image 20251126084758.png",
+    "Images/Pasted image 20251126084738.png",
+    "Images/Pasted image 20251126084704.png",
+    "Images/Pasted image 20251126084452.png",
+    "Images/Pasted image 20251126084347.png",
+    "Untitled.canvas",
     "C/Untitled.canvas",
     "Untitled 1.canvas"
   ]

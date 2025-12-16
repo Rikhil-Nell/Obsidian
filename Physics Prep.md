@@ -1,0 +1,4 @@
+|                                                                                                                                                                                                   |     |     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- |
+| Gauss Law and Applications, Electrostatic Potential, Capacitance – Parallel Plate, Coaxial, Spherical Capacitors, Convection and Conduction currents, Fields in Dielectrics, Boundary Conditions. |     |     |
+| Ampere’s Circuital Law and Applications, Magnetic Flux Density, Magnetic Scalar and Vector Potentials, Forces due to Magnetic Fields, Inductance, Boundary Conditions.                            |     |     |
