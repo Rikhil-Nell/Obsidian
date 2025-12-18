@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FASTAPI/Sample Project Structure.md",
-                "mode": "preview",
+                "file": "STS4005/003 Insertion Sort.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Sample Project Structure"
+              "title": "003 Insertion Sort"
             }
           }
         ],
@@ -202,10 +202,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "20a3e6dea3ad6956",
+  "active": "f44b60ccbb8728dd",
   "lastOpenFiles": [
-    "FASTAPI/Sample Project Structure.md",
+    "STS4005/PDF's/003 Insertion Sort.pdf",
+    "STS4005/002 Selection Sort.md",
+    "STS4005/003 Insertion Sort.md",
+    "STS4005/001 Max Equilibrium Sum.md",
+    "Micro Processors/Intel 8085 Microprocessors.md",
     "FASTAPI/Mastering Production Ready Backends with FastAPI An Exhaustive Guide.md",
+    "FASTAPI/Sample Project Structure.md",
     "Accelerated Computing/Lecture 1.md",
     "Files/Physics 2nd Year.pdf",
     "Files/Let Us C.pdf",
@@ -234,11 +239,6 @@
     "script.md",
     "Ultimate Tech Pouch Setup.md",
     "Untitled.md",
-    "My Second Brain.md",
-    "Internship Companies.md",
-    "OSC Server Revamp.md",
-    "STS4005/001 Max Equilibrium Sum.md",
-    "STS4005/000 Mail Format.md",
     "STS4005/PDF's/001 Max Equilibrium Sum.pdf",
     "Images/Pasted image 20251216211222.png",
     "Images/Pasted image 20251126085059.png",
