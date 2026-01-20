@@ -8,18 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e9ba17ef02086b1c",
+            "id": "ea6ccd43571a08ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "STS4005/Assignment-1.md",
-                "mode": "preview",
+                "file": "STS4005/004 Maneuvering.md",
+                "mode": "source",
                 "source": false,
-                "backlinks": false
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
               },
               "icon": "lucide-file",
-              "title": "Assignment-1"
+              "title": "004 Maneuvering"
             }
           }
         ],
@@ -106,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "STS FAT.md",
+                "file": "Clink/Coupons.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +125,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for STS FAT"
+              "title": "Backlinks for Coupons"
             }
           },
           {
@@ -172,14 +181,14 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "STS FAT.md"
+                "file": "Clink/Coupons.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for STS FAT"
+              "title": "File properties for Coupons"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -202,54 +211,54 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "e9ba17ef02086b1c",
+  "active": "ea6ccd43571a08ba",
   "lastOpenFiles": [
+    "STS4005/PDF's/004 Maneuvering.pdf",
+    "List of things to implement.md",
+    "STS4005/004 Maneuvering.md",
+    "TargetDial/Obsidian Logic Knowledge Base.md",
+    "Untitled",
+    "Clink/Coupons.md",
+    "Clink/KPI Analysis Results (Manual).md",
+    "Clink/KPI Analysis Results (AI).md",
+    "Clink/creative response.md",
+    "Micro Processors/Intel 8085 Microprocessors.md",
+    "Networking/003 Everything Hosts do to speak on the Internet.md",
+    "Networking/001 Network Devices & Communication Basics.md",
+    "Networking/002 OSI (Open Systems Interconnection) Model.md",
     "STS4005/PDF's/Assignment-1.pdf",
+    "STS4005/PDF's/003 Bubble Sort.pdf",
+    "TODO's/Todo (Personal).md",
+    "FPGA Lab.md",
+    "Event Ideas.md",
+    "Control Systems Lab.md",
+    "Communication System Lab.md",
+    "Transformers/001 Embedding.md",
+    "Transformers/002 Attention.md",
+    "TargetDial/GHL Documentation.md",
+    "Excalidraw/Attention_Head_Steps.excalidraw.md",
+    "Transformers/003 Multi-Layer Perceptron.md",
+    "Excalidraw/Attention.excalidraw.md",
+    "Excalidraw/Drawing 2026-01-15 12.11.53.excalidraw.md",
+    "Machine Learning/Papers/Paper 302.md",
+    "Files/AN IMAGE IS WORTH 16X16 WORDS.pdf",
+    "Machine Learning/Papers",
+    "[[AN IMAGE IS WORTH 16X16 WORDS.pdf.md",
+    "Images/Pasted image 20260108230347.png",
+    "Images/Pasted image 20260108230301.png",
+    "Images/Pasted image 20260108203156.png",
+    "TargetDial",
+    "STS4005/template.html",
     "Images/Pasted image 20260108083029.png",
     "Images/Pasted image 20260108082655.png",
     "Images/Pasted image 20260108082652.png",
     "Images/Pasted image 20260108082449.png",
-    "STS4005/Assignment-1.md",
     "Images/Pasted image 20260108082225.png",
     "Images/Pasted image 20260108082142.png",
     "Images/Pasted image 20260108081906.png",
-    "Images/Pasted image 20260108081647.png",
-    "Images/Pasted image 20260108081508.png",
-    "Images/Pasted image 20260108081335.png",
-    "STS4005/000 Mail Format.md",
-    "STS4005/003 Bubble Sort.md",
-    "Machine Learning/002 Supervised Learning.md",
-    "Untitled 1.md",
-    "Machine Learning/000 MOC (Machine Learning).md",
-    "Machine Learning/001 What is Machine Learning.md",
-    "STS4005/002 Selection Sort.md",
     "STS4005/PDF's/002 Selection Sort.pdf",
-    "STS4005/001 Max Equilibrium Sum.md",
-    "STS4005/PDF's/003 Bubble Sort.pdf",
     "STS4005/PDF's/003 Insertion Sort.pdf",
-    "Micro Processors/Intel 8085 Microprocessors.md",
-    "FASTAPI/Mastering Production Ready Backends with FastAPI An Exhaustive Guide.md",
-    "FASTAPI/Sample Project Structure.md",
-    "Accelerated Computing/Lecture 1.md",
     "Files/Physics 2nd Year.pdf",
-    "Files/Let Us C.pdf",
-    "Files/Lab manual control systems.pdf",
-    "Files/Fundamentals of Electric Circuits TextBook.pdf",
-    "Files/Aurélien Géron - Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow_ Concepts, Tools, and Techniques to Build Intelligent Systems-O'Reilly Media (2022).pdf",
-    "Files",
-    "FPGA Lab.md",
-    "FASTAPI",
-    "Experiment-3.md",
-    "Event Ideas.md",
-    "Control Systems Lab.md",
-    "Communication System Lab.md",
-    "Clink/KPI Analysis Results (Manual).md",
-    "Clink/KPI Analysis Results (AI).md",
-    "Clink/creative response.md",
-    "Clink/Coupons.md",
-    "CI-CD.md",
-    "Battery Report.md",
-    "Image Generation Prompt.md",
     "Untitled.canvas",
     "C/Untitled.canvas",
     "Untitled 1.canvas"
