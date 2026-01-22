@@ -8,27 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ea6ccd43571a08ba",
+            "id": "1a7373e24377bb29",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "STS4005/004 Maneuvering.md",
+                "file": "STS4005/005 Permutations.md",
                 "mode": "source",
                 "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": false
-                }
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "004 Maneuvering"
+              "title": "005 Permutations"
             }
           }
         ],
@@ -211,12 +202,19 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ea6ccd43571a08ba",
+  "active": "1a7373e24377bb29",
   "lastOpenFiles": [
+    "STS4005/PDF's/005 Permutations.pdf",
+    "STS4005/004 Maneuvering.md",
+    "STS4005/005 Permutations.md",
+    "STS4005/Assignment-1.md",
+    "TargetDial/GHL Documentation.md",
+    "TargetDial/Obsidian Logic Knowledge Base.md",
+    "Untitled.md",
+    "TODO's/Todo (Personal).md",
+    "STS4005/000 Mail Format.md",
     "STS4005/PDF's/004 Maneuvering.pdf",
     "List of things to implement.md",
-    "STS4005/004 Maneuvering.md",
-    "TargetDial/Obsidian Logic Knowledge Base.md",
     "Untitled",
     "Clink/Coupons.md",
     "Clink/KPI Analysis Results (Manual).md",
@@ -228,22 +226,16 @@
     "Networking/002 OSI (Open Systems Interconnection) Model.md",
     "STS4005/PDF's/Assignment-1.pdf",
     "STS4005/PDF's/003 Bubble Sort.pdf",
-    "TODO's/Todo (Personal).md",
     "FPGA Lab.md",
     "Event Ideas.md",
     "Control Systems Lab.md",
     "Communication System Lab.md",
     "Transformers/001 Embedding.md",
     "Transformers/002 Attention.md",
-    "TargetDial/GHL Documentation.md",
     "Excalidraw/Attention_Head_Steps.excalidraw.md",
     "Transformers/003 Multi-Layer Perceptron.md",
-    "Excalidraw/Attention.excalidraw.md",
-    "Excalidraw/Drawing 2026-01-15 12.11.53.excalidraw.md",
-    "Machine Learning/Papers/Paper 302.md",
     "Files/AN IMAGE IS WORTH 16X16 WORDS.pdf",
     "Machine Learning/Papers",
-    "[[AN IMAGE IS WORTH 16X16 WORDS.pdf.md",
     "Images/Pasted image 20260108230347.png",
     "Images/Pasted image 20260108230301.png",
     "Images/Pasted image 20260108203156.png",
@@ -258,7 +250,6 @@
     "Images/Pasted image 20260108081906.png",
     "STS4005/PDF's/002 Selection Sort.pdf",
     "STS4005/PDF's/003 Insertion Sort.pdf",
-    "Files/Physics 2nd Year.pdf",
     "Untitled.canvas",
     "C/Untitled.canvas",
     "Untitled 1.canvas"
