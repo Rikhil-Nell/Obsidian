@@ -308,4 +308,4 @@ Find the error in each statement:
 
 ---
 
-*Previous: [07_exam_logic_flowchart.md](./07_exam_logic_flowchart.md) | Next: [09_scaling_summary.md](./09_scaling_summary.md)*
+*Previous: [07_exam_logic_flowchart.md](07_exam_logic_flowchart.md) | Next: [09_scaling_summary.md](09_scaling_summary.md)*

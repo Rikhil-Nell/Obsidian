@@ -314,4 +314,4 @@ n+│      │n+              n-│      │n-  ← Light doping
 
 ---
 
-*Previous: [10_mosfet_capacitances.md](./10_mosfet_capacitances.md) | [Return to Roadmap](./00_roadmap.md)*
+*Previous: [10_mosfet_capacitances.md](10_mosfet_capacitances.md) | [Return to Roadmap](00_roadmap.md)*

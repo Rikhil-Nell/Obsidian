@@ -319,4 +319,4 @@ Before moving on:
 
 ---
 
-*Previous: [01_foundation_semiconductor_physics.md](./01_foundation_semiconductor_physics.md) | Next: [03_threshold_voltage_mastery.md](./03_threshold_voltage_mastery.md)*
+*Previous: [01_foundation_semiconductor_physics.md](01_foundation_semiconductor_physics.md) | Next: [03_threshold_voltage_mastery.md](03_threshold_voltage_mastery.md)*

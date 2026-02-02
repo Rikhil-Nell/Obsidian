@@ -341,4 +341,4 @@ Is the channel SHORT (L ≈ xj)?
 
 ---
 
-*Previous: [05_formula_sheet_unified.md](./05_formula_sheet_unified.md) | Next: [07_exam_logic_flowchart.md](./07_exam_logic_flowchart.md)*
+*Previous: [05_formula_sheet_unified.md](05_formula_sheet_unified.md) | Next: [07_exam_logic_flowchart.md](07_exam_logic_flowchart.md)*

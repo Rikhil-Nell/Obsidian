@@ -306,4 +306,4 @@ Modern processes use a **hybrid approach**:
 
 ---
 
-*Previous: [08_quirks_and_gotchas.md](./08_quirks_and_gotchas.md) | [Return to Roadmap](./00_roadmap.md)*
+*Previous: [08_quirks_and_gotchas.md](08_quirks_and_gotchas.md) | [Return to Roadmap](00_roadmap.md)*

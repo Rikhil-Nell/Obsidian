@@ -385,4 +385,4 @@ $$V_{GS} = 1.22 \text{ V}$$
 
 ---
 
-*Previous: [03_threshold_voltage_mastery.md](./03_threshold_voltage_mastery.md) | Next: [05_formula_sheet_unified.md](./05_formula_sheet_unified.md)*
+*Previous: [03_threshold_voltage_mastery.md](03_threshold_voltage_mastery.md) | Next: [05_formula_sheet_unified.md](05_formula_sheet_unified.md)*

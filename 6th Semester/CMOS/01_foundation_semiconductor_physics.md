@@ -243,4 +243,4 @@ Before moving on, make sure you can answer:
 
 ---
 
-*Previous: [00_roadmap.md](./00_roadmap.md) | Next: [02_mos_structure_fundamentals.md](./02_mos_structure_fundamentals.md)*
+*Previous: [00_roadmap.md](00_roadmap.md) | Next: [02_mos_structure_fundamentals.md](02_mos_structure_fundamentals.md)*

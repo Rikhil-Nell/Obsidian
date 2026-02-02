@@ -473,4 +473,4 @@ Where:
 
 ---
 
-*Previous: [09_scaling_summary.md](./09_scaling_summary.md) | Next: [11_latchup_and_reliability.md](./11_latchup_and_reliability.md)*
+*Previous: [09_scaling_summary.md](09_scaling_summary.md) | Next: [11_latchup_and_reliability.md](11_latchup_and_reliability.md)*

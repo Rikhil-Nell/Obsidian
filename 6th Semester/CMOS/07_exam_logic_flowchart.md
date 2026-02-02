@@ -316,4 +316,4 @@ Before submitting your answer:
 
 ---
 
-*Previous: [06_short_channel_effects_decoded.md](./06_short_channel_effects_decoded.md) | Next: [08_quirks_and_gotchas.md](./08_quirks_and_gotchas.md)*
+*Previous: [06_short_channel_effects_decoded.md](06_short_channel_effects_decoded.md) | Next: [08_quirks_and_gotchas.md](08_quirks_and_gotchas.md)*

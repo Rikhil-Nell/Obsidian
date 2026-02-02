@@ -176,4 +176,4 @@ This study guide will fill those gaps.
 
 ---
 
-*Next: [01_foundation_semiconductor_physics.md](./01_foundation_semiconductor_physics.md)*
+*Next: [01_foundation_semiconductor_physics.md](01_foundation_semiconductor_physics.md)*

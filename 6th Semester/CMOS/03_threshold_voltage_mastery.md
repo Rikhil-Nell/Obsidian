@@ -300,4 +300,4 @@ $$V_{T0} = 0.34 + 0.70 + 0.70 - 0.09 = 1.65 \text{ V}$$
 
 ---
 
-*Previous: [02_mos_structure_fundamentals.md](./02_mos_structure_fundamentals.md) | Next: [04_current_equations_complete.md](./04_current_equations_complete.md)*
+*Previous: [02_mos_structure_fundamentals.md](02_mos_structure_fundamentals.md) | Next: [04_current_equations_complete.md](04_current_equations_complete.md)*

@@ -366,4 +366,4 @@ Where P = perimeter of diffusion region.
 
 ---
 
-*Previous: [04_current_equations_complete.md](./04_current_equations_complete.md) | Next: [06_short_channel_effects_decoded.md](./06_short_channel_effects_decoded.md)*
+*Previous: [04_current_equations_complete.md](04_current_equations_complete.md) | Next: [06_short_channel_effects_decoded.md](06_short_channel_effects_decoded.md)*
