@@ -245,7 +245,7 @@ The upper layers of the OSI model—**Session (L5)**, **Presentation (L6)**, and
     - **ASCII Encoding (HTTP)**:
         - Groups raw binary data into sets of 8 bits (1 byte), where each byte represents an **ASCII character**.
         - Example:
-          ``` rust
+	      ```rust
 			01000111 -> G  
 			01000101 -> E  
 			01010100 -> T  
@@ -255,7 +255,7 @@ The upper layers of the OSI model—**Session (L5)**, **Presentation (L6)**, and
 			01101001 -> i  
 			01101101 -> m  
 			```
-		- This encoding mechanism allows browsers and servers to interpret HTTP requests (e.g., `GET /sim`).
+- This encoding mechanism allows browsers and servers to interpret HTTP requests (e.g., `GET /sim`).
 - **Modern HTTP (HTTP/2, HTTP/3)**:
     
     - With advancements like **HTTP/2** and **HTTP/3**, encoding has shifted to more efficient binary protocols, reducing overhead and improving speed.
