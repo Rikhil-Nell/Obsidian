@@ -14,19 +14,16 @@ kanban-plugin: board
 
 ## In Progress
 
-- [x] Internship: Smart Speech customer response
-- [x] VISU Robot
-- [x] Completing Min of meeting project
 - [x] Multi Agent Village
 - [x] Build Agentic framework
-- [x] Completing IIIT course
-- [x] ANN course NVIDIA
-- [x] Complete Hugging face Agent and NLP course
-- [x] MCP servers
+- [ ] Learning Deep Learning again
+- [ ] Learning Accelerated computing
+- [ ] Learning Iot and VLSI
 
 
 ## Completed-1
 
+- [x] Complete Hugging face Agent and NLP course
 - [x] Basic Networking
 - [x] Discord langgraph bot
 - [x] Terminal Chat Assistant Project
@@ -40,7 +37,6 @@ kanban-plugin: board
 - [x] Prepare to conduct an ML/LLM boot camp
 - [x] Learn dunder and decorators
 - [x] Learn Docker
-- [x] Win the HACKSRM hackathon
 
 
 ## Completed-2
@@ -56,6 +52,18 @@ kanban-plugin: board
 - [x] Gladia, DeepGram
 - [x] Learn Websockets
 - [x] Conduct two session on AI and LLMS
+- [x] Win the HACKSRM hackathon
+- [x] Completing Min of meeting project
+- [x] VISU Robot
+
+
+## Completed-3
+
+- [x] Internship: Smart Speech customer response
+- [x] Internship: Clink
+- [x] Internship: Voice Agent
+- [x] Iternship: CastLink
+- [x] MCP servers
 
 
 ## Failed
@@ -69,6 +77,8 @@ kanban-plugin: board
 - [x] Engineering Drawing OCR
 - [ ] Costal Anomaly Detection
 - [ ] Satellite Debry detection (IITM)
+- [x] ANN course NVIDIA
+- [x] Completing IIIT course
 
 
 ## Discord Chatbot
@@ -84,6 +94,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,null,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,null,false]}
 ```
 %%
