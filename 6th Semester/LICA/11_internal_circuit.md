@@ -11,11 +11,11 @@ An op-amp is a **multistage, direct-coupled, high-gain amplifier**. Understandin
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│  V+ ──►┌─────────────┐   ┌──────────────┐   ┌──────────────┐   │
-│        │ Differential │   │   Level      │   │   Output     │──►Vo
-│  V- ──►│  Amplifier   ├──►│   Shifter    ├──►│   Stage      │   │
-│        │ (Input Stage)│   │ (DC adjust)  │   │ (Push-Pull)  │   │
-│        └─────────────┘   └──────────────┘   └──────────────┘   │
+│  V+ ──►┌─────────────┐   ┌──────────────┐   ┌──────────────┐    │
+│        │ Differential│   │   Level      │   │   Output     │──►Vo
+│  V- ──►│  Amplifier  ├──►│   Shifter    ├──►│   Stage      │    │
+│        │(Input Stage)│   │ (DC adjust)  │   │ (Push-Pull)  │    │
+│        └─────────────┘   └──────────────┘   └──────────────┘    │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
          Stage 1              Stage 2           Stage 3
@@ -201,7 +201,7 @@ $$V_{bias} \approx 2V_{BE} \approx 1.2V \text{ to } 1.4V$$
     Multiplier)│     │
                │     ├──────► Vo
                │     │
-        25Ω ──┤     ├── Q2 (output PNP)
+         25Ω ──┤     ├── Q2 (output PNP)
                └──┬──┘
                   │
                 -VEE
@@ -220,15 +220,15 @@ Key features:
      ┌───────────────────────────────────────────────────────┐
      │                      Op-Amp IC                        │
      │                                                       │
- V+ ─┼─►┌─────────┐   ┌────────┐   ┌──────┐   ┌─────────┐   │
-     │  │  Diff   │   │ Diff   │   │Level │   │ Class AB│──►│──► Vo
- V- ─┼─►│  Amp    ├──►│ Amp    ├──►│Shift ├──►│ Output  │   │
-     │  │ Stage 1 │   │ Stage 2│   │      │   │  Stage  │   │
-     │  └─────────┘   └────────┘   └──────┘   └─────────┘   │
-     │       ↑             ↑           ↑           ↑        │
-     │   Current       Current    Constant    VBE           │
-     │   Mirrors       Mirrors    Current     Multiplier    │
-     │                           Source                     │
+ V+ ─┼─►┌─────────┐   ┌────────┐   ┌──────┐   ┌─────────┐    │
+     │  │  Diff   │   │ Diff   │   │Level │   │ Class AB│──► │──► Vo
+ V- ─┼─►│  Amp    ├──►│ Amp    ├──►│Shift ├──►│ Output  │    │
+     │  │ Stage 1 │   │ Stage 2│   │      │   │  Stage  │    │
+     │  └─────────┘   └────────┘   └──────┘   └─────────┘    │
+     │       ↑             ↑           ↑           ↑         │
+     │   Current       Current    Constant    VBE            │
+     │   Mirrors       Mirrors    Current     Multiplier     │
+     │                           Source                      │
      └───────────────────────────────────────────────────────┘
 ```
 

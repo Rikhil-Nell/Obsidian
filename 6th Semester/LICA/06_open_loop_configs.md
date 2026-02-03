@@ -11,8 +11,8 @@ In **open-loop** mode, **no feedback** is applied from output to input. The op-a
 ## The Three Open-Loop Configurations
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                  OPEN-LOOP CONFIGURATIONS                   │
+┌────────────────────────────────────────────────────────────┐
+│                  OPEN-LOOP CONFIGURATIONS                  │
 ├───────────────────┬───────────────────┬────────────────────┤
 │   Differential    │    Inverting      │   Non-Inverting    │
 │   (V1 ≠ 0, V2≠0)  │    (V1 = 0)       │   (V2 = 0)         │

@@ -13,10 +13,10 @@ DC characteristics describe how the op-amp behaves with **static (unchanging) si
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                   DC CHARACTERISTICS                        │
-├──────────────────┬──────────────────┬──────────────────────┤
-│  Input Bias      │  Input Offset    │  Input Offset        │
-│  Current (IB)    │  Current (IOS)   │  Voltage (VOS)       │
-├──────────────────┴──────────────────┴──────────────────────┤
+├──────────────────┬──────────────────┬───────────────────────┤
+│  Input Bias      │  Input Offset    │  Input Offset         │
+│  Current (IB)    │  Current (IOS)   │  Voltage (VOS)        │
+├──────────────────┴──────────────────┴───────────────────────┤
 │                 Total Output Offset Voltage                 │
 └─────────────────────────────────────────────────────────────┘
 ```

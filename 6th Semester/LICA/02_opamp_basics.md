@@ -43,12 +43,12 @@ The **IC 741** is the most widely used general-purpose operational amplifier.
 ### Pin Configuration (8-pin DIP)
 
 ```
-        ┌───────────────┐
+        ┌─────────────┐
   O.N. ─┤ 1         8 ├─ NC
-   V- ─┤ 2   741   7 ├─ +VCC
-   V+ ─┤ 3         6 ├─ Vout
- -VEE ─┤ 4         5 ├─ O.N.
-        └───────────────┘
+   V-  ─┤ 2   741   7 ├─ +VCC
+   V+  ─┤ 3         6 ├─ Vout
+ -VEE  ─┤ 4         5 ├─ O.N.
+        └─────────────┘
 ```
 
 | Pin | Name | Description |
@@ -228,7 +228,7 @@ With negative feedback, the linear region is greatly extended:
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │  V1 ──►┌────────────┐   ┌──────────────┐   ┌─────────────┐  │
-│        │ Differential│   │ Intermediate │   │   Output    │──►Vout
+│        │Differential│   │ Intermediate │   │   Output    │──►Vout
 │  V2 ──►│  Amplifier │──►│    Stages    │──►│   Stage     │  │
 │        │  (Input)   │   │   (Gain)     │   │ (Push-Pull) │  │
 │        └────────────┘   └──────────────┘   └─────────────┘  │
