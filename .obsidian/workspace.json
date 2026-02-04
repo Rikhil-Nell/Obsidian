@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6th Semester/STS/DSA_Study_Guide.md",
+                "file": "6th Semester/Analog IC/00_roadmap.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DSA_Study_Guide"
+              "title": "00_roadmap"
             }
           }
         ],
@@ -202,8 +202,20 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "20a3e6dea3ad6956",
+  "active": "1d6103e5bd146cf0",
   "lastOpenFiles": [
+    "6th Semester/Analog IC/07_worked_problems.md",
+    "6th Semester/Analog IC/02_iv_characteristics.md",
+    "6th Semester/Analog IC/08_formula_sheet_ultimate.md",
+    "6th Semester/Analog IC/00_roadmap.md",
+    "6th Semester/CMOS/12_ultimate_formula_sheet.md",
+    "6th Semester/Analog IC/01_mos_device_physics.md",
+    "6th Semester/Analog IC/03_transconductance.md",
+    "6th Semester/Analog IC/04_second_order_effects.md",
+    "6th Semester/Analog IC/05_device_models.md",
+    "6th Semester/Analog IC/06_common_source_stage.md",
+    "6th Semester/Analog IC",
+    "6th Semester/LICA/12_formula_sheet_ultimate.md",
     "6th Semester/STS/DSA_Study_Guide.md",
     "6th Semester/STS/DSA_Study_Guide.md",
     "6th Semester/STS/Untitled.md",
@@ -219,17 +231,7 @@
     "Event Ideas.md",
     "FPGA Lab.md",
     "Untitled.md",
-    "6th Semester/LICA/12_formula_sheet_ultimate.md",
     "6th Semester/LICA/11_internal_circuit.md",
-    "6th Semester/LICA/10_opamp_applications.md",
-    "6th Semester/LICA/09_noninverting_amplifier.md",
-    "6th Semester/LICA/08_inverting_amplifier.md",
-    "6th Semester/LICA/07_closed_loop_feedback.md",
-    "6th Semester/LICA/06_open_loop_configs.md",
-    "6th Semester/LICA/05_slew_rate_cmrr.md",
-    "6th Semester/LICA/04_ac_characteristics.md",
-    "6th Semester/LICA/03_dc_characteristics.md",
-    "6th Semester/LICA/02_opamp_basics.md",
     "6th Semester/LICA",
     "6th Semester",
     "Machine Learning/Papers",
@@ -238,7 +240,6 @@
     "TODO's",
     "TargetDial",
     "6th Semester/CMOS",
-    "STS4005/PDF's/003 Bubble Sort.pdf",
     "Images/Pasted image 20260201004606.png",
     "Images/Pasted image 20260201004500.png",
     "Images/Pasted image 20260201004219.png",
