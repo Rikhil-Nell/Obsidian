@@ -84,7 +84,8 @@ count += (num == candidate) ? 1 : -1;
 **Complexity**: O(n) time, O(1) space
 
 **MCQ Trivia**:
-- Verification phase is OPTIONAL if majority guaranteed to exist
+- Verification is OPTIONAL only if problem GUARANTEES majority exists
+- Verification is MANDATORY if you need to return -1 when no majority
 - Works because majority elements "survive" the voting
 
 ---
@@ -532,19 +533,15 @@ static void printPaths(int r, int c, int m, int n, String path) {
 
 ### 9. Maze Solving (With Obstacles)
 ```java
-static int[][] maze;
-static ArrayList<String> paths = new ArrayList<>();
+static int[][] m;
+static int n;
 
-static boolean isSafe(int r, int c, int n) {
-    return r >= 0 && r < n && c >= 0 && c < n && maze[r][c] == 1;
-}
-
-static void solve(int r, int c, int n, String path) {
-    if (r == n-1 && c == n-1) { paths.add(path); return; }
-    maze[r][c] = 0;  // mark visited
-    if (isSafe(r+1, c, n)) solve(r+1, c, n, path + "D");
-    if (isSafe(r, c+1, n)) solve(r, c+1, n, path + "R");
-    maze[r][c] = 1;  // backtrack
+static void solve(int r, int c, String p) {
+    if (r == n-1 && c == n-1) { System.out.println(p); return; }
+    m[r][c] = 0; // mark visited
+    if (r+1 < n && m[r+1][c] == 1) solve(r+1, c, p+"D");
+    if (c+1 < n && m[r][c+1] == 1) solve(r, c+1, p+"R");
+    m[r][c] = 1; // backtrack
 }
 ```
 
@@ -563,20 +560,30 @@ static int josephus(int n, int k) {
 
 ### 11. Activity Selection
 ```java
-public static void activitySelection(int[][] acts) {
-    Arrays.sort(acts, (a, b) -> a[1] - b[1]);  // sort by END time
-    
-    int lastEnd = acts[0][1];
-    System.out.print("(" + acts[0][0] + "," + acts[0][1] + ") ");
-    
-    for (int i = 1; i < acts.length; i++) {
-        if (acts[i][0] >= lastEnd) {
-            System.out.print("(" + acts[i][0] + "," + acts[i][1] + ") ");
-            lastEnd = acts[i][1];
+// Version 1: Pre-sorted by finish time (faculty style)
+static void select(int[] s, int[] f) {
+    System.out.print(0 + " ");
+    int last = 0;
+    for (int j = 1; j < s.length; j++) {
+        if (s[j] >= f[last]) {
+            System.out.print(j + " ");
+            last = j;
         }
     }
 }
-// Input: int[][] acts = {{start, end}, {start, end}, ...};
+
+// Version 2: Unsorted input (need to sort)
+static void selectUnsorted(int[][] a) {
+    Arrays.sort(a, (x, y) -> x[1] - y[1]); // sort by end
+    int end = a[0][1];
+    System.out.print(0 + " ");
+    for (int i = 1; i < a.length; i++) {
+        if (a[i][0] >= end) {
+            System.out.print(i + " ");
+            end = a[i][1];
+        }
+    }
+}
 ```
 
 ---
