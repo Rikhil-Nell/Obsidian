@@ -533,15 +533,19 @@ static void printPaths(int r, int c, int m, int n, String path) {
 
 ### 9. Maze Solving (With Obstacles)
 ```java
-static int[][] m;
-static int n;
+static int[][] maze;
+static ArrayList<String> paths = new ArrayList<>();
 
-static void solve(int r, int c, String p) {
-    if (r == n-1 && c == n-1) { System.out.println(p); return; }
-    m[r][c] = 0; // mark visited
-    if (r+1 < n && m[r+1][c] == 1) solve(r+1, c, p+"D");
-    if (c+1 < n && m[r][c+1] == 1) solve(r, c+1, p+"R");
-    m[r][c] = 1; // backtrack
+static boolean isSafe(int r, int c, int n) {
+    return r >= 0 && r < n && c >= 0 && c < n && maze[r][c] == 1;
+}
+
+static void solve(int r, int c, int n, String path) {
+    if (r == n-1 && c == n-1) { paths.add(path); return; }
+    maze[r][c] = 0;  // mark visited
+    if (isSafe(r+1, c, n)) solve(r+1, c, n, path + "D");
+    if (isSafe(r, c+1, n)) solve(r, c+1, n, path + "R");
+    maze[r][c] = 1;  // backtrack
 }
 ```
 
