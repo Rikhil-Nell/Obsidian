@@ -158,8 +158,8 @@ The most common CMOS process. Uses p-type substrate with n-wells for PMOS device
 
 ```
         NMOS Region            PMOS Region
-    ┌─────────────────┬─────────────────────┐
-    │                 │                     │
+    ┌─────────────────┬────────────────────┐
+    │                 │                    │
     │  n+  Gate  n+   │   p+  Gate  p+     │
     │  S  [poly] D    │   S  [poly] D      │
     │─────────────────┤                    │
@@ -183,16 +183,16 @@ Uses n-type substrate with p-wells for NMOS devices.
 
 ```
         NMOS Region            PMOS Region
-    ┌─────────────────┬─────────────────────┐
-    │                 │                     │
+    ┌─────────────────┬────────────────────┐
+    │                 │                    │
     │  n+  Gate  n+   │   p+  Gate  p+     │
     │  S  [poly] D    │   S  [poly] D      │
-    │                 ├─────────────────────│
-    │    p-well       │                     │
-    │      ↓          │      (channel)      │
-    │  ┌─────────┐    │                     │
-    │  │ (p-type)│    │   n-substrate       │
-    └──┴─────────┴────┴─────────────────────┘
+    │                 ├────────────────────│
+    │    p-well       │                    │
+    │      ↓          │      (channel)     │
+    │  ┌─────────┐    │                    │
+    │  │ (p-type)│    │   n-substrate      │
+    └──┴─────────┴────┴────────────────────┘
               n-substrate
 ```
 
@@ -201,11 +201,11 @@ Uses n-type substrate with p-wells for NMOS devices.
 Both n-well and p-well on a lightly doped substrate.
 
 ```
-    ┌─────────────────┬─────────────────────┐
-    │     NMOS        │        PMOS         │
+    ┌─────────────────┬────────────────────┐
+    │     NMOS        │        PMOS        │
     │  n+  Gate  n+   │   p+  Gate  p+     │
     │  S  [poly] D    │   S  [poly] D      │
-    │─────────────────┼─────────────────────│
+    │─────────────────┼────────────────────│
     │    p-well       │      n-well        │
     │  ┌─────────┐    │    ┌───────────┐   │
     │  │ (p-type)│    │    │ (n-type)  │   │

@@ -80,13 +80,13 @@ When you apply positive voltage to the gate:
 VG < VTH (OFF):          VG = VTH:              VG > VTH (ON):
     Gate                    Gate                    Gate
     │                       │                       │
-┌───┴───┐              ┌───┴───┐               ┌───┴───┐
-│ Oxide │              │ Oxide │               │ Oxide │
-├───────┤              ├───────┤               ├───────┤
-│       │              │ - - - │ ← depletion   │=======│ ← channel!
-│  n+ n+│              │  n+ n+│               │  n+═n+│
-└───────┘              └───────┘               └───────┘
- No channel             Starting               Conducting!
+┌───┴───┐               ┌───┴───┐               ┌───┴───┐
+│ Oxide │               │ Oxide │               │ Oxide │
+├───────┤               ├───────┤               ├───────┤
+│       │               │ - - - │ ← depletion   │=======│ ← channel!
+│  n+ n+│               │  n+ n+│               │  n+═n+│
+└───────┘               └───────┘               └───────┘
+ No channel              Starting               Conducting!
 ```
 
 ---
@@ -148,11 +148,11 @@ NMOS needs p-substrate, PMOS needs n-substrate.
           │                       │
     p-substrate              n-well in p-substrate
     
-    ┌─────────────────────────────────────────┐
-    │  n+ ═══ n+   │      │  p+ ═══ p+       │
-    │     NMOS     │      │     PMOS         │
-    │  p-substrate │      │    n-well        │
-    └─────────────────────────────────────────┘
+    ┌───────────────────────────────────────┐
+    │  n+ ═══ n+   │      │  p+ ═══ p+      │
+    │     NMOS     │      │     PMOS        │
+    │  p-substrate │      │    n-well       │
+    └───────────────────────────────────────┘
                     p-substrate
 ```
 
@@ -162,10 +162,10 @@ NMOS needs p-substrate, PMOS needs n-substrate.
 
 #### 3. Twin-Tub (Both Wells)
 ```
-    ┌─────────────────────────────────────────┐
+    ┌────────────────────────────────────────┐
     │     NMOS          │        PMOS        │
     │    in p-well      │      in n-well     │
-    └─────────────────────────────────────────┘
+    └────────────────────────────────────────┘
                    substrate
 ```
 

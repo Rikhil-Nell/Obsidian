@@ -147,7 +147,7 @@ In triode, gm = μnCox(W/L)VDS:
           │   ╱                       │       ╱                  │     ╲
           │ ╱                         │     ╱                    │       ╲
           │╱                          │   ╱                      │         ╲
-          └─────────→               └─────────→               └─────────→
+          └─────────→                 └─────────→                └─────────→
              VGS - VTH                    ID                    VGS - VTH
                                                                (ID constant)
          W/L constant                W/L constant              
