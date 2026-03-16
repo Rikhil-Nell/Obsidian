@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiNetwork",
       "LiAtom",
       "LiTestTube",
       "LiFastForward",
-      "LiBook",
-      "LiUnlock"
+      "LiBook"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -55,5 +55,6 @@
   "Andrew Ng": "LiBook",
   "FASTAPI": "LiFastForward",
   "SEM-5 FAT": "LiTestTube",
-  "6th Semester": "LiAtom"
+  "6th Semester": "LiAtom",
+  "techie shi": "LiNetwork"
 }
