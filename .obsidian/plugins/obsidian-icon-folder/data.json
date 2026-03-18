@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiSquareChevronRight",
       "LiNetwork",
       "LiAtom",
       "LiTestTube",
-      "LiFastForward",
-      "LiBook"
+      "LiFastForward"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -56,5 +56,6 @@
   "FASTAPI": "LiFastForward",
   "SEM-5 FAT": "LiTestTube",
   "6th Semester": "LiAtom",
-  "techie shi": "LiNetwork"
+  "techie shi": "LiNetwork",
+  "Recon": "LiSquareChevronRight"
 }
