@@ -1,0 +1,1402 @@
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 1
+============================================================
+
+Unit 2: Op-Amp Applications
+Applications of Op-amp
+Voltage follower, Summing/Difference amplifier, Integrator/Differentiator
+Pre – preparation: Lecture Materials and LIC Text book by ROY Choudhury, sixth edition, 2022.
+VIT-AP University                                              Linear Integrated Circuits                                      Dr. M. Sankush Krishna
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 2
+============================================================
+
+Voltage follower
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 3
+============================================================
+
+Summing amplifier
+A summing amplifier (adder) is an inverting op-amp configuration whose output is the algebraic sum of multiple input signals.
+If all input resistors are equal (𝑅1=𝑅2=⋯=𝑅𝑛), the circuit becomes an equal-weighted summing amplifier.
+Each input has an independent gain determined by its input resistor, with minimal interaction between inputs.
+Common applications include audio mixing, signal combining, and level shifting (adding a DC offset to an AC signal).
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 4
+============================================================
+
+Subtractor amplifier
+A subtractor (difference amplifier) is realized using an op-amp with four equal resistors 𝑅1=𝑅2=𝑅3=𝑅𝑓.
+Using the superposition principle, the output due to 𝑉2​ alone acts as a unity-gain non-inverting amplifier, while the output due to 𝑉1​ alone acts as a unity-gain inverting amplifier.
+Hence, the circuit produces an output proportional to the difference between the two input voltages and functions as a unity-gain difference (subtractor) amplifier.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 5
+============================================================
+
+Integrator
+An op-amp integrator is obtained by replacing the feedback resistor of an inverting amplifier with a capacitor 𝐶𝑓.
+Due to virtual ground at the inverting input and negligible input bias current, the output voltage is proportional to the negative time integral of the input voltage.
+At DC (𝜔=0), the gain becomes theoretically infinite, causing output saturation in practical circuits, while higher frequencies produce stable integration behavior.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 6
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 7
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 8
+============================================================
+
+Limitations of Ideal integrator:
+In an ideal op-amp integrator, even in the absence of an input signal, input offset voltage and bias current produce an error voltage at the output, causing distortion and preventing true integration.
+To limit low-frequency gain and avoid saturation, a resistor is connected in parallel with the integrating capacitor, but this also restricts the high-frequency integration range, making the circuit non-ideal.
+Because of these limitations, a practical integrator is used, where errors due to offset, bias current, and drift are minimized using compensation resistors,
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 9
+============================================================
+
+Differentiator
+An op-amp differentiator produces an output voltage proportional to the rate of change of the input voltage, making it useful for detecting rapid signal variations.
+The ideal differentiator is obtained by replacing the input resistor of an inverting amplifier with a capacitor, effectively interchanging the resistor and capacitor positions of an integrator.
+A differentiator performs the inverse operation of an integrator and emphasizes high-frequency components, with the upper cut-off frequency determined by the RC time constant.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 10
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 11
+============================================================
+
+Practice numericals
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 12
+============================================================
+
+Determine the output current IL for the circuit shown in Fig.
+Potential at emitter by virtual ground=5V.
+Using KVL analysis current through 1kohm resistor is
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 13
+============================================================
+
+Determine the current I in the circuit shown in Fig
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 14
+============================================================
+
+Determine the current through RL in the circuit shown in Fig
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 15
+============================================================
+
+Determine the V0 for the circuit shown in Fig
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 16
+============================================================
+
+Calculate the output voltage of an op-amp summing amplifier for the following sets of input voltages V1, V2 and V3 and input resistors R1, R2 and R3. Use R1=1Mohm.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 17
+============================================================
+
+Find the output voltage of the following op-amp circuit shown in Fig.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 18
+============================================================
+
+Find gain of the following Op-amp
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx] Page/Slide 19
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx] Page/Slide 1
+============================================================
+
+Internal Circuit of Op-Amp
+1
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx] Page/Slide 2
+============================================================
+
+Op-Amp Internal Circuit
+An op-amp is a multistage, direct-coupled, high-gain amplifier that uses negative feedback, consists of one or more differential amplifier stages, and ends with a level translator and an output stage.
+The input (differential) stage, often implemented using two cascaded differential amplifiers, provides high input resistance and the initial voltage gain of the op-amp.
+Differential amplifier is a basic building block of an op-amp. The function of a differential amplifier is to amplify the difference between two input signals. The two transistors Q1 and Q2 have identical characteristics.
+The resistances of the circuits are equal, i.e. RE1 = R E2, RC1 = R C2 and the magnitude of +VCC is equal to the magnitude of -VEE. These voltages are measured with respect to ground.
+2
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx] Page/Slide 3
+============================================================
+
+3
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx] Page/Slide 4
+============================================================
+
+4
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx] Page/Slide 5
+============================================================
+
+5
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx] Page/Slide 6
+============================================================
+
+Cascaded differential stage
+6
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx] Page/Slide 7
+============================================================
+
+Level Shifter
+Direct coupling between successive differential stages causes a progressive rise in DC bias voltage levels, shifting operating points, limiting output swing, and risking signal distortion.
+To restore the DC output level to zero or a desired reference voltage, level translator circuits—typically emitter followers with resistive dividers—are inserted between stages.
+Simple voltage-divider emitter followers can be enhanced with diode-based or current-mirror biasing for better thermal stability, lower output impedance, and more precise DC level shifting.
+7
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx] Page/Slide 8
+============================================================
+
+Here LS act like a buffer to isolate high gain stages from output. The amount of shift obtained is
+8
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx] Page/Slide 9
+============================================================
+
+Output stage
+The final stage is usually a push pull complementary symmetry amplifier output stage. The output stage increases the voltage swing and raises the ground supplying capabilities of the op-amp. A well designed output stage also provides low output resistance.
+If Vi is positive , Q1 is ON and supplies current to load RL. If Vi is negative, Q1 is Cutoff, Q2 acts as sink to remove current from load RL.The limitation of this circuit is the output voltage Vo remains zero until Vi exceeds Vbe(cut-in). This is called cross over distortion
+9
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx] Page/Slide 10
+============================================================
+
+The problem with above circuit can be eliminated by applying bias voltage V slightly greater than 2Vbe = 1 V between two bases, so that small current flows in transistors even in Quiescent state. The figure shows the output stage of uA741 op-amp. V represents VBE Multiplier and 25 ohm resistor to stabilize Quiescent base current.
+10
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx] Page/Slide 11
+============================================================
+
+11
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx] Page/Slide 12
+============================================================
+
+12
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx] Page/Slide 13
+============================================================
+
+13
+Thank You!
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 1
+============================================================
+
+Unit 2: Op-Amp Applications
+Applications of Op-amp
+Differential Amplifiers, Instrumentation Amplifier, Isolation amplifier
+Pre – preparation: Lecture Materials and LIC Text book by ROY Choudhury, sixth edition, 2022.
+VIT-AP University                                              Linear Integrated Circuits                                      Dr. M. Sankush Krishna
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 2
+============================================================
+
+Differential Amplifier
+Differential Amplifier with single Op-amp is similar to a difference Op-Amp.
+Using superposition, when one input is grounded, the circuit behaves as an inverting or non-inverting amplifier, depending on which input is active.
+When both inputs are applied, the output voltage becomes Vo = Vi1 − Vi2, confirming differential amplifier operation.
+In practical op-amps, resistor mismatch causes a small common-mode output, defined using Vcm = (Vi1 + Vi2)/2.
+The quality of a differential amplifier is measured by CMRR
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 3
+============================================================
+
+Differential Amplifier with two Op-Amps
+A two-op-amp differential amplifier increases gain and input resistance compared to a single op-amp configuration.
+The first stage (A1) is a non-inverting amplifier, producing Vo1.
+The second stage (A2) acts as a differential amplifier, amplifying Vi2 and Vo1 with opposite polarities.
+With Rf = R3 and R1 = R2, the output depends on the difference Vid = Vi2 − Vi1
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 4
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 5
+============================================================
+
+Instrumentation Amplifier
+Industrial transducers (temperature, pressure, humidity, light, strain gauges, etc.) produce very small signals typically µV to mV.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 6
+============================================================
+
+Instrumentation Amplifier
+Industrial transducers (temperature, pressure, humidity, light, strain gauges, etc.) produce very small signals typically µV to mV.
+These signals ride on large common-mode voltages (noise, ground offsets, interference).
+Hence, a special amplifier topology is required → Instrumentation Amplifier (IA).
+For the basic difference amplifier:
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 7
+============================================================
+
+Limitations of difference amplifier
+CMRR depends entirely on resistor matching
+Gain adjustment requires changing multiple resistors
+High gain requires large R2/R1​, which increases noise and resistor mismatch error.
+The three-op-amp instrumentation amplifier consists of:
+Differential Input Buffer Stage (A1, A2)
+Difference Amplifier Stage (A3)
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 8
+============================================================
+
+Schematic of Instrumentation amplifier
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 9
+============================================================
+
+Merits of Instrumentation Amplifier
+Gain depends on only one resistor 𝑅
+
+
+Resistor matching in stage 2 is fixed and factory-trimmed
+High gain achievable without degrading CMRR
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 10
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 11
+============================================================
+
+Unit 2: Op-Amp Applications
+Applications of Op-amp
+Precision Rectifier, Log & Anti-log Amplifiers, Schmitt Trigger, Comparator, Sample and Hold Circuits.
+Pre – preparation: Lecture Materials and LIC Text book by ROY Choudhury, sixth edition, 2022.
+VIT-AP University                                              Linear Integrated Circuits                                      Dr. M. Sankush Krishna
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 12
+============================================================
+
+Precision Rectifier
+Ordinary Si diodes have a cut-in voltage of 0.7 V which impedes efficient rectification
+The circuit consists of an op-amp with a diode connected in the feedback path. The op-amp has a very high open-loop gain.
+Because of this large gain, even a very small difference between the input and output causes the op-amp output to swing sufficiently to overcome the diode’s forward voltage. This effectively cancels the 0.7 V drop.
+When the input voltage becomes positive, the op-amp output also becomes positive due to amplification even if input is 7 uV considering gain of 105
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 13
+============================================================
+
+Precision Rectifier
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 14
+============================================================
+
+Precision Inverse Half Wave Rectifier
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 15
+============================================================
+
+Precision Full Wave Rectifier
+When vi>0: D1 off and D2 ON. V`0=-vi
+Now vi through R/2 and vi through R act as inputs to summing amplifier with unity gain. 
+So inputs will be V0=-2V`0-vi so V0=vi
+When vi<0:
+D1-ON and D2-OFF. V`0 =  0
+Input to summing amplifier  is only from vi so output V0=-vi. Positive half cycle appears at output.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 16
+============================================================
+
+Absolute value circuit.
+The following full wave rectifier converts the negative values to positive values. 
+Hence called absolute value rectifier.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 17
+============================================================
+
+Clippers
+Wave-shaping circuits modify signal amplitude (limit, clip, clamp) without changing frequency.
+Diode ON → feedback loop completeDiode OFF → feedback openEnables half-wave or full-wave rectification.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 18
+============================================================
+
+An op-amp clipper (amplitude limiter) is essentially an inverting amplifier with a Zener diode and a signal diode placed in the feedback path. The gain remains −𝑅𝑓/𝑅1 when the diodes are inactive.
+When ∣vo∣<(VZ+VD) → diodes OFF Circuit acts as normal inverting amplifier (Av=−Rf/R1).
+When ∣vo∣≥(VZ+VD​) → Zener in breakdown, diode forward biased →Output clipped at VZ+VD​.
+Using two back-to-back Zener diodes allows clipping in both positive and negative directions. Between the two clipping thresholds, the circuit operates as a standard linear amplifier.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 19
+============================================================
+
+Clampers
+A clamper circuit shifts the entire input waveform up or down by adding a fixed DC level, without changing its shape. It is widely used as a DC restorer (DC inserter) in television and signal processing circuits.
+In a positive clamper, during the negative half-cycle the diode conducts and the capacitor charges to the negative peak value Vnp​ to maintain virtual ground.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 20
+============================================================
+
+Clampers
+A clamper circuit shifts the entire input waveform up or down by adding a fixed DC level, without changing its shape. It is widely used as a DC restorer (DC inserter) in television and signal processing circuits.
+In a positive clamper, during the negative half-cycle the diode conducts and the capacitor charges to the negative peak value Vnp​ to maintain virtual ground.
+When the input becomes positive, the diode turns OFF and the capacitor holds its charge, shifting the output such that
+
+Adding a reference voltage V​ref at the non-inverting input shifts the clamp level, giving
+
+
+For negative clamping, the diode polarity and reference voltage are reversed; the capacitor charges during the positive half-cycle, shifting the waveform downward.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 21
+============================================================
+
+Logarithmic amplifier
+Resistive feedback networks provide linear i/p to o/p relations.
+Using a diode in feedback path provide logarithmic relation between i/p and o/p. 
+A logarithmic amplifier converts input voltage into:
+	V0 α ln(Vi)
+Used in situations where large dynamic range should be handled including small and large signals (eg 10 mV to 10 V)
+Transdiode with base grounded, collector to virtual ground and emitter to output.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 22
+============================================================
+
+From the input resistor:
+
+
+Substitute VBE from previous equation:
+
+
+The issues with above circuit is that Is changes with transistor design and temperature which might change the output calibration.
+Hence the following configuration is used.
+Two matched transistors Q1​ and Q2​ are used. Since fabricated on same silicon:
+				IS1=IS2
+​ This ensures close matching and thermal tracking
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 23
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 24
+============================================================
+
+From first Op-amp A1:
+
+
+From second Op-amp A2:
+
+
+The difference amplifier A3 subtracts two outputs
+
+
+Overall output at stage 4 of Op-amp A4
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 25
+============================================================
+
+IS cancels out and temperature tracking improves.
+If temperature increases → this term increases linearly.
+So to compensate it a temperature dependent resistor is used.
+
+
+
+
+Positive temperature coefficient of RTC reduces gain when temperature rises compensating KT/q factor.
+The overall output is less susceptible to temperature variations
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 26
+============================================================
+
+Antilog amplifier
+A logarithmic amplifier converts input voltage into:
+	V0 α ln(Vi)
+Antilog amplifier reverses that result
+	Vo​ ∝ eVi​  or Vo ​∝ 10Vi​
+Used in cases analog multiplication, division, exponentiation etc. 
+Transdiode with base grounded, collector to inverting input terminal of Op-amp, emitter toinput signal.
+Input voltage is same as the voltage across VBE
+The output voltage is derived as
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 27
+============================================================
+
+Antilog amplifier faces the same issues as the log amplifier.
+Hence compensated circuit is used which is shown below.
+The red regions are simple log amplifier sections. So
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 28
+============================================================
+
+Antilog amplifier
+Now VB=VBE2-VBE1
+
+So VB=
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 29
+============================================================
+
+Antilog amplifier
+Now substitute VB values:
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 30
+============================================================
+
+Op-Amp Comparator
+An Op-amp comparator compares the input voltage with a certain reference voltage and produces either of two outputs ±Vsat. 
+Op-amp comparator is constructed using open-loop configuration either in inverting or  non-inverting mode.
+The practical and ideal characteristics of an ideal Op-amp are shown on right side.
+In practical comparator there is an approximate 2mV transition period during which the output is uncertain due Op-amp offset voltage.
+An inverting comparator produces -Vsat when Vi>Vref
+A non-inverting comparator produces Vsat when Vi>Vref
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 31
+============================================================
+
+Op-Amp Comparator
+Figure shown a inverting comparator.
+When Vi>Vref, a positive differential voltage appears at Op-amp inputs giving Vsat at output
+When Vi<Vref, a negative differential voltage appears at Op-amp inputs giving -Vsat at output
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 32
+============================================================
+
+Op-Amp Comparator
+The reference voltage can be obtained using voltage divider circuit from Vcc and –VEE using a potentiometer.
+The output voltage other than saturation voltage can be obtained using the Zener diodes at the output.
+For the circuit shown, the output goes +Vsat when Vi>Vref.
+Applications:
+Zero crossing detector (sine wave to square wave converter) 
+Amplitude distribution analyser 
+Pulse-time modulator 
+Window detector
+Timing marker signal generator 
+Phase detector
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 33
+============================================================
+
+Schmitt trigger
+A false triggering can happen in simple comparator due to input noise owing to high open loop gain of Op-amp.
+To avoid that a positive feedback is provided from the output called regenerative comparator.
+The positive feedback creates infinite closed loop gain if feedback gain is kept to unity.
+
+
+Positive feedback creates two different switching levels. It remembers previous state.
+If V0=+Vsat then output flips only Vi>V+. This voltage is called upper threshold voltage.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 34
+============================================================
+
+Schmitt trigger
+When V0=-Vsat, the output flips when Vi exceeds the following voltage:
+
+
+
+
+It can be observed that VH is independent of Vref. If Vref is made 0, then a symmetrical square wave is produced at output
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 35
+============================================================
+
+Merits
+The Schmitt trigger produced two threshold switching output at VLT and VUT.
+The circuit switches its output only when input changes after certain threshold.
+Hence circuit is immune to noise signals.
+The Schmitt trigger produces clean square waves making switching more deterministic and avoids false triggering.
+Applications:
+Converting Slow Analog Signals to Clean Digital Signals
+Clock Signal Conditioning
+Threshold Detection with Stability
+Improving Noise Margin in Digital Logic
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 36
+============================================================
+
+Sample and Hold circuit
+A Sample and Hold circuit samples an analog input voltage, holds that value constant for a period of time.
+During sampleing: 
+During hold: 
+The MOSFET in the circuit acts as the sampling circuit. The frequency of the control voltage VC determines the sampling frequency.
+The first amplifier acts as a simple voltage follower for the input signal. 
+The control voltage to gate of MOSFET dictates the status of MOSFET ON/OFF.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 37
+============================================================
+
+Sample and Hold circuit
+When Vc is positive, MOSFET is ON.
+Capacitor charges with time constant (R0+rds)C. The entire input waveform appears at non-inverting terminal of Op-amp2.
+When Vc is negative, MOSFET is OFF. Since, Rin of Op-amp is very high the capacitor holds the previous charge with output staying at the voltage on capacitor. 
+For a proper sampling of the signal, the control voltage frequency should be atleast twice the input signal frequency.
+Applications of sample and hold circuit include ADCs, Pulse Amplitude Measurement, digital oscilloscopes etc.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 38
+============================================================
+
+Analog Voltage Multiplier
+There are multiple configurations for an Analog voltage multiplier.
+One of the ways is log-antilog configuration. The outputs of log amplifiers are summed together.
+The circuit operation is based on the logarithmic identity. 
+
+Since operational amplifiers can accurately add voltages, multiplication becomes practically realizable after converting signals into logarithmic form.
+The summed logarithmic voltage is applied to another transistor configured as an antilog amplifier.
+
+
+For voltage division give the output of 
+    log amplifier to a difference amplifier.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 39
+============================================================
+
+Applications
+Voltage Squarer
+For the above described multiplier configuration supply both the input voltages as equal signals.
+
+
+Frequency Doubler:
+The same voltage squarer when given with two signals of same frequency, the the output voltage turns out to be
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx] Page/Slide 40
+============================================================
+
+Phase angle detector:
+ When the inputs are given to the voltage multiplier with different phase angles the sinusoidal terms get multiplied.
+
+
+
+
+
+The values of vxp and vyp represent peak amplitudes of input signals. A scaling factor of 10 is deployed for the multiplier configuration.
+From the DC component, the phase can be calculated using phase angle meter.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 1
+============================================================
+
+Unit 3: Op-Amp Applications
+Sample & Hold circuit, Analog multiplier
+Pre – preparation: Lecture Materials and LIC Text book by ROY Choudhury, sixth edition, 2022.
+VIT-AP University                                              Linear Integrated Circuits                                      Dr. M. Sankush Krishna
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 2
+============================================================
+
+Sample and Hold circuit
+A Sample and Hold circuit samples an analog input voltage, holds that value constant for a period of time.
+During sampling: 
+During hold: 
+The MOSFET in the circuit acts as the sampling circuit. The frequency of the control voltage VC determines the sampling frequency.
+The first amplifier acts as a simple voltage follower for the input signal. 
+The control voltage to gate of MOSFET dictates the status of MOSFET ON/OFF.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 3
+============================================================
+
+Sample and Hold circuit
+When Vc is positive, MOSFET is ON.
+Capacitor charges with time constant (R0+rds)C. The entire input waveform appears at non-inverting terminal of Op-amp2.
+When Vc is negative, MOSFET is OFF. Since, Rin of Op-amp is very high the capacitor holds the previous charge with output staying at the voltage on capacitor. 
+For a proper sampling of the signal, the control voltage frequency should be atleast twice the input signal frequency.
+Applications of sample and hold circuit include ADCs, Pulse Amplitude Measurement, digital oscilloscopes etc.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 4
+============================================================
+
+Analog Voltage Multiplier
+There are multiple configurations for an Analog voltage multiplier.
+One of the ways is log-antilog configuration. The outputs of log amplifiers are summed together.
+The circuit operation is based on the logarithmic identity. 
+
+Since operational amplifiers can accurately add voltages, multiplication becomes practically realizable after converting signals into logarithmic form.
+The summed logarithmic voltage is applied to another transistor configured as an antilog amplifier.
+
+
+For voltage division give the output of 
+    log amplifier to a difference amplifier.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 5
+============================================================
+
+Applications
+Voltage Squarer
+For the above described multiplier configuration supply both the input voltages as equal signals.
+
+
+Frequency Doubler:
+The same voltage squarer when given with two signals of same frequency, the the output voltage turns out to be
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 6
+============================================================
+
+Phase angle detector:
+ When the inputs are given to the voltage multiplier with different phase angles the sinusoidal terms get multiplied.
+
+
+
+
+
+The values of vxp and vyp represent peak amplitudes of input signals. A scaling factor of 10 is deployed for the multiplier configuration.
+From the DC component, the phase can be calculated using phase angle meter.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 7
+============================================================
+
+Unit 4: Op-Amp Applications
+Waveform Generators
+Square, Triangle, Sawtooth
+Pre – preparation: Lecture Materials and LIC Text book by ROY Choudhury, sixth edition, 2022.
+VIT-AP University                                              Linear Integrated Circuits                                      Dr. M. Sankush Krishna
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 8
+============================================================
+
+Waveform Generators
+Operational amplifiers are commonly used to generate different types of waveforms such as sine, square, and triangular waves, which are required in electronic circuits.
+Many analog and digital systems need periodic signals for purposes like timing, control operations, testing, and synchronization.
+A sine wave is one of the most important and commonly used waveforms in electronics but generating an ideal sine wave with stable amplitude and frequency is comparatively difficult.
+An oscillator is essentially a feedback amplifier. A portion of output is fed back to input to cause oscillations. 
+The condition for oscillations should be unity feedback gain with 0- or 360-degrees phase angle.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 9
+============================================================
+
+RC-phase shift oscillator
+LC oscillators require large inductors at low frequencies hence RC networks are used for oscillator design.
+Two commonly used RC oscillators are the RC phase-shift oscillator and the Wien bridge oscillator.
+In an RC phase-shift oscillator, the op-amp is operated in inverting configuration, producing a phase shift of 180 degrees.
+The feedback RC network provides another 180 degrees phase shift totaling a 360 degrees phase shift between input and feedback signal.
+The feedback network determines the oscillation frequency, while the amplifier provides the required gain to compensate for losses occurring in the RC sections.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 10
+============================================================
+
+RC-phase shift oscillator
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 11
+============================================================
+
+RC-phase shift oscillator
+For RC phse shift oscillator gain should be 29 and frequency is oscillation is f0
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 12
+============================================================
+
+Wein Bridge Oscillator
+Similar to RC phase shift oscillator wein bridge oscillator generate sinusoidal waveform when feedback phase shift and gain become 0 and 1 respectively.
+This happens when the RC bridge is in balanced condition aka resonance condition
+Wien bridge oscillator is an audio frequency sine wave oscillator of high stability and simplicity. It consists of balanced bridge used as feedback network.
+The feedback signal in this circuit is connected to the non-inverting input terminal so that the op-amp is working as a non-inverting amplifier.Therefore, the feedback network need not provide any phase shift.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 13
+============================================================
+
+Wein Bridge Oscillator
+Gain of Op-amp
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 14
+============================================================
+
+Wein Bridge Oscillator
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 15
+============================================================
+
+Comparison
+RC phase shift oscillator does not require closely matched components for resonance
+Does not need special amplitude stabilization circuitry in basic operation.
+However, it requires high gain and the phase errors tends to deviate a lot due to three RC sections.
+Frequency tuning is difficult as three stages change phase if any RC value is changed.
+Output amplitude is small and frequency stability is relatively low. Only suitable for low frequency applications
+Wein bridge amplifier requires low gain and frequency stability is more with less distortion.
+Frequency tuning is relatively easier with RC tuning.
+However, the circuit design is complex and requires closely matched RC components.
+Not suitable for very high frequency operations due to Op-amp bandwidth limitations.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 16
+============================================================
+
+Square wave generator
+A square wave generator generates a square waveform for digital applications.
+It is also called astable multivibrator free running square wave.
+The positive feedback is connected to positive terminal and the capacitor with feedback resistance are connected to non-inverting terminal.
+The RF and capacitor network decides the pulse width of the square waveform.
+The Zener diodes used at the output decide the output square wave amplitude.
+The feedback network via R1 and R2 decides the threshold switching voltages.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 17
+============================================================
+
+Square wave generator
+Assuming the initial output as +Vsat, the potential at V+ becomes +Vsat(R2/(R1+R2)).
+Since initial charge on capacitor is zero, the constant it charges towards the voltage +Vsat.
+The charging time is decided by the feedback resistor RF and the capacitor C network and the switching thresholds decided by the positive feedback network.
+When the charge of V- becomes more than V+, output flips to –Vsat.
+Now capacitor discharges to –Vsat until the voltage of V- becomes more negative than V+ voltage (-Vsat x (R2/(R1+R2))). Once it happens output flips again.
+The process continues creating a square waveform.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 18
+============================================================
+
+Frequency of oscillation
+Continues until this point
+For complete cycle we get
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 19
+============================================================
+
+Triangular wave generator
+The circuit contains two stages first a comparator followed by an integrator with R1 and C1 network.
+The comparator compares the triangular waveform at its input with a reference level (usually ground). The output of comparator is either +Vsat or –Vsat.
+The second stage integrates the input signal at the non-inverting terminal of Op-amp i.e., the output of comparator.
+The output of comparator is a constant +Vsat or –Vsat. The integration of a constant generates a triangular waveform.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 20
+============================================================
+
+Triangular wave generator
+Assuming initial v0’ as +Vsat, the capacitor charges to +Vsat with a constant current v0’/R
+When the comparator output is –Vsat, the capacitor discharges with a constant current.
+The frequency of oscillation for the triangular wave generator and the peak to peak amplitude depends on the resistors and the capacitors.
+Applying a KVL from output V0 (Vramp) to output of comparator (+Vsat/-Vsat).
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 21
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 22
+============================================================
+
+Equating bot equations we get:
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 23
+============================================================
+
+Sawtooth wave generator
+A triangular waveform can be modified to build a sawtooth waveform generator.
+A sawtooth waveform is similar to triangular waveform with smaller fall time and larger rise time.
+The circuit contains two Op-amp stages.
+The first an integrator stage and then a comparator.
+A transistor is connected across the capacitor to act as switch for rapid discharge.
+Resistances R2 and R3 provide the reference voltage for the comparator.
+Diodes D1 and D2 avoid excessive reverse biasing to the transistors.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 24
+============================================================
+
+Sawtooth wave generator
+Vi<0, V+=V- capacitor charges with current Vi/R1.
+
+
+
+For Op-amp stage 2:
+V+=VoR and V-=Vref 
+V+<V- so Voc=_Vsat.
+D1 and D2 OFF
+Q1 and Q2 OFF
+V- remains at 15(R3/R2)
+Q2 as open switch across capacitor and capacitor keeps charging and VoR keeps increasing.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 25
+============================================================
+
+Sawtooth wave generator
+When VoR>Vref
+A Voc=+Vsat
+D1 and D2 ON
+Q1 and Q2 ON (short circuit)
+Capacitor discharges across Q2 rapindly reaching zero.
+VoR goes to zero with C discharge.
+V- of A2 reaches +Vsat(R/(R+R2))
+At A2 V+<V-, O/p goes to –Vsat
+Diodes and Transistors OFF
+Capacitor again starts charging increasing VoR and process continues.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 26
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 27
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 28
+============================================================
+
+Frequency of oscillation
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 29
+============================================================
+
+Applications of Sawtooth wave generator
+Function generator used in testing and calibration.
+Signal processing as reference signal in synchronization
+Time-Base Generator in CRO / Oscilloscopes. The horizontal sweep in oscilloscopes requires a linear ramp voltage.
+Sawtooth generators act as linear time reference generators.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 30
+============================================================
+
+IC 555 Timer
+The positive supply connected to pin 8 (VCC) and the negative supply to pin 1 (Ground), while the output at pin 3 can switch between a HIGH level (≈ VCC−0.5 VV_{CC}-0.5\,VVCC​−0.5V) and a LOW level (≈ 0.1 V).
+The internal operation is based on two comparators monitor input voltages and control the internal flip-flop state.
+Internal voltage divider: The voltage divider arrangement with resistors arrange for the threshold voltages for upper and lower comparators with 2/3Vcc and 1/3Vcc.
+The control voltage pin is used for external modulation of reference levels and generally bypassed with 0.1uF capacitor to remove noise.
+Pins 2 and 6 act as trigger and threshold pins to change the state of output.
+Trigger operation sets output to high when the voltage at pin2 reduces below 1/3 Vcc.
+When at pin 6 voltage increases by 2/3 Vcc the output state goes high resetting the flipflop forcing Q to zero.
+The reset pin (pin 4) can force the output LOW when its voltage drops below 0.4 V. while the internal discharge transistor 𝑄1Q1	​ connected to pin 7 conducts when the output is LOW to discharge the external capacitor and turns OFF when the output is HIGH.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 31
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 32
+============================================================
+
+Monostable Multivibrator
+Monostable multivibrator has one stable state and one quasi-stable state. It is also known as monoshot or one-shot multivibrator or uni-vibrator.
+It remains in its stable state until an input pulse triggers it into its quasi-stable state. It stays in quasi-stable state for a time duration determined by an RC timing circuit.
+Post RC time o/p returns to standby or stable state.
+The circuit is built by connecting a resistor between pin 8 and pin6.
+A capacitor is connected to pin 7 and shorted to pin 6. This RC network decides the pulse width or time constant of the pulse.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 33
+============================================================
+
+Firstly UC and LC are given with 2/3 voltage for V- and 1/3 voltage for V+ respectively with voltage divider arrangement.
+Pin number 2 is held at a voltage higher than 1/3Vcc.
+Initially the output of flipfop is 0 making Qbarto 1 and Q1 ON.
+The output of 555 timer is logic 0 or zero volts at output.
+Now LC provides O/p logic zero since pin2 is more than 1/3Vcc
+Since capacitor initial charge is zero, UC also provides output logic zero.
+The flipflop retains earlier state as 0
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 34
+============================================================
+
+Now a small trigger of potential less than 1/3Vcc is applied at pin2
+LC shifts output to +Vsat aka logic 1.
+The UC still maintains logic zero at output as charge on capacitor is still zero.
+SR flipflop with S=1 and R=0 makes Q=1
+This makes Qbar=0 and Q2 OFF
+Output of 555 times is logic high or saturated voltage at output.
+Since Q1 off the capacitor is unclamped and starts to charge.
+The capacitor charges via the resistor R connected to pin8.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 35
+============================================================
+
+Now a small trigger of potential less than 1/3Vcc is applied at pin2
+LC shifts output to +Vsat aka logic 1.
+The UC still maintains logic zero at output as charge on capacitor is still zero.
+SR flipflop with S=1 and R=0 makes Q=1
+This makes Qbar=0 and Q2 OFF
+Output of 555 times is logic high or saturated voltage at output.
+Since Q1 off the capacitor is unclamped and starts to charge.
+The capacitor charges via the resistor R connected to pin8.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx] Page/Slide 36
+============================================================
+
+When the charge on capacitor exceeds 1/3Vcc the LC shifts o/p to logic 0. This makes S of FF as zero.
+When the charge on capacitor exceeds 2/3Vcc, then UC shifts o/p to logic 1.
+The the FF has S=0 and R=1
+This makes output Q=0 and Qbar=1 and Q1 ON
+As soon as Q1 is ON, the capacitor clamps to transistor and discharges via the transistor to ground potential.
+The output of 555 timer reverts back to zero.
+This generates a pulse width of certain time period and then reverts back to its standby mode or stable mode hence monostable multivibrator.
+The output remains zero until another trigger pulse is applied at pin 2.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 1
+============================================================
+
+IC 555 Timer
+The positive supply connected to pin 8 (VCC) and the negative supply to pin 1 (Ground), while the output at pin 3 can switch between a HIGH level (≈ VCC−0.5 ) and a LOW level (≈ 0.1 V).
+The internal operation is based on two comparators monitor input voltages and control the internal flip-flop state.
+Internal voltage divider: The voltage divider arrangement with resistors arrange for the threshold voltages for upper and lower comparators with 2/3Vcc and 1/3Vcc.
+The control voltage pin is used for external modulation of reference levels and generally bypassed with 0.1uF capacitor to remove noise.
+Pins 2 and 6 act as trigger and threshold pins to change the state of output.
+Trigger operation sets output to high when the voltage at pin2 reduces below 1/3 Vcc.
+When at pin 6 voltage increases by 2/3 Vcc the output state goes high resetting the flipflop forcing Q to zero.
+The reset pin (pin 4) can force the output LOW when its voltage drops below 0.4 V. while the internal discharge transistor 𝑄1Q1	​ connected to pin 7 conducts when the output is LOW to discharge the external capacitor and turns OFF when the output is HIGH.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 2
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 3
+============================================================
+
+Monostable Multivibrator
+Monostable multivibrator has one stable state and one quasi-stable state. It is also known as monoshot or one-shot multivibrator or uni-vibrator.
+It remains in its stable state until an input pulse triggers it into its quasi-stable state. It stays in quasi-stable state for a time duration determined by an RC timing circuit.
+Post RC time o/p returns to standby or stable state.
+The circuit is built by connecting a resistor between pin 8 and pin6.
+A capacitor is connected to pin 7 and shorted to pin 6. This RC network decides the pulse width or time constant of the pulse.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 4
+============================================================
+
+Firstly UC and LC are given with 2/3 voltage for V- and 1/3 voltage for V+ respectively with voltage divider arrangement.
+Pin number 2 is held at a voltage higher than 1/3Vcc.
+Initially the output of flipfop is 0 making Qbarto 1 and Q1 ON.
+The output of 555 timer is logic 0 or zero volts at output.
+Now LC provides O/p logic zero since pin2 is more than 1/3Vcc
+Since capacitor initial charge is zero, UC also provides output logic zero.
+The flipflop retains earlier state as 0
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 5
+============================================================
+
+Now a small trigger of potential less than 1/3Vcc is applied at pin2
+LC shifts output to +Vsat aka logic 1.
+The UC still maintains logic zero at output as charge on capacitor is still zero.
+SR flipflop with S=1 and R=0 makes Q=1
+This makes Qbar=0 and Q2 OFF
+Output of 555 times is logic high or saturated voltage at output.
+Since Q1 off the capacitor is unclamped and starts to charge.
+The capacitor charges via the resistor R connected to pin8.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 6
+============================================================
+
+When the charge on capacitor exceeds 1/3Vcc the LC shifts o/p to logic 0. This makes S of FF as zero.
+When the charge on capacitor exceeds 2/3Vcc, then UC shifts o/p to logic 1.
+The FF has S=0 and R=1
+This makes output Q=0 and Qbar=1 and Q1 ON
+As soon as Q1 is ON, the capacitor clamps to transistor and discharges via the transistor to ground potential.
+The output of 555 timer reverts back to zero.
+This generates a pulse width of certain time period and then reverts back to its standby mode or stable mode hence monostable multivibrator.
+The output remains zero until another trigger pulse is applied at pin 2.
+For proper monostable operation with the 555 timer, the negative-going trigger pulse width should be kept shorter compared to the desired output pulse width.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 7
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 8
+============================================================
+
+Astable Multivibrator
+Astable multivibrator has no stable state and continuously oscillates between HIGH and LOW output levels.
+It generates a continuous square wave without any external trigger.
+The oscillation frequency and duty cycle are determined by external resistors RA, RB and capacitor C.
+Pins 2 and 6 are connected together to monitor the capacitor voltage.
+Charging and discharging of capacitor between 1/3 VCC and 2/3 VCC produces oscillations.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 9
+============================================================
+
+Initially the capacitor voltage VC is approximately 0 V.
+Since VC < 1/3 VCC, the trigger comparator sets the flip‑flop.
+Output becomes HIGH: Vout ≈ VCC.
+Discharge transistor Q1 becomes OFF.
+The capacitor begins charging through resistors RA and RB toward VCC.
+Capacitor charges through RA and RB with time constant (RA + RB)C.
+The capacitor voltage increases exponentially toward VCC.
+Charging equation: VC(t) = VCC(1 − e^(−t / ((RA + RB)C))).
+When Vc exceeds 1/3Vcc output of LC becomes logic zero.
+When VC reaches the threshold level 2/3 VCC the upper comparator activates.
+This causes the flip‑flop to reset.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 10
+============================================================
+
+When VC = 2/3 VCC the upper comparator output becomes HIGH.
+The flip‑flop resets making output LOW.
+Output voltage becomes approximately 0 V. Qbar becomes high or logic 1.
+The discharge transistor Q1 turns ON.
+The capacitor gets a path from Rb to ground via transistor Q1.
+The capacitor now begins discharging through RB only.
+During discharge the capacitor voltage decreases exponentially toward 0.
+Discharging equation: VC(t) = (2/3)VCC e^(−t / (RB C)).
+When VC falls to 1/3 VCC the lower comparator triggers.
+The flip‑flop sets again making output HIGH.
+The discharge transistor turns OFF and charging starts again.
+.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 11
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 12
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 13
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 14
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 15
+============================================================
+
+Applications of Monostable MultivibratorRamp Generator
+A linear ramp (sawtooth) signal is generated by charging a capacitor with a constant current source instead of a resistor.
+If the capacitor C is charged by a constant current i, the capacitor voltage is obtained by integrating the current over time
+
+
+The transistor 𝑄𝐿 acts as a constant current source, supplying a nearly fixed current to the capacitor regardless of the capacitor voltage.
+KVL form base to emitter gives
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 16
+============================================================
+
+Applications of Monostable Multivibrator
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 17
+============================================================
+
+Frequency divider
+A monostable multivibrator can function as a frequency divider when it is continuously triggered by a square-wave signal.
+The timing interval 𝑇 of the monostable must be greater than the period of the input square wave so that the circuit does not respond to every trigger.
+The monostable is triggered by the first negative edge of the input square wave, causing the output to switch HIGH
+When the second negative edge arrives, the monostable is still in its active state because 𝑇
+By the time the third negative edge occurs, the timing interval has completed and the monostable has returned to its stable state, allowing it to trigger again.
+Since the monostable responds only to alternate input edges, the output frequency becomes a fraction of the input frequency.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 18
+============================================================
+
+Pulse Width Modulator
+By giving modulating control signal at pin5 555 timer can act as a pulse width modulator.
+A sequence of trigger pulses applied to pin 2 produces a corresponding sequence of output pulses at the output terminal.
+The width of each output pulse depends on when the upper comparator resets the flip-flop, which occurs when the capacitor voltage reaches the comparator threshold.
+The modulating signal applied at pin 5 alters the threshold voltage of the upper comparator. Normally this threshold is 2/3𝑉𝐶𝐶	​.
+The modulating signal is superimposed on the internal voltage divider voltage, causing the threshold level to increase or decrease.
+Because the capacitor must charge to this varying threshold, the time taken to reach the threshold changes, which changes the pulse width of the output.
+The trigger pulses determine the output frequency, so the frequency remains constant (trigger pulse frequency), while the duty cycle varies according to the modulating signal.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 19
+============================================================
+
+Applications of Astable MultivibratorFSK Generator
+FSK mechanism transmits data with different frequencies for logic 0 and logic 1.
+In this circuit, a 555 timer is configured in astable mode so that it continuously generates square-wave oscillations.
+Initially the astable multivibrator operator works with a fixed frequency of 
+
+
+The digital input applied to the circuit typically has a low frequency such as 150 Hz and represents the binary data to be transmitted.
+When the input signal is HIGH, transistor 𝑄𝑀​ remains OFF. In this condition, the 555 timer operates like a normal astable multivibrator.
+When the input signal becomes LOW, transistor 𝑄𝑀	​ turns ON. This connects an additional resistor 𝑅𝐶 in parallel with 𝑅𝐴	​.
+Because 𝑅𝐶 is connected across 𝑅𝐴 the effective resistance becomes 𝑅𝐴∥𝑅𝐶​. This reduced resistance alters the charging path of the capacitor.
+The new oscillation frequency produced when QMQ_MQM​ is ON is given by
+
+
+As the digital input switches between HIGH and LOW, the output alternates between two different frequencies, thereby encoding binary data using the FSK modulation technique.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 20
+============================================================
+
+Schmitt Trigger using 555 timer
+The timer IC 555 can be used to function as a Schmitt trigger with variable threshold voltage levels.
+The two internal comparator inputs (pins 2 and 6) are connected together and externally biased with a voltage VCC /2 through R1 and R2 potential divider network.
+Since the voltage at pins 6 and 2 will trigger the upper comparator (UC) at (2/3)VCC and the lower comparator (LC) at (1/3)VCC , the bias provided by R1 and R2 is centered within these two threshold levels. 
+When a sine wave input of sufficient amplitude (vi ), where vi is greater than [(2/3)VCC – (1/3)VCC] is applied to the circuit, it causes the internal flip-flop to alternatively Set and Reset generating a square wave output.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 21
+============================================================
+
+Phase Locked Loop (PLL)
+With the advancement of integrated-circuit technology PLL circuits became fundamental building blocks in modern electronics
+PLLs are widely used in systems such as FM stereo decoders, motor speed control systems, tracking filters, frequency synthesizers in transmitters and receivers, FM demodulators, FSK decoders, and local oscillator generation in TV and FM tuners.
+A phase-locked loop consists of three main components:(1) Phase detector,(2) Low-pass filter, and(3) Voltage-controlled oscillator (VCO).
+The phase detector compares the input frequency 𝑓𝑖​ with the feedback frequency from the VCO and produces an output proportional to their phase difference.
+The output of the phase detector is a dc voltage proportional to the phase error, commonly called the error voltage.
+The low-pass filter removes high-frequency noise and ripple from the detector output and produces a smoother dc control voltage.
+In addition to filtering noise, the low-pass filter also determines the dynamic response and stability of the PLL.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx] Page/Slide 22
+============================================================
+
+Phase Locked Loop (PLL)
+The filtered dc voltage is applied to the voltage-controlled oscillator, whose output frequency is directly proportional to the input control voltage.
+The VCO output is continuously compared with the input signal, and its frequency is automatically adjusted until both signals match.
+Before the input signal is applied, the VCO oscillates at its natural free-running frequency called free running state.
+When the input signal is applied, the VCO frequency begins to change under the influence of the control voltage, and the PLL enters the capture mode.
+When the VCO frequency becomes equal to the input frequency, the loop reaches the phase-locked condition.
+Once locked, the PLL can track small changes in the input frequency by continuously adjusting the VCO frequency.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I.pptx] Page/Slide 1
+============================================================
+
+Phase Locked Loop (PLL)
+With the advancement of integrated-circuit technology PLL circuits became fundamental building blocks in modern electronics
+PLLs are widely used in systems such as FM stereo decoders, motor speed control systems, tracking filters, frequency synthesizers in transmitters and receivers, FM demodulators, FSK decoders, and local oscillator generation in TV and FM tuners.
+A phase-locked loop consists of three main components:(1) Phase detector, (2) Low-pass filter, and (3) Voltage-controlled oscillator (VCO).
+The phase detector compares the input frequency 𝑓𝑖​ with the feedback frequency from the VCO and produces an output proportional to their phase difference.
+The output of the phase detector is a dc voltage proportional to the phase error, commonly called the error voltage.
+The low-pass filter removes high-frequency noise and ripple from the detector output and produces a smoother dc control voltage.
+In addition to filtering noise, the low-pass filter also determines the dynamic response and stability of the PLL.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I.pptx] Page/Slide 2
+============================================================
+
+Phase Locked Loop (PLL)
+The filtered dc voltage is applied to the voltage-controlled oscillator, whose output frequency is directly proportional to the input control voltage.
+The VCO output is continuously compared with the input signal, and its frequency is automatically adjusted until both signals match.
+Before the input signal is applied, the VCO oscillates at its natural free-running frequency called free running state.
+When the input signal is applied, the VCO frequency begins to change under the influence of the control voltage, and the PLL enters the capture mode.
+When the VCO frequency becomes equal to the input frequency, the loop reaches the phase-locked condition.
+Once locked, the PLL can track small changes in the input frequency by continuously adjusting the VCO frequency.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I.pptx] Page/Slide 3
+============================================================
+
+Phase detector
+The PLL tries to force a Voltage Controlled Oscillator (VCO) to follow the phase and frequency of an input signal.
+If two periodic signals are compared: 
+If their phases are identical → error = 0
+If one leads or lags → error ≠ 0
+ The phase detector converts this phase difference into a voltage called the error voltage.
+  
+This voltage then passes through a loop filter and adjusts the VCO frequency until the phase difference becomes zero (or a fixed value depending on detector type).
+Types of Phase Detectors
+Analog Phase detectors
+Digital phase detectors
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I.pptx] Page/Slide 4
+============================================================
+
+Analog Phase detector
+An analog switch is controlled by the VCO output.
+The output error voltage becomes phase dependent.
+Let input=
+And output of VCO: 
+The phase detector basically multiplies the signals.
+
+
+
+The filter removes the high frequency component. The output becomes
+
+
+When both frequencies are matched it becomes:
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I.pptx] Page/Slide 5
+============================================================
+
+Analog Phase detector
+The PLL lock occurs when phase difference is 90 degrees.
+When the phase difference is positive it generates a positive error voltage.
+When phase difference is between 90-180 it generates a negative error voltage.
+Limitation:
+The error output voltage is dependent on the input signal amplitude.
+The non-linear response (cos(phase_difference)) is hard to control.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I.pptx] Page/Slide 6
+============================================================
+
+Digital Phase detector
+Digital phase detectors require square wave inputs.
+They compare the timing of edges rather than waveform amplitude.
+Three types are commonly used.
+EXOR Phase detector
+SR Flip flop phase detector
+ The XOR phase detector uses an EXOR gate for the phase detection
+The XOR gates goes high when both the signals are different.
+
+
+So as long as the two signals have different edge timings, the XOR gate goes high generating a pulse signal.
+The higher the phase difference the greater is the pulse width.
+Based on pulse width the error voltage is generated and supplied to the VCO for frequency tuning.
+The error voltage is highest for 180 degrees and lowest for 0 degree phase difference.
+However, it works well only if both the signals are perfect square waves with 50% duty cycle.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I.pptx] Page/Slide 7
+============================================================
+
+Digital Phase detector
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I.pptx] Page/Slide 8
+============================================================
+
+SR Flip flop Phase detector
+Uses an RS latch built using NOR gates.
+Input frequency =set
+VCO output=reset
+input edge arrives → output set HIGH
+VCO edge arrives → output reset LOW
+Therefore the output remains HIGH during the time difference between the edges.
+The average value of Q output
+Vdc∝phase difference
+Advantages Compared to XOR detector:
+Linear over full 360°
+Better capture range
+Better lock stability
+Better tracking performance
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I.pptx] Page/Slide 9
+============================================================
+
+Low pass filter
+Uses an RS latch built using NOR gates.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I.pptx] Page/Slide 10
+============================================================
+
+VCO
+Uses an RS latch built using NOR gates.

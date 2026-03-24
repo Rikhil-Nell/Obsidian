@@ -50,6 +50,8 @@ graph TD
 | LOW | Clippers & Clampers | Low | Low | [04](./04_clippers_and_clampers.md) |
 | LOW | Analog Multiplier | Low | Medium | [08](./08_analog_voltage_multiplier.md) |
 | LOW | 555 Applications | Low | Medium | [12](./12_555_applications.md) |
+| CRITICAL | Exam Solutions (Numerical & Derivations) | High | High | [16](./16_exam_solutions.md) |
+| CRITICAL | Advanced Circuit Analysis | High | High | [17](./17_advanced_circuit_analysis.md) |
 
 ---
 
@@ -76,8 +78,10 @@ graph TD
 
 ### Day 4: Revision (~3 hours)
 14. [Worked Problems](./14_worked_problems.md) - 90 min
-15. [Formula Sheet](./15_formula_sheet_ultimate.md) - 60 min
-16. Re-do self-check questions from all topic files
+15. **[Exam Solutions (CRITICAL)](./16_exam_solutions.md)** - 60 min
+16. **[Advanced Circuit Analysis (CRITICAL)](./17_advanced_circuit_analysis.md)** - 60 min
+17. [Formula Sheet](./15_formula_sheet_ultimate.md) - 60 min
+18. Re-do self-check questions from all topic files
 
 ---
 

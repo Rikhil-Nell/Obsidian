@@ -101,13 +101,13 @@ Phase detection: $V_{DC} \propto \cos(\phi_x - \phi_y)$
 
 $$\boxed{|A\beta| = 1, \quad \angle(A\beta) = 0^\circ \text{ or } 360^\circ}$$
 
-| Parameter | RC Phase Shift | Wien Bridge |
-|-----------|---------------|-------------|
-| Frequency | $\boxed{f_0 = \frac{1}{2\pi RC\sqrt{6}}}$ | $\boxed{f_0 = \frac{1}{2\pi RC}}$ |
-| Min. Gain | $\boxed{|A| = 29}$ | $\boxed{A = 3}$ |
-| Config | Inverting | Non-inverting |
-| Phase from network | 180 degrees | 0 degrees |
-| $R_f/R_1$ for gain | 29 | 2 |
+| Parameter          | RC Phase Shift                            | Wien Bridge                       |        |                 |     |
+| ------------------ | ----------------------------------------- | --------------------------------- | ------ | --------------- | --- |
+| Frequency          | $\boxed{f_0 = \frac{1}{2\pi RC\sqrt{6}}}$ | $\boxed{f_0 = \frac{1}{2\pi RC}}$ |        |                 |     |
+| Min. Gain          | $\boxed{                                  | A                                 | = 29}$ | $\boxed{A = 3}$ |     |
+| Config             | Inverting                                 | Non-inverting                     |        |                 |     |
+| Phase from network | 180 degrees                               | 0 degrees                         |        |                 |     |
+| $R_f/R_1$ for gain | 29                                        | 2                                 |        |                 |     |
 
 ---
 

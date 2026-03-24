@@ -1,0 +1,754 @@
+[
+  {
+    "content": "1=𝑅2=⋯=𝑅𝑛)",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx",
+    "page_or_slide": 3,
+    "context": "input signals. If all input resistors are equal (𝑅1=𝑅2=⋯=𝑅𝑛), the circuit becomes an equal-weighted summing am",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1=𝑅2=𝑅3=𝑅𝑓.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx",
+    "page_or_slide": 4,
+    "context": "alized using an op-amp with four equal resistors 𝑅1=𝑅2=𝑅3=𝑅𝑓. Using the superposition principle, the output due",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "R1=1Mohm.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx",
+    "page_or_slide": 16,
+    "context": " V2 and V3 and input resistors R1, R2 and R3. Use R1=1Mohm.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1=1Mohm.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-23_Reference-Material-I.pptx",
+    "page_or_slide": 16,
+    "context": "V2 and V3 and input resistors R1, R2 and R3. Use R1=1Mohm.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "RE1 = R E2",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx",
+    "page_or_slide": 2,
+    "context": ". The resistances of the circuits are equal, i.e. RE1 = R E2, RC1 = R C2 and the magnitude of +VCC is equal to",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "RC1 = R C2 and the magnitude of +VCC is equal to the magnitude of -VEE. These voltages are measured with respect to ground.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx",
+    "page_or_slide": 2,
+    "context": "ances of the circuits are equal, i.e. RE1 = R E2, RC1 = R C2 and the magnitude of +VCC is equal to the magnitude of -VEE. These voltages are measured with respect to ground. 2",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = R E2",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx",
+    "page_or_slide": 2,
+    "context": "The resistances of the circuits are equal, i.e. RE1 = R E2, RC1 = R C2 and the magnitude of +VCC is equal to",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = R C2 and the magnitude of +VCC is equal to the magnitude of -VEE. These voltages are measured with respect to ground.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx",
+    "page_or_slide": 2,
+    "context": "ces of the circuits are equal, i.e. RE1 = R E2, RC1 = R C2 and the magnitude of +VCC is equal to the magnitude of -VEE. These voltages are measured with respect to ground. 2",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vbe = 1 V between two bases",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": "by applying bias voltage V slightly greater than 2Vbe = 1 V between two bases, so that small current flows in transistors even ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vbe = 1 V between two bases, so that small current flows in transistors even in Quiescent state. The figure shows the output stage of uA741 op-amp. V represents VBE Multiplier and 25 ohm resistor to stabilize Quiescent base current.\n10",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-01-28_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": "by applying bias voltage V slightly greater than 2Vbe = 1 V between two bases, so that small current flows in transistors even in Quiescent state. The figure shows the output stage of uA741 op-amp. V represents VBE Multiplier and 25 ohm resistor to stabilize Quiescent base current. 10",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vo = Vi1 − Vi2",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 2,
+    "context": "th inputs are applied, the output voltage becomes Vo = Vi1 − Vi2, confirming differential amplifier operation. In ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vcm = (Vi1 + Vi2)/2.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 2,
+    "context": " causes a small common-mode output, defined using Vcm = (Vi1 + Vi2)/2. The quality of a differential amplifier is measur",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 + Vi2)/2.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 2,
+    "context": " small common-mode output, defined using Vcm = (Vi1 + Vi2)/2. The quality of a differential amplifier is measur",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vo = Vi1 − Vi2, confirming differential amplifier operation.\nIn practical op-amps, resistor mismatch causes a small common-mode output, defined using Vcm = (Vi1 + Vi2)/2.\nThe quality of a differential amplifier is measured by CMRR",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 2,
+    "context": "th inputs are applied, the output voltage becomes Vo = Vi1 − Vi2, confirming differential amplifier operation. In practical op-amps, resistor mismatch causes a small common-mode output, defined using Vcm = (Vi1 + Vi2)/2. The quality of a differential amplifier is measured by CMRR",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Rf = R3 and R1 = R2",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 3,
+    "context": "ifying Vi2 and Vo1 with opposite polarities. With Rf = R3 and R1 = R2, the output depends on the difference Vid = Vi2 −",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vid = Vi2 − Vi1",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 3,
+    "context": "and R1 = R2, the output depends on the difference Vid = Vi2 − Vi1",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = R2",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 3,
+    "context": "d Vo1 with opposite polarities. With Rf = R3 and R1 = R2, the output depends on the difference Vid = Vi2 −",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Rf = R3 and R1 = R2, the output depends on the difference Vid = Vi2 − Vi1",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 3,
+    "context": "ifying Vi2 and Vo1 with opposite polarities. With Rf = R3 and R1 = R2, the output depends on the difference Vid = Vi2 − Vi1",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/R1​",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 7,
+    "context": "ging multiple resistors High gain requires large R2/R1​, which increases noise and resistor mismatch erro",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "V0=-2V`0-vi so V0=vi",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 15,
+    "context": "ing amplifier with unity gain.  So inputs will be V0=-2V`0-vi so V0=vi When vi<0: D1-ON and D2-OFF. V`0 =  0 Input to su",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "V0=-vi. Positive half cycle appears at output.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 15,
+    "context": "t to summing amplifier  is only from vi so output V0=-vi. Positive half cycle appears at output.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "0=-vi",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 15,
+    "context": "ull Wave Rectifier When vi>0: D1 off and D2 ON. V`0=-vi Now vi through R/2 and vi through R act as inputs",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "0=-2V`0-vi so V0=vi",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 15,
+    "context": "ng amplifier with unity gain.  So inputs will be V0=-2V`0-vi so V0=vi When vi<0: D1-ON and D2-OFF. V`0 =  0 Input to su",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1-ON and D2-OFF. V`0 =  0",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 15,
+    "context": "o inputs will be V0=-2V`0-vi so V0=vi When vi<0: D1-ON and D2-OFF. V`0 =  0 Input to summing amplifier  is only from vi so ou",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "0=-vi. Positive half cycle appears at output.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 15,
+    "context": " to summing amplifier  is only from vi so output V0=-vi. Positive half cycle appears at output.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Av=−Rf/R1).",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 18,
+    "context": " OFF \u000bCircuit acts as normal inverting amplifier (Av=−Rf/R1). When ∣vo∣≥(VZ+VD​) → Zener in breakdown, diode fo",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Av=−Rf/R1).\nWhen ∣vo∣≥(VZ+VD​) → Zener in breakdown, diode forward biased →\u000bOutput clipped at VZ+VD​.\nUsing two back-to-back Zener diodes allows clipping in both positive and negative directions. Between the two clipping thresholds, the circuit operates as a standard linear amplifier.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 18,
+    "context": " OFF \u000bCircuit acts as normal inverting amplifier (Av=−Rf/R1). When ∣vo∣≥(VZ+VD​) → Zener in breakdown, diode forward biased →\u000bOutput clipped at VZ+VD​. Using two back-to-back Zener diodes allows clipping in both positive and negative directions. Between the two clipping thresholds, the circuit operates as a standard linear amplifier.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1=IS2",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 22,
+    "context": "are used. Since fabricated on same silicon: \t\t\t\tIS1=IS2 ​ This ensures close matching and thermal trackin",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "VB=VBE2-VBE1",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 28,
+    "context": "Antilog amplifier Now VB=VBE2-VBE1  So VB=",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2-VBE1",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 28,
+    "context": "Antilog amplifier Now VB=VBE2-VBE1  So VB=",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "B=VBE2-VBE1\n\nSo VB=",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 28,
+    "context": "Antilog amplifier Now VB=VBE2-VBE1  So VB=",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "V0=+Vsat then output flips only Vi>V+. This voltage is called upper threshold voltage.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 33,
+    "context": "switching levels. It remembers previous state. If V0=+Vsat then output flips only Vi>V+. This voltage is called upper threshold voltage.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "0=+Vsat then output flips only Vi>V+. This voltage is called upper threshold voltage.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 33,
+    "context": "witching levels. It remembers previous state. If V0=+Vsat then output flips only Vi>V+. This voltage is called upper threshold voltage.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "V0=-Vsat",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 34,
+    "context": "Schmitt trigger When V0=-Vsat, the output flips when Vi exceeds the following v",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "0=-Vsat",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 34,
+    "context": "Schmitt trigger When V0=-Vsat, the output flips when Vi exceeds the following v",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "0+rds)C. The entire input waveform appears at non-inverting terminal of Op-amp2.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I.pptx",
+    "page_or_slide": 37,
+    "context": "FET is ON. Capacitor charges with time constant (R0+rds)C. The entire input waveform appears at non-inverting terminal of Op-amp2. When Vc is negative, MOSFET is OFF. Since, Rin of",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "0+rds)C. The entire input waveform appears at non-inverting terminal of Op-amp2.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 3,
+    "context": "FET is ON. Capacitor charges with time constant (R0+rds)C. The entire input waveform appears at non-inverting terminal of Op-amp2. When Vc is negative, MOSFET is OFF. Since, Rin of",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "0- or 360-degrees phase angle.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 8,
+    "context": "r oscillations should be unity feedback gain with 0- or 360-degrees phase angle.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/(R1+R2)).",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 17,
+    "context": "tput as +Vsat, the potential at V+ becomes +Vsat(R2/(R1+R2)). Since initial charge on capacitor is zero, the co",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/(R1+R2))). Once it happens output flips again.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 17,
+    "context": " becomes more negative than V+ voltage (-Vsat x (R2/(R1+R2))). Once it happens output flips again. The process continues creating a square waveform.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Voc=_Vsat.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 24,
+    "context": " For Op-amp stage 2: V+=VoR and V-=Vref  V+<V- so Voc=_Vsat. D1 and D2 OFF Q1 and Q2 OFF V- remains at 15(R3/R",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3/R2)",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 24,
+    "context": "at. D1 and D2 OFF Q1 and Q2 OFF V- remains at 15(R3/R2) Q2 as open switch across capacitor and capacitor ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Voc=_Vsat.\nD1 and D2 OFF\nQ1 and Q2 OFF\nV- remains at 15(R3/R2)\nQ2 as open switch across capacitor and capacitor keeps charging and VoR keeps increasing.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 24,
+    "context": " For Op-amp stage 2: V+=VoR and V-=Vref  V+<V- so Voc=_Vsat. D1 and D2 OFF Q1 and Q2 OFF V- remains at 15(R3/R2) Q2 as open switch across capacitor and capacitor keeps charging and VoR keeps increasing.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Voc=+Vsat",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 25,
+    "context": "Sawtooth wave generator When VoR>Vref A Voc=+Vsat D1 and D2 ON Q1 and Q2 ON (short circuit) Capacit",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Voc=+Vsat\nD1 and D2 ON\nQ1 and Q2 ON (short circuit)\nCapacitor discharges across Q2 rapindly reaching zero.\nVoR goes to zero with C discharge.\nV- of A2 reaches +Vsat(R/(R+R2))\nAt A2 V+<V-, O/p goes to –Vsat\nDiodes and Transistors OFF\nCapacitor again starts charging increasing VoR and process continues.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 25,
+    "context": "Sawtooth wave generator When VoR>Vref A Voc=+Vsat D1 and D2 ON Q1 and Q2 ON (short circuit) Capacitor discharges across Q2 rapindly reaching zero. VoR goes to zero with C discharge. V- of A2 reaches +Vsat(R/(R+R2)) At A2 V+<V-, O/p goes to –Vsat Diodes and Transistors OFF Capacitor again starts charging increasing VoR and process continues.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3Vcc and 1/3Vcc.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 30,
+    "context": "old voltages for upper and lower comparators with 2/3Vcc and 1/3Vcc. The control voltage pin is used for external modu",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3 Vcc.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 30,
+    "context": "ut to high when the voltage at pin2 reduces below 1/3 Vcc. When at pin 6 voltage increases by 2/3 Vcc the ou",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3 Vcc the output state goes high resetting the flipflop forcing Q to zero.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 30,
+    "context": "below 1/3 Vcc. When at pin 6 voltage increases by 2/3 Vcc the output state goes high resetting the flipflop forcing Q to zero. The reset pin (pin 4) can force the output LOW wh",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3 voltage for V- and 1/3 voltage for V+ respectively with voltage divider arrangement.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 33,
+    "context": "Firstly UC and LC are given with 2/3 voltage for V- and 1/3 voltage for V+ respectively with voltage divider arrangement. Pin number 2 is held at a voltage higher than 1/3",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3Vcc.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 33,
+    "context": "nt. Pin number 2 is held at a voltage higher than 1/3Vcc. Initially the output of flipfop is 0 making Qbart",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3Vcc",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 33,
+    "context": "C provides O/p logic zero since pin2 is more than 1/3Vcc Since capacitor initial charge is zero, UC also p",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "S=1 and R=0 makes Q=1",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 34,
+    "context": "arge on capacitor is still zero. SR flipflop with S=1 and R=0 makes Q=1 This makes Qbar=0 and Q2 OFF Output of 555 times ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Qbar=0 and Q2 OFF",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 34,
+    "context": "SR flipflop with S=1 and R=0 makes Q=1 This makes Qbar=0 and Q2 OFF Output of 555 times is logic high or saturated vo",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3Vcc is applied at pin2",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 34,
+    "context": "Now a small trigger of potential less than 1/3Vcc is applied at pin2 LC shifts output to +Vsat aka logic 1. The UC sti",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "S=1 and R=0 makes Q=1\nThis makes Qbar=0 and Q2 OFF\nOutput of 555 times is logic high or saturated voltage at output.\nSince Q1 off the capacitor is unclamped and starts to charge.\nThe capacitor charges via the resistor R connected to pin8.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 34,
+    "context": "arge on capacitor is still zero. SR flipflop with S=1 and R=0 makes Q=1 This makes Qbar=0 and Q2 OFF Output of 555 times is logic high or saturated voltage at output. Since Q1 off the capacitor is unclamped and starts to charge. The capacitor charges via the resistor R connected to pin8.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "S=1 and R=0 makes Q=1",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 35,
+    "context": "arge on capacitor is still zero. SR flipflop with S=1 and R=0 makes Q=1 This makes Qbar=0 and Q2 OFF Output of 555 times ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Qbar=0 and Q2 OFF",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 35,
+    "context": "SR flipflop with S=1 and R=0 makes Q=1 This makes Qbar=0 and Q2 OFF Output of 555 times is logic high or saturated vo",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3Vcc is applied at pin2",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 35,
+    "context": "Now a small trigger of potential less than 1/3Vcc is applied at pin2 LC shifts output to +Vsat aka logic 1. The UC sti",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "S=1 and R=0 makes Q=1\nThis makes Qbar=0 and Q2 OFF\nOutput of 555 times is logic high or saturated voltage at output.\nSince Q1 off the capacitor is unclamped and starts to charge.\nThe capacitor charges via the resistor R connected to pin8.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 35,
+    "context": "arge on capacitor is still zero. SR flipflop with S=1 and R=0 makes Q=1 This makes Qbar=0 and Q2 OFF Output of 555 times is logic high or saturated voltage at output. Since Q1 off the capacitor is unclamped and starts to charge. The capacitor charges via the resistor R connected to pin8.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "S=0 and R=1",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 36,
+    "context": "cc, then UC shifts o/p to logic 1. The the FF has S=0 and R=1 This makes output Q=0 and Qbar=1 and Q1 ON As soo",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Q=0 and Qbar=1 and Q1 ON",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 36,
+    "context": "c 1. The the FF has S=0 and R=1 This makes output Q=0 and Qbar=1 and Q1 ON As soon as Q1 is ON, the capacitor clamps to tran",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3Vcc the LC shifts o/p to logic 0. This makes S of FF as zero.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 36,
+    "context": "When the charge on capacitor exceeds 1/3Vcc the LC shifts o/p to logic 0. This makes S of FF as zero. When the charge on capacitor exceeds 2/3Vcc, then",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3Vcc",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 36,
+    "context": " FF as zero. When the charge on capacitor exceeds 2/3Vcc, then UC shifts o/p to logic 1. The the FF has S=",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "S=0 and R=1\nThis makes output Q=0 and Qbar=1 and Q1 ON\nAs soon as Q1 is ON, the capacitor clamps to transistor and discharges via the transistor to ground potential.\nThe output of 555 timer reverts back to zero.\nThis generates a pulse width of certain time period and then reverts back to its standby mode or stable mode hence monostable multivibrator.\nThe output remains zero until another trigger pulse is applied at pin 2.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-03_Reference-Material-I.pptx",
+    "page_or_slide": 36,
+    "context": "cc, then UC shifts o/p to logic 1. The the FF has S=0 and R=1 This makes output Q=0 and Qbar=1 and Q1 ON As soon as Q1 is ON, the capacitor clamps to transistor and discharges via the transistor to ground potential. The output of 555 timer reverts back to zero. This generates a pulse width of certain time period and then reverts back to its standby mode or stable mode hence monostable multivibrator. The output remains zero until another trigger pulse is applied at pin 2.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3Vcc and 1/3Vcc.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 1,
+    "context": "old voltages for upper and lower comparators with 2/3Vcc and 1/3Vcc. The control voltage pin is used for external modu",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3 Vcc.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 1,
+    "context": "ut to high when the voltage at pin2 reduces below 1/3 Vcc. When at pin 6 voltage increases by 2/3 Vcc the ou",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3 Vcc the output state goes high resetting the flipflop forcing Q to zero.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 1,
+    "context": "below 1/3 Vcc. When at pin 6 voltage increases by 2/3 Vcc the output state goes high resetting the flipflop forcing Q to zero. The reset pin (pin 4) can force the output LOW wh",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3 voltage for V- and 1/3 voltage for V+ respectively with voltage divider arrangement.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 4,
+    "context": "Firstly UC and LC are given with 2/3 voltage for V- and 1/3 voltage for V+ respectively with voltage divider arrangement. Pin number 2 is held at a voltage higher than 1/3",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3Vcc.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 4,
+    "context": "nt. Pin number 2 is held at a voltage higher than 1/3Vcc. Initially the output of flipfop is 0 making Qbart",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3Vcc",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 4,
+    "context": "C provides O/p logic zero since pin2 is more than 1/3Vcc Since capacitor initial charge is zero, UC also p",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "S=1 and R=0 makes Q=1",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": "arge on capacitor is still zero. SR flipflop with S=1 and R=0 makes Q=1 This makes Qbar=0 and Q2 OFF Output of 555 times ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Qbar=0 and Q2 OFF",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": "SR flipflop with S=1 and R=0 makes Q=1 This makes Qbar=0 and Q2 OFF Output of 555 times is logic high or saturated vo",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3Vcc is applied at pin2",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": "Now a small trigger of potential less than 1/3Vcc is applied at pin2 LC shifts output to +Vsat aka logic 1. The UC sti",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "S=1 and R=0 makes Q=1\nThis makes Qbar=0 and Q2 OFF\nOutput of 555 times is logic high or saturated voltage at output.\nSince Q1 off the capacitor is unclamped and starts to charge.\nThe capacitor charges via the resistor R connected to pin8.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": "arge on capacitor is still zero. SR flipflop with S=1 and R=0 makes Q=1 This makes Qbar=0 and Q2 OFF Output of 555 times is logic high or saturated voltage at output. Since Q1 off the capacitor is unclamped and starts to charge. The capacitor charges via the resistor R connected to pin8.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "S=0 and R=1",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": "2/3Vcc, then UC shifts o/p to logic 1. The FF has S=0 and R=1 This makes output Q=0 and Qbar=1 and Q1 ON As soo",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Q=0 and Qbar=1 and Q1 ON",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": "logic 1. The FF has S=0 and R=1 This makes output Q=0 and Qbar=1 and Q1 ON As soon as Q1 is ON, the capacitor clamps to tran",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3Vcc the LC shifts o/p to logic 0. This makes S of FF as zero.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": "When the charge on capacitor exceeds 1/3Vcc the LC shifts o/p to logic 0. This makes S of FF as zero. When the charge on capacitor exceeds 2/3Vcc, then",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3Vcc",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": " FF as zero. When the charge on capacitor exceeds 2/3Vcc, then UC shifts o/p to logic 1. The FF has S=0 an",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "S=0 and R=1\nThis makes output Q=0 and Qbar=1 and Q1 ON\nAs soon as Q1 is ON, the capacitor clamps to transistor and discharges via the transistor to ground potential.\nThe output of 555 timer reverts back to zero.\nThis generates a pulse width of certain time period and then reverts back to its standby mode or stable mode hence monostable multivibrator.\nThe output remains zero until another trigger pulse is applied at pin 2.\nFor proper monostable operation with the 555 timer, the negative-going trigger pulse width should be kept shorter compared to the desired output pulse width.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": "2/3Vcc, then UC shifts o/p to logic 1. The FF has S=0 and R=1 This makes output Q=0 and Qbar=1 and Q1 ON As soon as Q1 is ON, the capacitor clamps to transistor and discharges via the transistor to ground potential. The output of 555 timer reverts back to zero. This generates a pulse width of certain time period and then reverts back to its standby mode or stable mode hence monostable multivibrator. The output remains zero until another trigger pulse is applied at pin 2. For proper monostable operation with the 555 timer, the negative-going trigger pulse width should be kept shorter compared to the desired output pulse width.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3 VCC and 2/3 VCC produces oscillations.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 8,
+    "context": "ge. Charging and discharging of capacitor between 1/3 VCC and 2/3 VCC produces oscillations.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3 VCC",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 9,
+    "context": "citor voltage VC is approximately 0 V. Since VC < 1/3 VCC, the trigger comparator sets the flip‑flop. Outpu",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3Vcc output of LC becomes logic zero.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 9,
+    "context": "= VCC(1 − e^(−t / ((RA + RB)C))). When Vc exceeds 1/3Vcc output of LC becomes logic zero. When VC reaches the threshold level 2/3 VCC the u",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3 VCC the upper comparator activates.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 9,
+    "context": "s logic zero. When VC reaches the threshold level 2/3 VCC the upper comparator activates. This causes the flip‑flop to reset.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "VC = 2/3 VCC the upper comparator output becomes HIGH.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": "When VC = 2/3 VCC the upper comparator output becomes HIGH. The flip‑flop resets making output LOW. Output vo",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3 VCC the upper comparator output becomes HIGH.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": "When VC = 2/3 VCC the upper comparator output becomes HIGH. The flip‑flop resets making output LOW. Output vo",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3)VCC e^(−t / (RB C)).",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": "entially toward 0. Discharging equation: VC(t) = (2/3)VCC e^(−t / (RB C)). When VC falls to 1/3 VCC the lower comparator tri",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/3 VCC the lower comparator triggers.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": "C(t) = (2/3)VCC e^(−t / (RB C)). When VC falls to 1/3 VCC the lower comparator triggers. The flip‑flop sets again making output HIGH. The ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "C = 2/3 VCC the upper comparator output becomes HIGH.\nThe flip‑flop resets making output LOW.\nOutput voltage becomes approximately 0 V. Qbar becomes high or logic 1.\nThe discharge transistor Q1 turns ON.\nThe capacitor gets a path from Rb to ground via transistor Q1.\nThe capacitor now begins discharging through RB only.\nDuring discharge the capacitor voltage decreases exponentially toward 0.\nDischarging equation: VC(t) = (2/3)VCC e^(−t / (RB C)).\nWhen VC falls to 1/3 VCC the lower comparator triggers.\nThe flip‑flop sets again making output HIGH.\nThe discharge transistor turns OFF and charging starts again.\n.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": "When VC = 2/3 VCC the upper comparator output becomes HIGH. The flip‑flop resets making output LOW. Output voltage becomes approximately 0 V. Qbar becomes high or logic 1. The discharge transistor Q1 turns ON. The capacitor gets a path from Rb to ground via transistor Q1. The capacitor now begins discharging through RB only. During discharge the capacitor voltage decreases exponentially toward 0. Discharging equation: VC(t) = (2/3)VCC e^(−t / (RB C)). When VC falls to 1/3 VCC the lower comparator triggers. The flip‑flop sets again making output HIGH. The discharge transistor turns OFF and charging starts again. .",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3𝑉𝐶𝐶\t​.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 18,
+    "context": " the upper comparator. Normally this threshold is 2/3𝑉𝐶𝐶\t​. The modulating signal is superimposed on the inte",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3)VCC and the lower comparator (LC) at (1/3)VCC",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 20,
+    "context": " and 2 will trigger the upper comparator (UC) at (2/3)VCC and the lower comparator (LC) at (1/3)VCC , the bias provided by R1 and R2 is centered withi",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2/3)VCC – (1/3)VCC] is applied to the circuit",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-11_Reference-Material-I.pptx",
+    "page_or_slide": 20,
+    "context": "cient amplitude (vi ), where vi is greater than [(2/3)VCC – (1/3)VCC] is applied to the circuit, it causes the internal flip-flop to alternativel",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "input=\nAnd output of VCO:",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I.pptx",
+    "page_or_slide": 4,
+    "context": "output error voltage becomes phase dependent. Let input= And output of VCO:  The phase detector basically multiplies the signa",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "90-180 it generates a negative error voltage.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": "e error voltage. When phase difference is between 90-180 it generates a negative error voltage. Limitation: The error output voltage is dependent",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "output=reset",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I.pptx",
+    "page_or_slide": 8,
+    "context": "h built using NOR gates. Input frequency =set VCO output=reset input edge arrives → output set HIGH VCO edge arr",
+    "is_numbered": false,
+    "equation_number": ""
+  }
+]
