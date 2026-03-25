@@ -1,0 +1,186 @@
+[
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "for Vin for this equation is \n\n                                                                                                    ……(25)\nFinally, the inverter threshold (switching threshold) voltage Vth is found as\n\n                                                             …….(26)\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 25,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Problem 1",
+    "problem_text": "Problem 1\nConsider a CMOS inverter circuit with the following parameters:\n\n\n\n\n\n\nCalculate the noise margins of the circuit. Notice that the CMOS inverter being considered here has \n      kR = 2.5 and                          . hence, it is not a symmetric inverter.\nRohit Lorenzo, VIT-AP",
+    "solution_text": "",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 29,
+    "problem_type": "Problem"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "From equation (18)\n\n\nNow substitute this in equation (17) \n\n\n\n\n\nNow we can calculate the value in VIL\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 30,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Problem 2",
+    "problem_text": "Problem 2\nQ ) For a supply voltage of 2.5 V, the normalized on-resistances of NMOS and PMOS transistors equal 13kΩ and 31kΩ, respectively. From the layout, we determine the (W/L) ratios of the transistors to be 1.5 for the NMOS, and 4.5 for the PMOS.    capacitor   6.1 fF (nmos)  and 6.0 fF (PMOS). Calculate delay?",
+    "solution_text": "",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 43,
+    "problem_type": "Problem"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "Rohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 43,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "for 𝛾 = 0, this is when the self-loading is ignored and the load capacitance only consists of the fanout. A common practice is to select an optimum fanout of 4.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 52,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "Rohit Lorenzo , VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 54,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Problem 1",
+    "problem_text": "Problem 1\nQ) Sketch a 3-input NAND gate with transistor widths chosen to achieve effective rise and fall resistance equal to that of a unit inverter (R). Annotate the gate with its gate and diffusion capacitances. Assume all diffusion nodes are contacted. Then sketch equivalent circuits for the falling output transition and for the worst-case rising output transition ?",
+    "solution_text": ":\nThe three nMOS transistors are in series so the resistance is three times that of a single transistor. Therefore, each must be three times unit width to compensate. In other words, each transistor has resistance R/3 and the series combination has resistance R.The two pMOS transistors are in parallel. In the worst case (with one of the inputs low), only one of the pMOS transistors is ON. Therefore, each must be twice unit width to have resistance R.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 13,
+    "problem_type": "Problem"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": ":\nThe three nMOS transistors are in series so the resistance is three times that of a single transistor. Therefore, each must be three times unit width to compensate. In other words, each transistor has resistance R/3 and the series combination has resistance R.The two pMOS transistors are in parallel. In the worst case (with one of the inputs low), only one of the pMOS transistors is ON. Therefore, each must be twice unit width to have resistance R.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 13,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Problem 2",
+    "problem_text": "Problem2\nQ) Compute the Elmore delay for Vout in the 2nd order RC system from Figure?",
+    "solution_text": "The circuit has a source and two nodes. At node n1, the capacitance is C1 and the resistance to the source is R1. At node Vout, the capacitance is C2 and the resistance to the source is (R1 + R2). Hence, the Elmore delay is tpd = R1C1 + (R1 + R2)C2\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 17,
+    "problem_type": "Problem"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "The circuit has a source and two nodes. At node n1, the capacitance is C1 and the resistance to the source is R1. At node Vout, the capacitance is C2 and the resistance to the source is (R1 + R2). Hence, the Elmore delay is tpd = R1C1 + (R1 + R2)C2\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 17,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Problem 3",
+    "problem_text": "Problem3\nQ) Estimate Elmores delay for a unit inverter driving m identical unit inverters.?",
+    "solution_text": "Each load inverter presents 3C units of gate capacitance, for a total of 3mC. The output node also sees a capacitance of 3C from the drain diffusions of the driving inverter. This capacitance is called parasitic because it is an undesired side-effect of the need to make the drain large enough to contact. The parasitic capacitance is independent of the load that the inverter is driving. Hence, the total capacitance is (3 + 3m)C. The resistance is R, so the Elmore delay is tpd = (3 + 3m)RC. The equivalent circuit for the rising transition gives the same results.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 18,
+    "problem_type": "Problem"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "Each load inverter presents 3C units of gate capacitance, for a total of 3mC. The output node also sees a capacitance of 3C from the drain diffusions of the driving inverter. This capacitance is called parasitic because it is an undesired side-effect of the need to make the drain large enough to contact. The parasitic capacitance is independent of the load that the inverter is driving. Hence, the total capacitance is (3 + 3m)C. The resistance is R, so the Elmore delay is tpd = (3 + 3m)RC. The equivalent circuit for the rising transition gives the same results.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 18,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Problem 4",
+    "problem_text": "Problem4\nQ) Repeat  the previous problem  if the driver is w times unit size. Calculate the fan-out of a gate?",
+    "solution_text": "The driver transistors are w times as wide, so the effective resistance decreases by a factor of w . The diffusion capacitance increases by a factor of w. The Elmore delay is tpd = ((3w + 3m)C)(R/w) = (3 + 3m/w)RC. \nDefine the fanout of the gate, h, to be the ratio of the load capacitance to the input capacitance. (Diffusion capacitance is not counted in the fanout.) The load capacitance is 3mC. The input capacitance is 3wC. Thus, the inverter has a fanout of h = m/w and the delay can be written as (3 + 3h)RC\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 19,
+    "problem_type": "Problem"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "The driver transistors are w times as wide, so the effective resistance decreases by a factor of w . The diffusion capacitance increases by a factor of w. The Elmore delay is tpd = ((3w + 3m)C)(R/w) = (3 + 3m/w)RC. \nDefine the fanout of the gate, h, to be the ratio of the load capacitance to the input capacitance. (Diffusion capacitance is not counted in the fanout.) The load capacitance is 3mC. The input capacitance is 3wC. Thus, the inverter has a fanout of h = m/w and the delay can be written as (3 + 3h)RC\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 19,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Problem 5",
+    "problem_text": "Problem5\nQ)If a unit transistor has R = 10 kΩ and C = 0.1 fF in a 65 nm process, compute the delay, in picoseconds, of the inverter in Figure 4.14 with a fanout of h = 4 ?",
+    "solution_text": "The RC product in the 65 nm process is (10 kΩ)(0.1 fF) = 1 ps. For h = 4, the delay is (3 + 3h)(1 ps) = 15 ps. This is called the fanout-of-4 (FO4) inverter delay and is representative of gate delays in a typical circuit.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 20,
+    "problem_type": "Problem"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "The RC product in the 65 nm process is (10 kΩ)(0.1 fF) = 1 ps. For h = 4, the delay is (3 + 3h)(1 ps) = 15 ps. This is called the fanout-of-4 (FO4) inverter delay and is representative of gate delays in a typical circuit.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 20,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Problem 6",
+    "problem_text": "Problem 6\nQ) Estimate tpdf and tpdr for the 3-input NAND gate from given figure (Problem1) if the output is loaded with h identical NAND gates?\nRohit Lorenzo, VIT-AP",
+    "solution_text": "",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 21,
+    "problem_type": "Problem"
+  },
+  {
+    "title": "Problem 1",
+    "problem_text": "Problem1) if the output is loaded with h identical NAND gates?\nRohit Lorenzo, VIT-AP",
+    "solution_text": "",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 21,
+    "problem_type": "Problem"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "Each NAND gate load presents 5 units of capacitance on a given input. Figure (a) shows the equivalent circuit including the load for the falling transition. Node n1 has capacitance 3C and resistance of R/3 to ground. Node n2 has capacitance 3C and resistance (R/3 + R/3) to ground. Node Y has capacitance (9 + 5h)C and resistance (R/3 + R/3 +R/3) to ground. The Elmore delay for the falling output is the sum of these RC products, tpdf = (3C)(R/3) + (3C)(R/3 + R/3) + ((9 + 5h)C)(R/3+  R/3 + R/3) = (12 + 5h)RC. \nFigure 4.15(b) shows the equivalent circuit for the falling transition. In the worst case, the two inner inputs are 1 and the outer input falls. Y is pulled up to VDD through a single pMOS transistor. Node Y has capacitance (9 + 5h)C and resistance R to the VDD supply. Node n2 has capacitance 3C\nThe relevant resistance is only R, not (R + R/3), because the output is being charged only through R. This is what is meantby the resistance on the shared path from the source (VDD)",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 22,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "The logical effort of the inverter is g = 1, by definition. The electrical effort of each inverter is also 1 because it drives a single identical load. The parasitic delay is also 1. The delay of each stage is d = gh + p = 1 × 1 + 1 = 2. An N-stage ring oscillator has a period of 2N stage delays because a value must propagate twice around the ring to regain the original polarity. Therefore, the period is T = 2 × 2N. The frequency is the reciprocal of the period, 1/4N.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 14,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "(a)\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 26,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "b\nThe gate sizes are computed with the capacitance transformation from working backward along the path  \n y = 45  ×  (5/3)/5 = 15\nx = (15 + 15) × (5/3)/5 = 10\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 27,
+    "problem_type": "Example"
+  }
+]

@@ -4,26 +4,46 @@
     "type": "split",
     "children": [
       {
-        "id": "1ad4e68c2abee072",
+        "id": "e858cda8a675c8df",
         "type": "tabs",
         "children": [
           {
-            "id": "7f140cbdfb07336a",
+            "id": "63c68e570b587e95",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recon/ZONE_SOPS.md",
+                "file": "6th Semester/CAT - 2/STS/CAT2_All_Codes_In_Order.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "ZONE_SOPS"
+              "title": "CAT2_All_Codes_In_Order"
             }
           }
-        ],
-        "stacked": true
+        ]
+      },
+      {
+        "id": "5463fefbecffa4fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8404d20da836f814",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6th Semester/CAT - 2/STS/CAT2_MCQs_Theory_Notes.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "CAT2_MCQs_Theory_Notes"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 257.5
+    "width": 247.5086555480957
   },
   "right": {
     "id": "65917c39ac0d31e7",
@@ -179,11 +199,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 269.5,
+    "width": 494.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -199,57 +219,59 @@
       "audio-recorder:Start/stop recording": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-kanban:Create new board": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "copilot:Open Copilot Chat": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7f140cbdfb07336a",
+  "active": "63c68e570b587e95",
   "lastOpenFiles": [
-    "Recon/VOLUNTEER_HANDBOOK.md",
-    "Recon/SPONSOR_SOW_TEMPLATES.md",
-    "Recon/MINUTE_BY_MINUTE_SHOWFLOW.md",
-    "Recon/RISK_REGISTER.md",
-    "Recon/EVENT_MASTER_RUNBOOK.md",
-    "Clink/07_future_directions.md",
-    "Recon/AGENTS.md",
-    "Recon/ZONE_SOPS.md",
-    "Recon",
-    "Clink/03_recommendation_engine.md",
-    "Clink/Taste matching docs.md",
-    "Clink/Taste matching docs.pdf",
-    "Clink/06_risks_and_unknowns.md",
+    "6th Semester/CAT - 2/STS/test/IterativeTowerOfHanoi.java",
+    "6th Semester/CAT - 2/STS/CAT2_MCQs_Theory_Notes.md",
+    "6th Semester/CAT - 2/STS/CAT2_All_Codes_In_Order.md",
+    "6th Semester/CAT - 2/STS/test/SortWithoutExtraSpace.java",
+    "6th Semester/CAT - 2/STS/STS Quiz Cat-1.md",
+    "6th Semester/CAT - 2/STS/test/StackPermutations.java",
+    "6th Semester/CAT - 2/STS/test/MinimumStack.java",
+    "Programming Basics/Machine Learning/001 Basics.md",
     "Clink/05_implementation_roadmap.md",
-    "Clink/04_data_model.md",
-    "Clink/02_system_architecture.md",
-    "Clink/01_clink_product_overview.md",
-    "Clink/Clink Taste Matching.md",
-    "Clink/Coupons.md",
-    "Clink/Problems.md",
-    "Clink/KPI Analysis Results (Manual).md",
-    "Clink/KPI Analysis Results (AI).md",
-    "traction-ai-docs.md",
-    "traction-ai schema.md",
-    "script.md",
-    "README.md",
-    "Industrial Report.md",
-    "FPGA Lab.md",
-    "techie shi",
+    "techie shi/deploying backend using nginx.md",
+    "Networking/002 OSI (Open Systems Interconnection) Model.md",
+    "Networking/000 MOC (Networking).md",
+    "Clink/03_recommendation_engine.md",
+    "Excalidraw/OSI Model.excalidraw.md",
+    "Images/Pasted image 20260325031630.png",
+    "6th Semester/CAT - 2/STS/test/StockSpanProblem.class",
+    "6th Semester/CAT - 2/STS/test/StockSpanProblem.java",
+    "6th Semester/CAT - 2/STS/CAT2_Topics_Java/StockSpan.class",
+    "copilot/copilot-conversations/Model_Accessibility_Error_Discussion@20260325_025334.md",
+    "copilot/copilot-conversations",
+    "6th Semester/CAT - 2/STS/CAT2_Topics_Java/IterativeTowerOfHanoi.md",
+    "copilot/copilot-custom-prompts/Clip Web Page.md",
+    "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot/copilot-custom-prompts/Remove URLs.md",
+    "copilot/copilot-custom-prompts/Generate glossary.md",
+    "copilot/copilot-custom-prompts/Generate table of contents.md",
+    "copilot/copilot-custom-prompts/Make longer.md",
+    "copilot/copilot-custom-prompts/Make shorter.md",
+    "copilot/copilot-custom-prompts/Emojify.md",
+    "copilot/copilot-custom-prompts/Explain like I am 5.md",
+    "copilot/copilot-custom-prompts/Simplify.md",
+    "copilot/copilot-custom-prompts/Summarize.md",
+    "copilot/copilot-custom-prompts",
+    "copilot",
     "techie shi/AI Reels Flagger.pdf",
-    "GSOC/CERN",
-    "GSOC/Rocket Chat",
-    "GSOC",
-    "6th Semester/HDL/Lab Codes",
-    "6th Semester/CMOS.7z",
-    "Images/switching_waveform.png",
-    "Images/short_circuit_waveform.png",
-    "Images/power_consumption_trend.png",
-    "Images/leakage_overview.png",
-    "Images/leakage_components.png",
-    "Images/cmos_inverter_circuit.png",
-    "Images/power_methodology_pyramid.png",
-    "Images/power_design_hierarchy.png",
-    "Images/vth_rolloff.png",
-    "Images/vtcmos_vs_mtcmos_table2.png",
-    "6th Semester/Low Power VLSI",
+    "6th Semester/CAT - 2/LICA/study_guide/images/WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-02-17_Reference-Material-I_s2_img1.png",
+    "6th Semester/CAT - 2/LICA/study_guide/images/WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I_s9_img2.png",
+    "6th Semester/CAT - 2/LICA/study_guide/images/WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I_s9_img1.png",
+    "6th Semester/CAT - 2/LICA/study_guide/images/WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I_s8_img2.png",
+    "6th Semester/CAT - 2/LICA/study_guide/images/WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I_s8_img1.png",
+    "6th Semester/CAT - 2/LICA/study_guide/images/WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I_s4_img3.png",
+    "6th Semester/CAT - 2/LICA/study_guide/images/WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I_s4_img2.png",
+    "6th Semester/CAT - 2/LICA/study_guide/images/WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I_s4_img1.png",
+    "6th Semester/CAT - 2/LICA/study_guide/images/WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-03-18_Reference-Material-I_s3_img1.png",
     "Untitled.canvas",
     "C/Untitled.canvas",
     "Untitled 1.canvas"

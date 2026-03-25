@@ -1,0 +1,770 @@
+[
+  {
+    "content": "Vin = 0, 0.5, 1, 1.5, 2, and 2.5 V) are marked on the graph.\n\nAs can be observed, all operating points are\n located either at the high or low output  levels.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 12,
+    "context": "ponding load lines. A number of those points (for Vin = 0, 0.5, 1, 1.5, 2, and 2.5 V) are marked on the graph.  As can be observed, all operating points are  located either at the high or low output  levels. Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vin = Vout. Its value can be obtained graphically from the intersection of the VTC with the line given by Vin = Vout  . In this region",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 14,
+    "context": "hing threshold, VM, is defined as the point where Vin = Vout. Its value can be obtained graphically from the intersection of the VTC with the line given by Vin = Vout  . In this region, both PMOS and NMOS are always saturated. We solv",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vin = Vout. Its value can be obtained graphically from the intersection of the VTC with the line given by Vin = Vout  . In this region, both PMOS and NMOS are always saturated.\nWe solve the case where the supply voltage is high so that the devices can be assumed to be velocity-saturated (VDSAT < VM - VT). We furthermore ignore the channel length modulation effects.\n\n                                                                                                                                                                                                                                       …….(2)   \n\nSolving for VM yields \n\n                                                                                                                                                                                                                                               ……(3)\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 14,
+    "context": "hing threshold, VM, is defined as the point where Vin = Vout. Its value can be obtained graphically from the intersection of the VTC with the line given by Vin = Vout  . In this region, both PMOS and NMOS are always saturated. We solve the case where the supply voltage is high so that the devices can be assumed to be velocity-saturated (VDSAT < VM - VT). We furthermore ignore the channel length modulation effects.                                                                                                                                                                                                                                         …….(2)     Solving for VM yields                                                                                                                                                                                                                                                  ……(3) Rohit Lorenzo, VIT-AP",
+    "is_numbered": true,
+    "equation_number": "2"
+  },
+  {
+    "content": "dVin = -1. when the input voltage is Vin = VIL  .",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 21,
+    "context": "ion, the slope of the VTC is equal to (-1), dVout/dVin = -1. when the input voltage is Vin = VIL  .  Note that in this case, the NMOS transistor opera",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vin = -1. when the input voltage is Vin = VIL  . \nNote that in this case, the NMOS transistor operates in saturation while the PMOS transistor operates in the linear region. From    ID,n = ID,p  . we obtain the following current equation:\n                                                                                                                      …(14)\n\nUsing equation (7) and (8) , this expression can be rewritten as – \n                                                                                                                                …….(15)\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 21,
+    "context": "on, the slope of the VTC is equal to (-1), dVout/dVin = -1. when the input voltage is Vin = VIL  .  Note that in this case, the NMOS transistor operates in saturation while the PMOS transistor operates in the linear region. From    ID,n = ID,p  . we obtain the following current equation:                                                                                                                       …(14)  Using equation (7) and (8) , this expression can be rewritten as –                                                                                                                                  …….(15) Rohit Lorenzo, VIT-AP",
+    "is_numbered": true,
+    "equation_number": "14"
+  },
+  {
+    "content": "Vin = VIL  and dVout/dVin = -1 in equation (16)",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 22,
+    "context": "                             …(16)     Substitute Vin = VIL  and dVout/dVin = -1 in equation (16)                                                  ",
+    "is_numbered": true,
+    "equation_number": "16"
+  },
+  {
+    "content": "Vin = VIL  and dVout/dVin = -1 in equation (16)\n                                                                                                                 …..(17)\n\nVoltage VIL can now found as a function Vout\n\n                                                                                                     …..(18)\n\n                 Where\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 22,
+    "context": "                             …(16)     Substitute Vin = VIL  and dVout/dVin = -1 in equation (16)                                                                                                                  …..(17)  Voltage VIL can now found as a function Vout                                                                                                       …..(18)                   Where Rohit Lorenzo, VIT-AP",
+    "is_numbered": true,
+    "equation_number": "16"
+  },
+  {
+    "content": "Vin = VIH  and dVout/dVin = -1 in equation (20)",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 23,
+    "context": "                                       Substitute Vin = VIH  and dVout/dVin = -1 in equation (20)                                                  ",
+    "is_numbered": true,
+    "equation_number": "20"
+  },
+  {
+    "content": "Vin = VIH  and dVout/dVin = -1 in equation (20)\n\n                                                                                                                                     ….(22)\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 23,
+    "context": "                                       Substitute Vin = VIH  and dVout/dVin = -1 in equation (20)                                                                                                                                       ….(22) Rohit Lorenzo, VIT-AP",
+    "is_numbered": true,
+    "equation_number": "20"
+  },
+  {
+    "content": "Vth = Vin =Vout . For Vin = Vout",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 24,
+    "context": "VIth The inverter threshold voltage is defined as Vth = Vin =Vout . For Vin = Vout, both transistors are expected to be in saturatio",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vth = Vin =Vout . For Vin = Vout, both transistors are expected to be in saturation mode. Hence we can write KCL equation. \n                                                                                                                                                                          …….(23)\n\nUsing equation (7) and (8) , this expression can be rewritten as\n                                                                                                                   …… (24)\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 24,
+    "context": "VIth The inverter threshold voltage is defined as Vth = Vin =Vout . For Vin = Vout, both transistors are expected to be in saturation mode. Hence we can write KCL equation.                                                                                                                                                                            …….(23)  Using equation (7) and (8) , this expression can be rewritten as                                                                                                                    …… (24) Rohit Lorenzo, VIT-AP",
+    "is_numbered": true,
+    "equation_number": "23"
+  },
+  {
+    "content": "n = |VT0",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 27,
+    "context": "cs by setting the threshold voltages as VT0 = VT0,n = |VT0,p | . This reduces equation (30)                 ",
+    "is_numbered": true,
+    "equation_number": "30"
+  },
+  {
+    "content": "0 = VT0",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 27,
+    "context": "cteristics by setting the threshold voltages as VT0 = VT0,n = |VT0,p | . This reduces equation (30)        ",
+    "is_numbered": true,
+    "equation_number": "30"
+  },
+  {
+    "content": "kR = 2.5 and                          . hence",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 29,
+    "context": "he CMOS inverter being considered here has        kR = 2.5 and                          . hence, it is not a symmetric inverter. Rohit Lorenzo, V",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "R = 2.5 and                          . hence, it is not a symmetric inverter.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 29,
+    "context": "e CMOS inverter being considered here has        kR = 2.5 and                          . hence, it is not a symmetric inverter. Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cgd = 2CGD0W",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 38,
+    "context": "llowing equation for the gate-drain capacitors. – Cgd = 2CGD0W Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cgd = 2CGD0W\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 38,
+    "context": "llowing equation for the gate-drain capacitors. – Cgd = 2CGD0W Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1≈β Cdn1",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 45,
+    "context": "es will scale in approximately the same way or Cdp1≈β Cdn1  ,and Cgp2≈βCgn2  .   Eqn (16)then be rewritten    ",
+    "is_numbered": true,
+    "equation_number": "16"
+  },
+  {
+    "content": "2≈βCgn2  .   Eqn (16)then be rewritten",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 45,
+    "context": "pproximately the same way or Cdp1≈β Cdn1  ,and Cgp2≈βCgn2  .   Eqn (16)then be rewritten                                                  ",
+    "is_numbered": true,
+    "equation_number": "16"
+  },
+  {
+    "content": "β times larger than the NMOS ones (β=(W/L)p/(W/L)n) all transistor capacitances will scale in approximately the same way or Cdp1≈β Cdn1  ,and Cgp2≈βCgn2  .   Eqn (16)then be rewritten\n                                                                                                     ……. (17)\n An expression for the propagation delay can be derived, based on Eq (13)                                                                                                   \n                                                                                                                                                                                                                           ……(18)\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 45,
+    "context": "            ……(16) When the PMOS devices are made β times larger than the NMOS ones (β=(W/L)p/(W/L)n) all transistor capacitances will scale in approximately the same way or Cdp1≈β Cdn1  ,and Cgp2≈βCgn2  .   Eqn (16)then be rewritten                                                                                                      ……. (17)  An expression for the propagation delay can be derived, based on Eq (13)                                                                                                                                                                                                                                                                                                                               ……(18) Rohit Lorenzo, VIT-AP",
+    "is_numbered": true,
+    "equation_number": "16"
+  },
+  {
+    "content": "1+ Cgn2  >> CW )",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 46,
+    "context": "at when the wiring capacitance is negligible  (Cdn1+ Cgn2  >> CW ) , βopt equals      .The surprising result of this ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "CL=Cint+Cext.",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 47,
+    "context": "ded into an intrinsic and an extrinsic component. CL=Cint+Cext.   we can express the propagation delay  as follows",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tpo= 0.69 Req .Cint  represents the delay of the inverter only loaded by its own intrinsic capacitance  (Cext =0)",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 47,
+    "context": "                                       ….(20)     tpo= 0.69 Req .Cint  represents the delay of the inverter only loaded by its own intrinsic capacitance  (Cext =0)  and is called the intrinsic or unloaded delay. Th",
+    "is_numbered": true,
+    "equation_number": "20"
+  },
+  {
+    "content": "Cint=SCiref . The resistance of the gate relates to the reference gate as  Req = Ref/S . We can now rewrite the equation (20) .",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 47,
+    "context": "e gate—typically a minimum-sized inverter. Hence  Cint=SCiref . The resistance of the gate relates to the reference gate as  Req = Ref/S . We can now rewrite the equation (20) .                                                            ",
+    "is_numbered": true,
+    "equation_number": "20"
+  },
+  {
+    "content": "L=Cint+Cext. \n\nwe can express the propagation delay\n as follows                                                                                                                                         ….(20)   \n\ntpo= 0.69 Req .Cint  represents the delay of the inverter only loaded by its own intrinsic capacitance  (Cext =0) \nand is called the intrinsic or unloaded delay. The sizing factor S, we consider for  inverter to a reference gate—typically a minimum-sized inverter. Hence  Cint=SCiref . The resistance of the gate relates to the reference gate as  Req = Ref/S . We can now rewrite the equation (20) .          \n\n                                                                                                                                                          …(21)\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 47,
+    "context": "ed into an intrinsic and an extrinsic component. CL=Cint+Cext.   we can express the propagation delay  as follows                                                                                                                                         ….(20)     tpo= 0.69 Req .Cint  represents the delay of the inverter only loaded by its own intrinsic capacitance  (Cext =0)  and is called the intrinsic or unloaded delay. The sizing factor S, we consider for  inverter to a reference gate—typically a minimum-sized inverter. Hence  Cint=SCiref . The resistance of the gate relates to the reference gate as  Req = Ref/S . We can now rewrite the equation (20) .                                                                                                                                                                      …(21) Rohit Lorenzo, VIT-AP",
+    "is_numbered": true,
+    "equation_number": "20"
+  },
+  {
+    "content": "Cint = intrinsic output capacitance of the inverter",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 49,
+    "context": "                                        ……. (22)  Cint = intrinsic output capacitance of the inverter, associated with diffusion capacitance   Cext = f",
+    "is_numbered": true,
+    "equation_number": "22"
+  },
+  {
+    "content": "Cext = fanout and wire capacitance",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 49,
+    "context": "inverter, associated with diffusion capacitance   Cext = fanout and wire capacitance     The input gate capacitance and output gate capac",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cint = intrinsic output capacitance of the inverter, associated with diffusion capacitance  \nCext = fanout and wire capacitance   \n\nThe input gate capacitance and output gate capacitance are function of transistor gate size.  \n                                                                                       ……(23)\n\n𝛾 is a proportionality factor, which is only a function of technology. Now equation (20) can be rewritten as \n\n                                                                                                          …..(24)\nThe delay if the inverter is only a function of the ratio between its external load capacitance and input capacitance. This ratio is called the effective fanout f.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx",
+    "page_or_slide": 49,
+    "context": "                                        ……. (22)  Cint = intrinsic output capacitance of the inverter, associated with diffusion capacitance   Cext = fanout and wire capacitance     The input gate capacitance and output gate capacitance are function of transistor gate size.                                                                                          ……(23)  𝛾 is a proportionality factor, which is only a function of technology. Now equation (20) can be rewritten as                                                                                                             …..(24) The delay if the inverter is only a function of the ratio between its external load capacitance and input capacitance. This ratio is called the effective fanout f. Rohit Lorenzo, VIT-AP",
+    "is_numbered": true,
+    "equation_number": "22"
+  },
+  {
+    "content": "tpd = maximum time from the input crossing 50% to the output crossing 50% .",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 3,
+    "context": "Delay Definitions Propagation delay time, tpd = maximum time from the input crossing 50% to the output crossing 50% .  Contamination delay time, tcd = minimum time from",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tcd = minimum time from the",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 3,
+    "context": " output crossing 50% .  Contamination delay time, tcd = minimum time from the      input crossing 50% to the output crossing 50",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tr = time for a waveform to rise from 20% to",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 3,
+    "context": "ssing 50% to the output crossing 50%.  Rise time, tr = time for a waveform to rise from 20% to       80% of its steady-state value.  Fall time, ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tf = time for a waveform to fall from 80% to",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 3,
+    "context": "       80% of its steady-state value.  Fall time, tf = time for a waveform to fall from 80% to       20% of its steady-state value.   Edge rate,",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "trf = (tr + tf )/2",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 3,
+    "context": "      20% of its steady-state value.   Edge rate, trf = (tr + tf )/2 Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "C = dq/dv",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 9,
+    "context": "Capacitances Voltage dependence capacitance   C = dq/dv Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "C = dq/dv\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 9,
+    "context": "Capacitances Voltage dependence capacitance   C = dq/dv Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cs = AS× Cjbs + PS × Cjbsw",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": "Simplified Model Rohit Lorenzo, VIT-AP Cs = AS× Cjbs + PS × Cjbsw  AS = Area of Diffusion region = D×W PS = Perimet",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "AS = Area of Diffusion region = D×W",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": "Rohit Lorenzo, VIT-AP Cs = AS× Cjbs + PS × Cjbsw  AS = Area of Diffusion region = D×W PS = Perimeter of Diffusion region = 2W+2D Cjb= U",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "PS = Perimeter of Diffusion region = 2W+2D",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": "+ PS × Cjbsw  AS = Area of Diffusion region = D×W PS = Perimeter of Diffusion region = 2W+2D Cjb= Unit area capacitance to body   Cjbsw   =Uni",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cjb= Unit area capacitance to body",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": " = D×W PS = Perimeter of Diffusion region = 2W+2D Cjb= Unit area capacitance to body   Cjbsw   =Units of capacitance/length",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cjbsw   =Units of capacitance/length",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": "gion = 2W+2D Cjb= Unit area capacitance to body   Cjbsw   =Units of capacitance/length",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cs = AS× Cjbs + PS × Cjbsw\n\nAS = Area of Diffusion region = D×W\nPS = Perimeter of Diffusion region = 2W+2D\nCjb= Unit area capacitance to body  \nCjbsw   =Units of capacitance/length",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": "Simplified Model Rohit Lorenzo, VIT-AP Cs = AS× Cjbs + PS × Cjbsw  AS = Area of Diffusion region = D×W PS = Perimeter of Diffusion region = 2W+2D Cjb= Unit area capacitance to body   Cjbsw   =Units of capacitance/length",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3-input NAND gate with transistor widths chosen to achieve effective rise and fall resistance equal to that of a unit inverter (R). Annotate the gate with its gate and diffusion capacitances. Assume all diffusion nodes are contacted. Then sketch equivalent circuits for the falling output transition and for the worst-case rising output transition ?",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 13,
+    "context": "Problem 1 Q) Sketch a 3-input NAND gate with transistor widths chosen to achieve effective rise and fall resistance equal to that of a unit inverter (R). Annotate the gate with its gate and diffusion capacitances. Assume all diffusion nodes are contacted. Then sketch equivalent circuits for the falling output transition and for the worst-case rising output transition ?  Solution : The three nMOS transistors are in ser",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tpd = R1C1 + (R1 + R2)C2",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 17,
+    "context": "e source is (R1 + R2). Hence, the Elmore delay is tpd = R1C1 + (R1 + R2)C2 Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 + R2). Hence",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 17,
+    "context": "tance is C2 and the resistance to the source is (R1 + R2). Hence, the Elmore delay is tpd = R1C1 + (R1 + R2)C2 Roh",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 + (R1 + R2)C2",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 17,
+    "context": "is (R1 + R2). Hence, the Elmore delay is tpd = R1C1 + (R1 + R2)C2 Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tpd = (3 + 3m)RC. The equivalent circuit for the rising transition gives the same results.",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 18,
+    "context": "3m)C. The resistance is R, so the Elmore delay is tpd = (3 + 3m)RC. The equivalent circuit for the rising transition gives the same results. Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 + 3m)C. The resistance is R",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 18,
+    "context": "rter is driving. Hence, the total capacitance is (3 + 3m)C. The resistance is R, so the Elmore delay is tpd = (3 + 3m)RC. The equ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 + 3m)RC. The equivalent circuit for the rising transition gives the same results.",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 18,
+    "context": "he resistance is R, so the Elmore delay is tpd = (3 + 3m)RC. The equivalent circuit for the rising transition gives the same results. Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tpd = ((3w + 3m)C)(R/w) = (3 + 3m/w)RC.",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 19,
+    "context": "e increases by a factor of w. The Elmore delay is tpd = ((3w + 3m)C)(R/w) = (3 + 3m/w)RC.  Define the fanout of the gate, h, to be the ratio",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "h = m/w and the delay can be written as (3 + 3h)RC",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 19,
+    "context": "itance is 3wC. Thus, the inverter has a fanout of h = m/w and the delay can be written as (3 + 3h)RC Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 + 3m/w)RC.",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 19,
+    "context": "w. The Elmore delay is tpd = ((3w + 3m)C)(R/w) = (3 + 3m/w)RC.  Define the fanout of the gate, h, to be the ratio",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 + 3h)RC",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 19,
+    "context": "anout of h = m/w and the delay can be written as (3 + 3h)RC Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "R = 10 kΩ and C = 0.1 fF in a 65 nm process",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 20,
+    "context": "Problem5 Q)If a unit transistor has R = 10 kΩ and C = 0.1 fF in a 65 nm process, compute the delay, in picoseconds, of the invert",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "h = 4 ?",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 20,
+    "context": ", of the inverter in Figure 4.14 with a fanout of h = 4 ?   Solution  The RC product in the 65 nm process is ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 + 3h)(1 ps) = 15 ps. This is called the fanout-of-4 (FO4) inverter delay and is representative of gate delays in a typical circuit.",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 20,
+    "context": " (10 kΩ)(0.1 fF) = 1 ps. For h = 4, the delay is (3 + 3h)(1 ps) = 15 ps. This is called the fanout-of-4 (FO4) inverter delay and is representative of gate delays in a typical circuit. Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "R = 10 kΩ and C = 0.1 fF in a 65 nm process, compute the delay, in picoseconds, of the inverter in Figure 4.14 with a fanout of h = 4 ?  \nSolution \nThe RC product in the 65 nm process is (10 kΩ)(0.1 fF) = 1 ps. For h = 4, the delay is (3 + 3h)(1 ps) = 15 ps. This is called the fanout-of-4 (FO4) inverter delay and is representative of gate delays in a typical circuit.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 20,
+    "context": "Problem5 Q)If a unit transistor has R = 10 kΩ and C = 0.1 fF in a 65 nm process, compute the delay, in picoseconds, of the inverter in Figure 4.14 with a fanout of h = 4 ?   Solution  The RC product in the 65 nm process is (10 kΩ)(0.1 fF) = 1 ps. For h = 4, the delay is (3 + 3h)(1 ps) = 15 ps. This is called the fanout-of-4 (FO4) inverter delay and is representative of gate delays in a typical circuit. Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3-input NAND gate from given figure (Problem1) if the output is loaded with h identical NAND gates?",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 21,
+    "context": "Problem 6 Q) Estimate tpdf and tpdr for the 3-input NAND gate from given figure (Problem1) if the output is loaded with h identical NAND gates? Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tpdf = (3C)(R/3) + (3C)(R/3 + R/3) + ((9 + 5h)C)(R/3+  R/3 + R/3) = (12 + 5h)RC.",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 22,
+    "context": "e falling output is the sum of these RC products, tpdf = (3C)(R/3) + (3C)(R/3 + R/3) + ((9 + 5h)C)(R/3+  R/3 + R/3) = (12 + 5h)RC.  Figure 4.15(b) shows the equivalent circuit for t",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tpdr = (3C)R +(3C)R +(9=5h)R= (15 + 5h)RC.",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 22,
+    "context": ". Hence, the Elmore delayfor the rising output is tpdr = (3C)R +(3C)R +(9=5h)R= (15 + 5h)RC. Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 + R/3) to ground. Node Y has capacitance (9 + 5h)C and resistance (R/3 + R/3 +R/3) to ground. The Elmore delay for the falling output is the sum of these RC products",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 22,
+    "context": "und. Node n2 has capacitance 3C and resistance (R/3 + R/3) to ground. Node Y has capacitance (9 + 5h)C and resistance (R/3 + R/3 +R/3) to ground. The Elmore delay for the falling output is the sum of these RC products, tpdf = (3C)(R/3) + (3C)(R/3 + R/3) + ((9 + 5h)C)",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 + R/3) + ((9 + 5h)C)(R/3+  R/3 + R/3) = (12 + 5h)RC.",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 22,
+    "context": "m of these RC products, tpdf = (3C)(R/3) + (3C)(R/3 + R/3) + ((9 + 5h)C)(R/3+  R/3 + R/3) = (12 + 5h)RC.  Figure 4.15(b) shows the equivalent circuit for t",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "9 + 5h)C and resistance R to the VDD supply. Node n2 has capacitance 3C",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 22,
+    "context": "a single pMOS transistor. Node Y has capacitance (9 + 5h)C and resistance R to the VDD supply. Node n2 has capacitance 3C The relevant resistance is only R, not (R + R/3),",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "9=5h)R= (15 + 5h)RC.",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 22,
+    "context": "layfor the rising output is tpdr = (3C)R +(3C)R +(9=5h)R= (15 + 5h)RC. Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "R= (15 + 5h)RC.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx",
+    "page_or_slide": 22,
+    "context": "r the rising output is tpdr = (3C)R +(3C)R +(9=5h)R= (15 + 5h)RC. Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "g = Cingate/Cininverter",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": "current.  Inverter  Logical Effort of basic gate  g = Cingate/Cininverter  Cininverter = 2unit + 1Unit = 3Unit Rohit Lorenzo",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cininverter = 2unit + 1Unit = 3Unit",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": "al Effort of basic gate  g = Cingate/Cininverter  Cininverter = 2unit + 1Unit = 3Unit Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cininverter = 2unit + 1Unit = 3Unit\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": "al Effort of basic gate  g = Cingate/Cininverter  Cininverter = 2unit + 1Unit = 3Unit Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "NAND2 = 2unit(NMOS) + 2 unit(PMOS) = 4 Unit",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": "Continue … 2 input NAND gate Cin NAND2 = 2unit(NMOS) + 2 unit(PMOS) = 4 Unit  The NAND presents  4units of capacitance on each ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "g = Cingate/Cininverter  = 4/3",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": "ND presents  4units of capacitance on each input. g = Cingate/Cininverter  = 4/3   3 Input NAND Gate Cin NAND3 = 3unit(NMOS) + 2 un",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "NAND3 = 3unit(NMOS) + 2 unit(PMOS) = 5 Unit",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": "ingate/Cininverter  = 4/3   3 Input NAND Gate Cin NAND3 = 3unit(NMOS) + 2 unit(PMOS) = 5 Unit  The NAND presents  5units of capacitance on each ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "g = Cingate/Cininverter  = 5/3",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": "ND presents  5units of capacitance on each input. g = Cingate/Cininverter  = 5/3   G for NAND Gate    (n+2)/3 ,  where n is number ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 = 2unit(NMOS) + 2 unit(PMOS) = 4 Unit",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": "Continue … 2 input NAND gate Cin NAND2 = 2unit(NMOS) + 2 unit(PMOS) = 4 Unit  The NAND presents  4units of capacitance on each ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4/3",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": "citance on each input. g = Cingate/Cininverter  = 4/3   3 Input NAND Gate Cin NAND3 = 3unit(NMOS) + 2 un",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 = 3unit(NMOS) + 2 unit(PMOS) = 5 Unit",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": "te/Cininverter  = 4/3   3 Input NAND Gate Cin NAND3 = 3unit(NMOS) + 2 unit(PMOS) = 5 Unit  The NAND presents  5units of capacitance on each ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "5/3",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": "citance on each input. g = Cingate/Cininverter  = 5/3   G for NAND Gate    (n+2)/3 ,  where n is number ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cininverter  = 4/3 \n\n3 Input NAND Gate\nCin NAND3 = 3unit(NMOS) + 2 unit(PMOS) = 5 Unit \nThe NAND presents  5units of capacitance on each input.\ng = Cingate/Cininverter  = 5/3 \n\nG for NAND Gate \n  (n+2)/3 ,  where n is number of inputs\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": " 4units of capacitance on each input. g = Cingate/Cininverter  = 4/3   3 Input NAND Gate Cin NAND3 = 3unit(NMOS) + 2 unit(PMOS) = 5 Unit  The NAND presents  5units of capacitance on each input. g = Cingate/Cininverter  = 5/3   G for NAND Gate    (n+2)/3 ,  where n is number of inputs Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "NOR2 = 1unit(NMOS) +  4unit(PMOS) = 5 Unit",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 7,
+    "context": "Continue….. 2 input NOR gate Cin NOR2 = 1unit(NMOS) +  4unit(PMOS) = 5 Unit  The NOR presents  5units of capacitance on each i",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "g = Cingate/Cininverter  = 5/3",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 7,
+    "context": "OR presents  5units of capacitance on each input. g = Cingate/Cininverter  = 5/3   3 Input NOR Gate Cin NOR3 = 1unit(NMOS) + 6unit(",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "NOR3 = 1unit(NMOS) + 6unit(PMOS) = 7Unit",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 7,
+    "context": "Cingate/Cininverter  = 5/3   3 Input NOR Gate Cin NOR3 = 1unit(NMOS) + 6unit(PMOS) = 7Unit  The NOR presents  5units of capacitance on each i",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "g = Cingate/Cininverter  = 7/3",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 7,
+    "context": "OR presents  5units of capacitance on each input. g = Cingate/Cininverter  = 7/3   G for NOR Gate    (2n+1)/3 ,  where n is number ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 = 1unit(NMOS) +  4unit(PMOS) = 5 Unit",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 7,
+    "context": "Continue….. 2 input NOR gate Cin NOR2 = 1unit(NMOS) +  4unit(PMOS) = 5 Unit  The NOR presents  5units of capacitance on each i",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "5/3",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 7,
+    "context": "citance on each input. g = Cingate/Cininverter  = 5/3   3 Input NOR Gate Cin NOR3 = 1unit(NMOS) + 6unit(",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 = 1unit(NMOS) + 6unit(PMOS) = 7Unit",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 7,
+    "context": "gate/Cininverter  = 5/3   3 Input NOR Gate Cin NOR3 = 1unit(NMOS) + 6unit(PMOS) = 7Unit  The NOR presents  5units of capacitance on each i",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "7/3",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 7,
+    "context": "citance on each input. g = Cingate/Cininverter  = 7/3   G for NOR Gate    (2n+1)/3 ,  where n is number ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cininverter  = 5/3 \n\n3 Input NOR Gate\nCin NOR3 = 1unit(NMOS) + 6unit(PMOS) = 7Unit \nThe NOR presents  5units of capacitance on each input.\ng = Cingate/Cininverter  = 7/3 \n\nG for NOR Gate \n  (2n+1)/3 ,  where n is number of inputs\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 7,
+    "context": " 5units of capacitance on each input. g = Cingate/Cininverter  = 5/3   3 Input NOR Gate Cin NOR3 = 1unit(NMOS) + 6unit(PMOS) = 7Unit  The NOR presents  5units of capacitance on each input. g = Cingate/Cininverter  = 7/3   G for NOR Gate    (2n+1)/3 ,  where n is number of inputs Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "d = gh + p = 1 × 1 + 1 = 2. An N-stage ring oscillator has a period of 2N stage delays because a value must propagate twice around the ring to regain the original polarity. Therefore",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 14,
+    "context": "sitic delay is also 1. The delay of each stage is d = gh + p = 1 × 1 + 1 = 2. An N-stage ring oscillator has a period of 2N stage delays because a value must propagate twice around the ring to regain the original polarity. Therefore, the period is T = 2 × 2N. The frequency is the r",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "T = 2 × 2N. The frequency is the reciprocal of the period",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 14,
+    "context": "n the original polarity. Therefore, the period is T = 2 × 2N. The frequency is the reciprocal of the period, 1/4N. Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 × 1 + 1 = 2. An N-stage ring oscillator has a period of 2N stage delays because a value must propagate twice around the ring to regain the original polarity. Therefore",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 14,
+    "context": "s also 1. The delay of each stage is d = gh + p = 1 × 1 + 1 = 2. An N-stage ring oscillator has a period of 2N stage delays because a value must propagate twice around the ring to regain the original polarity. Therefore, the period is T = 2 × 2N. The frequency is the r",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 × 2N. The frequency is the reciprocal of the period",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 14,
+    "context": "e original polarity. Therefore, the period is T = 2 × 2N. The frequency is the reciprocal of the period, 1/4N. Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/4N.",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 14,
+    "context": "N. The frequency is the reciprocal of the period, 1/4N. Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "T = 2 × 2N. The frequency is the reciprocal of the period, 1/4N.\nRohit Lorenzo, VIT-AP",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 14,
+    "context": "n the original polarity. Therefore, the period is T = 2 × 2N. The frequency is the reciprocal of the period, 1/4N. Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "f = gh.",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 15,
+    "context": "Recall that the stage effort of a single stage is f = gh.   If a path has N stages and each bears the same e",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "y = 45  ×  (5/3)/5 = 15",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 27,
+    "context": "formation from working backward along the path    y = 45  ×  (5/3)/5 = 15 x = (15 + 15) × (5/3)/5 = 10 Rohit Lorenzo, VIT-A",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "x = (15 + 15) × (5/3)/5 = 10",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 27,
+    "context": "ackward along the path    y = 45  ×  (5/3)/5 = 15 x = (15 + 15) × (5/3)/5 = 10 Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "45  ×  (5/3)/5 = 15",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 27,
+    "context": "ation from working backward along the path    y = 45  ×  (5/3)/5 = 15 x = (15 + 15) × (5/3)/5 = 10 Rohit Lorenzo, VIT-A",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "15 + 15) × (5/3)/5 = 10",
+    "source_file": "WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx",
+    "page_or_slide": 27,
+    "context": "rd along the path    y = 45  ×  (5/3)/5 = 15 x = (15 + 15) × (5/3)/5 = 10 Rohit Lorenzo, VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  }
+]

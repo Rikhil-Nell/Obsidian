@@ -244,17 +244,18 @@ The upper layers of the OSI model—**Session (L5)**, **Presentation (L6)**, and
             - **Data Types**: Could interpret binary data as integers (e.g., long, int) or other specific types.
     - **ASCII Encoding (HTTP)**:
         - Groups raw binary data into sets of 8 bits (1 byte), where each byte represents an **ASCII character**.
-        - Example:
-	      ```rust
-			01000111 -> G  
-			01000101 -> E  
-			01010100 -> T  
-			00100000 -> (space)  
-			00101111 -> /  
-			01110011 -> s  
-			01101001 -> i  
-			01101101 -> m  
-			```
+        - Example:   
+	          ```rust
+					01000111 -> G  
+					01000101 -> E  
+					01010100 -> T  
+					00100000 -> (space)  
+					00101111 -> /  
+					01110011 -> s  
+					01101001 -> i  
+					01101101 -> m  
+				
+
 - This encoding mechanism allows browsers and servers to interpret HTTP requests (e.g., `GET /sim`).
 - **Modern HTTP (HTTP/2, HTTP/3)**:
     

@@ -1,0 +1,1369 @@
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 1
+============================================================
+
+Module -2 –  CMOS inverter
+By
+
+Dr.Rohit Lorenzo
+Assistant Professor Sr. Grade -1
+School of Electronics Engineering (SENSE)
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 2
+============================================================
+
+Modeling of MOS Transistor using SPICE
+SPICE (Simulation Program with Integrated Circuit Emphasis) is a general-purpose circuit simulator which is used very widely both in the microelectronics industry and in educational institutions as an essential computer-aided design (CAD) tool for circuit design.
+In the fast-advancing field of VLSI design, a sound knowledge of physical models used to describe the behavior of transistors and knowledge of various device parameters are essential for performing detailed circuit simulations and for optimizing design.
+
+SPICE has three built-in MOSFET models –
+ LEVEL 1 (MOS1) is described by a square-law. current-voltage characteristic.
+LEVEL 2 (MOS2) is a detailed analytical MOSFET model. 
+LEVEL 3 (MOS3) is a semi-empirical model.
+
+Both MOS2 and MOS3 include second-order effects such as the short-channel threshold voltage, subthreshold conduction, scattering-limited velocity saturation, and charge-controlled capacitances.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 3
+============================================================
+
+Basic Concepts
+Rohit Lorenzo, VIT-AP
+The source-substrate and the drain-substrate junctions, which are reverse-biased under normal operating conditions, are represented by ideal diodes in this equivalent circuit.
+
+
+The parasitic source and drain resistances
+ are represented by the resistors RD and Rs,
+ respectively, connected between the drain
+ current source and the respective terminals.
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 4
+============================================================
+
+The LEVEL 1 Model Equations
+The LEVEL 1 model is the simplest current-voltage description of the MOSFET, which is basically the GCA-based quadratic model. 
+The equations used for the LEVEL 1 n-channel MOSFET model in SPICE are as follows.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 5
+============================================================
+
+The LEVEL 2 Model Equations
+To obtain a more accurate model for the drain current, it is necessary to eliminate some of the simplifying assumptions made in the original GCA analysis. 
+Specifically, the bulk depletion charge must be calculated by taking into account its dependence on the channel voltage. current-voltage characteristics in model 2 can be obtained as –
+
+
+
+
+The saturation voltage VDSAT can be calculated as
+
+Saturation mode current
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 6
+============================================================
+
+The LEVEL 3 Model Equations
+The majority of the LEVEL 3 model equations are empirical. The aims of using empirical equations instead of analytical models are both to improve the accuracy of the model and to limit the complexity of the calculations. 
+The drain current in the linear region
+ is given by the following equation:
+
+
+
+the empirical parameter FB expresses the dependence of the bulk depletion charge on the three-dimensional geometry of the MOSFET. Here, the parameters VT, Fs, and μs are influenced by the short-channel effects, while the parameter Fn is influenced by the narrow-channel effects.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 7
+============================================================
+
+CMOS Inverter
+The inverter is truly the nucleus of all digital designs. Once its operation and properties are clearly understood, designing more intricate structures such as NAND gates, adders, multipliers, and microprocessors is greatly simplified. 
+The analysis of inverters can be extended to explain the behavior of more complex gates such as NAND, NOR, or XOR, which in turn form the building blocks for modules such as multipliers and processors.
+
+Static CMOS Inverter
+Inverter  operation is readily understood with the aid of the simple switch 
+model of the MOS transistor.
+
+The transistor is nothing more than a switch with an infinite OFF resistance 
+( for VGS<VT) and a finite on-resistance ( for VGS>VT) .
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 8
+============================================================
+
+Continue….
+When Vin is low (0 V), NMOS and PMOS transistors are OFF and ON, respectively. The equivalent circuit of Figure (a) shows that a path exists between VDD and Vout, yielding a high output voltage. 
+When Vin is high and equal to VDD, the NMOS  transistor is ON, while the PMOS is OFF. This yields the equivalent circuit of Figure (b). A direct path exists between Vout and the ground node,
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 9
+============================================================
+
+Continue….
+Important properties of static CMOS inverter
+ High noise margins -The high and low output levels equal VDD and GND, respectively; in other words, the voltage swing is equal to the supply voltage. This results in high noise margins.
+Ratioless Logic -The logic levels are not dependent upon the relative device sizes, so that the transistors can be minimum size. Gates with this property are called ratioless. 
+High Input Impedance - The input impedance of the CMOS inverter is extremely high, as the gate of an MOS transistor is a virtually perfect insulator and draws no dc input current. Since the input node of the inverter only connects to transistor gates. A single inverter can theoretically drive an infinite number of gates in static case. however, increasing the fan-out also increases the propagation delay in transient case.
+Low output Impedance -In steady state, there always exists a path with finite resistance between the output and either VDD or GND. A well-designed CMOS inverter, therefore, has a low output impedance, which makes it less sensitive to noise and disturbances. 
+static power -No direct path exists between the supply and ground rails under steady-state operating conditions (this is, when the input and outputs remain constant). The absence of current flow (ignoring leakage currents) means that the gate does not consume much static power.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 10
+============================================================
+
+CMOS Inverter voltage-transfer characteristic
+The nature and the form of the voltage-transfer characteristic (VTC) can be graphically deduced by superimposing the current characteristics of the NMOS and the PMOS devices. 
+It requires that the I-V curves of the NMOS and PMOS devices are transformed onto a common coordinate set. The PMOS I-V relations can be translated into this variable space by the following relations. 
+
+
+                                                                                                                                           ……..(1)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 11
+============================================================
+
+Continue…….
+The load-line curves of the PMOS device are obtained by a mirroring around the x-axis and a horizontal shift over VDD.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 12
+============================================================
+
+Continued….
+The resulting load lines are shown in figure. For a dc operating points to be valid, the currents through the NMOS and PMOS devices must be equal.
+Graphically, this means that the dc points must be located at the intersection of corresponding load lines.
+A number of those points (for Vin = 0, 0.5, 1, 1.5, 2, and 2.5 V) are marked on the graph.
+
+As can be observed, all operating points are
+ located either at the high or low output  levels.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 13
+============================================================
+
+Continue….
+In that operation region, a small change in the input voltage results in a large output variation. All these observations translate into the VTC doped silicon substrate.
+Before going into the analytical details of the operation of the CMOS inverter, a qualitative analysis of the transient behavior of the gate.
+
+The gate response time is simply determined by the 
+time it takes to charge the capacitor CL through 
+The resistor Rp. we learned that the propagation delay of
+ such a network is proportional to the its time constant 
+RpCL.  
+
+Hence, a fast gate is built either by keeping the output
+ capacitance small or by decreasing the on-resistance
+ of the transistor. The latter is achieved by
+increasing the W/L ratio of the device.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 14
+============================================================
+
+Switching Threshold
+The switching threshold, VM, is defined as the point where Vin = Vout. Its value can be obtained graphically from the intersection of the VTC with the line given by Vin = Vout  . In this region, both PMOS and NMOS are always saturated.
+We solve the case where the supply voltage is high so that the devices can be assumed to be velocity-saturated (VDSAT < VM - VT). We furthermore ignore the channel length modulation effects.
+
+                                                                                                                                                                                                                                       …….(2)   
+
+Solving for VM yields 
+
+                                                                                                                                                                                                                                               ……(3)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 15
+============================================================
+
+continue…….
+For large values of VDD   Eq. (3) can be simplified                                              …..(4)
+
+we can derive the required ratio of PMOS versus NMOS transistor sizes such that the switching threshold is set to a desired value VM. When using this expression, please make sure that the assumption that both devices are velocity-saturated still holds for the chosen operation point.
+
+                                                                                                                                                                              …….(5)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 16
+============================================================
+
+CMOS Inverter -  Noise Margin
+Definition - The  amount of noise voltage which the inverter can reject  without effecting the output. 
+If higher is the value of noise margin better is the capability of inverter.
+ In given figure this output signal  of first inverter is being transmitted to the second  inverter input via an interconnect, which is  prone to signal noise. 
+Consequently , If the input voltage of the second inverter is smaller than VOL' this signal will be interpreted correctly as a logic "0" input by the second inverter. On the other hand, if the input voltage becomes larger than VIL as a result of noise, then it may not be interpreted correctly by the inverter. Thus, we conclude that VIL is the maximum allowable voltage at the input of the second inverter, which is low enough to ensure a logic "1" output.
+
+Same way it is applicable
+For second and third 
+Inverter.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 17
+============================================================
+
+Continued…
+So from previous observation  noise tolérances for digital circuits, called noise margins and denoted by NM. 
+Two noise margins will be defined: the noise margin for low signal levels (NML) and the noise margin for high signal levels (NMH) . 
+                                                                                                           …..(6)
+
+The shaded areas indicate the valid regions of the input and
+ output voltages, and the noise margins are shown as the
+ amount of variation in the signal levels that can be allowed 
+while the signal is transmitted from the output of one gate to
+ the input of the next gate.
+
+Note that there is a voltage range between VIL and VIH
+corresponding to input voltage values. The region between 
+ VIL and VIH    is called uncertain region or alternatively the 
+transition  region.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 18
+============================================================
+
+Calculation of  Voltages in CMOS Inverter
+CMOS Inverter circuit voltage configuration is shown in figure. According to circuit diagram voltages can be written as – 
+                                                                        ……. (7)
+  
+
+                                                                            ……..(8)
+
+When                          the nMOS transistor is cut-OFF. The PMOS
+ transistor is on, operating in the linear region. Since the drain 
+currents of both transistors are approximately equal to zero.
+                                                         
+                                                                 …….(9)
+                                                                   ……(10)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 19
+============================================================
+
+Continued….
+when the input voltage exceeds                                the PMOS transistor is turned off and  NMOS transistor is operating in the linear region. Consequently, the output voltage of the circuit is
+                                                                                          ……(11)
+
+The NMOS transistor operates in saturation if                      if the following condition is satisfied
+                                                                                                                          ……(12)                                                                                                           
+                                                                                                                 
+The PMOS transistor operates in saturation if
+                                                                                                          
+                                                                                                                           ……(13)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 20
+============================================================
+
+Continue…..
+Here, we identify five distinct regions,  labeled A through E, each corresponding  to a different set of operating conditions
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 21
+============================================================
+
+Continue….
+We already know that the drain current ID,n of the NMOS transistor is a function of the voltages VGS,n and VDS,n. The NMOS drain current is also a function of the inverter input and output voltages Vin. and Vout.
+                                                                                          
+Similarly for PMOS 
+                                                                            
+Calculation of VIL
+By definition, the slope of the VTC is equal to (-1), dVout/dVin = -1. when the input voltage is Vin = VIL  . 
+Note that in this case, the NMOS transistor operates in saturation while the PMOS transistor operates in the linear region. From    ID,n = ID,p  . we obtain the following current equation:
+                                                                                                                      …(14)
+
+Using equation (7) and (8) , this expression can be rewritten as – 
+                                                                                                                                …….(15)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 22
+============================================================
+
+Continue…..
+Differentiate equation (15) with respect to Vin .
+
+                                                                                                                                                        …(16)    
+Substitute Vin = VIL  and dVout/dVin = -1 in equation (16)
+                                                                                                                 …..(17)
+
+Voltage VIL can now found as a function Vout
+
+                                                                                                     …..(18)
+
+                 Where
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 23
+============================================================
+
+Calculation of VIH
+When the input voltage is equal to VIH, the NMOS transistor operates in the linear region, and the PMOS transistor operates in saturation. Apply KCL to the output node  ID,n = ID,p . 
+                                                                                                                            ……(19)
+
+Using equation (7) and (8) , this expression can be rewritten as
+                                                                                                                                  …(20)
+
+Now, differentiate both sides of (20) with respect to Vin 
+
+                                                                                                                                              ….(21)                                                                                                     
+Substitute Vin = VIH  and dVout/dVin = -1 in equation (20)
+
+                                                                                                                                     ….(22)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 24
+============================================================
+
+Continued….
+The critical voltage VIH can now be found as a function of Vout, as follows –
+                                                                                                             ……(23) 
+
+Calculation of VIth
+The inverter threshold voltage is defined as Vth = Vin =Vout . For Vin = Vout, both transistors are expected to be in saturation mode. Hence we can write KCL equation. 
+                                                                                                                                                                          …….(23)
+
+Using equation (7) and (8) , this expression can be rewritten as
+                                                                                                                   …… (24)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 25
+============================================================
+
+Continued….
+The correct solution for Vin for this equation is 
+
+                                                                                                    ……(25)
+Finally, the inverter threshold (switching threshold) voltage Vth is found as
+
+                                                             …….(26)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 26
+============================================================
+
+Design of CMOS Inverters
+The inverter threshold voltage Vth was identified as one of the most important parameters that characterize the steady-state  input-output behavior of the CMOS inverter circuit. 
+The problem of designing a CMOS inverter can be reduced to setting the inverter threshold to a desired voltage value. The corresponding ratio kR can be found as follows. reorganizing (26) yields.
+
+                                                                              ……(27)
+Solve the KR  that is required to achieve the given Vth.  
+
+                                                                                  ……(28)
+
+Recall that the switching threshold voltage of an ideal inverter is
+ defined as
+                                                                                                                    ……(29)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 27
+============================================================
+
+Continue….
+Substitute the value from (29) in (28).
+                                                                                                  ….(30)
+
+We can achieve completely symmetric input-output characteristics by setting the threshold voltages as
+VT0 = VT0,n = |VT0,p | . This reduces equation (30) 
+
+                                                                                                  … (31)
+Note that the ratio kR is defined as
+
+                                                                                                                        ……(32)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 28
+============================================================
+
+Continued……
+Assume the same tox  and Cox . The unity-ratio condition (32) for the ideal symmetric inverter.
+
+                                                        …. (32)                                                            …. (33)
+
+The VTCs of three CMOS inverter circuits with different kR ratios   are shown in Fig. It can be seen clearly that the inverter threshold  voltage Vth shifts to lower values with increasing kR ratio.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 29
+============================================================
+
+Problem 1
+Consider a CMOS inverter circuit with the following parameters:
+
+
+
+
+
+
+Calculate the noise margins of the circuit. Notice that the CMOS inverter being considered here has 
+      kR = 2.5 and                          . hence, it is not a symmetric inverter.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 30
+============================================================
+
+Solution
+From equation (18)
+
+
+Now substitute this in equation (17) 
+
+
+
+
+
+Now we can calculate the value in VIL
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 31
+============================================================
+
+Continue…..
+To calculate VIH in terms of the output voltage, use
+
+
+
+Use equation (20)
+
+
+
+
+we can calculate the critical voltage VIH
+we can find the noise margin
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 32
+============================================================
+
+Supply Voltage scaling in CMOS
+In the following, we will briefly examine the effects of supply 
+voltage scaling, i.e., reduction of VDD, upon the static voltage
+ transfer characteristics of CMOS inverters. overall power
+ dissipation of any digital circuit is a strong function of the
+ supply voltage VDD.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 33
+============================================================
+
+MOS Inverters : Dynamic Characteristics
+We will investigate the dynamic (time-domain) behavior of the inverter circuits. The switching characteristics of digital integrated circuits and, in particular, of inverter circuits, essentially determine the overall operating speed of digital systems.
+Introduction 
+The capacitances Cgd and Cgs are primarily due to gate overlap with diffusion, while Cdb and Csb are voltage-dependent junction capacitances. we also consider the lumped interconnect capacitance Cint, which represents the parasitic capacitance contribution of the metal or polysilicon.
+
+we first combine the capacitances  into an equivalent 
+lumped linear capacitance, connected between the
+ output node of the inverter and  the ground.
+
+This combined capacitance at the output node
+will be called the load capacitance Cload .  
+
+                                                                           …(1)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 34
+============================================================
+
+Continue….
+In particular, Csb,n and Csb,p have no effect on the transient behavior. The capacitances Cgs,n and Cgs,p are also not included in (1) because they are connected to the input node. The capacitance terms Cdb,n and Cdb,p in (1) are the equivalent junction capacitances calculated for a particular output voltage transition. 
+
+The first-stage CMOS inverter is shown with the single
+ lumped output load capacitance Cload .  Now, the problem
+ of analyzing the switching behavior can be handled more
+ easily.
+
+In fact, the question of inverter transient response is
+ reduced to finding the charge-up and charge-down times      
+ of a single capacitance which is charged
+and discharged through one transistor.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 35
+============================================================
+
+Delay-Time Definitions
+The propagation delay times             and             determine the input-to-output signal delay during the high-to-low and low-to-high transitions of the output, respectively.
+By definition,            is the time delay between the V50%   -transition of the rising input voltage and the V50% -transition of the falling output voltage.
+Similarly  ,       is defined as the time delay between the V50% -transition of the falling input voltage
+and the V50%-  transition of the rising output voltage.
+
+To simplify the analysis           becomes the time required for
+ the output voltage to fall from VOH to the V50% level.
+           becomes the time required for the output voltage to
+            rise from VOL to the V50% level. The voltage point V50% 
+is defined as follows
+
+                                                                                        ….(2)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 36
+============================================================
+
+Continue….
+Thus, the propagation delay times                                                …..(3)
+
+The average propagation delay       of the inverter characterizes the average time required for the input signal to propagate through the inverter. 
+                                                                                                        …..(4)
+
+The rise time        is defined here as the time required 
+for the output voltage to rise from the V10% level to V90% 
+level.
+The fall time         is defined here as the time
+ required for the output voltage to drop from 
+the V90% level to V10%    level.
+
+                                              …(5)
+Rohit Lorenzo, VIT-AP                                      …..(6)
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 37
+============================================================
+
+Performance of CMOS Inverter
+The qualitative analysis presented earlier concluded that the propagation delay of the CMOS inverter is determined by the time it takes to charge and discharge the load capacitor CL through the PMOS and NMOS transistors.    
+This observation suggests that getting CL as small as possible is crucial to the realization of high-performance CMOS circuits.
+It is hence worthwhile to first study the major components of the load capacitance before embarking onto an in-depth analysis of the propagation delay.  
+Computing the Capacitances             
+Manual analysis of MOS circuits where each capacitor is considered individually is virtually impossible.
+To make the analysis tractable, we assume that all capacitances are lumped together into one single capacitor CL, located between Vout and GND. 
+It includes all the capacitances influencing the transient response of node Vout.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 38
+============================================================
+
+Continue……
+Gate-Drain Capacitance Cgd12
+M1 and M2 are either in cut-off or in the saturation mode during the first half (up to 50% point) of the output transient. Under these circumstances, the only contributions to Cgd12    are the overlap capacitances.
+During a low-high or high-low transition, the terminals of the gate drain capacitor are moving in opposite directions. The voltage change over the floating capacitor is hence twice the actual output voltage swing.
+We use the following equation for the gate-drain capacitors. – Cgd = 2CGD0W
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 39
+============================================================
+
+Diffusion Capacitances Cdb1 and Cdb2
+The capacitance between drain and bulk is due to the reverse-biased pn-junction. Such a capacitor is, unfortunately, quite nonlinear and depends heavily on the applied voltage. 
+A multiplication factor Keq is introduced to relate the linearized capacitor to the value of the junction capacitance under zero-bias conditions
+                                                                                            ……(7)
+Wiring Capacitance Cw 
+The capacitance due to the wiring depends upon the length and width of the connecting wires, and is a function of the distance of the fanout from the driving gate and the number of fanout gates.
+
+Gate Capacitance of Fanout Cg3 and Cg4
+We  assume that the fanout capacitance equals the total gate capacitance of the loading  gates M3 and M4. 
+
+…                                                                                                                                                    ……(8)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 40
+============================================================
+
+Propagation Delay: First-Order Analysis
+One way to compute the propagation delay of the inverter is to integrate the capacitor  (dis)charge current. with i is the (dis)charging current, V the voltage over the capacitor, and v1 and v2 the 
+Initial and final voltage.                                                                                                                            ….(9) 
+
+
+An exact computation of this equation is intractable, as both CL(v) and i(v) are nonlinear functions of V. 
+An expression for the average on-resistance of the MOS transistor.
+This scenario is plotted in for the case of an NMOS discharging a capacitor from VDD to VDD/2.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 41
+============================================================
+
+Continue……
+we can derive the value of the equivalent resistance, which averages the resistance of the device over the interval                                                                                                             
+                                                                                                                                 …..(10)
+
+Deriving the propagation delay of the resulting circuit is now straightforward, and is nothing more than the analysis of a first-order linear RC-network. the propagation delay of such a network for a voltage step at the input is proportional to the time-constant of the network.
+                                                                                                                                …..(11)
+Similarly, we can obtain the propagation delay for the low-to-high transition  
+                                                                                                                                 …..(12)
+Reqp and  Reqn  the equivalent on-resistance of the PMOS and NMOS transistor. The overall propagation delay of the inverter is defined as the average of the two values.
+                                                                                                                               …..(13)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 42
+============================================================
+
+Continue……
+Combining Eq. (10) and Eq. (11), and assuming for the time being that the channel- length modulation factor l is ignorable, yields the following expression for tpHL .   
+                                                                                                                                  ……(14)  
+
+In the majority of designs, the supply voltage is chosen high enough so that  VDD>>VTn+VDSATn/2 . Under these conditions, the delay becomes virtually independent of the supply voltage .   
+                                                                                             ……(15)
+
+
+
+From the above analysis we can plot the propagation delay 
+of the inverter as a function of the supply voltage.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 43
+============================================================
+
+Problem 2
+Q ) For a supply voltage of 2.5 V, the normalized on-resistances of NMOS and PMOS transistors equal 13kΩ and 31kΩ, respectively. From the layout, we determine the (W/L) ratios of the transistors to be 1.5 for the NMOS, and 4.5 for the PMOS.    capacitor   6.1 fF (nmos)  and 6.0 fF (PMOS). Calculate delay?
+
+
+Solution
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 44
+============================================================
+
+Propagation Delay from a Design Perspective
+We deduce that the propagation delay of a gate can be minimized in the following ways                                                
+Reduce CL : Remember that three major factors contribute to the load capacitance: the internal diffusion capacitance of the gate itself, the interconnect capacitance, and the fanout. Careful layout helps to reduce the diffusion and interconnect capacitances. Good design practice requires keeping the drain diffusion areas as small as possible.
+Increase the W/L ratio of the transistors : Increasing the transistor size also raises the diffusion capacitance and hence CL . In fact, once the intrinsic capacitance (i.e. the diffusion capacitance) starts to dominate the extrinsic load formed by wiring and fanout, increasing the gate size does not longer help in reducing the delay. In addition, wide transistors have a larger gate capacitance, which increases the fan-out factor of the driving gate and adversely affects its speed. 
+Increase VDD : The delay of a gate can be modulated by modifying the supply voltage. This flexibility allows the designer to trade-off energy dissipation for performance. However, increasing the supply voltage above a certain level yields only very minimal improvement. Also, reliability concerns (oxide breakdown, hot-electron effects)enforce firm upper-bounds on the supply voltage in deep sub-micron processes
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 45
+============================================================
+
+NMOS/PMOS Ratio
+We have consistently widened the PMOS transistor so that its resistance matches. The motivation behind this approach is to create an inverter with  symmetrical VTC. However, this does not imply that this ratio also yields the minimum overall propagation delay. 
+If symmetry and  noise margins are not of prime concern it is actually possible to speed up the inverter by reducing the width of the PMOS device. 
+This optimum ratio can be derived through the following simple analysis. Consider two identical, cascaded CMOS inverters. The load capacitance of the first gate equals approximately
+                                                                                                                            ……(16)
+When the PMOS devices are made β times larger than the NMOS ones (β=(W/L)p/(W/L)n) all transistor capacitances will scale in approximately the same way or Cdp1≈β Cdn1  ,and Cgp2≈βCgn2  .   Eqn (16)then be rewritten
+                                                                                                     ……. (17)
+ An expression for the propagation delay can be derived, based on Eq (13)                                                                                                   
+                                                                                                                                                                                                                           ……(18)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 46
+============================================================
+
+Continue…..
+r (= Reqp/Reqn) represents the resistance ratio of identically-sized PMOS and NMOS transistors. The optimal value of β can be found by setting         to 0, which yields. 
+
+                                                                                                     ……(19)
+
+This means that when the wiring capacitance is negligible 
+(Cdn1+ Cgn2  >> CW ) , βopt equals      .The surprising result of this
+ analysis is that smaller device  sizes (and hence smaller design
+ area)  yield a faster design.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 47
+============================================================
+
+Sizing Inverters for Performance
+we assume a symmetrical inverter, this is an inverter where PMOS and NMOS are sized such that the rise and fall delays are identical.
+The load capacitance of the inverter can be divided into an intrinsic and an extrinsic component. CL=Cint+Cext. 
+
+we can express the propagation delay
+ as follows                                                                                                                                         ….(20)   
+
+tpo= 0.69 Req .Cint  represents the delay of the inverter only loaded by its own intrinsic capacitance  (Cext =0) 
+and is called the intrinsic or unloaded delay. The sizing factor S, we consider for  inverter to a reference gate—typically a minimum-sized inverter. Hence  Cint=SCiref . The resistance of the gate relates to the reference gate as  Req = Ref/S . We can now rewrite the equation (20) .          
+
+                                                                                                                                                          …(21)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 48
+============================================================
+
+Continue….
+This leads to two important conclusions: 
+(1) The intrinsic delay of the inverter tp0 is independent of the sizing of the gate, and is purely determined by technology and inverter layout.
+(2) Making S infinitely large yields the maximum obtainable performance gain, 
+eliminating the impact of any external load, and reducing
+ the delay to the intrinsic one.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 49
+============================================================
+
+Sizing of inverter chain
+For an inverter the load capacitance can be divided into an intrinsic 
+and extrinsic capacitive component. 
+                                                                              ……. (22)
+
+Cint = intrinsic output capacitance of the inverter, associated with diffusion capacitance  
+Cext = fanout and wire capacitance   
+
+The input gate capacitance and output gate capacitance are function of transistor gate size.  
+                                                                                       ……(23)
+
+𝛾 is a proportionality factor, which is only a function of technology. Now equation (20) can be rewritten as 
+
+                                                                                                          …..(24)
+The delay if the inverter is only a function of the ratio between its external load capacitance and input capacitance. This ratio is called the effective fanout f.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 50
+============================================================
+
+Continue……
+Let us consider the circuit. The goal is to minimize the
+ delay through the inverter chain, with the input capacitance
+ of the first inverter Cg1 typically a minimally-sized device
+ and the load capacitance CL fixed .   
+
+Given the delay expression for the j-th inverter stage    
+
+                                                                                                         …….(24)  
+
+we can derive the total delay of the chain    
+
+                                                                                                                    …….(25)       
+
+This equation has N-1 unknowns, being Cg,2, Cg,3,…….., Cg,N. The minimum delay can be found by taking N-1 partial derivatives, and equating them to 0  or
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 51
+============================================================
+
+Continue……
+In other words, the optimum size of each inverter is the geometric mean of its neighbors sizes
+                                                                                                    ……(26) 
+
+With Cg,1  and CL given, we can derive the sizing factor.
+                                                                                                      ……(27)
+and the minimum delay through the chain,
+                                                                                                    …..(28)
+ F represents the overall effective fanout of the circuit
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 52
+============================================================
+
+Choosing the Right Number of Stages in an Inverter Chain
+The optimum value can be found by differentiating the minimum delay expression by the number of stages, and setting the result to 0.
+                                                                                                       ……. (29)
+                       
+                                               or equivalently                                  …….. (30)
+This equation only has a closed-form solution for 𝛾 = 0, this is when the self-loading is ignored and the load capacitance only consists of the fanout. A common practice is to select an optimum fanout of 4.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 53
+============================================================
+
+Problem
+Q) Assume a circuit designed with a chain of inverters as shown in Figure 2. The unloaded delay is 1  and   𝛾 = 1   in each  case of  inverter chain. Evaluate the value of effective fanout  (small f) and  tp for given inverter  chains?
+Rohit Lorenzo , VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 54
+============================================================
+
+Solution
+Rohit Lorenzo , VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-12_Reference-Material-I.pptx] Page/Slide 55
+============================================================
+
+Thank You
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 1
+============================================================
+
+Delay
+By
+
+Dr.Rohit Lorenzo
+Assistant Professor Sr. Grade -1
+School of Electronics Engineering (SENSE)
+Rohit Lorenzo , VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 2
+============================================================
+
+Talk Outline
+Delay Definitions
+Timing Optimization
+RC Delay
+Problems
+Logical Effort
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 3
+============================================================
+
+Delay Definitions
+Propagation delay time, tpd = maximum time from the input crossing 50% to the output crossing 50% . 
+Contamination delay time, tcd = minimum time from the
+     input crossing 50% to the output crossing 50%.
+
+Rise time, tr = time for a waveform to rise from 20% to
+      80% of its steady-state value. 
+Fall time, tf = time for a waveform to fall from 80% to
+      20% of its steady-state value.
+
+ Edge rate, trf = (tr + tf )/2
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 4
+============================================================
+
+Continue….
+when an input changes, the output will retain its old value for at least the contamination delay and take
+      on its new value in at most the propagation delay. 
+Rise/fall times are also sometimes called slopes or edge rates. 
+Propagation and contamination  delay times are also called max-time and min-time. 
+The gate that charges or discharges a node is called the driver and the gates and wire being driven are called the load. 
+Propagation delay is usually the most relevant value of interest, and is often simply called delay. 
+ The nodes are classified  as inputs, outputs, and internal nodes. The user must specify the arrival time of inputs and the time data is required at the outputs. 
+The timing analyzer computes the arrival times at each node and checks that the outputs arrive by their required time.
+ The slack is the difference between the required and arrival times. Positive slack means that the circuit meets timing. Negative slack means that the circuit is not fast enough.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 5
+============================================================
+
+Continue….
+Rohit Lorenzo, VIT-AP
+Critical Path -  The critical path is the longest path in the circuit.
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 6
+============================================================
+
+Continue…..
+Setup Time: The amount of time the data at the synchronous input (D) must be stable before the active edge of clock.
+Hold Time: The amount of time the data at the synchronous input (D) must be stable after the active edge of clock.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 7
+============================================================
+
+Delay of a single gate
+Sir – Input rise  &   Sof – Output Fall
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 8
+============================================================
+
+RC Model of a transistor
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 9
+============================================================
+
+Capacitances
+Voltage dependence capacitance 
+
+C = dq/dv
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 10
+============================================================
+
+Simplified Model
+Rohit Lorenzo, VIT-AP
+Cs = AS× Cjbs + PS × Cjbsw
+
+AS = Area of Diffusion region = D×W
+PS = Perimeter of Diffusion region = 2W+2D
+Cjb= Unit area capacitance to body  
+Cjbsw   =Units of capacitance/length
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 11
+============================================================
+
+Sizing Impact on R and C
+Figure  shows equivalent RC circuit models for nMOS and pMOS 
+      transistors of width k with contacted diffusion on both source and drain.
+
+ 
+The pMOS transistor has approximately twice the resistance of the
+       nMOS transistor because holes have lower mobility than electrons.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 12
+============================================================
+
+Equivalent Circuit of Inverter
+Figure  shows the equivalent circuit for a fanout-of-1 inverter with negligible wire capacitance.
+The unit inverters of Figure are composed from an nMOS transistor of unit size and a pMOS transistor of twice unit width to achieve equal rise and fall resistance. 
+If input A rises, the nMOS transistor will be ON and the pMOS OFF.
+The capacitors shorted between two constant supplies are also removed because they are not charged or discharged
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 13
+============================================================
+
+Problem 1
+Q) Sketch a 3-input NAND gate with transistor widths chosen to achieve effective rise and fall resistance equal to that of a unit inverter (R). Annotate the gate with its gate and diffusion capacitances. Assume all diffusion nodes are contacted. Then sketch equivalent circuits for the falling output transition and for the worst-case rising output transition ?
+
+Solution :
+The three nMOS transistors are in series so the resistance is three times that of a single transistor. Therefore, each must be three times unit width to compensate. In other words, each transistor has resistance R/3 and the series combination has resistance R.The two pMOS transistors are in parallel. In the worst case (with one of the inputs low), only one of the pMOS transistors is ON. Therefore, each must be twice unit width to have resistance R.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 14
+============================================================
+
+Continue….
+Figure (b) shows the capacitances. Each input presents five units of gate capacitance to whatever circuit drives that input. Notice that the capacitors on source diffusions attached to the rails have both terminals shorted together so they are irrelevant to circuit operation. Figure (c) redraws the gate with these capacitances deleted and the remaining capacitances lumped to ground.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 15
+============================================================
+
+Continue….
+Figure (d) shows the equivalent circuit for the falling output transition. The output pulls down through the three series nMOS transistors. Figure 4.7(e) shows the equivalent circuit for the rising output transition. Inthe worst case, the upper two inputs are 1 and the bottom one falls to 0. The output pulls up through a single pMOS transistor. The upper two nMOS transistors are still on, so the diffusion capacitance between theseries nMOS transistors must also be discharged.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 16
+============================================================
+
+Elmore Delay
+Most circuits of interest can be represented as an RC tree, i.e., an RC circuit with no loops. The root of the tree is the voltage source and the leaves are the capacitors at the ends of the branches. 
+The Elmore delay model estimates the delay from a source switching to one of the leaf nodes changing as the sum over each node i of the capacitance Ci on the node, multiplied by the effective resistance Ris on the shared path from the source to the node and the leaf.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 17
+============================================================
+
+Problem2
+Q) Compute the Elmore delay for Vout in the 2nd order RC system from Figure?
+
+
+
+
+
+Solution 
+The circuit has a source and two nodes. At node n1, the capacitance is C1 and the resistance to the source is R1. At node Vout, the capacitance is C2 and the resistance to the source is (R1 + R2). Hence, the Elmore delay is tpd = R1C1 + (R1 + R2)C2
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 18
+============================================================
+
+Problem3
+Q) Estimate Elmores delay for a unit inverter driving m identical unit inverters.?  
+Solution 
+Each load inverter presents 3C units of gate capacitance, for a total of 3mC. The output node also sees a capacitance of 3C from the drain diffusions of the driving inverter. This capacitance is called parasitic because it is an undesired side-effect of the need to make the drain large enough to contact. The parasitic capacitance is independent of the load that the inverter is driving. Hence, the total capacitance is (3 + 3m)C. The resistance is R, so the Elmore delay is tpd = (3 + 3m)RC. The equivalent circuit for the rising transition gives the same results.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 19
+============================================================
+
+Problem4
+Q) Repeat  the previous problem  if the driver is w times unit size. Calculate the fan-out of a gate?
+Solution  
+The driver transistors are w times as wide, so the effective resistance decreases by a factor of w . The diffusion capacitance increases by a factor of w. The Elmore delay is tpd = ((3w + 3m)C)(R/w) = (3 + 3m/w)RC. 
+Define the fanout of the gate, h, to be the ratio of the load capacitance to the input capacitance. (Diffusion capacitance is not counted in the fanout.) The load capacitance is 3mC. The input capacitance is 3wC. Thus, the inverter has a fanout of h = m/w and the delay can be written as (3 + 3h)RC
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 20
+============================================================
+
+Problem5
+Q)If a unit transistor has R = 10 kΩ and C = 0.1 fF in a 65 nm process, compute the delay, in picoseconds, of the inverter in Figure 4.14 with a fanout of h = 4 ?  
+Solution 
+The RC product in the 65 nm process is (10 kΩ)(0.1 fF) = 1 ps. For h = 4, the delay is (3 + 3h)(1 ps) = 15 ps. This is called the fanout-of-4 (FO4) inverter delay and is representative of gate delays in a typical circuit.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 21
+============================================================
+
+Problem 6
+Q) Estimate tpdf and tpdr for the 3-input NAND gate from given figure (Problem1) if the output is loaded with h identical NAND gates?
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 22
+============================================================
+
+Solution
+Each NAND gate load presents 5 units of capacitance on a given input. Figure (a) shows the equivalent circuit including the load for the falling transition. Node n1 has capacitance 3C and resistance of R/3 to ground. Node n2 has capacitance 3C and resistance (R/3 + R/3) to ground. Node Y has capacitance (9 + 5h)C and resistance (R/3 + R/3 +R/3) to ground. The Elmore delay for the falling output is the sum of these RC products, tpdf = (3C)(R/3) + (3C)(R/3 + R/3) + ((9 + 5h)C)(R/3+  R/3 + R/3) = (12 + 5h)RC. 
+Figure 4.15(b) shows the equivalent circuit for the falling transition. In the worst case, the two inner inputs are 1 and the outer input falls. Y is pulled up to VDD through a single pMOS transistor. Node Y has capacitance (9 + 5h)C and resistance R to the VDD supply. Node n2 has capacitance 3C
+The relevant resistance is only R, not (R + R/3), because the output is being charged only through R. This is what is meantby the resistance on the shared path from the source (VDD) to the node (n2) and the leaf(Y). Similarly, node n1 has capacitance 3C and resistance R. Hence, the Elmore delayfor the rising output is tpdr = (3C)R +(3C)R +(9=5h)R= (15 + 5h)RC.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-16_Reference-Material-I.pptx] Page/Slide 23
+============================================================
+
+Thank You
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 1
+============================================================
+
+CMOS VLSI DesignTopic – Logical Effort
+By
+
+Dr.Rohit Lorenzo
+Assistant Professor Sr. Grade -1
+School of Electronics Engineering (SENSE)
+Rohit Lorenzo , VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 2
+============================================================
+
+Topic – Logical EffortTalk Outline
+Introduction 
+Delay in logic gate
+Multistage Logic Networks
+Example
+Summary
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 3
+============================================================
+
+Introduction
+Chip designer  face number of choices like – 
+What is the best topology for a function?
+How many stage of logic gives best function?
+How wide should the transistor be?
+
+Logical effort is a method to take decisions -   
+ Uses a simple model of delay.
+Helps make rapid comparisons between alternatives. 
+Emphasizes remarkable symmetries.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 4
+============================================================
+
+Delay in a logic gate.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 5
+============================================================
+
+Computing logical effort
+Definition: The  Logical effort is the ratio of the input capacitance of the gate to the input capacitance of an  inverter delivering the same output current.
+
+Inverter 
+Logical Effort of basic gate  g = Cingate/Cininverter 
+Cininverter = 2unit + 1Unit = 3Unit
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 6
+============================================================
+
+Continue …
+2 input NAND gate
+Cin NAND2 = 2unit(NMOS) + 2 unit(PMOS) = 4 Unit 
+The NAND presents  4units of capacitance on each input.
+g = Cingate/Cininverter  = 4/3 
+
+3 Input NAND Gate
+Cin NAND3 = 3unit(NMOS) + 2 unit(PMOS) = 5 Unit 
+The NAND presents  5units of capacitance on each input.
+g = Cingate/Cininverter  = 5/3 
+
+G for NAND Gate 
+  (n+2)/3 ,  where n is number of inputs
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 7
+============================================================
+
+Continue…..
+2 input NOR gate
+Cin NOR2 = 1unit(NMOS) +  4unit(PMOS) = 5 Unit 
+The NOR presents  5units of capacitance on each input.
+g = Cingate/Cininverter  = 5/3 
+
+3 Input NOR Gate
+Cin NOR3 = 1unit(NMOS) + 6unit(PMOS) = 7Unit 
+The NOR presents  5units of capacitance on each input.
+g = Cingate/Cininverter  = 7/3 
+
+G for NOR Gate 
+  (2n+1)/3 ,  where n is number of inputs
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 8
+============================================================
+
+Logical Effort of Common gate
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 9
+============================================================
+
+Parasitic Delay
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 10
+============================================================
+
+Continue….
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 11
+============================================================
+
+Parasitic Delay of Common Gate
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 12
+============================================================
+
+Linear Delay Model
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 13
+============================================================
+
+Problem
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 14
+============================================================
+
+Problem
+Q) A ring oscillator is constructed from an odd number of inverters, as shown in Figure . Estimate the frequency of an N-stage ring oscillator.?
+
+Solution 
+The logical effort of the inverter is g = 1, by definition. The electrical effort of each inverter is also 1 because it drives a single identical load. The parasitic delay is also 1. The delay of each stage is d = gh + p = 1 × 1 + 1 = 2. An N-stage ring oscillator has a period of 2N stage delays because a value must propagate twice around the ring to regain the original polarity. Therefore, the period is T = 2 × 2N. The frequency is the reciprocal of the period, 1/4N.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 15
+============================================================
+
+Logical Efforts in Multi-Stage Logic Network
+Logical effort ensures to get least overall delay by balancing the delay among stages .
+The logical effort along a path compounds by multiplying  the logical efforts of all the logic gates 
+The path logical effort G can be expressed as the products of the logical efforts of each stage along the path. 
+
+
+The path electrical effort H
+The path effort F is the product of the stage efforts of each stage. Recall that the stage effort of a single stage is f = gh. 
+
+If a path has N stages and each bears the same effort, that effort must be
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 16
+============================================================
+
+Example
+Figure  shows the logical and electrical efforts of each stage in a multistage path as a function of the sizes of each stage. Observe that logical effort is independent of size, while electrical effort depends on sizes.
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 17
+============================================================
+
+Problem
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 18
+============================================================
+
+Continue….
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 19
+============================================================
+
+Continue….
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 20
+============================================================
+
+Continue…
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 21
+============================================================
+
+Branching Effort
+This branching effort b is the ratio of the total capacitance seen by a stage to the capacitance on the path. 
+
+
+
+The path branching effort B is the product of the branching efforts between stages. 
+
+
+
+we can define the path effort F as the product of the logical, electrical, and branching efforts of the path
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 22
+============================================================
+
+Continue…
+The path delay D is the sum of the delays of each stage. It can also be written as the sum of the path effort delay DF and  path parasitic delay P. 
+
+
+
+
+If a path has N stages and each bears the same effort, that effort must be
+
+
+the minimum possible delay of an N-stage path with path effort F and path parasitic
+    delay P is
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 23
+============================================================
+
+Continue…
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 24
+============================================================
+
+Summary
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 25
+============================================================
+
+Path branch
+Q Calculate  path effort  (F)  of a given circuit?
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 26
+============================================================
+
+Problem
+Q) a) Estimate the minimum delay of the path from A to B
+       b) Choose the transistor size to achieve this delay.
+Solution (a)
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 27
+============================================================
+
+Continue…
+Solution b
+The gate sizes are computed with the capacitance transformation from working backward along the path  
+ y = 45  ×  (5/3)/5 = 15
+x = (15 + 15) × (5/3)/5 = 10
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 28
+============================================================
+
+Problem
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 29
+============================================================
+
+Derivation for least possible delay for a logic block
+Consider the circuit containing n number of stages, n1 is the number of stages are  in the logic block and N-n1 are the extra inverters. Least delay for the logic path will be 
+
+
+
+The first term is the delay obtained by distributing effort equally among the stage. The second term is the parasitic delay of the logic stages, and the third term is the parasitic delay of the inverters
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 30
+============================================================
+
+Best stage effort
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 31
+============================================================
+
+Asymmetric logic gates
+Rohit Lorenzo, VIT-AP
+
+============================================================
+[WINSEM2025-26_ECE3005_ETH_AP2025264001051_2025-12-19_Reference-Material-I.pptx] Page/Slide 32
+============================================================
+
+Thank You
+Rohit Lorenzo, VIT-AP
