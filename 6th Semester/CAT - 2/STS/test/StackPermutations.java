@@ -4,19 +4,20 @@ import java.util.*;
 
 public class StackPermutations {
     
-    static boolean isStackPermutation(int[] input, int[] output){
+    static boolean isStackPermutation(int[] input, int[] output) {
         Stack<Integer> stack = new Stack<>();
         int outputIndex = 0;
 
-        for(int value : input){
+        for (int value : input) {
             stack.push(value);
-            while(!stack.isEmpty() && outputIndex < output.length && stack.peek == output[outputIndex]){
+
+            while (!stack.isEmpty() && outputIndex < output.length && stack.peek() == output[outputIndex]) {
                 stack.pop();
                 outputIndex++;
             }
-            return outputIndex == output.length;
         }
 
+        return outputIndex == output.length;
     }
 
 

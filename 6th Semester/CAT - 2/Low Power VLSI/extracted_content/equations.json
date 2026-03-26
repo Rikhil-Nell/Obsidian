@@ -1,0 +1,610 @@
+[
+  {
+    "content": "CL=3250 pF",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 7,
+    "context": " for a chip (DEC Alpha Chip) uses a clock driver  CL=3250 pF  F= 200 MHz,  Operating Voltage= 3.3 V, Pdynamic=7",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "F= 200 MHz",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 7,
+    "context": "(DEC Alpha Chip) uses a clock driver  CL=3250 pF  F= 200 MHz,  Operating Voltage= 3.3 V, Pdynamic=7.08 W,  30%",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Voltage= 3.3 V",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 7,
+    "context": " clock driver  CL=3250 pF  F= 200 MHz,  Operating Voltage= 3.3 V, Pdynamic=7.08 W,  30% of the chip's total power ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Pdynamic=7.08 W",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 7,
+    "context": "L=3250 pF  F= 200 MHz,  Operating Voltage= 3.3 V, Pdynamic=7.08 W,  30% of the chip's total power dissipation.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "L=3250 pF \nF= 200 MHz, \nOperating Voltage= 3.3 V,\nPdynamic=7.08 W, \n30% of the chip's total power dissipation.",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 7,
+    "context": "for a chip (DEC Alpha Chip) uses a clock driver  CL=3250 pF  F= 200 MHz,  Operating Voltage= 3.3 V, Pdynamic=7.08 W,  30% of the chip's total power dissipation.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "CL= Total Load",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 8,
+    "context": " Dynamic power dissipated by switching the clock  CL= Total Load Cd= Clock driver capacitance  N= total No of cloc",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cd= Clock driver capacitance",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 8,
+    "context": "dissipated by switching the clock  CL= Total Load Cd= Clock driver capacitance  N= total No of clock terminals, Cg=input capacit",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "N= total No of clock terminals",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 8,
+    "context": "ock  CL= Total Load Cd= Clock driver capacitance  N= total No of clock terminals, Cg=input capacitance at each terminal Cw=Unit Le",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cg=input capacitance at each terminal",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 8,
+    "context": "iver capacitance  N= total No of clock terminals, Cg=input capacitance at each terminal Cw=Unit Length wire capacitance, D= Chip dimensio",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cw=Unit Length wire capacitance",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 8,
+    "context": " terminals, Cg=input capacitance at each terminal Cw=Unit Length wire capacitance, D= Chip dimension α= estimation factor depending",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "D= Chip dimension",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 8,
+    "context": "at each terminal Cw=Unit Length wire capacitance, D= Chip dimension α= estimation factor depending on algorithm used ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "30-40% of the total system PD.",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 8,
+    "context": "nd chip dimension increases. Global clock effects 30-40% of the total system PD. For Low Power clock distribution, less N, less Cw",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "L= Total Load\nCd= Clock driver capacitance\n\nN= total No of clock terminals, Cg=input capacitance at each terminal\nCw=Unit Length wire capacitance, D= Chip dimension\nα= estimation factor depending on algorithm used for local clock routing.\nEffect of CLOCK on chip\nPD increases by clock as the number of clocked devices and chip dimension increases.\nGlobal clock effects 30-40% of the total system PD.\nFor Low Power clock distribution, less N, less Cw, less Cd were chosen.\nControlled clock skews within small or tolerable values.\nClock phase delay has to be controlled for better system throughput.",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 8,
+    "context": "Dynamic power dissipated by switching the clock  CL= Total Load Cd= Clock driver capacitance  N= total No of clock terminals, Cg=input capacitance at each terminal Cw=Unit Length wire capacitance, D= Chip dimension α= estimation factor depending on algorithm used for local clock routing. Effect of CLOCK on chip PD increases by clock as the number of clocked devices and chip dimension increases. Global clock effects 30-40% of the total system PD. For Low Power clock distribution, less N, less Cw, less Cd were chosen. Controlled clock skews within small or tolerable values. Clock phase delay has to be controlled for better system throughput.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vin = logical 1.",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 36,
+    "context": "n is high , since rail to rail current flows when Vin = logical 1.  (b) Switching of output from 1 to 0 begins when V",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vin = logical 1. \n(b) Switching of output from 1 to 0 begins when Vin exceeds Vt, of pull-down device \n(c) When switching the output from 1 to 0, the pull-up device is non-saturated initially and this presents lower resistance through which to charge capacitive loads .",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 36,
+    "context": "n is high , since rail to rail current flows when Vin = logical 1.  (b) Switching of output from 1 to 0 begins when Vin exceeds Vt, of pull-down device  (c) When switching the output from 1 to 0, the pull-up device is non-saturated initially and this presents lower resistance through which to charge capacitive loads .",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vin =logical 1 (VGG is returned to VDD) .",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 38,
+    "context": " (a) Dissipation is high since current flows when Vin =logical 1 (VGG is returned to VDD) .  (b) Vout can never reach VDD (logical I) if VGG =",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "VGG = VDD as is normally the case.",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 38,
+    "context": "D) .  (b) Vout can never reach VDD (logical I) if VGG = VDD as is normally the case.  (c) VGG may be derived from a switching source, f",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vin =logical 1 (VGG is returned to VDD) . \n(b) Vout can never reach VDD (logical I) if VGG = VDD as is normally the case. \n(c) VGG may be derived from a switching source, for example, one phase of a clock, so that dissipation can be greatly reduced. \n(d) If VGG is higher than VDD then an extra supply rail is required.",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 38,
+    "context": " (a) Dissipation is high since current flows when Vin =logical 1 (VGG is returned to VDD) .  (b) Vout can never reach VDD (logical I) if VGG = VDD as is normally the case.  (c) VGG may be derived from a switching source, for example, one phase of a clock, so that dissipation can be greatly reduced.  (d) If VGG is higher than VDD then an extra supply rail is required.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "VGS=(VG- VS) = VDD-(VDD-Vt",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 52,
+    "context": "om 0 towards VDD .  When Vs reaches VDD-Vt,n then VGS=(VG- VS) = VDD-(VDD-Vt,n) = Vt,n which is the minimum voltage required f",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "S=(VG- VS) = VDD-(VDD-Vt,n) = Vt,n\nwhich is the minimum voltage required for the  NMOS to be ON state for a current to flow.\n\nSo node out reaching to a potential more than VDD-  Vt,n turns off the NMOS.",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 52,
+    "context": " 0 towards VDD .  When Vs reaches VDD-Vt,n then VGS=(VG- VS) = VDD-(VDD-Vt,n) = Vt,n which is the minimum voltage required for the  NMOS to be ON state for a current to flow.  So node out reaching to a potential more than VDD-  Vt,n turns off the NMOS.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "K = 0, the output node Out is precharged to VDD by the PMOS transistor Mp.\nDuring that time, the evaluate NMOS transistor Me is off, so that the pull-down path is disabled.\nThe evaluation FET eliminates any static power that would be consumed during the precharge period (this is, static current would flow between the supplies if both the pull down and the precharge device were turned on simultaneously).\nEvaluation:\nFor CLK = 1, the precharge transistor Mp is off, and the evaluation transistor Me is turned on.\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 74,
+    "context": "Clocked (Dynamic) Logic Design Precharge: When CLK = 0, the output node Out is precharged to VDD by the PMOS transistor Mp. During that time, the evaluate NMOS transistor Me is off, so that the pull-down path is disabled. The evaluation FET eliminates any static power that would be consumed during the precharge period (this is, static current would flow between the supplies if both the pull down and the precharge device were turned on simultaneously). Evaluation: For CLK = 1, the precharge transistor Mp is off, and the evaluation transistor Me is turned on. Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "K =0), the outputs of both inverters are precharged to VDD. Assume that the primary input In makes a 0 → 1 transition.\nOn the rising edge of the clock, output Out1 starts to discharge.\nThe second output should remain in the precharged state of VDD as its expected value is 1 (Out1 transitions to 0 during evaluation).\nHowever, there is a finite propagation delay for the input to discharge Out1 to GND. Therefore, the second output also starts to discharge.\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 76,
+    "context": "oes not work. During the precharge phase (i.e., CLK =0), the outputs of both inverters are precharged to VDD. Assume that the primary input In makes a 0 → 1 transition. On the rising edge of the clock, output Out1 starts to discharge. The second output should remain in the precharged state of VDD as its expected value is 1 (Out1 transitions to 0 during evaluation). However, there is a finite propagation delay for the input to discharge Out1 to GND. Therefore, the second output also starts to discharge. Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "CLK = LOW)",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 92,
+    "context": "Precharge high DCSL Phase 1: Precharge Phase (CLK = LOW) Both outputs OUT and OUTBAR are precharged HIGH (",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "CLK = HIGH)",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 92,
+    "context": "ialized to logic ‘1’.  Phase 2: Evaluation Phase (CLK = HIGH) Clock turns ON evaluation transistors. Both outpu",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "K = LOW)\nBoth outputs OUT and OUTBAR are precharged HIGH (VDD).\nPrecharge transistors are ON.\nEvaluation NMOS tree is inactive.\nOutputs are initialized to logic ‘1’.\n Phase 2: Evaluation Phase (CLK = HIGH)\nClock turns ON evaluation transistors.\nBoth outputs start discharging through the NMOS tree.\nDue to differential input:\nOne side has a stronger pull-down path.\nThat output discharges faster.\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 92,
+    "context": "Precharge high DCSL Phase 1: Precharge Phase (CLK = LOW) Both outputs OUT and OUTBAR are precharged HIGH (VDD). Precharge transistors are ON. Evaluation NMOS tree is inactive. Outputs are initialized to logic ‘1’.  Phase 2: Evaluation Phase (CLK = HIGH) Clock turns ON evaluation transistors. Both outputs start discharging through the NMOS tree. Due to differential input: One side has a stronger pull-down path. That output discharges faster. Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "CLK = LOW)",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 94,
+    "context": "Precharge low DCSL Phase 1: Precharge Phase (CLK = LOW) Outputs are charged LOW (GND). Clock load is smal",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "CLK = HIGH)",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 94,
+    "context": "tialized to logic ‘0’. Phase 2: Evaluation Phase (CLK = HIGH) NMOS tree evaluates differential currents. One si",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "K = LOW)\nOutputs are charged LOW (GND).\nClock load is smaller compared to precharge-high version.\nCircuit is initialized to logic ‘0’.\nPhase 2: Evaluation Phase (CLK = HIGH)\nNMOS tree evaluates differential currents.\nOne side pulls up faster than the other.\nCross-coupled inverter senses the imbalance.\nOne output goes HIGH, the other stays LOW.\n Important Characteristics\nProduces completion signal (DONE).\nEven lower internal voltage swings (~0.5V)\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 94,
+    "context": "Precharge low DCSL Phase 1: Precharge Phase (CLK = LOW) Outputs are charged LOW (GND). Clock load is smaller compared to precharge-high version. Circuit is initialized to logic ‘0’. Phase 2: Evaluation Phase (CLK = HIGH) NMOS tree evaluates differential currents. One side pulls up faster than the other. Cross-coupled inverter senses the imbalance. One output goes HIGH, the other stays LOW.  Important Characteristics Produces completion signal (DONE). Even lower internal voltage swings (~0.5V) Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2-D electric field distribution.",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 121,
+    "context": "e to the vertical depletion width. This creates a 2-D electric field distribution. As a result: Depletion regions from source and dr",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Vgs=0.\nThe device parameter commonly used to characterize the punchthrough is the punchthrough voltage (VPT) which estimates the value of Vds for which the punchthrough occurs at  Vgs = 0.\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 140,
+    "context": "s. Thus, punchthrough increases leakage even when Vgs=0. The device parameter commonly used to characterize the punchthrough is the punchthrough voltage (VPT) which estimates the value of Vds for which the punchthrough occurs at  Vgs = 0. Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "NB = is the doping concentration at the bulk.",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 141,
+    "context": "ion regions is equal to effective channel length  NB = is the doping concentration at the bulk. L = channel length Wj = Junction width Dr. Aruru ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "L = channel length",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 141,
+    "context": "th  NB = is the doping concentration at the bulk. L = channel length Wj = Junction width Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Wj = Junction width",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 141,
+    "context": "ing concentration at the bulk. L = channel length Wj = Junction width Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "B = is the doping concentration at the bulk.\nL = channel length\nWj = Junction width\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-3.pptx",
+    "page_or_slide": 141,
+    "context": "on regions is equal to effective channel length  NB = is the doping concentration at the bulk. L = channel length Wj = Junction width Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Sum = A  ⊕ B",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 8,
+    "context": "nctions for the Sum and Cout are generalized as : Sum = A  ⊕ B Cout = A.B     Figure 1: Logic gate of a half add",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Sum = A  ⊕ B\nCout = A.B\n\n\n\n\nFigure 1: Logic gate of a half adder. \nThe HA can only be used to add two single-bit binary numbers since it does not permit a carry-in.\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 8,
+    "context": "nctions for the Sum and Cout are generalized as : Sum = A  ⊕ B Cout = A.B     Figure 1: Logic gate of a half adder.  The HA can only be used to add two single-bit binary numbers since it does not permit a carry-in. Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Sum = A ⊕ B ⊕ C",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 9,
+    "context": "ponding to terminals Sum and Cout are as follows: Sum = A ⊕ B ⊕ C Cout    = (A ⊕ B) . Cin  + A.B Dr. Aruru Sai Kuma",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Cout    = (A ⊕ B) . Cin  + A.B",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 9,
+    "context": "nals Sum and Cout are as follows: Sum = A ⊕ B ⊕ C Cout    = (A ⊕ B) . Cin  + A.B Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Sum = A ⊕ B ⊕ C\nCout    = (A ⊕ B) . Cin  + A.B\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 9,
+    "context": "ponding to terminals Sum and Cout are as follows: Sum = A ⊕ B ⊕ C Cout    = (A ⊕ B) . Cin  + A.B Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1-bit FA to the carry-in of the next 1-bit FA.",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 12,
+    "context": "umber by connecting the carry-out of the previous 1-bit FA to the carry-in of the next 1-bit FA.  An n-bit RCA consisting of n single-bit FAs. The ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-bit RCA",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 16,
+    "context": "ong the chain of cascaded full adders. Consider a 4-bit RCA, where inputs Ai = 0, while Bi and the carry inpu",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Ai = 0, while Bi and the carry input Cin change from 0 to 1.\nIdeally, the sum outputs Si should remain 0, because adding 0 and 1 with carry conditions should not immediately produce a final stable output.\nHowever, because the carry signal propagates sequentially through each full adder, each stage experiences a delay before the correct carry arrives.\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 16,
+    "context": "d full adders. Consider a 4-bit RCA, where inputs Ai = 0, while Bi and the carry input Cin change from 0 to 1. Ideally, the sum outputs Si should remain 0, because adding 0 and 1 with carry conditions should not immediately produce a final stable output. However, because the carry signal propagates sequentially through each full adder, each stage experiences a delay before the correct carry arrives. Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-bit RCA. (6) Static simulation of the 4-bit RCA.",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 18,
+    "context": "Dr. Aruru Sai Kumar , VIT-AP Figure (a) The 4-bit RCA. (6) Static simulation of the 4-bit RCA.",
+    "is_numbered": true,
+    "equation_number": "6"
+  },
+  {
+    "content": "16-bit",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 21,
+    "context": "table for High-Speed Systems In large-bit adders (16-bit, 32-bit, 64-bit), the carry propagation delay bec",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "32-bit",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 21,
+    "context": "r High-Speed Systems In large-bit adders (16-bit, 32-bit, 64-bit), the carry propagation delay becomes sig",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "64-bit)",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 21,
+    "context": "peed Systems In large-bit adders (16-bit, 32-bit, 64-bit), the carry propagation delay becomes significant,",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Si = Pi ⊕ Ci",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 26,
+    "context": "nals, the Boolean variables for the CLA adder are Si = Pi ⊕ Ci Ci+1  = Gi ⊕ Pi . Ci where Si and Ci+1  are the s",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1  = Gi ⊕ Pi . Ci",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 26,
+    "context": "n variables for the CLA adder are Si = Pi ⊕ Ci Ci+1  = Gi ⊕ Pi . Ci where Si and Ci+1  are the sum and carry recurren",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Si = Pi ⊕ Ci\nCi+1  = Gi ⊕ Pi . Ci\nwhere Si and Ci+1  are the sum and carry recurrence for the ith stage, respectively.\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 26,
+    "context": "nals, the Boolean variables for the CLA adder are Si = Pi ⊕ Ci Ci+1  = Gi ⊕ Pi . Ci where Si and Ci+1  are the sum and carry recurrence for the ith stage, respectively. Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-bit carry.",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 27,
+    "context": "ru Sai Kumar , VIT-AP Figure : Logic schematic of 4-bit carry.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-bit CLA",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 29,
+    "context": " Sai Kumar , VIT-AP Figure : Block diagram of the 4-bit CLA",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "16-bit carry look-ahead adder",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 32,
+    "context": "uru Sai Kumar , VIT-AP Figure: Block diagram of a 16-bit carry look-ahead adder",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "16-bit",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 35,
+    "context": "are more efficient for large bit-width additions (16-bit, 32-bit, 64-bit, etc.) where ripple carry delay b",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "32-bit",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 35,
+    "context": " efficient for large bit-width additions (16-bit, 32-bit, 64-bit, etc.) where ripple carry delay becomes v",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "64-bit",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 35,
+    "context": "nt for large bit-width additions (16-bit, 32-bit, 64-bit, etc.) where ripple carry delay becomes very larg",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "32-bit",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 38,
+    "context": "t Widths Without Hierarchy For very large adders (32-bit, 64-bit, etc.), the carry look-ahead logic become",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "64-bit",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 38,
+    "context": " Without Hierarchy For very large adders (32-bit, 64-bit, etc.), the carry look-ahead logic becomes extrem",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-bit adder",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 39,
+    "context": "he first block with Cin, = Co is implemented by a 4-bit adder, typically the RCA, while the second block is eva",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-7) and the carry-in for the next block (C8) from the respective multiplexers",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 40,
+    "context": " In order to select the correct set of sum bits (S4-7) and the carry-in for the next block (C8) from the respective multiplexers, a control signal, C4, which is computed from the",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "8-bit architecture of CSL",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 41,
+    "context": "Dr. Aruru Sai Kumar , VIT-AP Figure : An 8-bit architecture of CSL",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "16-bit",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 42,
+    "context": " Medium to Large Bit Adders CSLA is efficient for 16-bit, 32-bit, and larger adders, where Ripple Carry Ad",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "32-bit",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 42,
+    "context": "to Large Bit Adders CSLA is efficient for 16-bit, 32-bit, and larger adders, where Ripple Carry Adders bec",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "carry = 0 and another assuming carry = 1)",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 44,
+    "context": " Ripple Carry Adders for each block (one assuming carry = 0 and another assuming carry = 1), which increases the number of required gates. Hi",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "16-bit hybrid CLA/CSL",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 47,
+    "context": "are known. Dr. Aruru Sai Kumar , VIT-AP Figure: A 16-bit hybrid CLA/CSL",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2-operand adders that necessitate the time- consuming carry propagation to repeat several times",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 49,
+    "context": "quirement of multiplication. Instead of using the 2-operand adders that necessitate the time- consuming carry propagation to repeat several times, depending on the number of operands, the CSA’s t",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1-bit multi-operand addition using a CSA can be extended to n-bit addition by cascading multiple CSA stages.",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 51,
+    "context": "’s Architectures n-bit Carry Save Adder (CSA) The 1-bit multi-operand addition using a CSA can be extended to n-bit addition by cascading multiple CSA stages. An n-bit CSA consists of n independent full adder",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-bit CSA Implementation",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 53,
+    "context": "Dr. Aruru Sai Kumar , VIT-AP Figure: 4-bit CSA Implementation",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-bit binary numbers A",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 55,
+    "context": "n-bit Carry Save Adder (CSA) The addition of four 4-bit binary numbers A, B, C and D, with an initial carry-in, Co.  The u",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-bit CSA",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 55,
+    "context": "r two levels of the FA or (3:2) counters form the 4-bit CSA, while the third level is the 4-bit Carry Propaga",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-bit Carry Propagating Adder (CPA). The CPA used in this case is an RCA",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 55,
+    "context": " form the 4-bit CSA, while the third level is the 4-bit Carry Propagating Adder (CPA). The CPA used in this case is an RCA, but a CLA or any other fast adder can substitute",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "T =(k - 2) * TCSA + TCPA",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 56,
+    "context": "dder (CSA) The time to obtain the summation is  \t\tT =(k - 2) * TCSA + TCPA where TCSA and TCPA, are the execution times for ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "T =(k - 2) * TCSA + TCPA\nwhere TCSA and TCPA, are the execution times for a CSA level and CPA, respectively.\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 56,
+    "context": "dder (CSA) The time to obtain the summation is  \t\tT =(k - 2) * TCSA + TCPA where TCSA and TCPA, are the execution times for a CSA level and CPA, respectively. Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Pn = XiYj is called the summand.",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 82,
+    "context": "follows:        Each of the partial product terms Pn = XiYj is called the summand. Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Pn = XiYj is called the summand.\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 82,
+    "context": "follows:        Each of the partial product terms Pn = XiYj is called the summand. Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1-bit-at-a-time) multiplication is performed by initializing the cumulative partial product to 0.",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 84,
+    "context": " Shift/add multiplication algorithms: Sequential (1-bit-at-a-time) multiplication is performed by initializing the cumulative partial product to 0. The algorithm successively adds shifted versions ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "32-bit and above)",
+    "source_file": "LPVLSI_MODULE-4.pptx",
+    "page_or_slide": 135,
+    "context": "  However, as the operand size increases (such as 32-bit and above), the generated partial products become significan",
+    "is_numbered": false,
+    "equation_number": ""
+  }
+]

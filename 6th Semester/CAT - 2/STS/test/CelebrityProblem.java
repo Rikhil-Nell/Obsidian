@@ -1,5 +1,5 @@
 import java.util.*;
-
+package test;
 public class CelebrityProblem {
     static int findCelebrity(int [][] m){
         int n = m.length;
