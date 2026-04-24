@@ -2,6 +2,10 @@
   "cssTheme": "Minimal",
   "textFontFamily": "JetBrainsMono Nerd Font",
   "interfaceFontFamily": "JetBrainsMono Nerd Font",
-  "showRibbon": true,
-  "nativeMenus": false
+  "showRibbon": false,
+  "nativeMenus": false,
+  "enabledCssSnippets": [
+    "mermaid-fix",
+    "rounded image edges"
+  ]
 }

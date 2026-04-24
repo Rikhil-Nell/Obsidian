@@ -8,8 +8,8 @@
   "showLineNumber": false,
   "alwaysUpdateLinks": true,
   "pdfExportSettings": {
-    "includeName": true,
-    "pageSize": "Letter",
+    "includeName": false,
+    "pageSize": "A4",
     "landscape": false,
     "margin": "2",
     "downscalePercent": 100

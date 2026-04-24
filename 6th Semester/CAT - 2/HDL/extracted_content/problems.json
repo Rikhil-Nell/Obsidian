@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Example 0.1",
+    "problem_text": "EXAMPLE\n0.1ns\n40ps\nArray Literals\nArray literals are syntactically similar to C initializers, but with the replicate operator ( {{}} ) allowed.\nEXAMPLE\nint n[1:2][1:3] = '{'{0,1,2},'{3{4}}};\nint n[1:2][1:6] = '{2{'{3{4, 5}}}}; // same as '{'{4,5,4,5,4,5},'{4,5,4,5,4,5}",
+    "solution_text": "",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 16,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "Operator ::\n•The class scope operator :: is used to specify an identifier defined within the scope of a class.\n•Classes and other scopes can have the same identifiers\n•The scope resolution operator uniquely identifies a member of a particular class\nClass Resolution operator allows access to static members (class properties and methods) from \noutside the class, as well as access to public or protected elements of super classes from within the \nderived classes",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 185,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "operator uniquely identifies a member of a particular class\nClass Resolution operator allows access to static members (class properties and methods) from \noutside the class, as well as access to public or protected elements of super classes from within the \nderived classes",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 185,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "operator allows access to static members (class properties and methods) from \noutside the class, as well as access to public or protected elements of super classes from within the \nderived classes",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 185,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "operator ::",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 186,
+    "problem_type": "Example"
+  }
+]
