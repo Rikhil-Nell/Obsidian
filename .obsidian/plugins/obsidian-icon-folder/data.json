@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiActivitySquare",
       "LiSquareChevronRight",
       "LiNetwork",
       "LiAtom",
-      "LiTestTube",
-      "LiFastForward"
+      "LiTestTube"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],

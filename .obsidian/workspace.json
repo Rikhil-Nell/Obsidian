@@ -4,41 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "586b7684a7d717b9",
+        "id": "3666b9b1621350b6",
         "type": "tabs",
         "children": [
           {
-            "id": "fdccd5ce24c88014",
+            "id": "f1b016d8218406c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "techie shi/study guides/F5-TTS (study-guide)/02-repository-structure.md",
+                "file": "6th Semester/FAT/CMOS/study_guide/01_fabrication_processes.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "02-repository-structure"
+              "title": "01_fabrication_processes"
             }
           },
           {
-            "id": "b150f8f4a88f3e3a",
+            "id": "eb0f9d2d4960a6ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6th Semester/CAT - 1/HDL/Lab Codes/Lab Record.md",
+                "file": "6th Semester/FAT/CMOS/study_guide/02_mos_capacitor_and_operating_modes.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Lab Record"
+              "title": "02_mos_capacitor_and_operating_modes"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -105,8 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5086555480957,
-    "collapsed": true
+    "width": 247.5086555480957
   },
   "right": {
     "id": "65917c39ac0d31e7",
@@ -122,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clink/Coupons.md",
+                "file": "6th Semester/CAT - 1/Low Power VLSI/07_short_channel_effects.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +130,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Coupons"
+              "title": "Backlinks for 07_short_channel_effects"
             }
           },
           {
@@ -142,7 +140,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "alphabetical",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -188,14 +188,13 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "LICA LAB/Linear Integrated Circuit Applications LAB NOTES.md"
+                "file": "6th Semester/CAT - 1/Low Power VLSI/07_short_channel_effects.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Linear Integrated Circuit Applications LAB NOTES"
+              "title": "File properties for 07_short_channel_effects"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -219,54 +218,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b150f8f4a88f3e3a",
+  "active": "f1b016d8218406c5",
   "lastOpenFiles": [
-    "techie shi/study guides/F5-TTS (study-guide)/02-repository-structure.md",
-    "Drawing 2026-04-23 17.35.35.excalidraw.md",
-    "Unsloth/001 Basics.md",
-    "techie shi/study guides/F5-TTS (study-guide)/01-what-is-this-repo.md",
-    "techie shi/study guides/F5-TTS (study-guide)/12-glossary.md",
-    "techie shi/study guides/F5-TTS (study-guide)/00-index.md",
-    "techie shi/deploying backend using nginx.md",
-    "techie shi/study guides/F5-TTS (study-guide)/11-non-obvious-decisions.md",
-    "techie shi/study guides/F5-TTS (study-guide)/10-production-considerations.md",
-    "techie shi/study guides/F5-TTS (study-guide)/09-finetuning-guide.md",
-    "techie shi/study guides/F5-TTS (study-guide)/08-inference-pipeline.md",
-    "techie shi/study guides/F5-TTS (study-guide)/07-training-loop.md",
-    "techie shi/study guides/F5-TTS (study-guide)/06-data-pipeline.md",
-    "techie shi/study guides/F5-TTS (study-guide)/05-model-architecture.md",
-    "techie shi/study guides/F5-TTS (study-guide)/04-flow-matching-intuition.md",
-    "techie shi/study guides/F5-TTS (study-guide)/03-audio-and-codec-primitives.md",
-    "techie shi/study guides/F5-TTS (study-guide)",
-    "techie shi/study guides",
-    "research paper diagram 1.excalidraw.md",
-    "techie shi/Schema Design for Kinesis.md",
-    "techie shi/Tailscale Tunnel.md",
-    "techie shi/Image Generation Prompt.md",
-    "CMOS LAB/Actual Lab Work/NOR/Nor_Schmt.png",
-    "CMOS LAB/Actual Lab Work/NOR/Nor_Sim.png",
-    "CMOS LAB/Actual Lab Work/OR/Or_Layout.png",
-    "CMOS LAB/Actual Lab Work/OR/Or_LVS.png",
-    "CMOS LAB/Actual Lab Work/OR/Or_Wave.png",
-    "CMOS LAB/Actual Lab Work/OR/OR_Schmt.png",
-    "CMOS LAB/Actual Lab Work/NOR/Nor_extr.png",
-    "CMOS LAB/Actual Lab Work/NAND/Nand_layout.png",
-    "CMOS LAB/Actual Lab Work/INV/Inverter_Layout.png",
-    "CMOS LAB/Actual Lab Work/INV/Inverter_Extr.png",
-    "research paper diagram 2.excalidraw.md",
-    "Research Paper Preview.md",
-    "CMOS LAB/CMOS VLSI LAB NOTES.md",
-    "CMOS LAB/Actual Lab Work/XOR",
-    "CMOS LAB/Actual Lab Work/OR",
-    "CMOS LAB/Actual Lab Work/NOR",
-    "CMOS LAB/Actual Lab Work/NAND",
-    "CMOS LAB/Actual Lab Work/INV",
-    "CMOS LAB/Actual Lab Work/AND",
-    "CMOS LAB/Actual Lab Work",
-    "LICA LAB/Linear Integrated Circuit Applications LAB NOTES.md",
-    "CMOS LAB/Digital Cadence/XOR",
-    "My Second Brain.md",
-    "6th Semester/CAT - 2/HDL/study_guide/08_interprocess_communication.md",
+    "6th Semester/FAT/CMOS/study_guide/17_worked_problems.md",
+    "6th Semester/FAT/CMOS/study_guide/01_fabrication_processes.md",
+    "6th Semester/FAT/CMOS/study_guide/02_mos_capacitor_and_operating_modes.md",
+    "6th Semester/FAT/CMOS/Materials/~$E3005_CMOS-VLSI-DESIGN_ETH_1.0_2_ECE3005.docx",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s9_img1.png",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s8_img1.png",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s6_img1.png",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s7_img1.png",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s5_img3.png",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s4_img1.wmf",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s5_img2.png",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s47_img1.png",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s5_img1.png",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s48_img1.png",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s44_img1.png",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s3_img1.wmf",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s3_img2.wmf",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s37_img2.wmf",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s23_img2.wmf",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s23_img1.wmf",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-10_Reference-Material-I_s3_img1.wmf",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-10_Reference-Material-I_s32_img1.wmf",
+    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-10_Reference-Material-I_s31_img1.wmf",
+    "6th Semester/FAT/CMOS/study_guide/18_formula_sheet.md",
+    "6th Semester/FAT/CMOS/study_guide/13_dynamic_and_domino_logic.md",
+    "6th Semester/FAT/CMOS/study_guide/16_design_for_testability.md",
+    "6th Semester/FAT/CMOS/study_guide/15_memory.md",
+    "6th Semester/FAT/CMOS/study_guide/14_sequential_circuits.md",
+    "6th Semester/CAT - 1/CMOS/12_ultimate_formula_sheet.md",
+    "6th Semester/FAT/CMOS/study_guide/12_pass_transistor_and_transmission_gate_logic.md",
+    "6th Semester/FAT/CMOS/study_guide/11_static_cmos_logic.md",
+    "6th Semester/FAT/CMOS/study_guide/10_logical_effort.md",
+    "6th Semester/FAT/CMOS/study_guide/09_power_dissipation.md",
+    "6th Semester/FAT/CMOS/study_guide/08_cmos_inverter_dynamic_behavior.md",
+    "6th Semester/FAT/CMOS/study_guide/07_cmos_inverter_vtc_and_noise_margins.md",
+    "6th Semester/FAT/CMOS/study_guide/06_scaling_and_short_channel_effects.md",
+    "6th Semester/FAT/CMOS/study_guide/05_mosfet_capacitances_and_resistances.md",
+    "6th Semester/FAT/CMOS/study_guide/04_mosfet_iv_characteristics.md",
+    "6th Semester/FAT/CMOS/study_guide/03_threshold_voltage_and_body_effect.md",
+    "6th Semester/CAT - 1/CMOS/01_foundation_semiconductor_physics.md",
+    "6th Semester/CAT - 2/CMOS/study_guide/10_formula_sheet_ultimate.md",
+    "6th Semester/CAT - 2/CMOS/study_guide/09_worked_problems.md",
+    "6th Semester/CAT - 2/CMOS/study_guide/08_logical_effort.md",
+    "6th Semester/CAT - 2/CMOS/study_guide/07_rc_delay_and_elmore.md",
+    "6th Semester/CAT - 2/CMOS/study_guide/06_inverter_sizing.md",
     "Untitled.canvas",
     "C/Untitled.canvas",
     "Untitled 1.canvas"
