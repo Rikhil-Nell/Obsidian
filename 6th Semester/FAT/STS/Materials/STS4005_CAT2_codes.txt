@@ -1,0 +1,921 @@
+1. Loop Detection
+
+import java.util.*;
+ class node{
+	int data;
+	node next;
+	node(int d)
+	{
+		data=d;
+		next=null;
+	}
+}
+ class LL
+ {
+	 node head=null;
+	 void insert(int d)
+	 {
+		 node newn=new node(d);
+		 if(head==null)
+		 {
+			 head=newn;
+		 }
+		 else
+		 {
+			 node temp=head;
+			 while(temp.next!=null)
+			 {
+				 temp=temp.next;
+			 }
+			 temp.next=newn;
+		 }
+	 }
+	 void createloop(int s)
+	 {
+		 node start=head;
+		 node end=head;
+		 while(end.next!=null)
+			 {
+				 end=end.next;
+			 }
+		 while(start.data!=s)
+		 {
+				 start=start.next;
+				 if(start.next==null && start.data!=s) return ;
+			 }
+			 
+		 end.next=start;
+	 }
+	 void display()
+	 {
+	      node temp=head;
+	      while(temp!=null)
+	      {
+	           System.out.print(temp.data+" ");
+	           temp=temp.next;
+	      }
+	 }
+	 boolean loopdetect()
+	 {
+		 node slow=head;
+		 node fast=head;
+		 while(fast!=null && fast.next!=null)
+		 {
+			 slow=slow.next;
+			 fast=fast.next.next;
+			 if(slow==fast)
+			 {
+				 return true;
+			 }
+		 }
+		 return false;
+	 }
+	 void display(node head)
+	 {
+		 if(head==null)
+		 {
+			 System.out.println("No nodes");
+		 }
+		 node temp=head;
+		 while(temp!=null)
+		 {
+			 System.out.print(temp.data+" ");
+			 temp=temp.next;
+		 }
+	 }
+ }
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		LL l=new LL();
+		int n=sc.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			int d=sc.nextInt();
+			l.insert(d);
+			}
+		int s=sc.nextInt();
+		l.createloop(s);
+		//l.display();
+		System.out.println((l.loopdetect())?"Yes":"No");
+		//l.display(l.head);
+		
+
+	}
+
+	
+
+}
+
+2. Seggregate even and odd nodes
+
+import java.util.*;
+class node{
+     int data;
+     node next;
+     node(int d)
+     {
+          data=d;
+          next=null;
+     }
+}
+class LL{
+     node head=null;
+     void append(int d)
+     {
+          node newn=new node(d);
+          if(head==null)
+          {
+               head=newn;
+          }
+          else{
+               node temp=head;
+               while(temp.next!=null)
+               {
+                    temp=temp.next;
+               }
+               temp.next=newn;
+          }
+     }
+     void segregate()
+     {
+          node es=null;
+          node ee=null;
+          node os=null;
+          node oe=null;
+          node curr=head;
+          while(curr!=null)
+          {
+               if(curr.data%2==0)
+               {
+                    if(es==null)
+                    {
+                         es=ee=curr;
+                    }
+                    else{
+                         ee.next=curr;
+                         ee=curr;
+                         
+                    }
+               }
+               else{
+                    if(os==null)
+                    {
+                         os=oe=curr;
+                    }
+                    else{
+                          oe.next=curr;
+                         oe=curr;
+                        
+                    }
+               }
+               curr=curr.next;
+          }
+          if(es==null){
+               head=os;
+               //oe.next=null;
+          }
+          else if(os==null)
+          {
+               head=es;
+               //ee.next=null;
+          }
+          else{
+          head=es;
+          ee.next=os;
+          oe.next=null;
+     }
+     }
+     void display()
+     {
+          node temp=head;
+          while(temp!=null)
+          {
+               System.out.print(temp.data+" ");
+               temp=temp.next;
+          }
+     }
+}
+class Main{
+     public static void main(String args[])
+     {
+          Scanner sc=new Scanner(System.in);
+          LL l=new LL();
+          int n=sc.nextInt();
+          for(int i=0;i<n;i++)
+          {
+               int d=sc.nextInt();
+               l.append(d);
+          }
+          l.segregate();
+          l.display();
+     }
+}
+
+3.sort bitonic DLL
+
+import java.util.Scanner;
+class node{
+    int data;
+    node next;
+    node prev;
+    node(int n){
+        data=n;
+        next=null;
+        prev=null;
+    }
+}
+class DLL{
+     node head=null;
+    void insert(int n){
+    node newnode = new node(n);
+    if(head==null) head=newnode;
+    else{
+        node cur=head;
+        while(cur.next!=null) cur=cur.next;
+        cur.next=newnode;
+        newnode.prev=cur;
+    }
+}
+ void bit(){
+    node first=head;
+    node last=head;
+    node resl=null;
+    node reslend=null;
+    
+    while(last.next!=null) last=last.next;
+    while(first!=last){
+        if(first.data<=last.data){
+            if(resl==null){
+                resl=reslend=first;
+                first=first.next;
+            }
+            else{
+                node cur=first.next;
+                reslend.next=first;
+                first.prev=reslend;
+                cur.prev=null;
+                first=cur;
+                reslend=reslend.next;
+            }
+        }
+        else{
+            if(resl==null){
+                resl=reslend=last;
+                last=last.prev;
+            }
+            else{
+                node cur=last.prev;
+                reslend.next=last;
+                last.prev=reslend;
+                cur.next=null;
+                last=cur;
+                reslend=reslend.next;
+            }
+        }
+    }
+    reslend.next=first;
+    first.prev=reslend;
+    head=resl;
+}
+void display(){
+    node cur=head;
+    while(cur!=null){
+        System.out.print(cur.data+"-->");
+        cur=cur.next;
+    }
+    System.out.print("null");
+}
+}
+class Main{
+    public static void main(String ar[]){
+        Scanner sw = new Scanner(System.in);
+        DLL dl=new DLL();
+        int n=sw.nextInt();
+        for(int i=0;i<n;i++){
+            dl.insert(sw.nextInt());
+        }
+        dl.display();
+        dl.bit();
+        System.out.println();
+        dl.display();
+        
+    }
+}
+
+4. Merge Sort on DLL
+
+import java.util.Scanner;
+class Main{
+    static node head=null;
+    static class node{
+    int data;
+    node next;
+    node prev;
+    node(int n){
+        data=n;
+        next=null;
+        prev=null;
+    }
+}
+static void insert(int n){
+    node newnode = new node(n);
+    if(head==null) head=newnode;
+    else{
+        node cur=head;
+        while(cur.next!=null) cur=cur.next;
+        cur.next=newnode;
+        newnode.prev=cur;
+    }
+}
+static node sort(node head){
+    if(head==null||head.next==null) return head;
+    node head1=split(head);
+    node first=sort(head);
+    node second=sort(head1);
+    return merge(first,second);
+}
+static node split(node first){
+    node fast=first;
+    node slow=first;
+    while(fast!=null&&fast.next!=null && fast.next.next!=null){
+        fast=fast.next.next;
+        slow=slow.next;
+    }
+    node temp=slow.next;
+    slow.next=null;
+    return temp;
+}
+static node merge(node first,node second){
+    if(first==null) return second;
+    if(second==null) return first;
+    if(first.data<=second.data){
+        first.next=merge(first.next,second);
+        first.next.prev=first;
+        first.prev=null;
+        return first;
+    }
+    else{
+       second.next=merge(first,second.next);
+       second.next.prev=second;
+       second.prev=null;
+       return second;
+    }
+}
+static void display(){
+    node cur=head;
+    while(cur!=null){
+        System.out.print(cur.data+"-->");
+        cur=cur.next;
+    }
+    System.out.print("null");
+}
+    public static void main(String ar[]){
+        Scanner sw = new Scanner(System.in);
+        int n=sw.nextInt();
+        for(int i=0;i<n;i++){
+            insert(sw.nextInt());
+        }
+        head=sort(head);
+        display();
+        
+    }
+}
+
+5. Min Stack
+
+import java.util.*;
+import java.util.Scanner;
+class Main{
+    static Stack<Integer> st = new Stack<>();
+    static Stack<Integer> mst = new Stack<>();
+    static void push(int n){
+        if(st.isEmpty()){
+            st.push(n);
+            mst.push(n);
+        }
+        else{
+            st.push(n);
+            if(n<=mst.peek()) mst.push(n);
+        }
+    }
+    static void pop(){
+        int ele=st.pop();
+        if(ele==mst.peek()) mst.pop();
+    }
+    static void getmin(){
+        if(mst.isEmpty()) System.out.print("Stack is Empty");
+        else System.out.print(mst.peek());
+    }
+    public static void main(String ar[]){
+        Scanner sw = new Scanner(System.in);
+        int n=sw.nextInt();
+        for(int i=0;i<n;i++) push(sw.nextInt());
+        getmin();
+    }
+}
+
+
+6. Celebrity Problem
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int [][]mat=new int[n][n];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                mat[i][j]=sc.nextInt();
+            }
+        }
+        Stack<Integer>st=new Stack<>();
+        for(int i=n-1;i>=0;i--){
+            st.push(i);
+        }
+        while(st.size()>1){
+            int x=st.pop();
+            int y=st.pop();
+            if(mat[x][y]==1){
+                st.push(y);}
+            else{
+                st.push(x);}}
+        int c=st.pop();
+        for(int i=0;i<n;i++){
+            if(i!=c && (mat[c][i]==1 || mat[i][c]==0)){
+                System.out.println("No celebrity found.");
+                return;
+            }
+        }
+        System.out.println(c);
+    }
+}
+
+7. Stock Span Problem
+
+import java.util.*;
+public class Main {
+    static void span(int p[],int n,int s[]){
+        Stack<Integer> st = new Stack<>();
+        st.push(0);
+        s[0]=1;
+        for(int i=0;i<n;i++){
+            while(!st.isEmpty()&&p[st.peek()]<=p[i]){
+                st.pop();
+            }
+            s[i]=(st.isEmpty()?(i+1):(i-st.peek()));
+            st.push(i);
+        }
+    }
+	public static void main(String[] args)
+	{
+	    Scanner sw= new Scanner(System.in);
+	    int n=sw.nextInt();
+		int p[] = new int[n];
+		for(int i=0;i<n;i++)
+		p[i]=sw.nextInt();
+		int s[] = new int[n];
+		span(p, n, s);
+		for(int i=0;i<n;i++)
+		System.out.print(s[i]+" ");
+	}
+}
+
+8. Tower of Hanoi
+
+import java.util.Scanner;
+import java.util.Stack;
+class Main{
+    static Stack<Integer> sr = new Stack<>();
+    static Stack<Integer> ax = new Stack<>();
+    static Stack<Integer> ds = new Stack<>();
+    static void change(Stack<Integer> s1,Stack<Integer> s2,char a,char b){
+        int v1,v2;
+        if(s1.isEmpty()) v1=Integer.MIN_VALUE;
+        else v1=s1.pop();
+        if(s2.isEmpty()) v2=Integer.MIN_VALUE;
+        else v2=s2.pop();
+        if(v1==Integer.MIN_VALUE){
+            s1.push(v2);
+            System.out.println("The value "+v2+" is moved from "+b+" to "+a);
+        }
+        else if(v2==Integer.MIN_VALUE){
+            s2.push(v1);
+            System.out.println("The value "+v1+" is moved from "+a+" to "+b);
+        }
+        else if(v1<v2){
+            s2.push(v2);
+            s2.push(v1);
+            System.out.println("The value "+v1+" is moved from "+a+" to "+b);
+        }
+        else{
+            s1.push(v1);
+            s1.push(v2);
+            System.out.println("The value "+v2+" is moved from "+b+" to "+a);
+        }
+    }
+    public static void main(String ar[]){
+        Scanner sw = new Scanner(System.in);
+        int n = sw.nextInt();
+        for(int i=n;i>0;i--) sr.push(i);
+        char s='S',a='A',d='D';
+        if(n%2==0){
+            char temp=a;
+            a=d;
+            d=temp;
+        }
+        int moves = (int)(Math.pow(2,n)-1);
+        for(int i=1;i<=moves;i++){
+            if(i%3==1) change(sr,ds,s,d);
+            if(i%3==2) change(sr,ax,s,a);
+            if(i%3==0) change(ax,ds,a,d);
+        }
+    }
+}
+
+
+9. Stack Permutation
+
+public class StackPermutations {
+public static boolean check(int x[],int y[],int n)
+{
+Stack<Integer> s=new Stack<Integer>();
+int j=0;
+for(int i=0;i<n;i++)
+{
+s.push(x[i]);
+while(!s.isEmpty()&&y[j]==s.peek())
+{
+s.pop();
+j++;
+}
+}
+return s.isEmpty(); 
+}
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int a[]=new int[n];
+int b[]=new int[n];
+for(int i=0;i<n;i++)
+a[i]=sc.nextInt();
+for(int j=0;j<n;j++)
+b[j]=sc.nextInt();
+if(check(a,b,n))
+System.out.println("Yes");
+else
+System.out.println("No");
+}}
+
+10. Priority Queue using DLL
+
+import java.util.*;
+class node{
+    int data;
+    int pr;
+    node next;
+    node prev;
+    node(int n,int pri){
+        data=n;
+        pr=pri;
+        next=null;
+        prev=null;
+    }
+}
+class Main{
+    static node front =null;
+    static node rear=null;
+    static void insert(int n,int prio){
+        node newnode = new node(n,prio);
+        if(front ==null){
+            front=newnode;
+            rear=newnode;
+        }
+        else if(prio<front.pr){
+            newnode.next=front;
+            front.prev=newnode;
+            front=newnode;
+        }
+        else{
+            node temp=front;
+            while(temp.next!=null&&temp.next.pr<=prio){
+                temp=temp.next;
+            }
+            if(temp.next==null){
+                temp.next=newnode;
+                newnode.prev=temp;
+                rear=newnode;
+            }
+            else{
+                newnode.next=temp.next;
+                newnode.prev=temp;
+                temp.next.prev=newnode;
+                temp.next=newnode;
+            }
+        }
+    }
+    static void display(){
+        node cur=front;
+        while(cur!=null){
+            System.out.println(cur.data+" "+cur.pr);
+            cur=cur.next;
+        }
+    }
+    public static void main(String ar[]){
+        Scanner sw = new Scanner(System.in);
+        int n = sw.nextInt();
+        for(int i=0;i<n;i++){
+            int c=sw.nextInt();//value
+            int d=sw.nextInt();//priority
+            insert(c,d);
+        }
+        display();
+    }
+}
+
+11. Sort without extra space
+
+import java.util.*;
+class Main{
+   static Queue<Integer> q=new LinkedList<>();
+    static int Findmin(Queue<Integer> q,int maxs)
+    {
+        int mini=-1;
+        int minval=Integer.MAX_VALUE;
+        int size=q.size();
+        for(int i=0;i<size;i++)
+        { 
+            int curr=q.poll();
+            if(curr<= minval && i<=maxs)
+            {
+                mini=i;
+                minval=curr;
+            }
+            q.add(curr);
+        }
+        return mini;
+    }
+    static void inserttorear(Queue<Integer> q,int min)
+    {
+        int minvalue=0;
+        int size=q.size();
+        for(int i=0;i<size;i++)
+        {
+            int curr=q.poll();
+            if(i==min)
+            {
+                minvalue=curr;
+            }
+            else{
+                q.add(curr);
+            }
+        }
+        q.add(minvalue);
+    }
+    static void sortQueue(Queue<Integer> q){
+        int size=q.size();
+    for(int i=1;i<=size;i++)
+    {
+        int mind=Findmin(q,size-i);
+        inserttorear(q,mind);
+    }
+}
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++)
+        {
+            q.add(sc.nextInt());
+        }
+        sortQueue(q);
+        System.out.println(q);
+    }
+}
+
+Queue using arrays
+import java.util.Scanner;
+
+class Queue {
+    private int[] queueArray;
+    private int front;
+    private int rear;
+    private int size;
+    private int capacity;
+
+    // Constructor to initialize the queue
+    public Queue(int capacity) {
+        this.capacity = capacity;
+        this.queueArray = new int[capacity];
+        this.front = 0;
+        this.rear = -1;
+        this.size = 0;
+    }
+
+    // Method to add an element to the queue (enqueue)
+    public void enqueue(int value) {
+        if (isFull()) {
+            System.out.println("Queue is full");
+            return;
+        }
+        rear = (rear + 1) % capacity;
+        queueArray[rear] = value;
+        size++;
+    }
+
+    // Method to remove an element from the queue (dequeue)
+    public int dequeue() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty");
+            return -1;
+        }
+        int dequeuedValue = queueArray[front];
+        front = (front + 1) % capacity;
+        size--;
+        return dequeuedValue;
+    }
+
+    // Method to view the front element (peek)
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty");
+            return -1;
+        }
+        return queueArray[front];
+    }
+
+    // Method to check if the queue is empty
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    // Method to check if the queue is full
+    public boolean isFull() {
+        return size == capacity;
+    }
+
+    // Method to display the elements in the queue
+    public void display() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty");
+            return;
+        }
+        int count = size;
+        int current = front;
+        while (count > 0) {
+            System.out.print(queueArray[current] + " ");
+            current = (current + 1) % capacity;
+            count--;
+        }
+        System.out.println();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int capacity = scanner.nextInt();
+        Queue queue = new Queue(capacity);
+
+        while (true) {
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    int value = scanner.nextInt();
+                    queue.enqueue(value);
+                    break;
+                case 2:
+                    int x=queue.dequeue();
+                    if(x!=-1)
+                    System.out.println(x);
+                    break;
+                case 3:
+                    int y=queue.peek();
+                    if(y!=-1)
+                    System.out.println(y);
+                    break;
+                case 4:
+                    queue.display();
+                    break;
+                case 5:
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Invalid choice. Try again.");
+            }
+        }
+    }
+}
+
+Stack using arrays
+
+import java.util.Scanner;
+
+class Stack {
+    private int[] stackArray;
+    private int top;
+    private int capacity;
+
+    // Constructor
+    public Stack(int capacity) {
+        this.capacity = capacity;
+        stackArray = new int[capacity];
+        top = -1;
+    }
+
+    // Push operation
+    public void push(int value) {
+        if (isFull()) {
+            System.out.println("Stack is full");
+            return;
+        }
+        stackArray[++top] = value;
+    }
+
+    // Pop operation
+    public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+        return stackArray[top--];
+    }
+
+    // Peek operation
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+        return stackArray[top];
+    }
+
+    // Check empty
+    public boolean isEmpty() {
+        return top == -1;
+    }
+
+    // Check full
+    public boolean isFull() {
+        return top == capacity - 1;
+    }
+
+    // Display stack
+    public void display() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return;
+        }
+
+        for (int i = top; i >= 0; i--) {
+            System.out.print(stackArray[i] + " ");
+        }
+        System.out.println();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int capacity = scanner.nextInt();
+        Stack stack = new Stack(capacity);
+
+        while (true) {
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    int value = scanner.nextInt();
+                    stack.push(value);
+                    break;
+
+                case 2:
+                    int x = stack.pop();
+                    if (x != -1)
+                        System.out.println(x);
+                    break;
+
+                case 3:
+                    int y = stack.peek();
+                    if (y != -1)
+                        System.out.println(y);
+                    break;
+
+                case 4:
+                    stack.display();
+                    break;
+
+                case 5:
+                    System.exit(0);
+                    break;
+
+                default:
+                    System.out.println("Invalid choice. Try again.");
+            }
+        }
+    }
+}

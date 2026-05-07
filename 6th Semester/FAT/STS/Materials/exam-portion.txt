@@ -1,0 +1,35 @@
+Syllabus :
+
+Max Equilibrium Sum
+Leaders in array
+Majority element
+Quick, Selection Sort
+Sorted Unique Permutation
+Maneuvering
+Combination
+Josephus trap
+Maze Solving
+N Queens
+Activity Selection Problem
+Loop Detection
+Sort the bitonic DLL
+Segregate even & odd nodes in a LL
+Merge sort for DLL
+Minimum Stack
+The Celebrity problem
+Iterative Tower of Hanoi
+Stock Span problem
+Priority Queue using DLL
+Sort without extra Space
+Stack permutations
+Recover the BST
+Views of tree
+Vertical order traversal
+Boundary traversal
+BFS, DFS
+Dial's Algorithm
+Bellman-Ford Algorithm
+
+Kindly prepare all topics thoroughly for both coding and MCQs.
+
+Note : N-Queens topic is only for MCQs.

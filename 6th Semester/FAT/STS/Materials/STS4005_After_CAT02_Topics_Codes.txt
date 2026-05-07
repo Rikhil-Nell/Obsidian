@@ -1,0 +1,968 @@
+Binary Tree Creation
+
+import java.util.*;
+// Node class
+class Node {
+    int data;
+    Node left, right;
+    Node(int d) {
+        data = d;
+        left = right = null;
+    }
+}
+
+// Binary Tree class
+class BT {
+
+    Node buildTree(String str) {
+        if (str.length() == 0 || str.charAt(0) == 'N')
+            return null;
+
+        String[] ip = str.split(" ");
+
+        Node root = new Node(Integer.parseInt(ip[0]));
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+
+        int i = 1;
+
+        while (!q.isEmpty() && i < ip.length) {
+
+            Node curr = q.poll();
+
+            // Left child
+            if (!ip[i].equals("N")) {
+                curr.left = new Node(Integer.parseInt(ip[i]));
+                q.add(curr.left);
+            }
+            i++;
+
+            if (i >= ip.length)
+                break;
+
+            // Right child
+            if (!ip[i].equals("N")) {
+                curr.right = new Node(Integer.parseInt(ip[i]));
+                q.add(curr.right);
+            }
+            i++;
+        }
+
+        return root;
+    }
+
+    // Inorder Traversal
+    void inorder(Node root) {
+        if (root == null)
+            return;
+
+        inorder(root.left);
+        System.out.print(root.data + " ");
+        inorder(root.right);
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+
+        String input = "10 3 4 N 6 7 8";
+
+        BT tree = new BT();
+
+        Node root = tree.buildTree(input);
+
+        System.out.println("Inorder Traversal:");
+        tree.inorder(root);
+    }
+}
+
+2. 
+import java.util.*;
+class Tnode{
+    int data;
+    Tnode left,right;
+    Tnode(int d)
+    {
+        data=d;
+        left=right=null;
+    }
+}
+class BT{
+    Tnode root=null;
+    Tnode create()
+    {
+        Scanner sc=new Scanner(System.in);
+        int r=sc.nextInt();
+        if(r==-1)
+        {
+            return null;
+        }
+        Tnode root=new Tnode(r);
+        Queue<Tnode> q=new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty()){
+            Tnode curr=q.poll();
+        int l=sc.nextInt();
+        if(l!=-1){
+            Tnode lnode=new Tnode(l);
+            curr.left=lnode;
+            q.add(lnode);
+        }
+        int rd=sc.nextInt();
+        if(rd!=-1)
+        {
+            Tnode rnode=new Tnode(rd);
+            curr.right=rnode;
+            q.add(rnode);
+        }
+        }
+        return root;
+    }
+    // PREORDER TRAVERSAL
+    void preorder(Tnode root)
+    {
+        if(root==null){ return;}
+        System.out.print(root.data+" ");
+        preorder(root.left);
+        preorder(root.right);
+    }
+    // POSTORDER TRAVERSAL
+    void postorder(Tnode root)
+    {
+        if(root==null){ return;}
+        postorder(root.left);
+        postorder(root.right);
+        System.out.print(root.data+" ");
+    }
+    // INORDER TRAVERSAL 
+    void inorder(Tnode root)
+    {
+        if(root==null){ return;}
+        inorder(root.left);
+        System.out.print(root.data+" ");
+        inorder(root.right);
+    }
+    // LEVEL ORDER TRAVERSAL 
+    void level(Tnode root)
+    {
+        if(root==null){ return;}
+        Queue<Tnode> q=new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty())
+        {
+            Tnode curr=q.poll();
+            System.out.print(curr.data+" ");
+            if(curr.left!=null)
+            {
+                q.add(curr.left);
+            }
+            if(curr.right!=null){
+                q.add(curr.right);
+            }
+        }
+    }
+class Main{
+    public static void main(String arg[])
+    {
+        BT t=new BT();
+        t.root=t.create();
+ }    }
+
+BST creation
+
+import java.util.*;
+class node{
+    int data;
+    node left,right;
+    node(int d)
+    {
+        data=d;
+        left=right=null;
+    }
+}
+class Main{
+    static node root;
+    static node create(node root,int d)
+    {
+        if(root==null)
+        {
+            return new node(d);
+        }
+        if(d>root.data)
+        {
+            root.right=create(root.right,d);
+        }
+        if(d<root.data)
+        {
+            root.left=create(root.left,d);
+        }
+        return root;
+        }
+    }
+
+Right View of BT
+
+import java.util.*;
+class node{
+    int data;
+    node left,right;
+    node(int d)
+    {
+        data=d;
+        left=right=null;
+    }
+}
+class BST{
+    node root=null;
+    node create(node root,int d)
+    {
+        if(root==null)
+        {
+            return new node(d);
+        }
+        else if(d<=root.data)
+        {
+            root.left=create(root.left,d);
+        }
+        else if(d>root.data)
+        {
+            root.right=create(root.right,d);
+        }
+        return root;
+    }
+    void Rightview(node root,ArrayList<Integer> al,int l)
+    {
+        if(root==null)
+        {
+            return;
+        }
+        if(al.size()==l)
+        {
+            al.add(root.data);
+        }
+        if(root.right!=null)
+        {
+            Rightview(root.right,al,l+1);
+        }
+        if(root.left!=null)
+        {
+            Rightview(root.left,al,l+1);
+        }
+    }
+}
+class Main{
+    public static void main(String ars[])
+    {
+        Scanner sc=new Scanner(System.in);
+        BST t=new BST();
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++)
+        {
+            t.root=t.create(t.root,sc.nextInt());
+        }
+        ArrayList<Integer> al=new ArrayList<>();
+        t.Rightview(t.root,al,0);
+        System.out.println(al);
+    }
+}
+
+2. Boundary Traversal
+import java.util.*;
+
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int d) {
+        data = d;
+        left = right = null;
+    }
+}
+
+class BST {
+    Node root = null;
+    Node create(Node root, int d) {
+        if (root == null) {
+            return new Node(d);
+        } else if (d <= root.data) {
+            root.left = create(root.left, d);
+        } else {
+            root.right = create(root.right, d);
+        }
+        return root;
+    }
+
+    boolean isLeaf(Node node) {
+        return  node.left == null && node.right == null;
+    }
+
+    void leftB(Node root, ArrayList<Integer> bl) {
+        if(root.left==null)
+        {
+            return ;
+        }
+        Node curr = root.left;
+        while (curr != null) {
+            if (!isLeaf(curr)) { // Avoid adding leaf nodes
+                bl.add(curr.data);
+            }
+            curr = (curr.left != null) ? curr.left : curr.right;
+        }
+    }
+    void leaves(Node root, ArrayList<Integer> bl) {
+        if (isLeaf(root)) {
+            bl.add(root.data);
+            return;
+        }
+        if(root.left!=null){
+        leaves(root.left, bl);}
+        if(root.right!=null){
+        leaves(root.right, bl);}
+    }
+
+    void rightB(Node root, ArrayList<Integer> bl) {
+        ArrayList<Integer> temp = new ArrayList<>();
+        if(root.right==null)
+        {
+            return;
+        }
+        Node curr = root.right;
+        while (curr != null) {
+            if (!isLeaf(curr)) { // Avoid adding leaf nodes
+                temp.add(curr.data);
+            }
+            curr = (curr.right != null) ? curr.right : curr.left;
+        }
+        // Add right boundary in reverse order
+        for (int i = temp.size() - 1; i >= 0; i--) {
+            bl.add(temp.get(i));
+        }
+    }
+
+    void Boundary(ArrayList<Integer> bl, Node root) {
+        if (root == null) {
+            return;
+        }
+        bl.add(root.data);  // Add root first
+        leftB(root, bl);    // Left boundary
+        leaves(root, bl);   // Leaf nodes
+        rightB(root, bl);   // Right boundary
+    }
+}
+
+class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        BST t = new BST();
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            t.root = t.create(t.root, sc.nextInt());
+        }
+        ArrayList<Integer> bl = new ArrayList<>();
+        t.Boundary(bl, t.root);
+        
+        // Printing the boundary traversal
+        for (int val : bl) {
+            System.out.print(val + " ");
+        }
+        sc.close();
+    }
+}
+
+3. Vertical Order traversal
+
+import java.util.*;
+
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int d) {
+        data = d;
+        left = right = null;
+    }
+}
+
+class Qnode {
+    Node node;
+    int v, l;
+
+    Qnode(Node node, int v, int l) {
+        this.node = node;
+        this.v = v;
+        this.l = l;
+    }
+}
+
+class BST {
+    Node root = null;
+
+    Node create(Node root, int d) {
+        if (root == null) {
+            return new Node(d);
+        } else if (d <= root.data) {
+            root.left = create(root.left, d);
+        } else {
+            root.right = create(root.right, d);
+        }
+        return root;
+    }
+
+    public void verticalTraversal(Node root) {
+        TreeMap<Integer, TreeMap<Integer, LinkedList<Integer>>> map = new TreeMap<>();
+        Queue<Qnode> qdata = new LinkedList<>();
+        qdata.offer(new Qnode(root, 0, 0));
+        while (!qdata.isEmpty()) {
+            Qnode curr = qdata.poll();
+            int ver = curr.v;
+            int level = curr.l;
+
+            map.putIfAbsent(ver, new TreeMap<>());
+            map.get(ver).putIfAbsent(level, new LinkedList<>());
+            map.get(ver).get(level).add(curr.node.data);
+
+            if (curr.node.left != null) {
+                qdata.offer(new Qnode(curr.node.left, ver - 1, level + 1));
+            }
+            if (curr.node.right != null) {
+                qdata.offer(new Qnode(curr.node.right, ver + 1, level + 1));
+            }
+        }
+
+        for (TreeMap<Integer, LinkedList<Integer>> levels : map.values()) {
+            for (LinkedList<Integer> nodes : levels.values()) {
+                for (int num : nodes) {
+                    System.out.print(num + " ");
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        BST tree = new BST();
+        System.out.println("Enter number of nodes:");
+        int n = scanner.nextInt();
+        System.out.println("Enter node values:");
+        for (int i = 0; i < n; i++) {
+            int value = scanner.nextInt();
+            tree.root = tree.create(tree.root, value);
+        }
+        System.out.println("Vertical Order Traversal:");
+        tree.verticalTraversal(tree.root);
+    }
+}
+
+4. Recover BST
+
+import java.util.*;
+
+class node {
+    int data;
+    node left, right;
+
+    node(int d) {
+        data = d;
+        left = right = null;
+    }
+}
+class BT {
+    node root = null;
+    node first = null;
+    node last = null;
+    node prev = null;
+    Scanner sc = new Scanner(System.in);
+    node insert() {
+        int d = sc.nextInt();
+        if (d == -1) {
+            return null;
+        }
+        node tnode = new node(d);
+        Queue<node> q = new LinkedList<>();
+        q.add(tnode);
+        root = tnode;
+        while (!q.isEmpty()) {
+            node curr = q.poll();
+            int l = sc.nextInt();
+            if (l != -1) {
+                node lnode = new node(l);
+                curr.left = lnode;
+                q.add(lnode);
+            }
+            int r = sc.nextInt();
+            if (r != -1) {
+                node rnode = new node(r);
+                curr.right = rnode;
+                q.add(rnode);
+            }
+        }
+        return root;
+    }
+    private void inorder(node root) {
+        if (root == null) {
+            return;
+        }
+        inorder(root.left);
+        if (prev != null && root.data < prev.data) { 
+            if (first == null) {
+                first = prev;
+                last= root;
+            } 
+            else {
+                last = root;
+            }
+        }
+        prev = root;
+        inorder(root.right);
+    }
+    public void Inorder(node root) {
+        if (root == null) {
+            return;
+        }
+        Inorder(root.left);
+        System.out.print(root.data + " ");
+        Inorder(root.right);
+    }
+    void recoverTree(node root) {
+        //first = middle = last = null;
+        prev = new node(Integer.MIN_VALUE);
+        inorder(root);
+        if (first != null && last != null) {
+            int temp = first.data;
+            first.data = last.data;
+            last.data = temp;
+        }
+    }
+}
+class Main {
+    public static void main(String ar[]) {
+        BT b = new BT();
+        b.root = b.insert();
+        b.Inorder(b.root);
+        b.recoverTree(b.root);
+        System.out.println();
+        b.Inorder(b.root);
+    }
+}
+
+Top and Bottom view of BT
+
+import java.util.*;
+
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int d) {
+        data = d;
+        left = right = null;
+    }
+}
+
+class Qnode {
+    Node node;
+    int v, l;
+
+    Qnode(Node node, int v, int l) {
+        this.node = node;
+        this.v = v;
+        this.l = l;
+    }
+}
+
+class BST {
+    Node root = null;
+
+    Node create(Node root, int d) {
+        if (root == null) {
+            return new Node(d);
+        } 
+        else if (d <= root.data) {
+            root.left = create(root.left, d);
+        } 
+        else {
+            root.right = create(root.right, d);
+        }
+        return root;
+    }
+    // Top View
+    public void topView(Node root) {
+        TreeMap<Integer, TreeMap<Integer, LinkedList<Integer>>> map = new TreeMap<>();
+        Queue<Qnode> qdata = new LinkedList<>();
+        qdata.offer(new Qnode(root, 0, 0));
+
+        while (!qdata.isEmpty()) {
+            Qnode curr = qdata.poll();
+            int ver = curr.v;
+            int level = curr.l;
+
+            map.putIfAbsent(ver, new TreeMap<>());
+            map.get(ver).putIfAbsent(level, new LinkedList<>());
+            map.get(ver).get(level).add(curr.node.data);
+
+            if (curr.node.left != null)
+                qdata.offer(new Qnode(curr.node.left, ver - 1, level + 1));
+
+            if (curr.node.right != null)
+                qdata.offer(new Qnode(curr.node.right, ver + 1, level + 1));
+        }
+
+        for (TreeMap<Integer, LinkedList<Integer>> levels : map.values()) {
+            System.out.print(levels.firstEntry().getValue().getFirst() + " ");
+        }
+        System.out.println();
+    }
+
+    // Bottom View
+    public void bottomView(Node root) {
+        TreeMap<Integer, TreeMap<Integer, LinkedList<Integer>>> map = new TreeMap<>();
+        Queue<Qnode> qdata = new LinkedList<>();
+        qdata.offer(new Qnode(root, 0, 0));
+
+        while (!qdata.isEmpty()) {
+            Qnode curr = qdata.poll();
+            int ver = curr.v;
+            int level = curr.l;
+
+            map.putIfAbsent(ver, new TreeMap<>());
+            map.get(ver).putIfAbsent(level, new LinkedList<>());
+            map.get(ver).get(level).add(curr.node.data);
+
+            if (curr.node.left != null)
+                qdata.offer(new Qnode(curr.node.left, ver - 1, level + 1));
+
+            if (curr.node.right != null)
+                qdata.offer(new Qnode(curr.node.right, ver + 1, level + 1));
+        }
+
+        for (TreeMap<Integer, LinkedList<Integer>> levels : map.values()) {
+            System.out.print(levels.lastEntry().getValue().getLast() + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        BST tree = new BST();
+
+        System.out.println("Enter number of nodes:");
+        int n = scanner.nextInt();
+
+        System.out.println("Enter node values:");
+        for (int i = 0; i < n; i++) {
+            int value = scanner.nextInt();
+            tree.root = tree.create(tree.root, value);
+        }
+
+        System.out.println("Top View:");
+        tree.topView(tree.root);
+
+        System.out.println("Bottom View:");
+        tree.bottomView(tree.root);
+    }
+}
+Graph Representations
+
+Adjacency matrix and Adjacency list
+
+import java.util.*;
+class Main{
+    static void AdjacencyList(ArrayList<ArrayList<Integer>> al,int s,int e)
+    {
+        al.get(s).add(e);
+        al.get(e).add(s);
+    }
+    public static void main(String ar[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int V=sc.nextInt();
+        int E=sc.nextInt();
+        int m[][]=new int[V][V];
+         ArrayList<ArrayList<Integer>> al=new ArrayList<>();
+         for(int i=0;i<V;i++)
+         {
+             al.add(new ArrayList<>());
+         }
+        for(int i=0;i<E;i++)
+        {
+            int s=sc.nextInt();
+            int e=sc.nextInt();
+            m[s][e]=1;
+            m[e][s]=1;
+            AdjacencyList(al,s,e);
+        }
+        for(int i=0;i<V;i++)
+        {
+            System.out.print(i+" ");
+            for(int n:al.get(i))
+            {
+                System.out.print(n+" ");
+            }
+            System.out.println();
+        }
+        for(int i=0;i<V;i++)
+        {
+            for(int j=0;j<V;j++)
+            {
+                System.out.print(m[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+BFS
+
+import java.util.*;
+public class Main {
+    public static void bfsTraversal(List<List<Integer>> graph,int sr,int V) {
+        boolean[] visited = new boolean[V];
+        Queue<Integer> queue = new LinkedList<>();
+        //for (int i = 0; i < V; i++) {
+            //if (!visited[i]) {
+                queue.add(sr);
+                visited[sr] = true;
+
+                while (!queue.isEmpty()) {
+                    int curr = queue.poll();
+                    System.out.print(curr + " ");
+                    for (int nv: graph.get(curr)) {
+                        if (!visited[nv]) {
+                            queue.add(nv);
+                            visited[nv] = true;
+                        }
+                    }
+                }
+            }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int V = sc.nextInt();
+        int E = sc.nextInt();
+        List<List<Integer>> graph = new ArrayList<>();
+        for (int i = 0; i < V; i++) {
+            graph.add(new ArrayList<>());
+        }
+        for (int i = 0; i < E; i++) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            graph.get(a).add(b);
+            graph.get(b).add(a);
+        }
+        int sr=sc.nextInt();
+        bfsTraversal(graph,sr,V);
+    }
+}
+
+DFS
+
+import java.util.*;
+
+public class Solution {
+    public static void dfsTraversal(List<List<Integer>> graph, int V) {
+        boolean[] visited = new boolean[V];
+        for (int i = 0; i < V; i++) {
+            if (!visited[i]) {
+                dfsUtil(graph, i, visited);
+            }
+        }
+        System.out.println();
+    }
+    public static void dfsUtil(List<List<Integer>> graph, int current, boolean[] visited) {
+        visited[current] = true;
+        System.out.print(current + " ");
+
+        for (int neighbor : graph.get(current)) {
+            if (!visited[neighbor]) {
+                dfsUtil(graph, neighbor, visited);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int v = sc.nextInt();  // Number of vertices
+        int e = sc.nextInt();  // Number of edges
+
+        List<List<Integer>> graph = new ArrayList<>();
+        for (int i = 0; i < v; i++) {
+            graph.add(new ArrayList<>());
+        }
+
+        for (int i = 0; i < e; i++) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            graph.get(a).add(b);
+            graph.get(b).add(a); // Remove this line for a directed graph
+        }
+
+        dfsTraversal(graph, v);
+    }
+}
+
+Bellman Ford Algorithm
+
+import java.util.*;
+
+class Main{
+    static class Edge {
+        int src, dest, weight;
+        Edge(int src, int dest, int weight) {
+            this.src = src;
+            this.dest = dest;
+            this.weight = weight;
+        }
+    }
+    
+    public static void bellmanFord(int n, int m, List<Edge> edges, int src) {
+        int[] dist = new int[n];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[src] = 0;
+        
+        // Relax all edges (n-1) times
+        for (int i = 0; i <n-1; i++) {
+            for (Edge edge : edges) {
+                if (dist[edge.src] != Integer.MAX_VALUE && dist[edge.src] + edge.weight < dist[edge.dest]) {
+                    dist[edge.dest] = dist[edge.src] + edge.weight;
+                }
+            }
+        }
+        
+        // Check for negative weight cycles
+        /*for (Edge edge : edges) {
+            if (dist[edge.src] != Integer.MAX_VALUE && dist[edge.src] + edge.weight < dist[edge.dest]) {
+                System.out.println("-1"); // Negative cycle detected
+                return;
+            }
+        }*/
+        
+        // Print shortest distances
+        for (int i = 0; i < n; i++) {
+            System.out.print((dist[i] == Integer.MAX_VALUE ? "-1" : dist[i]) + " ");
+        }
+        System.out.println();
+    }
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(); // Number of nodes
+        int m = sc.nextInt(); // Number of edges
+        
+        List<Edge> edges = new ArrayList<>();
+        for (int i = 0; i < m; i++) {
+            int u = sc.nextInt();
+            int v = sc.nextInt();
+            int w = sc.nextInt();
+            edges.add(new Edge(u, v, w));
+        }
+        
+        bellmanFord(n, m, edges, 0); // Assuming source is always 0
+        
+        sc.close();
+    }
+}
+
+Dial's Algorithm
+
+import java.util.*;
+class edge{
+    int v;
+    int w;
+    edge(int v,int w)
+    {
+        this.v=v;
+        this.w=w;
+    }
+}
+class Main{
+    static void dials(ArrayList<ArrayList<edge>> al,int v,int s,int max)
+    {
+        int dis[]=new int[v];
+        for(int i=0;i<v;i++)
+        {
+            dis[i]=Integer.MAX_VALUE;
+        }
+        dis[s]=0;
+        List<Queue<Integer>> l=new ArrayList<>();
+        for(int i=0;i<=v*max;i++)
+        {
+            l.add(new LinkedList<>());
+        }
+        l.get(0).add(s);
+        int ind=0;
+        while(ind<l.size())
+        {
+            while(!l.get(ind).isEmpty())
+            {
+                int u=l.get(ind).poll();
+                if(dis[u]<ind){ continue;}
+                for(edge n:al.get(u))
+                {
+                    int ver=n.v;
+                    int w=n.w;
+                    if(dis[u]+w<dis[ver])
+                    {
+                        dis[ver]=dis[u]+w;
+                        l.get(dis[ver]).add(ver);
+                    }
+                }
+            }
+                ind++;
+        }
+        for(int i=0;i<v;i++)
+        {
+            System.out.print(dis[i]+" ");
+        }
+    }
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int v=sc.nextInt();
+        int e=sc.nextInt();
+        ArrayList<ArrayList<edge>> al=new ArrayList<>();
+        for(int i=0;i<v;i++)
+        {
+            al.add(new ArrayList<>());
+        }
+        for(int i=0;i<e;i++)
+        {
+            int u=sc.nextInt();
+            int ver=sc.nextInt();
+            int w=sc.nextInt();
+            al.get(u).add(new edge(ver,w));
+            al.get(ver).add(new edge(u,w));
+        }
+        int max=sc.nextInt();
+        dials(al,v,0,max);
+    }
+}
+
+Max Sliding Window
+
+import java.util.*;
+
+public class Main {
+    
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        if (nums == null || nums.length == 0) return new int[0];
+        int n = nums.length;
+        int[] result = new int[n - k + 1];
+        Deque<Integer> dq = new ArrayDeque<>();
+        for (int i = 0; i < n; i++) {
+            // Remove out-of-window indices
+            if (!dq.isEmpty() && dq.peekFirst() <= i - k) {
+                dq.pollFirst();
+            }
+            // Remove smaller elements from back
+            while (!dq.isEmpty() && nums[dq.peekLast()] <= nums[i]) {
+                dq.pollLast();
+            }
+            dq.offerLast(i);
+            // Add to result when window is complete
+            if (i >= k - 1) {
+                result[i - k + 1] = nums[dq.peekFirst()];
+            }
+        }
+        return result;
+    }
+}

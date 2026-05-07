@@ -1,0 +1,3800 @@
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 1
+============================================================
+
+
+[Speaker Notes]
+1st slide (Mandatory)
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 2
+============================================================
+
+
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 3
+============================================================
+
+
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 4
+============================================================
+
+
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 5
+============================================================
+
+
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 6
+============================================================
+
+
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 7
+============================================================
+
+
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 8
+============================================================
+
+
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 9
+============================================================
+
+
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 10
+============================================================
+
+
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 11
+============================================================
+
+
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 12
+============================================================
+
+
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 13
+============================================================
+
+//Max Equilibrium Sum
+public class MES {
+    public static int getMaxEquilibriumSumOptimized(int[] arr) {
+        int totalSum = 0;
+        int leftSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+       for (int i = 0; i < arr.length; i++) {
+        totalSum += arr[i];
+        }       
+        for (int i = 0; i < arr.length; i++) {
+           
+            totalSum -= arr[i];   
+            if (leftSum == totalSum && leftSum > maxSum) {
+                maxSum = leftSum;
+            }
+            leftSum += arr[i];
+        }
+        return maxSum;
+    }
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5, 4, 3, 2, 1};
+        int maxSum = getMaxEquilibriumSumOptimized(arr);
+        System.out.println("Max Equilibrium Sum : " + maxSum);
+    }
+}
+
+============================================================
+[L22 -Max Equlibrium Sum.pptx] Page/Slide 14
+============================================================
+
+THANK YOU
+
+============================================================
+[L23-Leaders in  an Array.pptx] Page/Slide 1
+============================================================
+
+
+[Speaker Notes]
+1st slide (Mandatory)
+
+============================================================
+[L23-Leaders in  an Array.pptx] Page/Slide 2
+============================================================
+
+
+
+============================================================
+[L23-Leaders in  an Array.pptx] Page/Slide 3
+============================================================
+
+
+
+============================================================
+[L23-Leaders in  an Array.pptx] Page/Slide 4
+============================================================
+
+
+
+============================================================
+[L23-Leaders in  an Array.pptx] Page/Slide 5
+============================================================
+
+
+
+============================================================
+[L23-Leaders in  an Array.pptx] Page/Slide 6
+============================================================
+
+
+
+============================================================
+[L23-Leaders in  an Array.pptx] Page/Slide 7
+============================================================
+
+
+
+============================================================
+[L23-Leaders in  an Array.pptx] Page/Slide 8
+============================================================
+
+Brute Force Algorithm
+
+============================================================
+[L23-Leaders in  an Array.pptx] Page/Slide 9
+============================================================
+
+Scan Array from Right
+
+============================================================
+[L23-Leaders in  an Array.pptx] Page/Slide 10
+============================================================
+
+THANK YOU
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 1
+============================================================
+
+
+[Speaker Notes]
+1st slide (Mandatory)
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 2
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 3
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 4
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 5
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 6
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 7
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 8
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 9
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 10
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 11
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 12
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 13
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 14
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 15
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 16
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 17
+============================================================
+
+
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 18
+============================================================
+
+public class MajorityElement {
+2	
+3	    public static int findMajorityElement(int[] nums) {
+4	        int candidate = 0;
+5	        int count = 0;
+6	        
+7	        for (int num : nums) {
+8	            if (count == 0) {
+9	                candidate = num;
+10	                count = 1;
+11	            } else if (candidate == num) {
+12	                count++;
+13	            } else {
+14	                count--;
+15	            }
+16	        }
+17	        
+18	        // Verify the candidate
+19	        int majorityCount = 0;
+20
+21	        for (int num : nums) {
+22	            if (num == candidate) {
+23	                majorityCount++;
+24	            }
+25	        }
+26	        
+27	        if (majorityCount > nums.length / 2) {
+28	            return candidate;
+29	        }
+30	        
+31	        return -1; // No majority element found
+32	    }
+33	
+34	    public static void main(String[] args) {
+35	        int[] nums = {3, 2, 3};
+36	        int majorityElement = findMajorityElement(nums);
+37	        
+38	        if (majorityElement != -1) {
+39	            System.out.println("Majority element: " + majorityElement);
+40	        } else {
+41	            System.out.println("No majority element found.");
+42	        }
+43	    }
+44	}
+
+============================================================
+[L24- Majority element.pptx] Page/Slide 19
+============================================================
+
+THANK YOU
+
+============================================================
+[L27-Quick, Selection Sort.pptx] Page/Slide 1
+============================================================
+
+
+[Speaker Notes]
+1st slide (Mandatory)
+
+============================================================
+[L27-Quick, Selection Sort.pptx] Page/Slide 2
+============================================================
+
+Topic/Course
+Quick Sort
+QuickSort is a widely used divide-and-conquer sorting algorithm. It works by selecting a pivot element from the list and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then recursively sorted, and the process continues until the entire list is sorted.
+
+Here's a step-by-step explanation of how the QuickSort algorithm works:
+
+1. Choose a pivot element from the list. The pivot can be selected in various ways, such as taking the first element, the last element, or a random element. For simplicity, let's assume we select the last element of the list as the pivot.
+
+2. Partition the list by rearranging the elements such that all elements smaller than the pivot are placed before it, and all elements greater than the pivot are placed after it. After this partitioning step, the pivot is in its final sorted position.
+
+3. Recursively apply the above two steps to the sub-array of elements smaller than the pivot and the sub-array of elements greater than the pivot. This means performing the partitioning step on each sub-array and continuing the process until each sub-array contains only one element or is empty.
+
+4. Once the recursion ends and all sub-arrays are sorted, the entire list is sorted.
+
+============================================================
+[L27-Quick, Selection Sort.pptx] Page/Slide 3
+============================================================
+
+Here's an example to illustrate the steps:
+
+Consider the list: [8, 3, 1, 7, 0, 10, 2]
+
+Step 1: Choose the pivot. Let's choose the last element, 2.
+
+Step 2: Partition the list. Rearrange the elements such that all elements smaller than 2 come before it, and all elements greater than 2 come after it.
+
+Partitioned list: [1, 0, 2, 7, 8, 10, 3]
+
+Step 3: Recursively apply the above steps to the sub-arrays. In this case, we have two sub-arrays: [1, 0] and [7, 8, 10, 3].
+
+For the sub-array [1, 0]:
+- Choose the last element, 0, as the pivot.
+- Partition the list: [0, 1]
+
+For the sub-array [7, 8, 10, 3]:
+- Choose the last element, 3, as the pivot.
+- Partition the list: [7, 8, 3, 10]
+Continue applying the steps recursively to the sub-arrays until each sub-array contains only one element or is empty.
+
+Step 4: The recursion ends when each sub-array is sorted (contains only one element or is empty). At this point, the entire list is sorted.
+
+Final sorted list: [0, 1, 2, 3, 7, 8, 10]
+
+QuickSort has an average time complexity of O(n log n), making it efficient for large lists. However, its worst-case time complexity can be O(n^2) if the pivot selection is unbalanced, which can be mitigated by using randomized pivot selection or other techniques. Overall, QuickSort is a widely used and efficient sorting algorithm.
+
+============================================================
+[L27-Quick, Selection Sort.pptx] Page/Slide 4
+============================================================
+
+public class QuickSort {
+
+    public static void main(String[] args) {
+        int[] arr = {8, 3, 1, 7, 0, 10, 2};
+        quickSort(arr, 0, arr.length - 1);
+        System.out.println("Sorted array:");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+
+    public static void quickSort(int[] arr, int low, int high) {
+        if (low < high) {
+            // Partition the array
+            int partitionIndex = partition(arr, low, high);
+
+            // Recursively sort the sub-arrays
+            quickSort(arr, low, partitionIndex - 1);
+            quickSort(arr, partitionIndex + 1, high);
+        }
+    }
+public static int partition(int[] arr, int low, int high) {
+int pivot = arr[high];
+int i = low - 1;
+        for (int j = low; j < high; j++) {
+if (arr[j] <= pivot) {
+                i++;
+
+                // Swap arr[i] and arr[j]
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+
+int temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
+
+        return i + 1;
+    }
+}
+
+============================================================
+[L27-Quick, Selection Sort.pptx] Page/Slide 5
+============================================================
+
+Topic/Course
+Selection Sort
+Certainly! Here's a step-by-step explanation of how the selection sort algorithm works:
+
+1. Start with an unsorted list of elements.
+   Example: [64, 25, 12, 22, 11]
+
+2. The algorithm divides the list into two parts: the sorted part and the unsorted part. Initially, the sorted part is empty, and the unsorted part contains all the elements.
+
+3. In each iteration, the algorithm finds the minimum element from the unsorted part of the list.
+
+4. To find the minimum element, the algorithm compares each element in the unsorted part with the current minimum element. If it finds a smaller element, it updates the minimum element.
+
+5. Once the minimum element is found, it is swapped with the first element of the unsorted part. This places the minimum element at the end of the sorted part and expands the sorted part by one element.
+
+6. The algorithm repeats steps 3-5 until the entire list is sorted. The sorted part gradually grows from left to right until it encompasses the entire list.
+
+7. Finally, when the algorithm completes all iterations, the list is fully sorted.
+
+============================================================
+[L27-Quick, Selection Sort.pptx] Page/Slide 6
+============================================================
+
+Here's an example to illustrate the steps:
+
+Iteration 1:
+- Find the minimum element from the unsorted part [64, 25, 12, 22, 11]. The minimum is 11.
+- Swap the minimum element (11) with the first element (64) of the unsorted part.
+- The sorted part becomes [11], and the unsorted part becomes [64, 25, 12, 22].
+
+Iteration 2:
+- Find the minimum element from the unsorted part [64, 25, 12, 22]. The minimum is 12.
+- Swap the minimum element (12) with the first element (64) of the unsorted part.
+- The sorted part becomes [11, 12], and the unsorted part becomes [64, 25, 22].
+
+Iteration 3:
+- Find the minimum element from the unsorted part [64, 25, 22]. The minimum is 22.
+- Swap the minimum element (22) with the first element (64) of the unsorted part.
+- The sorted part becomes [11, 12, 22], and the unsorted part becomes [64, 25].
+Iteration 4:
+- Find the minimum element from the unsorted part [64, 25]. The minimum is 25.
+- Swap the minimum element (25) with the first element (64) of the unsorted part.
+- The sorted part becomes [11, 12, 22, 25], and the unsorted part becomes [64].
+
+Iteration 5:
+- Find the minimum element from the unsorted part [64]. The minimum is 64.
+- Swap the minimum element (64) with the first element (64) of the unsorted part. (No change in this step)
+- The sorted part becomes [11, 12, 22, 25, 64], and the unsorted part becomes [] (empty).
+
+The iterations are now complete, and the list [64, 25, 12, 22, 11] is sorted in ascending order to [11, 12, 22, 25, 64].
+
+Selection sort has a time complexity of O(n^2), where n is the number of elements in the list. It is not very efficient for large lists, but it is simple to implement and performs well for small lists or partially sorted lists.
+
+============================================================
+[L27-Quick, Selection Sort.pptx] Page/Slide 7
+============================================================
+
+public class SelectionSort {
+    public static void main(String[] args) {
+        int[] arr = {64, 25, 12, 22, 11};
+        selectionSort(arr);
+        System.out.println("Sorted array:");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+    public static void selectionSort(int[] arr) {
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
+int minIndex = i;
+            for (int j = i + 1; j < n; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+            }
+int temp = arr[minIndex];
+            arr[minIndex] = arr[i];
+            arr[i] = temp;
+        }
+    }
+}
+
+============================================================
+[L27-Quick, Selection Sort.pptx] Page/Slide 8
+============================================================
+
+THANK YOU
+
+============================================================
+[L31-Sorted Unique Permutation.pptx] Page/Slide 1
+============================================================
+
+
+[Speaker Notes]
+1st slide (Mandatory)
+
+============================================================
+[L31-Sorted Unique Permutation.pptx] Page/Slide 2
+============================================================
+
+Sorted Unique Permutation
+Print distinct sorted permutations with duplicates allowed in input
+Write a program to print all distinct permutations of a given string in sorted order. Note that the input string may contain duplicate characters.In mathematics, the notion of permutation relates to the act of arranging all the members of a set into some sequence or order, or if the set is already ordered, rearranging (reordering) its elements, a process called permuting.
+Examples:
+Input : BAC Output : ABC ACB BAC BCA CAB CBAInput : AAB Output : AAB ABA BAAInput : DBCA Output: ABCD ABDC ACBD ACDB ADBC ADCB BACD BADC BCAD BCDA BDAC BDCA CABD CADB CBAD CBDA CDAB CDBA DABC DACB DBAC DBCA DCAB DCBA
+
+============================================================
+[L31-Sorted Unique Permutation.pptx] Page/Slide 3
+============================================================
+
+sorted Permutations
+Concept Used: The number of Strings generated by a string of distinct characters of length ‘n’ is equal to ‘n!’. Sorting any given string and generating the lexicographically next bigger string until we reach the largest lexicographically string from those characters.
+Different permutations of word “geeks” Length of string = 5 Character ‘e’ repeats 2 times. Result = 5!/2! = 60.
+
+============================================================
+[L31-Sorted Unique Permutation.pptx] Page/Slide 4
+============================================================
+
+Sorted Permutations
+Steps: 
+Example: Consider a string “ABCD”.Step 1: Sort the string. Step 2: Obtain the total number of permutations which can be formed from that string. Step 3: Print the sorted string and then loop for the number of (permutations-1) times as 1st string is already printed. Step 4: Find the next greater string.
+
+============================================================
+[L31-Sorted Unique Permutation.pptx] Page/Slide 5
+============================================================
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+public class Permutations {
+    public static void main(String[] args) {
+        String input = "BAC";
+        distinctPermutations(input);
+    }
+
+    public static void distinctPermutations(String input) {
+        char[] chars = input.toCharArray();
+        Arrays.sort(chars);
+        input = new String(chars);
+        permute(input.toCharArray(), 0);
+    }
+
+    public static void permute(char[] chars, int index) {
+        if (index == chars.length - 1) {
+            System.out.println(String.valueOf(chars));
+            return;
+        }
+Set<Character> used = new HashSet<>();
+        for (int i = index; i < chars.length; i++) {
+            if (used.contains(chars[i]))
+                continue;
+
+            used.add(chars[i]);
+            swap(chars, index, i);
+            permute(chars, index + 1);
+            swap(chars, index, i);
+        }
+    }
+
+    public static void swap(char[] chars, int i, int j) {
+        char temp = chars[i];
+        chars[i] = chars[j];
+        chars[j] = temp;
+    }
+}
+
+============================================================
+[L31-Sorted Unique Permutation.pptx] Page/Slide 6
+============================================================
+
+THANK YOU
+
+============================================================
+[L32-Maneuvering.pptx] Page/Slide 1
+============================================================
+
+
+[Speaker Notes]
+1st slide (Mandatory)
+
+============================================================
+[L32-Maneuvering.pptx] Page/Slide 2
+============================================================
+
+Topic/Course
+Maneuvering
+Maneuvering a Cave Problem
+Problem:
+The task is to count all the possible paths from top left to bottom right of a m x n matrix with the constraints that from each cell you can either move only to right or down.
+Examples : 
+Input : m = 2, n = 2; 
+Output : 2 
+There are two paths 
+(0, 0) -> (0, 1) -> (1, 1) 
+(0, 0) -> (1, 0) -> (1, 1)
+
+============================================================
+[L32-Maneuvering.pptx] Page/Slide 3
+============================================================
+
+Let NumberOfPaths(m, n) be the count of paths to reach row number m and column number n in the matrix, NumberOfPaths(m, n) can be recursively written as following.
+class Main {
+    static int numberOfPaths(int m, int n){
+         if (m == 1 || n == 1)
+            return 1;
+         return numberOfPaths(m-1,n)+numberOfPaths(m,n-1);
+        // + numberOfPaths(m-1, n-1);
+    }
+ 
+    public static void main(String args[])
+    {
+        System.out.println(numberOfPaths(3, 3));
+    }
+}
+
+============================================================
+[L32-Maneuvering.pptx] Page/Slide 4
+============================================================
+
+THANK YOU
+
+============================================================
+[L33-Combination.pptx] Page/Slide 1
+============================================================
+
+
+[Speaker Notes]
+1st slide (Mandatory)
+
+============================================================
+[L33-Combination.pptx] Page/Slide 2
+============================================================
+
+Topic/Course
+Combination
+Permutation and Combination are two important concepts. 
+Permutation is the different arrangements of the set elements. The arrangements can be made by taking one element at a time, some element at a time and all elements at a time. 
+Combination is the different selections of the set of elements taken one by one, or some, or all at a time. In Java, the definition of Permutation and Combination is the same.
+
+============================================================
+[L33-Combination.pptx] Page/Slide 3
+============================================================
+
+Combination is the different selections of the set of elements taken one by one, or some, or all at a time. 
+In Java, the definition of Permutation and Combination is the same.
+For example, if we have a set having only two elements, X and Y.
+Combination value is very easy in Java but to get all the combination of array, list, and set elements is more difficult than getting permutations. For getting the combination value programmatically in Java, we use the following formula:
+	Combination = fact(n) / (fact(r) * fact(n-r));
+
+============================================================
+[L33-Combination.pptx] Page/Slide 4
+============================================================
+
+
+
+============================================================
+[L33-Combination.pptx] Page/Slide 5
+============================================================
+
+import java.util.*;   
+public class CombinationExample {  
+   static int fact(int number) {  
+      int f = 1;  
+      int j = 1;  
+      while(j <= number) {  
+         f = f * j;  
+         j++;  
+      }  
+      return f;  
+   }  
+public static void main(String args[]) {  
+         
+      List<Integer> numbers = new ArrayList<Integer>();
+numbers.add(9);  
+      numbers.add(12);  
+      numbers.add(19);  
+      numbers.add(61);  
+      numbers.add(19);          
+      int n = numbers.size();  
+      int r = 2;  int result;  
+       result = fact(n) / (fact(r) * fact(n-r));  
+      System.out.println("The combination value for the numbers list is: " + result);  
+   }  
+}
+
+============================================================
+[L33-Combination.pptx] Page/Slide 6
+============================================================
+
+
+
+============================================================
+[L33-Combination.pptx] Page/Slide 7
+============================================================
+
+THANK YOU
+
+============================================================
+[L34-Josephus trap.pptx] Page/Slide 1
+============================================================
+
+
+[Speaker Notes]
+1st slide (Mandatory)
+
+============================================================
+[L34-Josephus trap.pptx] Page/Slide 2
+============================================================
+
+Josephus trap
+In computer science and mathematics, the Josephus Problem (or Josephus permutation) is a theoretical problem.
+The problem statement:
+There are n people standing in a circle waiting to be executed. The counting out begins at some point in the circle and proceeds around the circle in a fixed direction.
+
+How is the Josephus problem solved?
+The Josephus problem can be solved using recursion. For each iteration, recursively delete the Kth position until only one person is left.
+
+============================================================
+[L34-Josephus trap.pptx] Page/Slide 3
+============================================================
+
+Example Diagram
+
+============================================================
+[L34-Josephus trap.pptx] Page/Slide 4
+============================================================
+
+import java.io.*; 
+class Main { 
+    static int josephus(int n, int k){
+        if (n == 1)
+            return 1;
+        else
+return (josephus(n - 1, k) + k - 1) % n + 1;
+    }
+ 
+public static void main(String[] args){
+        int n = 14;
+        int k = 2;
+        System.out.println("The chosen place is "
+                           + josephus(n, k));
+    }
+}
+Output
+The chosen place is 13
+
+============================================================
+[L34-Josephus trap.pptx] Page/Slide 5
+============================================================
+
+THANK YOU
+
+============================================================
+[L35-Maze Solving.pptx] Page/Slide 1
+============================================================
+
+
+[Speaker Notes]
+1st slide (Mandatory)
+
+============================================================
+[L35-Maze Solving.pptx] Page/Slide 2
+============================================================
+
+Topic/Course
+Maze Solving
+Introduction 
+
+Consider the maze to be a black and white image, with black pixels representing walls, and white pixels representing a path. Two white pixels are special, one being the entry to the maze and another exit.
+Given such a maze, we want to find a path from entry to the exit.
+
+Modelling the Maze
+0 -> Road
+1 -> Wall
+2 -> Maze entry
+3 -> Maze exit
+4 -> Cell part of the path from entry to exit
+
+============================================================
+[L35-Maze Solving.pptx] Page/Slide 3
+============================================================
+
+Gray blocks are dead ends (value = 0). 
+
+ binary matrix representation of the above maze.
+
+{ 1, 0, 0, 0}
+{1, 1, 0, 1}
+{0, 1, 0, 0} 
+{1, 1, 1, 1}
+
+============================================================
+[L35-Maze Solving.pptx] Page/Slide 4
+============================================================
+
+
+
+============================================================
+[L35-Maze Solving.pptx] Page/Slide 5
+============================================================
+
+public class RatMaze {
+    final int N = 4; 
+void printSolution(int sol[][]){
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++)
+                System.out.print(" " + sol[i][j] + " ");
+            System.out.println();
+        }} 
+boolean isSafe(int maze[][], int x, int y){
+	return (x >= 0 && x < N && y >= 0 && y < N && maze[x][y] == 1);
+    }
+ {
+        int sol[][] = { { 0, 0, 0, 0 },
+                        { 0, 0, 0, 0 },
+                        { 0, 0, 0, 0 },
+                        { 0, 0, 0, 0 } };
+if (solveMazeUtil(maze, 0, 0, sol) == false) {
+            System.out.print("Solution doesn't exist");
+            return false;
+        } 
+        printSolution(sol);
+        return true;
+    } 
+boolean solveMazeUtil(int maze[][], int x, int y,int sol[][]){
+  if (x == N - 1 && y == N - 1) {
+            sol[x][y] = 1;
+            return true;
+        }
+ if (isSafe(maze, x, y) == true) {
+sol[x][y] = 1;
+if (solveMazeUtil(maze, x + 1, y, sol))
+                return true; 
+if (solveMazeUtil(maze, x, y + 1, sol))
+                return true;
+
+============================================================
+[L35-Maze Solving.pptx] Page/Slide 6
+============================================================
+
+sol[x][y] = 0;            return false;        }         return false;    }     public static void main(String args[]){        RatMaze rat = new RatMaze();        int maze[][] = { { 1, 0, 0, 0 },                         { 1, 1, 0, 1 },                         { 0, 1, 0, 0 },                         { 1, 1, 1, 1 } };        rat.solveMaze(maze);    }}          
+Output:       1  0  0  0        1  1  0  0        0  1  0  0        0  1  1  1
+maze[][]={ {1, 1, 1, 1, 1},		{0, 0, 1, 0, 1},		{1, 1, 1, 1, 0},		{1, 0, 0, 0, 1},		{1, 1, 1, 1, 1}   };
+
+============================================================
+[L35-Maze Solving.pptx] Page/Slide 7
+============================================================
+
+THANK YOU
+
+============================================================
+[L36-N Queens.pptx] Page/Slide 1
+============================================================
+
+
+[Speaker Notes]
+1st slide (Mandatory)
+
+============================================================
+[L36-N Queens.pptx] Page/Slide 2
+============================================================
+
+N Queens
+The N Queen is the problem of placing N chess queens on an N×N chessboard so that no two queens attack each other.
+
+Example
+       The following is a solution for 4 Queen problem. The expected output is a binary matrix which has 1s for the blocks where queens are placed.
+
+============================================================
+[L36-N Queens.pptx] Page/Slide 3
+============================================================
+
+What is Backtracking?
+In backtracking, we start with one pos­si­ble move out of many avail­able moves. We then try to solve the prob­lem.
+What is the N-Queens Problem?
+How can N queens be placed on an NxN chessboard so that no two of them attack each other?
+This problem is commonly seen for N=4 and N=8.
+Let’s look at an example where N=4
+N Queens Problem
+
+============================================================
+[L36-N Queens.pptx] Page/Slide 4
+============================================================
+
+Before solving the problem, you need to know about the movement of the queen in chess.
+A queen can move any number of steps in any direction. The only constraint is that it can’t change its direction while it’s moving.
+One thing that is clear by looking at the queen’s movement is that no two queens can be in the same row or column.
+That allows us to place only one queen in each row and each column.
+When N=4, the solution looks like :
+N Queens Problem-Movement of Queen
+
+============================================================
+[L36-N Queens.pptx] Page/Slide 5
+============================================================
+
+Solution to the N-Queens Problem
+The way we try to solve this is by placing a queen at a position and trying to rule out the possibility of it being under attack. We place one queen in each row/column.
+If we see that the queen is under attack at its chosen position, we try the next position.
+If a queen is under attack at all the positions in a row, we backtrack and change the position of the queen placed prior to the current position.
+We repeat this process of placing a queen and backtracking until all the N queens are placed successfully.
+Queen solution
+N Queens Problem-Movement of Queen
+
+============================================================
+[L36-N Queens.pptx] Page/Slide 6
+============================================================
+
+The step by step backtracking is shown as follows:
+Start
+No place for queen 3, so we backtrack
+
+============================================================
+[L36-N Queens.pptx] Page/Slide 7
+============================================================
+
+After backtracking we are not able to place queen 4, so again we backtrack.
+This time we backtrack all the way to the first queen.
+
+============================================================
+[L36-N Queens.pptx] Page/Slide 8
+============================================================
+
+First three queens placed successfully after backtracking.
+All the queens placed
+
+============================================================
+[L36-N Queens.pptx] Page/Slide 9
+============================================================
+
+public class NQueenProblem {
+    final int N = 4; 
+void printSolution(int board[][]){
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++)
+                System.out.print(" " + board[i][j]
+                                 + " ");
+            System.out.println();        }
+    } 
+    boolean isSafe(int board[][], int row, int col){
+        int i, j; 
+        for (i = 0; i < col; i++)
+            if (board[row][i] == 1)
+                return false; 
+
+        for (i = row, j = col; i >= 0 && j >= 0; i--, j--)
+if (board[i][j] == 1)
+                return false; 
+
+        for (i = row, j = col; j >= 0 && i < N; i++, j--)
+            if (board[i][j] == 1)
+                return false; 
+        return true;
+    } 
+    boolean solveNQUtil(int board[][], int col){
+
+        if (col >= N)
+            return true; 
+
+        for (int i = 0; i < N; i++) {
+
+            if (isSafe(board, i, col)) {
+
+                board[i][col] = 1;
+
+============================================================
+[L36-N Queens.pptx] Page/Slide 10
+============================================================
+
+if (solveNQUtil(board, col + 1) == true)
+                    return true; 
+                board[i][col] = 0; // BACKTRACK
+            }        }
+        return false;
+    }
+    boolean solveNQ()
+    {
+        int board[][] = { { 0, 0, 0, 0 },
+                          { 0, 0, 0, 0 },
+                          { 0, 0, 0, 0 },
+                          { 0, 0, 0, 0 } }; 
+        if (solveNQUtil(board, 0) == false) {
+            System.out.print("Solution does not exist");
+            return false;
+        } 
+        printSolution(board);
+        return true;
+    }
+public static void main(String args[]){
+        NQueenProblem Queen = new NQueenProblem();
+        Queen.solveNQ();
+    }}
+Output:
+                               0  0  1  0 
+                               1  0  0  0 
+                               0  0  0  1 
+                               0  1  0  0
+
+============================================================
+[L36-N Queens.pptx] Page/Slide 11
+============================================================
+
+THANK YOU
+
+============================================================
+[Module-02.pdf] Page/Slide 1
+============================================================
+
+Module-02
+
+
+============================================================
+[Module-02.pdf] Page/Slide 2
+============================================================
+
+❑Simple Sieve
+❑Segmented Sieve
+❑Euler's phi Algorithm
+❑Remainder Theorem
+❑Strobogrammatic Number
+❑Binary Palindrome
+❑Booth's Algorithm
+
+
+============================================================
+[Module-02.pdf] Page/Slide 3
+============================================================
+
+• Write a java program for finding a number is prime or not.
+1.Time complexity should be  O(n).
+we will try to reduce it to 
+2.Time Complexity should be O
+
+
+============================================================
+[Module-02.pdf] Page/Slide 4
+============================================================
+
+1.
+import java.util.Scanner;
+2.
+public class Main {
+3.
+public static void main(String[] args) {
+4.
+Scanner sc=new Scanner(System.in);
+5.
+int n=sc.nextInt();
+6.
+for(int i=2;i<=n;i++)
+7.
+{
+8.
+if(n%i==0)
+9.
+{
+10.
+System.out.print("not a prime");
+11.
+return;
+12.
+}
+13.
+}
+14.
+System.out.print("prime");
+15.
+return;
+16.
+}
+17.
+}                                                              Time Complexity – O(n)
+
+
+============================================================
+[Module-02.pdf] Page/Slide 5
+============================================================
+
+1.
+import java.util.Scanner;
+2.
+public class Main
+3.
+{
+4.
+public static void main(String[] args) {
+5.
+Scanner sc=new Scanner(System.in);
+6.
+int n=sc.nextInt();
+7.
+for(int i=2;i*i<=n;i++)
+8.
+{
+9.
+if(n%i==0)
+10.
+{
+11.
+System.out.print("not a prime");
+12.
+return;
+13.
+}
+14.
+}
+15.
+System.out.print("prime");
+16.
+return;
+17.
+}
+18. }
+Time Complexity – O( srqt(n))
+
+
+============================================================
+[Module-02.pdf] Page/Slide 6
+============================================================
+
+• Sieve of Eratosthenes is a method to find the prime numbers and 
+composite numbers among a group of numbers.
+• Prime Numbers?
+• Composite Numbers?
+
+
+============================================================
+[Module-02.pdf] Page/Slide 7
+============================================================
+
+• What are all prime numbers less than 20. (Use the Sieve of 
+Eratosthenes method).
+❖Now, exclude 1 since it is not a prime nor a composite number.
+❖In the next step, encircle 2 and cross the multiples of 2 (4, 6, 8, 10, 12, 
+14, 16, 18, 20)
+❖Encircle 3 and cross the left multiples of 3 (9, 15)
+❖Encircle 5 and cross the left multiples of 5 (only 10 is left)
+❖Now, encircle the rest of the numbers 7, 11, 13, 17 and 19.
+
+
+============================================================
+[Module-02.pdf] Page/Slide 8
+============================================================
+
+
+
+============================================================
+[Module-02.pdf] Page/Slide 9
+============================================================
+
+Steps of Sieve’s Algorithm
+• Step-1 Take a Boolean array of size like up to what range you want to 
+know the prime numbers.
+• Step-2 Except 0 & 1 index of the array mark all the remaining 
+elements as “true”.
+• Step-3 Start from 2 cross out all the multiples of 2 and then for 3 and 
+so on..
+• Step-4 Take a loop and print wherever array contains true value.
+
+
+============================================================
+[Module-02.pdf] Page/Slide 10
+============================================================
+
+Code
+1.
+public static void sieve(int n)
+2.
+{
+3.
+boolean p[]=new boolean[n+1];
+4.
+for(int i=2;i<=n;i++)
+5.
+p[i]=true;
+6.
+for(int i=2;i*i<=n;i++)  {
+7.
+for(int j=i*i;j<=n;j=j+i)  {
+8.
+if(p[j]==true)
+9.
+p[j]=false;
+10.
+}
+11.
+}
+12.
+for(int i=2;i<=n;i++)   {
+13.
+if(p[i])
+14.
+System.out.print(i+" ");
+15.
+}
+16.
+}
+
+
+============================================================
+[Module-02.pdf] Page/Slide 11
+============================================================
+
+Time Complexity
+➢For each prime p we are marking 2p,3p,4p,……kp.
+➢n/2 + n/3 + n/4 +…….
+➢n(1/2 + 1/3 + 1/4+…..)
+➢n(log(log n))
+➢Hence O(n log(log n))
+
+
+============================================================
+[Module-02.pdf] Page/Slide 12
+============================================================
+
+Euclid’s Algorithm
+
+
+============================================================
+[Module-02.pdf] Page/Slide 13
+============================================================
+
+• GCD can be found in two ways:
+i.
+Traditional Method
+ii.
+Euclid’s Algorithm
+Traditional Method
+Example : gcd (12,33)→?
+Given  Numbers               12                                  33
+Divisors ----------------1,2,3,4,6,12                   1,3,11,33
+Common Divisors    ----------------------- 1,3 
+Greatest Common Divisors-----------------3
+
+
+============================================================
+[Module-02.pdf] Page/Slide 14
+============================================================
+
+Euclid Algorithm:
+Example gcd(12,33)----->?
+Max(12,33) will be given to a 
+quotient                     a                        b                       remainder 
+2                            33                     12                                9
+1                            12                       9                                3
+3                             9                        3                                0
+3                        0
+Stop the process as b is ‘0’ and whatever the ‘a’ contains that is the gcd 
+of the two numbers.
+gcd(12,33)=3
+
+
+============================================================
+[Module-02.pdf] Page/Slide 15
+============================================================
+
+1.
+import java.util.Scanner;
+2.
+class Main{
+3.
+public static int gcd(int a,int b)
+4.
+{
+5.
+if(b==0)
+6.
+return a;
+7.
+return gcd(b,a%b);
+8.
+}
+9.
+public static void main (String[] args) {
+10.
+Scanner sc=new Scanner(System.in);
+11.
+int n=sc.nextInt();
+12.
+int m=sc.nextInt();
+13.
+System.out.print(gcd(n,m));
+14.
+}
+15. }
+
+
+============================================================
+[Module-02.pdf] Page/Slide 16
+============================================================
+
+Euler’s Phi Algorithm
+
+
+============================================================
+[Module-02.pdf] Page/Slide 17
+============================================================
+
+Euler’s Phi Function
+• Denoted by
+• Euler's phi (or totient) function of a positive integer n is the number of 
+integers in {1,2,3,...,n} which are relatively prime to n.
+Relatively Prime:
+Two numbers are said to be relatively prime if their greatest common 
+factor ( GCD or HCF ) is 1 .
+
+
+============================================================
+[Module-02.pdf] Page/Slide 18
+============================================================
+
+• Example-1
+So for the numbers that are less than 5 i.e. 1,2,3 & 4 for these numbers 
+we have to check whether gcd is 1 or not and finally we have to count 
+how many pairs of n gcd is 1 and we have to say the count that is called 
+as eulers phi function.
+Gcd(1,5)----→1
+Gcd(2,5)----→1
+Gcd(3,5)----→1
+Gcd(4,5)-----→1
+Therefore phi(5) is  4.
+
+
+============================================================
+[Module-02.pdf] Page/Slide 19
+============================================================
+
+• Example-2
+?????
+We have to check number with 1,2,3,4,5,6,7.
+Gcd(1,8)=1
+Gcd(2,8)=2
+Gcd(3,8)=1
+Gcd(4,8)=4               we have to count only pairs which give gcd as 1 so 
+Gcd(5,8)=1                    phi (8)-->4.
+Gcd(6,8)=2
+Gcd(7,8)=1
+
+
+============================================================
+[Module-02.pdf] Page/Slide 20
+============================================================
+
+• So if the input number is large it is difficult find all the relative prime 
+pairs that is reason Euler introduced 3 formulas through which we can 
+easily tell the relatively prime pairs count.
+i.
+If the given number ‘n’ is prime then 
+ii.
+If the given number is not a prime number but we can represent ‘n’ 
+as product as primes the                                                 here p != q.
+iii. If the above two failed then find the prime factors and substitute in 
+the below formula:
+
+
+============================================================
+[Module-02.pdf] Page/Slide 21
+============================================================
+
+Examples:
+1. num=7
+As num is prime we can substitute in phi(num)=num-1 formula
+So 7-1=6 relatively primes are there for 7.
+2. num=21
+Here num is not a prime number but this can be represented in the 
+product of primes form i.e. 7*3
+So (7-1)(3-1)=6(2)=12 relatively primes are there for 21.
+
+
+============================================================
+[Module-02.pdf] Page/Slide 22
+============================================================
+
+3. num=1000
+Prime factors of 1000 are 2^3 * 5^3 
+So after removing powers we will remain with 2 and 5 and now apply 
+3rd formula we will get 400 as the result.
+Practice Questions
+i.
+5
+ii.
+31
+iii. 35
+iv. 7000
+v.
+369
+vi. 372
+
+
+============================================================
+[Module-02.pdf] Page/Slide 23
+============================================================
+
+1.
+import java.util.*;
+2.
+public class Eulers {
+3.
+public static void main(String args[]) {
+4.
+Scanner sc = new Scanner(System.in);
+5.
+int num = sc.nextInt();
+6.
+int a = 1, count = 0;
+7.
+for (a = 1; a < num; a++) {
+8.
+if (gcd(a, num) == 1) 
+9.
+count++;    }
+10.
+System.out.print(count);
+11.
+}
+12.
+public static int gcd(int a, int b) {
+13.
+if (a == 0) 
+14.
+return b;
+15.
+return gcd(b % a, a);    } }  }
+
+
+============================================================
+[Module-02.pdf] Page/Slide 24
+============================================================
+
+Chinese Remainder Theorem
+
+
+============================================================
+[Module-02.pdf] Page/Slide 25
+============================================================
+
+Chinese Remainder Theorem
+• It is used to solve a set of different congruent equations with one 
+variable but different modulo which are relatively prime.
+• x ≡ a1(mod m1),
+x ≡ a2(mod m2),
+.
+.
+.
+x ≡ an(mod mn).
+• Where one variable i.e common variable is ‘x’ which we have to find 
+with the help of different modulo m1,m2,m3,…..,mn and a1,a2,….,an.
+• Check Whether (m1,m2,....,mn) are relatively prime or not.
+
+
+============================================================
+[Module-02.pdf] Page/Slide 26
+============================================================
+
+• Substitute the values after finding M1 , M2 , M3 and M1
+-1, M2
+-1, M3
+-1 .
+x=(a1*M1* M1
+-1 + a2*M2* M2
+-1 + a3*M3* M3
+-1 +…….+ an*Mn* Mn
+-1) mod M
+
+
+============================================================
+[Module-02.pdf] Page/Slide 27
+============================================================
+
+Steps :
+• Step 1: Calculate the value of M where M = m1*m2*m3.
+• Step 2: Find M1 , M2 , M3 where M1 = M/m1, M2= M/m2, M3 = M/m3.
+• Step 3: Find M1
+-1, M2
+-1, M3
+-1 which are the modular multiplicative 
+inverses of M-1, M-2, M-3 respectively using the congruence relations 
+give below.
+M1* M1
+-1 ≡ 1(mod m1)
+M2* M2
+-1 ≡ 1(mod m2)
+M3* M3
+-1 ≡ 1(mod m3)
+• Step 4:
+x=(a1*M1* M1
+-1 + a2*M2* M2
+-1 + a3*M3* M3
+-1 +…….+ an*Mn* Mn
+-1) mod M
+
+
+============================================================
+[Module-02.pdf] Page/Slide 28
+============================================================
+
+Example - 01
+• x ≡ 2(mod 3)
+x ≡ 3(mod 5)
+x ≡ 2(mod 7)
+Solution:
+Step→01
+M=m1*m2*m3=>3*5*7➔105
+Step→02
+M1 = M/m1 ➔105/3➔35
+M2 = M/m2 ➔105/5➔21
+M3 = M/m3 ➔105/7➔15
+
+
+============================================================
+[Module-02.pdf] Page/Slide 29
+============================================================
+
+• Step→03
+M1* M1
+-1 = 1 mod m1
+M2* M2
+-1 = 1 mod m2
+M3* M3
+-1 = 1 mod m3
+35*(1)!= 1 mod 3
+35*(2)==1 mod 3    
+So M1
+-1 =2
+21*(1)==1 mod 5    
+So M2
+-1 =1
+15*(1)==1 mod 7
+So M3
+-1 =1
+
+
+============================================================
+[Module-02.pdf] Page/Slide 30
+============================================================
+
+• Step→04
+x=(a1*M1* M1
+-1 + a2*M2* M2
+-1 + a3*M3* M3
+-1 +…….+ an*Mn* Mn
+-1)
+x=(2*35*2)+(3*21*1)+(2*15*1)
+x=140+63+30
+x=233
+Step→05
+X=x mod M
+X=233 mod 105
+X=23
+
+
+============================================================
+[Module-02.pdf] Page/Slide 31
+============================================================
+
+Verifying……
+• x ≡ 2(mod 3)
+x ≡ 3(mod 5)
+x ≡ 2(mod 7)
+Now as now value is 23 substitute that and check whether it is getting 
+the remainder as given in the question or not.
+• 23 ≡ 2(mod 3)        23 ≡ 3(mod 5)      23 ≡ 2(mod 7)   
+
+
+============================================================
+[Module-02.pdf] Page/Slide 32
+============================================================
+
+Practice questions:
+1. x ≡ 8(mod 9)
+x ≡ 3(mod 20)
+2. x ≡ 5(mod 3)
+x ≡ 2(mod 5)
+x ≡ 1(mod 11)
+
+
+============================================================
+[Module-02.pdf] Page/Slide 33
+============================================================
+
+3.        x ​≡ 1(mod3)
+x ≡ 4(mod5)
+x ≡ 6(mod7)
+4.
+x ​≡ 2(mod3)
+x ≡ 3(mod8).​
+
+
+============================================================
+[Module-02.pdf] Page/Slide 34
+============================================================
+
+Binary Palindrome
+
+
+============================================================
+[Module-02.pdf] Page/Slide 35
+============================================================
+
+Binary Palindrome
+• Problem Statement:
+Take a number and convert it into binary form then check whether it is 
+palindrome or not.
+Binary Palindrome Examples:
+0, 1, 11, 101, 111, 1001, 1111, 10001, 10101, 11011, 11111, 100001, ...
+
+
+============================================================
+[Module-02.pdf] Page/Slide 36
+============================================================
+
+1.
+public static boolean isbp(int n)
+2.
+{
+3.
+if(n==0)   return true;
+4.
+int len=(int) (Math.log(n)/Math.log(2))+ 1;
+5.
+int left=len-1, right=0;
+6.
+while(left>right)
+7.
+{  int l=(n>>left)&1;
+8.
+int r=(n>>right)&1;
+9.
+if(l!=r)
+10.
+{
+11.
+return false;
+12.
+}
+13.
+left--;
+14.
+right++;
+15.
+}
+16.
+return true;
+17.
+}
+
+
+============================================================
+[Module-02.pdf] Page/Slide 37
+============================================================
+
+Strobogrammatic Number
+
+
+============================================================
+[Module-02.pdf] Page/Slide 38
+============================================================
+
+Strobogrammatic Number:
+• It is a number that looks same when rotated 180 degrees.
+Examples : 69,96,101,88,181,609,916…..
+• When rotating digits it may falls under any of the following case:
+i.
+Invalid
+ii.
+Stays Same
+iii. Different Digit
+
+
+============================================================
+[Module-02.pdf] Page/Slide 39
+============================================================
+
+If num.length()==1
+• Strobogrammatic Number list is:-[1,0,8]
+
+
+============================================================
+[Module-02.pdf] Page/Slide 40
+============================================================
+
+If num.length()>1
+• Strobogrammatic Number list is:-[1,0,8,6,9]
+
+
+============================================================
+[Module-02.pdf] Page/Slide 41
+============================================================
+
+• Logic is given below
+• If the 
+left part  is                       right part   should contain   
+0 -------------------------->0
+1 -------------------------->1
+8  ------------------------->8
+6 --------------------------> 9
+9  -------------------------->6 
+
+
+============================================================
+[Module-02.pdf] Page/Slide 42
+============================================================
+
+1.
+public static boolean issn(String s)
+2.
+{
+3.
+int l=0,r=s.length()-1;
+4.
+while(l<=r)
+5.
+{
+6.
+int a=s.charAt(l);
+7.
+int b=s.charAt(r);
+8.
+if(a=='0'&& b=='0' || a=='1' && b=='1' || a=='8' && b=='8' || a=='6' && b=='9' || a=='9' && b=='6')
+9.
+{
+10.
+l++;
+11.
+r--;
+12.
+}
+13.
+else
+14.
+return false;    }
+15.
+return true;
+16.
+}
+
+
+============================================================
+[Module-1.pptx] Page/Slide 1
+============================================================
+
+Module-01
+Linked List , Stack , Queue
+
+============================================================
+[Module-1.pptx] Page/Slide 2
+============================================================
+
+Data Structures
+Organized ways to store and manipulate data.
+
+
+Real-Time Applications
+Databases: Efficient storage and retrieval.
+Operating Systems: Process scheduling.
+Networking: Routing and data packet management.
+Web Development: Session and state management.
+AI/ML: Data preprocessing and model representation.
+
+============================================================
+[Module-1.pptx] Page/Slide 3
+============================================================
+
+
+
+============================================================
+[Module-1.pptx] Page/Slide 4
+============================================================
+
+Arrays
+Collection of elements of same type , identified by index.
+
+Characteristics:
+Fixed size.
+Random access. 
+Homogeneous data.
+Syntax
+int[] numbers = {1, 2, 3, 4};System.out.println(numbers[2]);
+
+============================================================
+[Module-1.pptx] Page/Slide 5
+============================================================
+
+
+
+============================================================
+[Module-1.pptx] Page/Slide 6
+============================================================
+
+Advantages:
+Fast access.
+
+
+Disadvantages:
+Static size.
+Insertion/Deletion is costly.
+
+============================================================
+[Module-1.pptx] Page/Slide 7
+============================================================
+
+Linked Lists
+Sequence of nodes, where each node points to the next.
+
+============================================================
+[Module-1.pptx] Page/Slide 8
+============================================================
+
+Advantages:
+Dynamic size.
+Easier insertion/deletion.
+
+Disadvantages:
+No random access.
+Higher memory usage.
+
+============================================================
+[Module-1.pptx] Page/Slide 9
+============================================================
+
+Components of a Linked List
+Node Structure:
+Data: Holds the value.
+Next: Pointer/reference to the next node.
+
+Head:
+Points to the first node.
+
+Tail:
+(Optional) Points to the last node.
+
+============================================================
+[Module-1.pptx] Page/Slide 10
+============================================================
+
+Node Creation
+class Node
+ {
+    int data;
+    Node next;
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 11
+============================================================
+
+Insertion in linked list
+Insertion at the Beginning
+Insert a Node after a Given Node in the Linked List
+Insert a Node at the End of Linked List
+
+============================================================
+[Module-1.pptx] Page/Slide 12
+============================================================
+
+Insertion in the beginning of the LL
+void insert(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+        } 
+   else {
+           newnode.next=head;
+            head=newnode;
+            } }
+
+============================================================
+[Module-1.pptx] Page/Slide 13
+============================================================
+
+Insertion at the end of the linkedlist
+void insert(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = newNode;
+        }
+
+============================================================
+[Module-1.pptx] Page/Slide 14
+============================================================
+
+Insertion at some position in a linkedlist
+static void InsertatPositon(int value, int pos) {
+    ListNode newnode = new ListNode(value);
+    int len = Length();
+    if (pos <= len) {
+      if (pos == 0) {
+        newnode.next = head;
+        head = newnode;
+}
+else {
+        ListNode curr = head;
+        while (--pos != 0)
+          curr = curr.next;
+        newnode.next = curr.next;
+        curr.next = newnode;
+      }
+    } else
+      System.out.println("Invalid Positon");
+  }
+
+============================================================
+[Module-1.pptx] Page/Slide 15
+============================================================
+
+Displaying Linked List
+void display() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
+
+============================================================
+[Module-1.pptx] Page/Slide 16
+============================================================
+
+Loop Detection
+public static boolean detectloop()
+{
+Node5 slow=head;
+Node5 fast=head;
+while(fast!=null && fast.next!=null)
+{
+slow=slow.next;
+fast=fast.next.next;
+if(slow==fast)
+return true;
+}
+return false;
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 17
+============================================================
+
+Form Cycle
+public static boolean formcycle(int a,int b)
+{
+int x=1;
+Node5 p1=head;
+Node5 p2=head;
+while(p1.data!=a || x!=b)
+{
+if(p1.data!=a)
+{
+p1=p1.next;
+if(p1.next==null)return false;
+}
+if(x!=b)
+{
+p2=p2.next;
+x++; 
+} }
+p2.next=p1;
+return true;
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 18
+============================================================
+
+Doubly Linked List
+class Node {
+    int data; 
+    Node next; 
+    Node prev; 
+public Node(int data) {
+        this.data = data;
+        this.next = null;
+        this.prev = null;
+    }
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 19
+============================================================
+
+public void addNode(int data) {
+Node newNode = new Node(data);  
+if(head == null) {
+           head = tail = newNode; 
+           head.previous = null; 
+          tail.next = null;  
+        }
+ else {
+tail.next = newNode;            
+ newNode.previous = tail;     
+                   tail = newNode;  
+ tail.next = null;  
+        }  
+    }
+
+============================================================
+[Module-1.pptx] Page/Slide 20
+============================================================
+
+Sort the bitonic DLL
+static Node sortBitonicDLL(Node head) {
+        if (head == null || head.next == null) return head;
+
+        Node last = head;
+        while (last.next != null) {
+            last = last.next;
+        }
+
+        Node front = head;
+        Node result = null;
+        Node tail = null;
+
+============================================================
+[Module-1.pptx] Page/Slide 21
+============================================================
+
+while (front != null && last != null && front != last && last.next != front) {
+            Node newNode;
+            if (front.data < last.data) {
+                newNode = new Node(front.data);
+                front = front.next;
+            } else {
+                newNode = new Node(last.data);
+                last = last.prev;
+            }
+            if (result == null) {
+                result = newNode;
+                tail = result;
+            } else {
+                tail.next = newNode;
+                newNode.prev = tail;
+                tail = tail.next;
+            }
+        }
+
+============================================================
+[Module-1.pptx] Page/Slide 22
+============================================================
+
+while (front != null && front != last.next) {
+            Node newNode = new Node(front.data);
+            front = front.next;
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = tail.next;
+        }
+
+        while (last != null && last.next != front) {
+            Node newNode = new Node(last.data);
+            last = last.prev;
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = tail.next;
+        }
+
+        return result;
+    }
+
+============================================================
+[Module-1.pptx] Page/Slide 23
+============================================================
+
+Segregate even and odd nodes in a LL
+public static void segregate()
+	 {
+       Node6 even_start=null;
+       Node6 even_end=null;
+       Node6 odd_start=null;
+       Node6 odd_end=null;
+		 Node6 curr=head;
+		 
+		 while(curr!=null)
+		 {
+			 int ele=curr.d;
+
+============================================================
+[Module-1.pptx] Page/Slide 24
+============================================================
+
+if(ele%2==0)
+			 {
+				 if(even_start==null)
+				 {
+					 even_start=curr;
+					 even_end=curr;
+				 }
+				 else
+				 {
+					 even_end.next=curr;
+					 even_end=even_end.next;
+				 }
+			 }
+
+============================================================
+[Module-1.pptx] Page/Slide 25
+============================================================
+
+else
+			 {
+				 if(odd_start==null)
+				 {
+					 odd_start=curr;
+					 odd_end=curr;
+				 }
+				 else
+				 {
+					 odd_end.next=curr;
+					 odd_end=odd_end.next;
+				 }
+			 }
+			 curr=curr.next;
+		 }
+
+============================================================
+[Module-1.pptx] Page/Slide 26
+============================================================
+
+if(odd_start==null || even_start==null)
+			 return;
+		 even_end.next=odd_start;
+		 odd_end.next=null;
+		 head=even_start;
+	 }
+
+============================================================
+[Module-1.pptx] Page/Slide 27
+============================================================
+
+Merge Sort Principle
+Divide: Split the list into two halves using a mid node. The first half runs from the head to just before mid, and the second half starts at mid and runs to the end.
+
+Recursively Sort: Apply MergeSort recursively on both halves.
+
+Merge: Merge the two sorted halves into one sorted list and return the new head node.
+
+============================================================
+[Module-1.pptx] Page/Slide 28
+============================================================
+
+
+
+============================================================
+[Module-1.pptx] Page/Slide 29
+============================================================
+
+Merge Sort for Doubly Linked List
+Input: 10 <-> 8 <-> 4 <-> 2
+Output: 2 <-> 4 <-> 8 <-> 10
+
+
+Input: 5 <-> 3 <-> 2
+Output: 2 <-> 3 <-> 5
+
+============================================================
+[Module-1.pptx] Page/Slide 30
+============================================================
+
+static Node MergeSort(Node head) {      
+if (head == null || head.next == null) {
+            return head;
+        }
+
+       Node second = split(head);
+
+        
+       Node first = MergeSort(head);
+        second = MergeSort(second);
+
+        return merge(first, second);
+    }
+
+============================================================
+[Module-1.pptx] Page/Slide 31
+============================================================
+
+Dividing
+static Node split(Node head) {
+        Node fast = head,slow = head;
+  while (fast != null && fast.next != null  && fast.next.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        Node temp = slow.next;
+        slow.next = null;
+        if (temp != null) {
+            temp.prev = null;
+        }
+        return temp;
+    }
+
+============================================================
+[Module-1.pptx] Page/Slide 32
+============================================================
+
+Merging
+static Node merge(Node first, Node second) {
+        if (first == null)     return second;
+        if (second == null)  return first;
+
+ if (first.data < =second.data) {
+   first.next = merge(first.next, second);
+            if (first.next != null) {
+                first.next.prev = first;
+            }
+            first.prev = null;
+            return first;
+        }
+else {
+           second.next = merge(first, second.next);
+            if (second.next != null) {
+                second.next.prev = second;
+            }
+            second.prev = null;
+            return second;
+        }
+    }
+
+============================================================
+[Module-1.pptx] Page/Slide 33
+============================================================
+
+Stack
+Stack is a linear data structure that follows LIFO (Last In First Out) Principle.
+It means both insertion and deletion operations happen at one end only.
+Basic Operations on Stack:
+In order to make manipulations in a stack, there are certain operations provided to us.
+push() to insert an element into the stack
+pop() to remove an element from the stack
+top() Returns the top element of the stack.
+isEmpty() returns true if stack is empty else false.
+isFull() returns true if the stack is full else false.
+
+============================================================
+[Module-1.pptx] Page/Slide 34
+============================================================
+
+
+
+============================================================
+[Module-1.pptx] Page/Slide 35
+============================================================
+
+Types of Stack
+Fixed Size Stack  (using arrays)
+
+Dynamic Size Stack (using linkedlist)
+
+============================================================
+[Module-1.pptx] Page/Slide 36
+============================================================
+
+Stack using arrays
+public class Stack_Array {
+
+static int top=-1;
+static int maxcap=1000;
+static int arr[]=new int[maxcap];
+
+
+static boolean isfull()
+{
+return top==maxcap-1;
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 37
+============================================================
+
+static boolean isempty()
+{
+return top==-1;
+}
+
+static void push(int e)
+{
+     if(isfull())
+           System.out.println("can't insert element");
+     else
+            arr[++top]=e;
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 38
+============================================================
+
+static void pop()
+{
+if(isempty())
+System.out.println("can't perform deletion");
+else
+top--;
+}
+static void top()
+{
+if(isempty())
+System.out.println("No peek element");
+else
+System.out.println(arr[top]);
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 39
+============================================================
+
+public static void display()
+{
+if(isempty())
+System.out.println("no elements to display");
+else
+{
+System.out.println("stack contains:");
+for(int i=top;i>=0;i--)
+{
+System.out.print(arr[i]+" ");
+}
+}
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 40
+============================================================
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+for(int i=0;i<n;i++)
+{
+int m=sc.nextInt();
+push(m);
+}
+top();
+pop();
+display();
+pop();
+pop();
+}}
+
+============================================================
+[Module-1.pptx] Page/Slide 41
+============================================================
+
+Stack using LinkedList
+class Node3
+{
+int data;
+Node3 next;
+Node3(int e)
+{
+this.data=e;
+this.next=null;
+}
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 42
+============================================================
+
+public class StackLL {
+static Node3 top;
+
+public static void push(int e)
+{
+Node3 newnode=new Node3(e);
+if(top==null)
+top=newnode;
+else {
+newnode.next=top;
+top=newnode;
+}
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 43
+============================================================
+
+public static void pop()
+{
+if(top==null)
+{
+System.out.println(“No elements Stack Empty");
+}
+else
+{
+top=top.next;
+}
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 44
+============================================================
+
+public static void display()
+{
+Node3 temp=top;
+while(temp!=null)
+{
+System.out.print(temp.data+" ");
+temp=temp.next;
+}
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 45
+============================================================
+
+Scanner sc=new Scanner(System.in);
+while(true)
+{
+int n=sc.nextInt();
+   if(n!=-1)
+          push(n);
+   else
+           break;
+}
+display();
+}
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 46
+============================================================
+
+Stack Implementation using Collections
+import java.util.Stack;  
+public class  Main{  
+public static void main(String[] args)   
+{   
+Stack<Integer> stk= new Stack<>();  
+boolean result = stk.empty();  
+System.out.println("Is the stack empty? " + result);  
+stk.push(78);  
+stk.push(113);  
+stk.push(90);  
+stk.push(120);  
+System.out.println("Elements in Stack: " + stk);  
+result = stk.empty();  
+System.out.println("Is the stack empty? " + result);  
+}  
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 47
+============================================================
+
+Minimum Stack
+Problem: Design and implement a stack that supports push(),pop(), top() and retrieving the minimum element in constant time.  
+Implement a  Stack class, which supports the following methods in O(1) time complexity.
+void push() : Insert element onto the stack.
+void pop() : Remove the top element from the stack.
+int top() : Retrieve the top element in the stack.
+int getmin() : Retrieve the minimum element in the stack.
+
+============================================================
+[Module-1.pptx] Page/Slide 48
+============================================================
+
+public class Minimum_Stack 
+{
+
+Stack<Integer> st;
+Stack<Integer> mst;
+
+     Minimum_Stack()
+        {
+           st=new Stack<Integer>();
+           mst=new Stack<Integer>();
+        }
+
+============================================================
+[Module-1.pptx] Page/Slide 49
+============================================================
+
+void getmin()
+{
+if(mst.isEmpty())
+System.out.println("Stack is Empty");
+else
+System.out.println(mst.peek());
+}
+
+void peek()
+{
+if(st.isEmpty())
+System.out.println("Stack is Empty");
+else
+System.out.println(st.peek());
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 50
+============================================================
+
+void pop() {
+int t=st.pop();
+       if(t==mst.peek())
+            mst.pop();
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 51
+============================================================
+
+void push(int x)
+{
+if(st.isEmpty())
+{
+st.push(x);
+mst.push(x);
+}
+else
+{
+st.push(x);
+if(x<=mst.peek())
+mst.push(x);
+}
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 52
+============================================================
+
+public static void main(String[] args) {
+Minimum_Stack m=new Minimum_Stack();
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+for(int i=0;i<n;i++)
+{
+int l=sc.nextInt();
+m.push(l);
+}
+m.getmin();
+}
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 53
+============================================================
+
+The Celebrity Problem
+Problem: You are given a number n, representing the number of people in a party.
+A celebrity is defined as somebody who knows no other person but everybody else knows him.
+Print the index of the celebrity in the party, and there is no celebrity, then print "none".
+Example:
+Consider a party of 4 people: with the array of strings as:
+010100001101                                                               1110
+In this scenario, the person with index 1 is the celebrity as everybody knows him but he does not know anybody else. 
+Hence, the answer will be 1.
+
+============================================================
+[Module-1.pptx] Page/Slide 54
+============================================================
+
+Code
+public class celebrity_problem 
+{
+    static boolean knows(int a,int b,int r[][])
+       {
+            return r[a][b]==1;
+       }
+
+============================================================
+[Module-1.pptx] Page/Slide 55
+============================================================
+
+static int findcelebrity(int n,int m[][])
+{
+           Stack<Integer> st=new Stack<>();
+            int c;
+  for(int i=0;i<n;i++)
+          st.push(i);
+  while(st.size()>1)
+  {
+    int a=st.pop();
+    int b=st.pop();
+        if(knows(a,b,m))
+              st.push(b);
+        else
+            st.push(a);
+   }
+
+============================================================
+[Module-1.pptx] Page/Slide 56
+============================================================
+
+c=st.pop();
+for(int i=0;i<n;i++)
+{
+if((i!=c) &&( knows(c,i,m) || !knows(i,c,m)))
+return -1;
+}
+return c;
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 57
+============================================================
+
+Tower of Hanoi
+Tower of Hanoi is a mathematical puzzle where we have three rods (A, B, and C) and N disks. Initially, all the disks are stacked in decreasing value of diameter i.e., the smallest disk is placed on the top and they are on rod A. The objective of the puzzle is to move the entire stack to another rod (here considered C), obeying the following simple rules: 
+Only one disk can be moved at a time.
+Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack i.e. a disk can only be moved if it is the uppermost disk on a stack.
+No disk may be placed on top of a smaller disk
+
+============================================================
+[Module-1.pptx] Page/Slide 58
+============================================================
+
+
+
+============================================================
+[Module-1.pptx] Page/Slide 59
+============================================================
+
+Examples
+Input: 2
+Output: Disk 1 moved from A to BDisk 2 moved from A to CDisk 1 moved from B to C
+
+Input: 3Output: Disk 1 moved from A to CDisk 2 moved from A to BDisk 1 moved from C to BDisk 3 moved from A to CDisk 1 moved from B to ADisk 2 moved from B to CDisk 1 moved from A to C
+
+============================================================
+[Module-1.pptx] Page/Slide 60
+============================================================
+
+Algorithm
+Calculate the total number of moves required i.e. "pow(2, n) - 1" here n is number of disks.
+2. If number of disks (i.e. n) is even then interchange destination pole and auxiliary pole.
+3. for i = 1 to total number of moves:
+     if i%3 == 1:
+    legal movement of top disk between source pole and destination pole
+     if i%3 == 2:
+    legal movement top disk between source pole and auxiliary pole    
+     if i%3 == 0:
+        legal movement top disk between auxiliary pole and destination pole
+
+============================================================
+[Module-1.pptx] Page/Slide 61
+============================================================
+
+public class TowerOfHanoiUsingStack {
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the number of disks: ");
+        int numOfDisks = sc.nextInt();
+
+        if (numOfDisks <= 0) 
+            System.out.println("The number of disks must be greater than 0.");
+         else 
+                 towerOfHanoi(numOfDisks);
+        
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 62
+============================================================
+
+public static void towerOfHanoi(int numOfDisks) {
+        Stack<Integer> source = new Stack<>();
+        Stack<Integer> auxiliary = new Stack<>();
+        Stack<Integer> destination = new Stack<>();
+
+        char s = 'S', a = 'A', d = 'D';
+
+        for (int i = numOfDisks; i >= 1; i--) {
+            source.push(i);
+        }
+
+        int totalMoves = (int) Math.pow(2, numOfDisks) - 1;
+
+        if (numOfDisks % 2 == 0) {
+            char temp = d;
+            d = a;
+            a = temp;
+        }
+
+============================================================
+[Module-1.pptx] Page/Slide 63
+============================================================
+
+for (int i = 1; i <= totalMoves; i++) {
+            if (i % 3 == 1) {
+                moveDisks(source, destination, s, d);
+            } else if (i % 3 == 2) {
+                moveDisks(source, auxiliary, s, a);
+            } else if (i % 3 == 0) {
+                moveDisks(auxiliary, destination, a, d);
+            }
+        }
+    }
+
+============================================================
+[Module-1.pptx] Page/Slide 64
+============================================================
+
+private static void moveDisks(Stack<Integer> source, Stack<Integer> destination, char s, char d) {
+        if (source.isEmpty()) {
+            int disk = destination.pop();
+            System.out.println("Move disk " + disk + " from " + d + " to " + s);
+            source.push(disk);
+        } else if (destination.isEmpty()) {
+            int disk = source.pop();
+            System.out.println("Move disk " + disk + " from " + s + " to " + d);
+            destination.push(disk);
+        }
+
+============================================================
+[Module-1.pptx] Page/Slide 65
+============================================================
+
+else if (source.peek() > destination.peek()) {
+            int disk = destination.pop();
+            System.out.println("Move disk " + disk + " from " + d + " to " + s);
+            source.push(disk);
+        } else {
+            int disk = source.pop();
+            System.out.println("Move disk " + disk + " from " + s + " to " + d);
+            destination.push(disk);
+        }
+    }
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 66
+============================================================
+
+Stock Span Problem
+Problem Statement
+The stock span problem is a financial problem where we have a series of N daily price quotes for a stock and we need to calculate the span of the stock's price for all N days.
+The stock span problem can be solved efficiently using stack data structure. 
+The idea is to use a stack to maintain the prices in monotonically decreasing order. We will iterate over the price array and for each price we will find the price just greater than the current price, lying on the left side of the array.
+
+============================================================
+[Module-1.pptx] Page/Slide 67
+============================================================
+
+Example
+Input:
+	size = 6
+	arr[]={97,64,32,11,22,56}
+
+Step 1: Traversing the given input span for 97 will be 1
+Step 2: 64 is smaller than 97, so span will be 1
+Step 3: 32 is smaller than 64 & 97, so span will be 1
+Step 4: 11 is smaller than 97,64 & 32, so span will be 1
+Step 5: 22 is greater than 11, so the span is 2
+Step 6: 56 is greater than 32,11,22, so the span is 4
+
+============================================================
+[Module-1.pptx] Page/Slide 68
+============================================================
+
+Stock Span Problem Code
+public class StockSpanProblem {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int a[]=new int[n];
+for(int i=0;i<n;i++)
+a[i]=sc.nextInt();
+int s[]=new int[n];
+stockspan(n,a,s);
+printarr(s);
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 69
+============================================================
+
+public static void stockspan(int n,int a[],int s[])
+{
+Stack<Integer> st=new Stack<>();
+st.push(0);
+s[0]=1;
+for(int i=1;i<n;i++)
+{
+while(!st.isEmpty()&&a[st.peek()]<=a[i]) {
+st.pop();
+}
+s[i]=(st.isEmpty()?(i+1):i-st.peek());
+st.push(i);
+}
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 70
+============================================================
+
+public static void printarr(int s[])
+{
+System.out.println(Arrays.toString(s));
+}
+}//class closing
+
+============================================================
+[Module-1.pptx] Page/Slide 71
+============================================================
+
+Stack Permutations
+You have been given two arrays having an equal number of elements. You have to find whether one array is the valid stack permutation of the other. An array is said to be a valid stack permutation of the other if and only if after applying some push and pop operations onto the sequence of elements in that array, will result in the other array.
+
+============================================================
+[Module-1.pptx] Page/Slide 72
+============================================================
+
+Example:
+
+Input: 
+arr1[] = [ 1, 2, 3 ] 
+arr2[] = [ 2, 1, 3 ]
+Output:
+ YES
+
+============================================================
+[Module-1.pptx] Page/Slide 73
+============================================================
+
+Code
+public class StackPermutations {
+public static boolean check(int x[],int y[],int n)
+{
+Stack<Integer> s=new Stack<Integer>();
+int j=0;
+for(int i=0;i<n;i++)
+{
+s.push(x[i]);
+while(!s.isEmpty()&&y[j]==s.peek())
+{
+s.pop();
+j++;
+}
+}
+return s.isEmpty(); 
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 74
+============================================================
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int a[]=new int[n];
+int b[]=new int[n];
+for(int i=0;i<n;i++)
+a[i]=sc.nextInt();
+for(int j=0;j<n;j++)
+b[j]=sc.nextInt();
+if(check(a,b,n))
+System.out.println("Yes");
+else
+System.out.println("No");
+}}
+
+============================================================
+[Module-1.pptx] Page/Slide 75
+============================================================
+
+Queue
+A Queue Data Structure is a fundamental concept in computer science used for storing and managing data in a specific order.
+ It follows the principle of "First in, First out" (FIFO), where the first element added to the queue is the first one to be removed.
+
+============================================================
+[Module-1.pptx] Page/Slide 76
+============================================================
+
+
+
+============================================================
+[Module-1.pptx] Page/Slide 77
+============================================================
+
+Queue using Arrays
+public class Queue_Array {
+static int maxcap = 1000;
+static int[] a = new int[maxcap];
+static int rear = -1, front = -1;
+public static boolean isempty() {
+return front == -1;
+}
+
+public static boolean isfull() {
+return rear == maxcap - 1;
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 78
+============================================================
+
+public static void enqueue(int e) {
+if (isfull()) {
+System.out.println("Queue is full! Can't insert.");
+} else {
+if (front == -1) {
+front = 0; 
+}
+a[++rear] = e;
+}}
+
+============================================================
+[Module-1.pptx] Page/Slide 79
+============================================================
+
+public static void dequeue()
+ {
+if (isempty())
+ {
+System.out.println("Queue is empty! Can't delete.");
+} 
+else 
+{
+System.out.println("Dequeued: " + a[front]);
+front++;
+if (front > rear) { 
+front = -1;
+rear = -1;
+}}}
+
+============================================================
+[Module-1.pptx] Page/Slide 80
+============================================================
+
+public static void display() 
+{
+if (isempty()) {
+System.out.println("No elements to display!");
+} 
+else 
+{
+System.out.print("Queue elements: ");
+for (int i = front; i <= rear; i++) {
+System.out.print(a[i] + " ");
+}
+}
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 81
+============================================================
+
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter the number of elements to enqueue: ");
+int n = sc.nextInt();
+System.out.println("Enter the elements:");
+for (int i = 0; i < n; i++) {
+int m = sc.nextInt();
+enqueue(m);
+}
+display();
+System.out.println("Performing two dequeue operations...");
+dequeue();
+ display();
+}}
+
+============================================================
+[Module-1.pptx] Page/Slide 82
+============================================================
+
+Queue using LinkedList
+class Node{
+int data;
+Node next;
+Node(int v)
+{
+        data=v;
+       next=null;
+}
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 83
+============================================================
+
+public class Queue_LinkedList {
+static Node rear,front;
+
+public static boolean isempty(){
+return rear==null;
+}
+
+public static void enqueue(int ele){
+Node newnode=new Node(ele);
+if(rear==null) 
+            front=rear=newnode;
+else
+{
+      rear.next=newnode;
+      rear=newnode;
+}}
+
+============================================================
+[Module-1.pptx] Page/Slide 84
+============================================================
+
+public static void dequeue(){
+if(isempty())
+     System.out.println("no elements to delete");
+else
+    front=front.next;
+}
+
+public static void display(){
+Node temp=front;
+while(temp!=rear)
+{
+System.out.print(temp.data+" -> ");
+temp=temp.next;
+}
+System.out.println();
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 85
+============================================================
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+for(int i=0;i<n;i++)
+{
+int ele=sc.nextInt();
+enqueue(ele);
+}
+display();
+dequeue();
+dequeue();
+display();
+}}
+
+============================================================
+[Module-1.pptx] Page/Slide 86
+============================================================
+
+Priority Queue
+A priority queue is an abstract data type that behaves similarly to the normal queue except that each element has some priority, i.e., the element with the highest priority would come first in a priority queue.
+
+The priority of the elements in a priority queue will determine the order in which elements are removed from the priority queue.
+
+The priority queue supports only comparable elements, which means that the elements are either arranged in an ascending or descending order.
+
+For example, suppose we have some values like 1, 3, 4, 8, 14, 22 inserted in a priority queue with an ordering imposed on the values is from least to the greatest. Therefore, the 1 number would be having the highest priority while 22 will be having the lowest priority.
+
+============================================================
+[Module-1.pptx] Page/Slide 87
+============================================================
+
+Characteristics of a Priority queue
+A priority queue is an extension of a queue that contains the following characteristics:
+
+Every element in a priority queue has some priority associated with it.
+An element with the higher priority will be deleted before the deletion of the lesser priority.
+If two elements in a priority queue have the same priority, they will be arranged using the FIFO principle.
+
+============================================================
+[Module-1.pptx] Page/Slide 88
+============================================================
+
+Priority Queue using DLL
+Priority queue is  abstract data type which behave similar to the linear queue except that each element  has priority.
+
+Example: 
+	Hospital Emergency Queue
+The patients will be treated  according to their medical condition. (i.e: Person in pain – High priority).
+
+============================================================
+[Module-1.pptx] Page/Slide 89
+============================================================
+
+Priority Queue using DLL
+Example:
+Front
+Deletion
+Rear
+Insertion
+Priority
+1
+2
+3
+4
+5
+The priority of the elements in the priority queue will determine the 
+order of  removal of the data elements.
+
+============================================================
+[Module-1.pptx] Page/Slide 90
+============================================================
+
+import java.util.*;
+class Main {
+    static class Node {
+        int data;
+        int priority;
+        Node next, prev;
+        public Node(int data, int priority) {
+            this.data = data;
+            this.priority = priority;
+        }
+    }
+    private static Node head = null;
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+
+============================================================
+[Module-1.pptx] Page/Slide 91
+============================================================
+
+private static void push(int data, int priority) {
+	if (head == null) {
+		Node newNode = new Node(data, priority);
+            head = newNode;
+            return;  
+	}
+	Node node = new Node(data, priority);
+        	Node temp = head, parent = null;
+        	while (temp != null && temp.priority >= priority) {
+            		parent = temp;
+            		temp = temp.next;
+        	}
+       	if (parent == null) {
+            		node.next = head;
+            		head.prev = node;
+            		head = node; }
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+
+============================================================
+[Module-1.pptx] Page/Slide 92
+============================================================
+
+else if (temp == null) {
+            parent.next = node;
+            node.prev = parent;
+}
+else {
+            parent.next = node;
+            node.prev = parent;
+            node.next = temp;
+            temp.prev = node;
+ } 
+ }
+ private static int peek() {
+        	if (head != null) {
+            		return head.data;
+        	}
+        	return -1; }
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+
+============================================================
+[Module-1.pptx] Page/Slide 93
+============================================================
+
+private static int pop() {
+	if (head != null) {
+		int curr = head.data;
+         head = head.next;
+		if (head != null)
+			head.prev = null;
+      return curr;
+}
+return -1;  
+}
+public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++)
+        {
+            int data=sc.nextInt();
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+
+============================================================
+[Module-1.pptx] Page/Slide 94
+============================================================
+
+int pri=sc.nextInt(); 
+				push(data, pri);
+        		}
+			System.out.println(peek());
+        		System.out.println(pop());
+        		System.out.println(pop());
+        		System.out.println(peek());
+	}
+}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+
+============================================================
+[Module-1.pptx] Page/Slide 95
+============================================================
+
+Sort without extra space
+Problem: 
+	
+	Sort the given queue without using any extra space
+10
+1
+90
+107
+5
+
+============================================================
+[Module-1.pptx] Page/Slide 96
+============================================================
+
+Code
+import java.util.*;
+public class Queue_Sort {
+public static void main (String[] args) 
+{ 
+Queue<Integer> q = new LinkedList<Integer>(); 
+q.add(3); 
+q.add(1); 
+q.add(4); 
+q.add(2);
+q.add(5);
+sortQueue(q); 
+System.out.println(q);
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 97
+============================================================
+
+public static void sortQueue(Queue<Integer> q) 
+{ 
+for(int i = 1; i <= q.size(); i++) 
+{ 
+int min_index = minInd(q,q.size() - i); 
+insertMinToRear(q, min_index); 
+} 
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 98
+============================================================
+
+public static int minInd(Queue<Integer> q, int sortIndex) { 
+int min_index = -1; 
+int min_value = Integer.MAX_VALUE; 
+int s = q.size(); 
+for (int i = 0; i < s; i++) { 
+int current = q.poll(); 
+if (current <= min_value && i <= sortIndex) { 
+min_index = i; 
+min_value = current; 
+} 
+q.add(current); 
+} 
+return min_index; 
+}
+
+============================================================
+[Module-1.pptx] Page/Slide 99
+============================================================
+
+public static void insertMinToRear(Queue<Integer> q, int min_index) 
+{ 
+int min_value = 0; 
+int s = q.size(); 
+for (int i = 0; i < s; i++) { 
+int current = q.poll(); 
+if (i != min_index) 
+q.add(current); 
+else
+min_value = current; 
+} 
+q.add(min_value); 
+} 
+}
+
+============================================================
+[STS4005 CAT 01 CODES.docx] Page/Slide 1
+============================================================
+
+STS4005 CAT 01 CODES
+Max Equilibrium Sum
+Code
+import java.util.*;
+class Main{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int a[]=new int[n];
+int suf=0;
+for(int i=0;i<n;i++)
+{
+a[i]=sc.nextInt();
+suf+=a[i];
+}
+int pre=0;
+int max=Integer.MIN_VALUE;
+for(int i=0;i<n;i++)
+{
+pre+=a[i];
+if(pre==suf)
+{
+System.out.println(pre+" "+i);
+max=Math.max(max,suf);
+}
+suf-=a[i];
+}
+System.out.println(max);
+}
+}
+Leaders of an array
+Code
+import java.util.*;
+class Main {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int n = sc.nextInt();
+int[] a = new int[n];
+for (int i = 0; i < n; i++) {
+a[i] = sc.nextInt();
+}
+int max = 0;
+for (int i = n - 1; i >= 0; i--) {
+if (a[i] > max) {
+System.out.print(a[i] + " ");
+max = a[i];
+}
+}
+}
+}
+Majority Element(Moore’s Voting Algorithm)
+Code
+import java.util.*;
+class Main{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int a[]=new int[n];
+for(int i=0;i<n;i++)
+{
+a[i]=sc.nextInt();
+}
+int c=0;
+int ele=0;
+for(int i=0;i<n;i++)
+{
+if(c==0)
+{
+ele=a[i];
+c=1;
+}
+else if(a[i]==ele)
+{
+c++;
+}
+else{
+c--;
+}
+}
+int nc=0;
+for(int i=0;i<n;i++)
+{
+if(a[i]==ele)
+{
+nc++;
+}
+}
+if(nc>a.length/2)
+{
+System.out.println(ele);
+}
+}
+}
+Quick Sort
+Code
+import java.util.*;
+public class QuickSort
+{
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int arr[] = new int[n];
+quicksort(arr,0,n-1);
+for(int i=0;i<n;i++)
+{
+System.out.print(arr[i]+"  ");
+}
+}
+public static void quicksort(int arr[],int lb,int ub)
+{
+int loc;
+if(lb<ub)
+{
+loc=partition(arr,lb,ub);
+quicksort(arr,lb,loc-1);
+quicksort(arr,loc+1,ub);
+}
+}
+public static int partition(int arr[],int lb,int ub)
+{
+int pivot=arr[lb];
+int start=lb;
+int end=ub;
+while(start<end)
+{
+while(arr[start]<=pivot && start<end)
+{
+start++;
+}
+while(arr[end]>pivot)
+{
+end--;
+}
+int temp=arr[start];
+arr[start]=arr[end];
+arr[end]=temp;
+}
+int temp=arr[lb];
+arr[lb]=arr[end];
+arr[end]=temp;
+return end;
+}
+}
+Selection Sort
+Code
+import java.util.*;
+class Main{
+public static void main(String ars[])
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int a[]=new int[n];
+for(int i=0;i<n;i++)
+{
+a[i]=sc.nextInt();
+}
+for(int i=0;i<n-1;i++)
+{
+int min=i;
+int j=0;
+for(j=i+1;j<n;j++)
+{
+if(a[j]<a[min])
+{
+min=j;
+}
+}
+if(min!=i)
+{
+int temp=a[min];
+a[min]=a[i];
+a[i]=temp;
+}
+}
+System.out.println(Arrays.toString(a));
+}
+}
+Activity Selection Problem
+Code
+import java.util.*;
+class ActivitySelection {
+public static void printMaxActivities(int s[], int f[], int n) {
+int i, j;
+System.out.println("Following activities are selected");
+i = 0;
+System.out.print(i + " ");
+for (j = 1; j < n; j++) {
+if (s[j] >= f[i]) {
+System.out.print(j + " ");
+i = j;
+}
+}
+}
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter the number of activities: ");
+int n = sc.nextInt();
+int s[] = new int[n];
+int f[] = new int[n];
+System.out.println("Enter the start times of activities:");
+for (int i = 0; i < n; i++) {
+s[i] = sc.nextInt();
+}
+System.out.println("Enter the finish times of activities:");
+for (int i = 0; i < n; i++) {
+f[i] = sc.nextInt();
+}
+printMaxActivities(s, f, n);
+}
+}
+Sorted Unique Permutation
+Code
+import java.util.*;
+public class Main {
+static TreeSet<String> set = new TreeSet<>();
+public static void swap(char[] a, int i, int j) {
+char temp = a[i];
+a[i] = a[j];
+a[j] = temp;
+}
+public static void permutations(char[] a, int fi) {
+if (fi == a.length - 1) {
+set.add(new String(a));
+return;
+}
+for (int i = fi; i < a.length; i++) {
+swap(a, fi, i);
+permutations(a, fi + 1);
+swap(a, fi, i);
+}
+}
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+String s = sc.next();
+char[] a = s.toCharArray();
+permutations(a, 0);
+for (String perm : set) {
+System.out.println(perm);
+}
+}
+}
+Maze Solving
+Code
+import java.util.*;
+public class Main
+{
+static boolean findpath(int m[][],int x,int y,int r,int c,int path[][])
+{
+if(x==r-1 && y==c-1 && m[x][y]==1)
+{
+path[x][y]=1;
+return true;
+}
+if(x>=0 && x<r &&y>=0 && y<c &&m[x][y]==1)
+{
+path[x][y]=1;
+if(findpath(m,x,y+1,r,c,path))
+{
+return true;
+}
+if(findpath(m,x+1,y,r,c,path))
+{
+return true;
+}
+path[x][y]=0;
+}
+return false;
+}
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int r=sc.nextInt();
+int c=sc.nextInt();
+int m[][]=new int[r][c];
+for(int i=0;i<r;i++)
+{
+for(int j=0;j<c;j++)
+{
+m[i][j]=sc.nextInt();
+}
+}
+int path[][]=new int[r][c];
+if(findpath(m,0,0,r,c,path))
+{
+for(int i=0;i<r;i++)
+{
+for(int j=0;j<c;j++)
+{
+System.out.print(path[i][j]+" ");
+}
+System.out.println();
+}
+}
+else{
+System.out.println("No");
+}
+}
+}
+Manuevering
+Code
+import java.util.*;
+public class Main
+{
+public static int man(int r,int c,int row,int col)
+{
+if(r==row-1 || c==col-1)
+{
+return 1;
+}
+return man(r+1,c,row,col)+man(r,c+1,row,col);
+}
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int r=sc.nextInt();
+int c=sc.nextInt();
+System.out.println(man(0,0,r,c));
+}
+}
+Josephus trap
+Code
+import java.util.*;
+class Main{
+static int josh(int n,int k)
+{
+if(n==1)
+{
+return 0;
+}
+return (josh(n-1,k)+k)%n;
+}
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int k=sc.nextInt();
+System.out.println(josh(n,k));//0 based indexing
+System.out.println(josh(n,k)+1);//1 based indexing
+}
+}
+Combination
+Code
+import java.util.*;
+class Main{
+static void com(int a[],int c[],int s,int e,int ind,int d)
+{
+if(ind==d)
+{
+for(int j=0;j<d;j++){
+System.out.print(c[j]+" ");
+}
+System.out.println();
+return;
+}
+for(int j=s;j<=e;j++)
+{
+c[ind]=a[j];
+com(a,c,j+1,e,ind+1,d);
+}
+}
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int a[]=new int[n];
+for(int i=0;i<n;i++)
+{
+a[i]=sc.nextInt();
+}
+int d=sc.nextInt();
+int c[]=new int[d];
+com(a,c,0,n-1,0,d);
+}
+}
+

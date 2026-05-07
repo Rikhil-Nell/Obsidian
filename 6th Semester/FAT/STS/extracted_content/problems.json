@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "doesn't exist\");\n            return false;\n        } \n        printSolution(sol);\n        return true;\n    } \nboolean solveMazeUtil(int maze[][], int x, int y,int sol[][]){\n  if (x == N - 1 && y == N - 1) {\n            sol[x][y] = 1;\n            return true;\n        }\n if (isSafe(maze, x, y) == true) {\nsol[x][y] = 1;\nif (solveMazeUtil(maze, x + 1, y, sol))\n                return true; \nif (solveMazeUtil(maze, x, y + 1, sol))\n                return true;",
+    "source_file": "L35-Maze Solving.pptx",
+    "page_or_slide": 5,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "for 4 Queen problem. The expected output is a binary matrix which has 1s for the blocks where queens are placed.",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 2,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "looks like :\nN Queens Problem-Movement of Queen",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 4,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "to the N-Queens Problem\nThe way we try to solve this is by placing a queen at a position and trying to rule out the possibility of it being under attack. We place one queen in each row/column.\nIf we see that the queen is under attack at its chosen position, we try the next position.\nIf a queen is under attack at all the positions in a row, we backtrack and change the position of the queen placed prior to the current position.\nWe repeat this process of placing a queen and backtracking until all the N queens are placed successfully.\nQueen solution\nN Queens Problem-Movement of Queen",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 5,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "N Queens Problem-Movement of Queen",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 5,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "does not exist\");\n            return false;\n        } \n        printSolution(board);\n        return true;\n    }\npublic static void main(String args[]){\n        NQueenProblem Queen = new NQueenProblem();\n        Queen.solveNQ();\n    }}\nOutput:\n                               0  0  1  0 \n                               1  0  0  0 \n                               0  0  0  1 \n                               0  1  0  0",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 10,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "Step→01\nM=m1*m2*m3=>3*5*7➔105\nStep→02\nM1 = M/m1 ➔105/3➔35\nM2 = M/m2 ➔105/5➔21\nM3 = M/m3 ➔105/7➔15",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 28,
+    "problem_type": "Example"
+  }
+]

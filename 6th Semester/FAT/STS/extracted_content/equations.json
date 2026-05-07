@@ -1,0 +1,3706 @@
+[
+  {
+    "content": "maxSum = Integer.MIN_VALUE;",
+    "source_file": "L22 -Max Equlibrium Sum.pptx",
+    "page_or_slide": 13,
+    "context": "otalSum = 0;         int leftSum = 0;         int maxSum = Integer.MIN_VALUE;        for (int i = 0; i < arr.length; i++) {    ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 0; i < arr.length; i++) {",
+    "source_file": "L22 -Max Equlibrium Sum.pptx",
+    "page_or_slide": 13,
+    "context": "  int maxSum = Integer.MIN_VALUE;        for (int i = 0; i < arr.length; i++) {         totalSum += arr[i];         }            ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "leftSum == totalSum && leftSum > maxSum) {",
+    "source_file": "L22 -Max Equlibrium Sum.pptx",
+    "page_or_slide": 13,
+    "context": "           totalSum -= arr[i];                if (leftSum == totalSum && leftSum > maxSum) {                 maxSum = leftSum;             }  ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "maxSum = leftSum;",
+    "source_file": "L22 -Max Equlibrium Sum.pptx",
+    "page_or_slide": 13,
+    "context": "= totalSum && leftSum > maxSum) {                 maxSum = leftSum;             }             leftSum += arr[i];     ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "maxSum = getMaxEquilibriumSumOptimized(arr);",
+    "source_file": "L22 -Max Equlibrium Sum.pptx",
+    "page_or_slide": 13,
+    "context": "[] arr = {1, 2, 3, 4, 5, 4, 3, 2, 1};         int maxSum = getMaxEquilibriumSumOptimized(arr);         System.out.println(\"Max Equilibrium Sum :",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Sum = 0;\n        int leftSum = 0;\n        int maxSum = Integer.MIN_VALUE;\n       for (int i = 0; i < arr.length; i++) {\n        totalSum += arr[i];\n        }       \n        for (int i = 0; i < arr.length; i++) {\n           \n            totalSum -= arr[i];   \n            if (leftSum == totalSum && leftSum > maxSum) {\n                maxSum = leftSum;\n            }\n            leftSum += arr[i];\n        }\n        return maxSum;\n    }\n    public static void main(String[] args) {\n        int[] arr = {1, 2, 3, 4, 5, 4, 3, 2, 1};\n        int maxSum = getMaxEquilibriumSumOptimized(arr);\n        System.out.println(\"Max Equilibrium Sum : \" + maxSum);\n    }\n}",
+    "source_file": "L22 -Max Equlibrium Sum.pptx",
+    "page_or_slide": 13,
+    "context": "libriumSumOptimized(int[] arr) {         int totalSum = 0;         int leftSum = 0;         int maxSum = Integer.MIN_VALUE;        for (int i = 0; i < arr.length; i++) {         totalSum += arr[i];         }                for (int i = 0; i < arr.length; i++) {                         totalSum -= arr[i];                if (leftSum == totalSum && leftSum > maxSum) {                 maxSum = leftSum;             }             leftSum += arr[i];         }         return maxSum;     }     public static void main(String[] args) {         int[] arr = {1, 2, 3, 4, 5, 4, 3, 2, 1};         int maxSum = getMaxEquilibriumSumOptimized(arr);         System.out.println(\"Max Equilibrium Sum : \" + maxSum);     } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "count == 0) {",
+    "source_file": "L24- Majority element.pptx",
+    "page_or_slide": 18,
+    "context": "\t        for (int num : nums) { 8\t            if (count == 0) { 9\t                candidate = num; 10\t           ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "candidate = num;",
+    "source_file": "L24- Majority element.pptx",
+    "page_or_slide": 18,
+    "context": "8\t            if (count == 0) { 9\t                candidate = num; 10\t                count = 1; 11\t            } el",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "candidate == num) {",
+    "source_file": "L24- Majority element.pptx",
+    "page_or_slide": 18,
+    "context": "             count = 1; 11\t            } else if (candidate == num) { 12\t                count++; 13\t            } else",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "num == candidate) {",
+    "source_file": "L24- Majority element.pptx",
+    "page_or_slide": 18,
+    "context": "        for (int num : nums) { 22\t            if (num == candidate) { 23\t                majorityCount++; 24\t          ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "majorityElement = findMajorityElement(nums);",
+    "source_file": "L24- Majority element.pptx",
+    "page_or_slide": 18,
+    "context": "35\t        int[] nums = {3, 2, 3}; 36\t        int majorityElement = findMajorityElement(nums); 37\t         38\t        if (majorityElement != -1)",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "18\t        // Verify the candidate",
+    "source_file": "L24- Majority element.pptx",
+    "page_or_slide": 18,
+    "context": "ount--; 15\t            } 16\t        } 17\t         18\t        // Verify the candidate 19\t        int majorityCount = 0; 20 21\t        f",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Count = 0;\n20\n21\t        for (int num : nums) {\n22\t            if (num == candidate) {\n23\t                majorityCount++;\n24\t            }\n25\t        }\n26\t        \n27\t        if (majorityCount > nums.length / 2) {\n28\t            return candidate;\n29\t        }\n30\t        \n31\t        return -1; // No majority element found\n32\t    }\n33\t\n34\t    public static void main(String[] args) {\n35\t        int[] nums = {3, 2, 3};\n36\t        int majorityElement = findMajorityElement(nums);\n37\t        \n38\t        if (majorityElement != -1) {\n39\t            System.out.println(\"Majority element: \" + majorityElement);\n40\t        } else {\n41\t            System.out.println(\"No majority element found.\");\n42\t        }\n43\t    }\n44\t}",
+    "source_file": "L24- Majority element.pptx",
+    "page_or_slide": 18,
+    "context": "   // Verify the candidate 19\t        int majorityCount = 0; 20 21\t        for (int num : nums) { 22\t            if (num == candidate) { 23\t                majorityCount++; 24\t            } 25\t        } 26\t         27\t        if (majorityCount > nums.length / 2) { 28\t            return candidate; 29\t        } 30\t         31\t        return -1; // No majority element found 32\t    } 33\t 34\t    public static void main(String[] args) { 35\t        int[] nums = {3, 2, 3}; 36\t        int majorityElement = findMajorityElement(nums); 37\t         38\t        if (majorityElement != -1) { 39\t            System.out.println(\"Majority element: \" + majorityElement); 40\t        } else { 41\t            System.out.println(\"No majority element found.\"); 42\t        } 43\t    } 44\t}",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "partitionIndex = partition(arr",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 4,
+    "context": "           // Partition the array             int partitionIndex = partition(arr, low, high);              // Recursively sort the",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "pivot = arr[high];",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 4,
+    "context": "int partition(int[] arr, int low, int high) { int pivot = arr[high]; int i = low - 1;         for (int j = low; j < hi",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = low - 1;",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 4,
+    "context": ", int low, int high) { int pivot = arr[high]; int i = low - 1;         for (int j = low; j < high; j++) { if (ar",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j = low; j < high; j++) {",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 4,
+    "context": "ot = arr[high]; int i = low - 1;         for (int j = low; j < high; j++) { if (arr[j] <= pivot) {                 i++;      ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp = arr[i];",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 4,
+    "context": "    // Swap arr[i] and arr[j]                 int temp = arr[i];                 arr[i] = arr[j];                 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp = arr[i + 1];",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 4,
+    "context": "      arr[j] = temp;             }         }  int temp = arr[i + 1];         arr[i + 1] = arr[high];         arr[high]",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Index = partition(arr, low, high);\n\n            // Recursively sort the sub-arrays\n            quickSort(arr, low, partitionIndex - 1);\n            quickSort(arr, partitionIndex + 1, high);\n        }\n    }\npublic static int partition(int[] arr, int low, int high) {\nint pivot = arr[high];\nint i = low - 1;\n        for (int j = low; j < high; j++) {\nif (arr[j] <= pivot) {\n                i++;\n\n                // Swap arr[i] and arr[j]\n                int temp = arr[i];\n                arr[i] = arr[j];\n                arr[j] = temp;\n            }\n        }\n\nint temp = arr[i + 1];\n        arr[i + 1] = arr[high];\n        arr[high] = temp;\n\n        return i + 1;\n    }\n}",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 4,
+    "context": "  // Partition the array             int partitionIndex = partition(arr, low, high);              // Recursively sort the sub-arrays             quickSort(arr, low, partitionIndex - 1);             quickSort(arr, partitionIndex + 1, high);         }     } public static int partition(int[] arr, int low, int high) { int pivot = arr[high]; int i = low - 1;         for (int j = low; j < high; j++) { if (arr[j] <= pivot) {                 i++;                  // Swap arr[i] and arr[j]                 int temp = arr[i];                 arr[i] = arr[j];                 arr[j] = temp;             }         }  int temp = arr[i + 1];         arr[i + 1] = arr[high];         arr[high] = temp;          return i + 1;     } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3-5 until the entire list is sorted. The sorted part gradually grows from left to right until it encompasses the entire list.",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 5,
+    "context": "t by one element.  6. The algorithm repeats steps 3-5 until the entire list is sorted. The sorted part gradually grows from left to right until it encompasses the entire list.  7. Finally, when the algorithm completes all ite",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "11.\n- Swap the minimum element (11) with the first element (64) of the unsorted part.",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 6,
+    "context": "nsorted part [64, 25, 12, 22, 11]. The minimum is 11. - Swap the minimum element (11) with the first element (64) of the unsorted part. - The sorted part becomes [11], and the unsorted ",
+    "is_numbered": true,
+    "equation_number": "11"
+  },
+  {
+    "content": "12.\n- Swap the minimum element (12) with the first element (64) of the unsorted part.",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 6,
+    "context": "he unsorted part [64, 25, 12, 22]. The minimum is 12. - Swap the minimum element (12) with the first element (64) of the unsorted part. - The sorted part becomes [11, 12], and the unsor",
+    "is_numbered": true,
+    "equation_number": "12"
+  },
+  {
+    "content": "22.\n- Swap the minimum element (22) with the first element (64) of the unsorted part.",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 6,
+    "context": "om the unsorted part [64, 25, 22]. The minimum is 22. - Swap the minimum element (22) with the first element (64) of the unsorted part. - The sorted part becomes [11, 12, 22], and the u",
+    "is_numbered": true,
+    "equation_number": "22"
+  },
+  {
+    "content": "25.\n- Swap the minimum element (25) with the first element (64) of the unsorted part.",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 6,
+    "context": "t from the unsorted part [64, 25]. The minimum is 25. - Swap the minimum element (25) with the first element (64) of the unsorted part. - The sorted part becomes [11, 12, 22, 25], and t",
+    "is_numbered": true,
+    "equation_number": "25"
+  },
+  {
+    "content": "64.\n- Swap the minimum element (64) with the first element (64) of the unsorted part. (No change in this step)",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 6,
+    "context": "ement from the unsorted part [64]. The minimum is 64. - Swap the minimum element (64) with the first element (64) of the unsorted part. (No change in this step) - The sorted part becomes [11, 12, 22, 25, 64], a",
+    "is_numbered": true,
+    "equation_number": "64"
+  },
+  {
+    "content": "n = arr.length;",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 7,
+    "context": "tatic void selectionSort(int[] arr) {         int n = arr.length;         for (int i = 0; i < n - 1; i++) { int min",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 0; i < n - 1; i++) {",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 7,
+    "context": "r) {         int n = arr.length;         for (int i = 0; i < n - 1; i++) { int minIndex = i;             for (int j = i + 1;",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j = i + 1; j < n; j++) {",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 7,
+    "context": " 1; i++) { int minIndex = i;             for (int j = i + 1; j < n; j++) {                 if (arr[j] < arr[minIndex]) {    ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp = arr[minIndex];",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 7,
+    "context": "minIndex = j;                 }             } int temp = arr[minIndex];             arr[minIndex] = arr[i];             a",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Index = i;\n            for (int j = i + 1; j < n; j++) {\n                if (arr[j] < arr[minIndex]) {\n                    minIndex = j;\n                }\n            }\nint temp = arr[minIndex];\n            arr[minIndex] = arr[i];\n            arr[i] = temp;\n        }\n    }\n}",
+    "source_file": "L27-Quick, Selection Sort.pptx",
+    "page_or_slide": 7,
+    "context": "         for (int i = 0; i < n - 1; i++) { int minIndex = i;             for (int j = i + 1; j < n; j++) {                 if (arr[j] < arr[minIndex]) {                     minIndex = j;                 }             } int temp = arr[minIndex];             arr[minIndex] = arr[i];             arr[i] = temp;         }     } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "string = 5 \u000bCharacter ‘e’ repeats 2 times. \u000bResult = 5!/2! = 60.",
+    "source_file": "L31-Sorted Unique Permutation.pptx",
+    "page_or_slide": 3,
+    "context": "Different permutations of word “geeks” \u000bLength of string = 5 \u000bCharacter ‘e’ repeats 2 times. \u000bResult = 5!/2! = 60.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Result = 5!/2! = 60.",
+    "source_file": "L31-Sorted Unique Permutation.pptx",
+    "page_or_slide": 3,
+    "context": "th of string = 5 \u000bCharacter ‘e’ repeats 2 times. \u000bResult = 5!/2! = 60.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "input = \"BAC\";",
+    "source_file": "L31-Sorted Unique Permutation.pptx",
+    "page_or_slide": 5,
+    "context": " static void main(String[] args) {         String input = \"BAC\";         distinctPermutations(input);     }      p",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "chars = input.toCharArray();",
+    "source_file": "L31-Sorted Unique Permutation.pptx",
+    "page_or_slide": 5,
+    "context": "stinctPermutations(String input) {         char[] chars = input.toCharArray();         Arrays.sort(chars);         input = new S",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "input = new String(chars);",
+    "source_file": "L31-Sorted Unique Permutation.pptx",
+    "page_or_slide": 5,
+    "context": "oCharArray();         Arrays.sort(chars);         input = new String(chars);         permute(input.toCharArray(), 0);     }   ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "index == chars.length - 1) {",
+    "source_file": "L31-Sorted Unique Permutation.pptx",
+    "page_or_slide": 5,
+    "context": "id permute(char[] chars, int index) {         if (index == chars.length - 1) {             System.out.println(String.valueOf(cha",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "used = new HashSet<>();",
+    "source_file": "L31-Sorted Unique Permutation.pptx",
+    "page_or_slide": 5,
+    "context": "s));             return;         } Set<Character> used = new HashSet<>();         for (int i = index; i < chars.length; i++",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = index; i < chars.length; i++) {",
+    "source_file": "L31-Sorted Unique Permutation.pptx",
+    "page_or_slide": 5,
+    "context": "aracter> used = new HashSet<>();         for (int i = index; i < chars.length; i++) {             if (used.contains(chars[i]))         ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp = chars[i];",
+    "source_file": "L31-Sorted Unique Permutation.pptx",
+    "page_or_slide": 5,
+    "context": "d swap(char[] chars, int i, int j) {         char temp = chars[i];         chars[i] = chars[j];         chars[j] = t",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "m == 1 || n == 1)",
+    "source_file": "L32-Maneuvering.pptx",
+    "page_or_slide": 3,
+    "context": "tic int numberOfPaths(int m, int n){          if (m == 1 || n == 1)             return 1;          return numberOfPat",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Combination = fact(n) / (fact(r) * fact(n-r));",
+    "source_file": "L33-Combination.pptx",
+    "page_or_slide": 3,
+    "context": "matically in Java, we use the following formula: \tCombination = fact(n) / (fact(r) * fact(n-r));",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "f = 1;",
+    "source_file": "L33-Combination.pptx",
+    "page_or_slide": 5,
+    "context": " {      static int fact(int number) {         int f = 1;         int j = 1;         while(j <= number) {    ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j = 1;",
+    "source_file": "L33-Combination.pptx",
+    "page_or_slide": 5,
+    "context": "fact(int number) {         int f = 1;         int j = 1;         while(j <= number) {            f = f * j; ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "f = f * j;",
+    "source_file": "L33-Combination.pptx",
+    "page_or_slide": 5,
+    "context": "nt j = 1;         while(j <= number) {            f = f * j;            j++;         }         return f;      } ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "numbers = new ArrayList<Integer>();",
+    "source_file": "L33-Combination.pptx",
+    "page_or_slide": 5,
+    "context": "(String args[]) {                   List<Integer> numbers = new ArrayList<Integer>(); numbers.add(9);         numbers.add(12);         ",
+    "is_numbered": true,
+    "equation_number": "9"
+  },
+  {
+    "content": "n = numbers.size();",
+    "source_file": "L33-Combination.pptx",
+    "page_or_slide": 5,
+    "context": "61);         numbers.add(19);                 int n = numbers.size();         int r = 2;  int result;          result = f",
+    "is_numbered": true,
+    "equation_number": "19"
+  },
+  {
+    "content": "r = 2;  int result;",
+    "source_file": "L33-Combination.pptx",
+    "page_or_slide": 5,
+    "context": "              int n = numbers.size();         int r = 2;  int result;          result = fact(n) / (fact(r) * fact(n-r)); ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "result = fact(n) / (fact(r) * fact(n-r));",
+    "source_file": "L33-Combination.pptx",
+    "page_or_slide": 5,
+    "context": ".size();         int r = 2;  int result;          result = fact(n) / (fact(r) * fact(n-r));         System.out.println(\"The combination value f",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "0 -> Road",
+    "source_file": "L35-Maze Solving.pptx",
+    "page_or_slide": 2,
+    "context": " path from entry to the exit.  Modelling the Maze 0 -> Road 1 -> Wall 2 -> Maze entry 3 -> Maze exit 4 -> Cel",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 -> Wall",
+    "source_file": "L35-Maze Solving.pptx",
+    "page_or_slide": 2,
+    "context": " entry to the exit.  Modelling the Maze 0 -> Road 1 -> Wall 2 -> Maze entry 3 -> Maze exit 4 -> Cell part of ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 -> Maze entry",
+    "source_file": "L35-Maze Solving.pptx",
+    "page_or_slide": 2,
+    "context": "the exit.  Modelling the Maze 0 -> Road 1 -> Wall 2 -> Maze entry 3 -> Maze exit 4 -> Cell part of the path from en",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 -> Maze exit",
+    "source_file": "L35-Maze Solving.pptx",
+    "page_or_slide": 2,
+    "context": "ling the Maze 0 -> Road 1 -> Wall 2 -> Maze entry 3 -> Maze exit 4 -> Cell part of the path from entry to exit",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4 -> Cell part of the path from entry to exit",
+    "source_file": "L35-Maze Solving.pptx",
+    "page_or_slide": 2,
+    "context": " -> Road 1 -> Wall 2 -> Maze entry 3 -> Maze exit 4 -> Cell part of the path from entry to exit",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "value = 0).",
+    "source_file": "L35-Maze Solving.pptx",
+    "page_or_slide": 3,
+    "context": "Gray blocks are dead ends (value = 0).    binary matrix representation of the above maze.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 0; i < N; i++) {",
+    "source_file": "L35-Maze Solving.pptx",
+    "page_or_slide": 5,
+    "context": "void printSolution(int sol[][]){         for (int i = 0; i < N; i++) {             for (int j = 0; j < N; j++)          ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j = 0; j < N; j++)",
+    "source_file": "L35-Maze Solving.pptx",
+    "page_or_slide": 5,
+    "context": "or (int i = 0; i < N; i++) {             for (int j = 0; j < N; j++)                 System.out.print(\" \" + sol[i][j] ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "x == N - 1 && y == N - 1) {",
+    "source_file": "L35-Maze Solving.pptx",
+    "page_or_slide": 5,
+    "context": "il(int maze[][], int x, int y,int sol[][]){   if (x == N - 1 && y == N - 1) {             sol[x][y] = 1;             return tru",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "N = 4; \nvoid printSolution(int sol[][]){\n        for (int i = 0; i < N; i++) {\n            for (int j = 0; j < N; j++)\n                System.out.print(\" \" + sol[i][j] + \" \");\n            System.out.println();\n        }} \nboolean isSafe(int maze[][], int x, int y){\n\treturn (x >= 0 && x < N && y >= 0 && y < N && maze[x][y] == 1);\n    }\n {\n        int sol[][] = { { 0, 0, 0, 0 },\n                        { 0, 0, 0, 0 },\n                        { 0, 0, 0, 0 },\n                        { 0, 0, 0, 0 } };\nif (solveMazeUtil(maze, 0, 0, sol) == false) {\n            System.out.print(\"Solution doesn't exist\");\n            return false;\n        } \n        printSolution(sol);\n        return true;\n    } \nboolean solveMazeUtil(int maze[][], int x, int y,int sol[][]){\n  if (x == N - 1 && y == N - 1) {\n            sol[x][y] = 1;\n            return true;\n        }\n if (isSafe(maze, x, y) == true) {\nsol[x][y] = 1;\nif (solveMazeUtil(maze, x + 1, y, sol))\n                return true; \nif (solveMazeUtil(maze, x, y + 1, sol))\n                return true;",
+    "source_file": "L35-Maze Solving.pptx",
+    "page_or_slide": 5,
+    "context": "public class RatMaze {     final int N = 4;  void printSolution(int sol[][]){         for (int i = 0; i < N; i++) {             for (int j = 0; j < N; j++)                 System.out.print(\" \" + sol[i][j] + \" \");             System.out.println();         }}  boolean isSafe(int maze[][], int x, int y){ \treturn (x >= 0 && x < N && y >= 0 && y < N && maze[x][y] == 1);     }  {         int sol[][] = { { 0, 0, 0, 0 },                         { 0, 0, 0, 0 },                         { 0, 0, 0, 0 },                         { 0, 0, 0, 0 } }; if (solveMazeUtil(maze, 0, 0, sol) == false) {             System.out.print(\"Solution doesn't exist\");             return false;         }          printSolution(sol);         return true;     }  boolean solveMazeUtil(int maze[][], int x, int y,int sol[][]){   if (x == N - 1 && y == N - 1) {             sol[x][y] = 1;             return true;         }  if (isSafe(maze, x, y) == true) { sol[x][y] = 1; if (solveMazeUtil(maze, x + 1, y, sol))                 return true;  if (solveMazeUtil(maze, x, y + 1, sol))                 return true;",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "rat = new RatMaze();\u000b        int maze[][] = { { 1",
+    "source_file": "L35-Maze Solving.pptx",
+    "page_or_slide": 6,
+    "context": " static void main(String args[]){\u000b        RatMaze rat = new RatMaze();\u000b        int maze[][] = { { 1, 0, 0, 0 },\u000b                         { 1, 1, 0, 1",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "N=4 and N=8.",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 3,
+    "context": "ack each other? This problem is commonly seen for N=4 and N=8. Let’s look at an example where N=4 N Queens Probl",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "N=4 and N=8.\nLet’s look at an example where N=4\nN Queens Problem",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 3,
+    "context": "ack each other? This problem is commonly seen for N=4 and N=8. Let’s look at an example where N=4 N Queens Problem",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "N=4, the solution looks like :\nN Queens Problem-Movement of Queen",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 4,
+    "context": " only one queen in each row and each column. When N=4, the solution looks like : N Queens Problem-Movement of Queen",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 0; i < N; i++) {",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 9,
+    "context": "id printSolution(int board[][]){         for (int i = 0; i < N; i++) {             for (int j = 0; j < N; j++)          ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j = 0; j < N; j++)",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 9,
+    "context": "or (int i = 0; i < N; i++) {             for (int j = 0; j < N; j++)                 System.out.print(\" \" + board[i][j",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 0; i < col; i++)",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 9,
+    "context": "nt row, int col){         int i, j;          for (i = 0; i < col; i++)             if (board[row][i] == 1)              ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j = col; i >= 0 && j >= 0; i--",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 9,
+    "context": "            return false;           for (i = row, j = col; i >= 0 && j >= 0; i--, j--) if (board[i][j] == 1)                 retur",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j = col; j >= 0 && i < N; i++",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 9,
+    "context": "            return false;           for (i = row, j = col; j >= 0 && i < N; i++, j--)             if (board[i][j] == 1)          ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "N = 4; \nvoid printSolution(int board[][]){\n        for (int i = 0; i < N; i++) {\n            for (int j = 0; j < N; j++)\n                System.out.print(\" \" + board[i][j]\n                                 + \" \");\n            System.out.println();        }\n    } \n    boolean isSafe(int board[][], int row, int col){\n        int i, j; \n        for (i = 0; i < col; i++)\n            if (board[row][i] == 1)\n                return false; \n\n        for (i = row, j = col; i >= 0 && j >= 0; i--, j--)\nif (board[i][j] == 1)\n                return false; \n\n        for (i = row, j = col; j >= 0 && i < N; i++, j--)\n            if (board[i][j] == 1)\n                return false; \n        return true;\n    } \n    boolean solveNQUtil(int board[][], int col){\n\n        if (col >= N)\n            return true; \n\n        for (int i = 0; i < N; i++) {\n\n            if (isSafe(board, i, col)) {\n\n                board[i][col] = 1;",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 9,
+    "context": "public class NQueenProblem {     final int N = 4;  void printSolution(int board[][]){         for (int i = 0; i < N; i++) {             for (int j = 0; j < N; j++)                 System.out.print(\" \" + board[i][j]                                  + \" \");             System.out.println();        }     }      boolean isSafe(int board[][], int row, int col){         int i, j;          for (i = 0; i < col; i++)             if (board[row][i] == 1)                 return false;           for (i = row, j = col; i >= 0 && j >= 0; i--, j--) if (board[i][j] == 1)                 return false;           for (i = row, j = col; j >= 0 && i < N; i++, j--)             if (board[i][j] == 1)                 return false;          return true;     }      boolean solveNQUtil(int board[][], int col){          if (col >= N)             return true;           for (int i = 0; i < N; i++) {              if (isSafe(board, i, col)) {                  board[i][col] = 1;",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Queen = new NQueenProblem();",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 10,
+    "context": "c void main(String args[]){         NQueenProblem Queen = new NQueenProblem();         Queen.solveNQ();     }} Output:          ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Queen = new NQueenProblem();\n        Queen.solveNQ();\n    }}\nOutput:\n                               0  0  1  0 \n                               1  0  0  0 \n                               0  0  0  1 \n                               0  1  0  0",
+    "source_file": "L36-N Queens.pptx",
+    "page_or_slide": 10,
+    "context": "c void main(String args[]){         NQueenProblem Queen = new NQueenProblem();         Queen.solveNQ();     }} Output:                                0  0  1  0                                 1  0  0  0                                 0  0  0  1                                 0  1  0  0",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc=new Scanner(System.in);",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 4,
+    "context": "blic static void main(String[] args) { 4. Scanner sc=new Scanner(System.in); 5. int n=sc.nextInt(); 6. for(int i=2;i<=n;i++) 7",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n=sc.nextInt();",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 4,
+    "context": "s) { 4. Scanner sc=new Scanner(System.in); 5. int n=sc.nextInt(); 6. for(int i=2;i<=n;i++) 7. { 8. if(n%i==0) 9. { ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=2;i<=n;i++)",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 4,
+    "context": "ner(System.in); 5. int n=sc.nextInt(); 6. for(int i=2;i<=n;i++) 7. { 8. if(n%i==0) 9. { 10. System.out.print(\"not",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc=new Scanner(System.in);",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 5,
+    "context": "blic static void main(String[] args) { 5. Scanner sc=new Scanner(System.in); 6. int n=sc.nextInt(); 7. for(int i=2;i*i<=n;i++)",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n=sc.nextInt();",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 5,
+    "context": "s) { 5. Scanner sc=new Scanner(System.in); 6. int n=sc.nextInt(); 7. for(int i=2;i*i<=n;i++) 8. { 9. if(n%i==0) 10.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=2;i*i<=n;i++)",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 5,
+    "context": "ner(System.in); 6. int n=sc.nextInt(); 7. for(int i=2;i*i<=n;i++) 8. { 9. if(n%i==0) 10. { 11. System.out.print(\"no",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=2;i<=n;i++)",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 10,
+    "context": " 2. { 3. boolean p[]=new boolean[n+1]; 4. for(int i=2;i<=n;i++) 5. p[i]=true; 6. for(int i=2;i*i<=n;i++)  { 7. fo",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=2;i*i<=n;i++)  {",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 10,
+    "context": "4. for(int i=2;i<=n;i++) 5. p[i]=true; 6. for(int i=2;i*i<=n;i++)  { 7. for(int j=i*i;j<=n;j=j+i)  { 8. if(p[j]==true)",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j=i*i;j<=n;j=j+i)  {",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 10,
+    "context": "i]=true; 6. for(int i=2;i*i<=n;i++)  { 7. for(int j=i*i;j<=n;j=j+i)  { 8. if(p[j]==true) 9. p[j]=false; 10. } 11. } 12. ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=2;i<=n;i++)   {",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 10,
+    "context": "[j]==true) 9. p[j]=false; 10. } 11. } 12. for(int i=2;i<=n;i++)   { 13. if(p[i]) 14. System.out.print(i+\" \"); 15. } 1",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 + n/3 + n/4 +…….",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 11,
+    "context": "For each prime p we are marking 2p,3p,4p,……kp. ➢n/2 + n/3 + n/4 +……. ➢n(1/2 + 1/3 + 1/4+…..) ➢n(log(log n)) ➢Hence O(n",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/2 + 1/3 + 1/4+…..)",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 11,
+    "context": "e marking 2p,3p,4p,……kp. ➢n/2 + n/3 + n/4 +……. ➢n(1/2 + 1/3 + 1/4+…..) ➢n(log(log n)) ➢Hence O(n log(log n)) ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc=new Scanner(System.in);",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 15,
+    "context": "ic static void main (String[] args) { 10. Scanner sc=new Scanner(System.in); 11. int n=sc.nextInt(); 12. int m=sc.nextInt(); 1",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n=sc.nextInt();",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 15,
+    "context": " { 10. Scanner sc=new Scanner(System.in); 11. int n=sc.nextInt(); 12. int m=sc.nextInt(); 13. System.out.print(gcd(",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "m=sc.nextInt();",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 15,
+    "context": "anner(System.in); 11. int n=sc.nextInt(); 12. int m=sc.nextInt(); 13. System.out.print(gcd(n,m)); 14. } 15. } ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "7-1=6 relatively primes are there for 7.",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 21,
+    "context": "me we can substitute in phi(num)=num-1 formula So 7-1=6 relatively primes are there for 7. 2. num=21 Here num is not a prime number but this",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "7*3",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 21,
+    "context": "e represented in the  product of primes form i.e. 7*3 So (7-1)(3-1)=6(2)=12 relatively primes are there",
+    "is_numbered": true,
+    "equation_number": "2"
+  },
+  {
+    "content": "7-1)(3-1)=6(2)=12 relatively primes are there for 21.",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 21,
+    "context": "ented in the  product of primes form i.e. 7*3 So (7-1)(3-1)=6(2)=12 relatively primes are there for 21. ",
+    "is_numbered": true,
+    "equation_number": "2"
+  },
+  {
+    "content": "3 * 5^3",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 22,
+    "context": "3. num=1000 Prime factors of 1000 are 2^3 * 5^3  So after removing powers we will remain with 2 an",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc = new Scanner(System.in);",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 23,
+    "context": "blic static void main(String args[]) { 4. Scanner sc = new Scanner(System.in); 5. int num = sc.nextInt(); 6. int a = 1, count = ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "num = sc.nextInt();",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 23,
+    "context": " { 4. Scanner sc = new Scanner(System.in); 5. int num = sc.nextInt(); 6. int a = 1, count = 0; 7. for (a = 1; a < num; ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "a = 1; a < num; a++) {",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 23,
+    "context": " = sc.nextInt(); 6. int a = 1, count = 0; 7. for (a = 1; a < num; a++) { 8. if (gcd(a, num) == 1)  9. count++;    } 10. Sy",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "a == 0)",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 23,
+    "context": "12. public static int gcd(int a, int b) { 13. if (a == 0)  14. return b; 15. return gcd(b % a, a);    } }  }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "x=(a1*M1* M1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 26,
+    "context": "er finding M1 , M2 , M3 and M1 -1, M2 -1, M3 -1 . x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1\n-1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 26,
+    "context": "titute the values after finding M1 , M2 , M3 and M1 -1, M2 -1, M3 -1 . x=(a1*M1* M1 -1 + a2*M2* M2 -1 + ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2\n-1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 26,
+    "context": "the values after finding M1 , M2 , M3 and M1 -1, M2 -1, M3 -1 . x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3\n-1 .",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 26,
+    "context": "ues after finding M1 , M2 , M3 and M1 -1, M2 -1, M3 -1 . x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +……",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1*M1* M1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 26,
+    "context": "inding M1 , M2 , M3 and M1 -1, M2 -1, M3 -1 . x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 + a2*M2* M2",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 26,
+    "context": ", M2 , M3 and M1 -1, M2 -1, M3 -1 . x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn -1) mod M ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 + a3*M3* M3",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 26,
+    "context": "1 -1, M2 -1, M3 -1 . x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn -1) mod M ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 +…….+ an*Mn* Mn",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 26,
+    "context": " -1 . x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn -1) mod M ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "M = m1*m2*m3.",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "Steps : • Step 1: Calculate the value of M where M = m1*m2*m3. • Step 2: Find M1 , M2 , M3 where M1 = M/m1, M2= ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "M1 = M/m1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "e M = m1*m2*m3. • Step 2: Find M1 , M2 , M3 where M1 = M/m1, M2= M/m2, M3 = M/m3. • Step 3: Find M1 -1, M2 -1",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "M2= M/m2",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "*m3. • Step 2: Find M1 , M2 , M3 where M1 = M/m1, M2= M/m2, M3 = M/m3. • Step 3: Find M1 -1, M2 -1, M3 -1 wh",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "M3 = M/m3.",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "p 2: Find M1 , M2 , M3 where M1 = M/m1, M2= M/m2, M3 = M/m3. • Step 3: Find M1 -1, M2 -1, M3 -1 which are the ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "x=(a1*M1* M1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "M2 -1 ≡ 1(mod m2) M3* M3 -1 ≡ 1(mod m3) • Step 4: x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1*m2*m3.",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "s : • Step 1: Calculate the value of M where M = m1*m2*m3. • Step 2: Find M1 , M2 , M3 where M1 = M/m1, M2= ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = M/m1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": " M = m1*m2*m3. • Step 2: Find M1 , M2 , M3 where M1 = M/m1, M2= M/m2, M3 = M/m3. • Step 3: Find M1 -1, M2 -1",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2= M/m2",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "m3. • Step 2: Find M1 , M2 , M3 where M1 = M/m1, M2= M/m2, M3 = M/m3. • Step 3: Find M1 -1, M2 -1, M3 -1 wh",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 = M/m3.",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": " 2: Find M1 , M2 , M3 where M1 = M/m1, M2= M/m2, M3 = M/m3. • Step 3: Find M1 -1, M2 -1, M3 -1 which are the ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1\n-1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "e M1 = M/m1, M2= M/m2, M3 = M/m3. • Step 3: Find M1 -1, M2 -1, M3 -1 which are the modular multiplicativ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2\n-1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "M/m1, M2= M/m2, M3 = M/m3. • Step 3: Find M1 -1, M2 -1, M3 -1 which are the modular multiplicative  inve",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3\n-1 which are the modular multiplicative",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "2= M/m2, M3 = M/m3. • Step 3: Find M1 -1, M2 -1, M3 -1 which are the modular multiplicative  inverses of M-1, M-2, M-3 respectively using the ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1* M1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "vely using the congruence relations  give below. M1* M1 -1 ≡ 1(mod m1) M2* M2 -1 ≡ 1(mod m2) M3* M3 -1 ≡ ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2* M2",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "nce relations  give below. M1* M1 -1 ≡ 1(mod m1) M2* M2 -1 ≡ 1(mod m2) M3* M3 -1 ≡ 1(mod m3) • Step 4: x=",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3* M3",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "low. M1* M1 -1 ≡ 1(mod m1) M2* M2 -1 ≡ 1(mod m2) M3* M3 -1 ≡ 1(mod m3) • Step 4: x=(a1*M1* M1 -1 + a2*M2*",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1*M1* M1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "1 ≡ 1(mod m2) M3* M3 -1 ≡ 1(mod m3) • Step 4: x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 + a2*M2* M2",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "m2) M3* M3 -1 ≡ 1(mod m3) • Step 4: x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn -1) mod M ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 + a3*M3* M3",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": " 1(mod m3) • Step 4: x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn -1) mod M ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 +…….+ an*Mn* Mn",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "ep 4: x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn -1) mod M ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "M = m1*m2*m3.\n• Step 2: Find M1 , M2 , M3 where M1 = M/m1, M2= M/m2, M3 = M/m3.\n• Step 3: Find M1\n-1, M2\n-1, M3\n-1 which are the modular multiplicative \ninverses of M-1, M-2, M-3 respectively using the congruence relations \ngive below.\nM1* M1\n-1 ≡ 1(mod m1)\nM2* M2\n-1 ≡ 1(mod m2)\nM3* M3\n-1 ≡ 1(mod m3)\n• Step 4:\nx=(a1*M1* M1\n-1 + a2*M2* M2\n-1 + a3*M3* M3\n-1 +…….+ an*Mn* Mn\n-1) mod M",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 27,
+    "context": "Steps : • Step 1: Calculate the value of M where M = m1*m2*m3. • Step 2: Find M1 , M2 , M3 where M1 = M/m1, M2= M/m2, M3 = M/m3. • Step 3: Find M1 -1, M2 -1, M3 -1 which are the modular multiplicative  inverses of M-1, M-2, M-3 respectively using the congruence relations  give below. M1* M1 -1 ≡ 1(mod m1) M2* M2 -1 ≡ 1(mod m2) M3* M3 -1 ≡ 1(mod m3) • Step 4: x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn -1) mod M ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "M=m1*m2*m3=>3*5*7➔105",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 28,
+    "context": "od 3) x ≡ 3(mod 5) x ≡ 2(mod 7) Solution: Step→01 M=m1*m2*m3=>3*5*7➔105 Step→02 M1 = M/m1 ➔105/3➔35 M2 = M/m2 ➔105/5➔21 M",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "M1 = M/m1 ➔105/3➔35",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 28,
+    "context": ") Solution: Step→01 M=m1*m2*m3=>3*5*7➔105 Step→02 M1 = M/m1 ➔105/3➔35 M2 = M/m2 ➔105/5➔21 M3 = M/m3 ➔105/7➔15 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "M2 = M/m2 ➔105/5➔21",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 28,
+    "context": "M=m1*m2*m3=>3*5*7➔105 Step→02 M1 = M/m1 ➔105/3➔35 M2 = M/m2 ➔105/5➔21 M3 = M/m3 ➔105/7➔15 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "M3 = M/m3 ➔105/7➔15",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 28,
+    "context": "5 Step→02 M1 = M/m1 ➔105/3➔35 M2 = M/m2 ➔105/5➔21 M3 = M/m3 ➔105/7➔15 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1*m2*m3=>3*5*7➔105",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 28,
+    "context": "3) x ≡ 3(mod 5) x ≡ 2(mod 7) Solution: Step→01 M=m1*m2*m3=>3*5*7➔105 Step→02 M1 = M/m1 ➔105/3➔35 M2 = M/m2 ➔105/5➔21 M",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = M/m1 ➔105/3➔35",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 28,
+    "context": " Solution: Step→01 M=m1*m2*m3=>3*5*7➔105 Step→02 M1 = M/m1 ➔105/3➔35 M2 = M/m2 ➔105/5➔21 M3 = M/m3 ➔105/7➔15 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 = M/m2 ➔105/5➔21",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 28,
+    "context": "=m1*m2*m3=>3*5*7➔105 Step→02 M1 = M/m1 ➔105/3➔35 M2 = M/m2 ➔105/5➔21 M3 = M/m3 ➔105/7➔15 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 = M/m3 ➔105/7➔15",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 28,
+    "context": " Step→02 M1 = M/m1 ➔105/3➔35 M2 = M/m2 ➔105/5➔21 M3 = M/m3 ➔105/7➔15 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "M=m1*m2*m3=>3*5*7➔105\nStep→02\nM1 = M/m1 ➔105/3➔35\nM2 = M/m2 ➔105/5➔21\nM3 = M/m3 ➔105/7➔15",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 28,
+    "context": "od 3) x ≡ 3(mod 5) x ≡ 2(mod 7) Solution: Step→01 M=m1*m2*m3=>3*5*7➔105 Step→02 M1 = M/m1 ➔105/3➔35 M2 = M/m2 ➔105/5➔21 M3 = M/m3 ➔105/7➔15 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1* M1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 29,
+    "context": "• Step→03 M1* M1 -1 = 1 mod m1 M2* M2 -1 = 1 mod m2 M3* M3 -1 = 1 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = 1 mod m1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 29,
+    "context": "• Step→03 M1* M1 -1 = 1 mod m1 M2* M2 -1 = 1 mod m2 M3* M3 -1 = 1 mod m3 35*(1)!",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "2* M2",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 29,
+    "context": "• Step→03 M1* M1 -1 = 1 mod m1 M2* M2 -1 = 1 mod m2 M3* M3 -1 = 1 mod m3 35*(1)!= 1 mod",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "1 = 1 mod m2",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 29,
+    "context": "• Step→03 M1* M1 -1 = 1 mod m1 M2* M2 -1 = 1 mod m2 M3* M3 -1 = 1 mod m3 35*(1)!= 1 mod 3 35*(2)==1 m",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "3* M3",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 29,
+    "context": "tep→03 M1* M1 -1 = 1 mod m1 M2* M2 -1 = 1 mod m2 M3* M3 -1 = 1 mod m3 35*(1)!= 1 mod 3 35*(2)==1 mod 3   ",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "1 = 1 mod m3",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 29,
+    "context": "M1* M1 -1 = 1 mod m1 M2* M2 -1 = 1 mod m2 M3* M3 -1 = 1 mod m3 35*(1)!= 1 mod 3 35*(2)==1 mod 3     So M1 -1 =2 ",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "35*(1)!= 1 mod 3",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 29,
+    "context": " mod m1 M2* M2 -1 = 1 mod m2 M3* M3 -1 = 1 mod m3 35*(1)!= 1 mod 3 35*(2)==1 mod 3     So M1 -1 =2 21*(1)==1 mod 5  ",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "35*(2)==1 mod 3",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 29,
+    "context": " = 1 mod m2 M3* M3 -1 = 1 mod m3 35*(1)!= 1 mod 3 35*(2)==1 mod 3     So M1 -1 =2 21*(1)==1 mod 5     So M2 -1 =1 15*(1",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "1\n-1 =2",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 29,
+    "context": "1 mod m3 35*(1)!= 1 mod 3 35*(2)==1 mod 3     So M1 -1 =2 21*(1)==1 mod 5     So M2 -1 =1 15*(1)==1 mod 7 S",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "21*(1)==1 mod 5",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 29,
+    "context": " 35*(1)!= 1 mod 3 35*(2)==1 mod 3     So M1 -1 =2 21*(1)==1 mod 5     So M2 -1 =1 15*(1)==1 mod 7 So M3 -1 =1 ",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "2\n-1 =1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 29,
+    "context": "==1 mod 3     So M1 -1 =2 21*(1)==1 mod 5     So M2 -1 =1 15*(1)==1 mod 7 So M3 -1 =1 ",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "15*(1)==1 mod 7",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 29,
+    "context": "3     So M1 -1 =2 21*(1)==1 mod 5     So M2 -1 =1 15*(1)==1 mod 7 So M3 -1 =1 ",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "3\n-1 =1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 29,
+    "context": "*(1)==1 mod 5     So M2 -1 =1 15*(1)==1 mod 7 So M3 -1 =1 ",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "x=(a1*M1* M1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 30,
+    "context": "• Step→04 x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "x=(2*35*2)+(3*21*1)+(2*15*1)",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 30,
+    "context": "+ a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn -1) x=(2*35*2)+(3*21*1)+(2*15*1) x=140+63+30 x=233 Step→05 X=x mod M X=233 mod 105",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "x=140+63+30",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 30,
+    "context": " +…….+ an*Mn* Mn -1) x=(2*35*2)+(3*21*1)+(2*15*1) x=140+63+30 x=233 Step→05 X=x mod M X=233 mod 105 X=23 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "X=x mod M",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 30,
+    "context": "35*2)+(3*21*1)+(2*15*1) x=140+63+30 x=233 Step→05 X=x mod M X=233 mod 105 X=23 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "X=233 mod 105",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 30,
+    "context": "1*1)+(2*15*1) x=140+63+30 x=233 Step→05 X=x mod M X=233 mod 105 X=23 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1*M1* M1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 30,
+    "context": "• Step→04 x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 + a2*M2* M2",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 30,
+    "context": "• Step→04 x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn -1) x=(2*35*2)+",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 + a3*M3* M3",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 30,
+    "context": "• Step→04 x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn -1) x=(2*35*2)+(3*21*1)+(2*15*",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 +…….+ an*Mn* Mn",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 30,
+    "context": "ep→04 x=(a1*M1* M1 -1 + a2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn -1) x=(2*35*2)+(3*21*1)+(2*15*1) x=140+63+30 x=23",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2*35*2)+(3*21*1)+(2*15*1)",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 30,
+    "context": "2*M2* M2 -1 + a3*M3* M3 -1 +…….+ an*Mn* Mn -1) x=(2*35*2)+(3*21*1)+(2*15*1) x=140+63+30 x=233 Step→05 X=x mod M X=233 mod 105",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "140+63+30",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 30,
+    "context": "…….+ an*Mn* Mn -1) x=(2*35*2)+(3*21*1)+(2*15*1) x=140+63+30 x=233 Step→05 X=x mod M X=233 mod 105 X=23 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "X=x mod M\nX=233 mod 105\nX=23",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 30,
+    "context": "35*2)+(3*21*1)+(2*15*1) x=140+63+30 x=233 Step→05 X=x mod M X=233 mod 105 X=23 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n==0)   return true;",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 36,
+    "context": "1. public static boolean isbp(int n) 2. { 3. if(n==0)   return true; 4. int len=(int) (Math.log(n)/Math.log(2))+ 1; 5.",
+    "is_numbered": true,
+    "equation_number": "2"
+  },
+  {
+    "content": "len=(int) (Math.log(n)/Math.log(2))+ 1;",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 36,
+    "context": "sbp(int n) 2. { 3. if(n==0)   return true; 4. int len=(int) (Math.log(n)/Math.log(2))+ 1; 5. int left=len-1, right=0; 6. while(left>right) ",
+    "is_numbered": true,
+    "equation_number": "2"
+  },
+  {
+    "content": "left=len-1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 36,
+    "context": "nt len=(int) (Math.log(n)/Math.log(2))+ 1; 5. int left=len-1, right=0; 6. while(left>right) 7. {  int l=(n>>le",
+    "is_numbered": true,
+    "equation_number": "2"
+  },
+  {
+    "content": "l=(n>>left)&1;",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 36,
+    "context": "ft=len-1, right=0; 6. while(left>right) 7. {  int l=(n>>left)&1; 8. int r=(n>>right)&1; 9. if(l!=r) 10. { 11. retu",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "r=(n>>right)&1;",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 36,
+    "context": "while(left>right) 7. {  int l=(n>>left)&1; 8. int r=(n>>right)&1; 9. if(l!=r) 10. { 11. return false; 12. } 13. lef",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "0 -------------------------->0",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 41,
+    "context": "                   right part   should contain    0 -------------------------->0 1 -------------------------->1 8  ---------------",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 -------------------------->1",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 41,
+    "context": " should contain    0 -------------------------->0 1 -------------------------->1 8  ------------------------->8 6 ----------------",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "8  ------------------------->8",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 41,
+    "context": "---------------->0 1 -------------------------->1 8  ------------------------->8 6 --------------------------> 9 9  --------------",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "6 --------------------------> 9",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 41,
+    "context": "---------------->1 8  ------------------------->8 6 --------------------------> 9 9  -------------------------->6  ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "9  -------------------------->6",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 41,
+    "context": "--------------->8 6 --------------------------> 9 9  -------------------------->6  ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "r=s.length()-1;",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 42,
+    "context": "lic static boolean issn(String s) 2. { 3. int l=0,r=s.length()-1; 4. while(l<=r) 5. { 6. int a=s.charAt(l); 7. int ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "a=s.charAt(l);",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 42,
+    "context": "nt l=0,r=s.length()-1; 4. while(l<=r) 5. { 6. int a=s.charAt(l); 7. int b=s.charAt(r); 8. if(a=='0'&& b=='0' || a=",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "b=s.charAt(r);",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 42,
+    "context": " 4. while(l<=r) 5. { 6. int a=s.charAt(l); 7. int b=s.charAt(r); 8. if(a=='0'&& b=='0' || a=='1' && b=='1' || a=='",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "a=='0'&& b=='0' || a=='1' && b=='1' || a=='8' && b=='8' || a=='6' && b=='9' || a=='9' && b=='6')",
+    "source_file": "Module-02.pdf",
+    "page_or_slide": 42,
+    "context": "6. int a=s.charAt(l); 7. int b=s.charAt(r); 8. if(a=='0'&& b=='0' || a=='1' && b=='1' || a=='8' && b=='8' || a=='6' && b=='9' || a=='9' && b=='6') 9. { 10. l++; 11. r--; 12. } 13. else 14. return ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "data = data;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 10,
+    "context": "     Node next;     Node(int data) {         this.data = data;         this.next = null;     } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 10,
+    "context": "nt data) {         this.data = data;         this.next = null;     } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "newNode = new Node(data);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 12,
+    "context": "ng of the LL void insert(int data) {         Node newNode = new Node(data);         if (head == null) {             head = ne",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head == null) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 12,
+    "context": "       Node newNode = new Node(data);         if (head == null) {             head = newNode;         }     else { ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head = newNode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 12,
+    "context": "de(data);         if (head == null) {             head = newNode;         }     else {            newnode.next=head",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next=head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 12,
+    "context": " newNode;         }     else {            newnode.next=head;             head=newnode;             } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head=newnode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 12,
+    "context": " else {            newnode.next=head;             head=newnode;             } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Node = new Node(data);\n        if (head == null) {\n            head = newNode;\n        } \n   else {\n           newnode.next=head;\n            head=newnode;\n            } }",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 12,
+    "context": "of the LL void insert(int data) {         Node newNode = new Node(data);         if (head == null) {             head = newNode;         }     else {            newnode.next=head;             head=newnode;             } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "newNode = new Node(data);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 13,
+    "context": "e linkedlist void insert(int data) {         Node newNode = new Node(data);         if (head == null) {             head = ne",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head == null) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 13,
+    "context": "       Node newNode = new Node(data);         if (head == null) {             head = newNode;         } else {     ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head = newNode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 13,
+    "context": "de(data);         if (head == null) {             head = newNode;         } else {             Node temp = head;   ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp = head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 13,
+    "context": "head = newNode;         } else {             Node temp = head;             while (temp.next != null) {          ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp = temp.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 13,
+    "context": "      while (temp.next != null) {                 temp = temp.next;             }             temp.next = newNode;   ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = newNode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 13,
+    "context": " temp = temp.next;             }             temp.next = newNode;         }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Node = new Node(data);\n        if (head == null) {\n            head = newNode;\n        } else {\n            Node temp = head;\n            while (temp.next != null) {\n                temp = temp.next;\n            }\n            temp.next = newNode;\n        }",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 13,
+    "context": "inkedlist void insert(int data) {         Node newNode = new Node(data);         if (head == null) {             head = newNode;         } else {             Node temp = head;             while (temp.next != null) {                 temp = temp.next;             }             temp.next = newNode;         }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "newnode = new ListNode(value);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 14,
+    "context": "nsertatPositon(int value, int pos) {     ListNode newnode = new ListNode(value);     int len = Length();     if (pos <= len) {    ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "len = Length();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 14,
+    "context": "  ListNode newnode = new ListNode(value);     int len = Length();     if (pos <= len) {       if (pos == 0) {      ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "pos == 0) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 14,
+    "context": "t len = Length();     if (pos <= len) {       if (pos == 0) {         newnode.next = head;         head = newno",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 14,
+    "context": "s <= len) {       if (pos == 0) {         newnode.next = head;         head = newnode; } else {         ListNode",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head = newnode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 14,
+    "context": "(pos == 0) {         newnode.next = head;         head = newnode; } else {         ListNode curr = head;         wh",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "curr = head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 14,
+    "context": "        head = newnode; } else {         ListNode curr = head;         while (--pos != 0)           curr = curr.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "curr = curr.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 14,
+    "context": "curr = head;         while (--pos != 0)           curr = curr.next;         newnode.next = curr.next;         curr.ne",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = curr.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 14,
+    "context": "!= 0)           curr = curr.next;         newnode.next = curr.next;         curr.next = newnode;       }     } else  ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = newnode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 14,
+    "context": "t;         newnode.next = curr.next;         curr.next = newnode;       }     } else       System.out.println(\"Inva",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp = head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 15,
+    "context": "playing Linked List void display() {         Node temp = head;         while (temp != null) {             System",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp = temp.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 15,
+    "context": "System.out.print(temp.data + \" -> \");             temp = temp.next;         }         System.out.println(\"null\");    ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "slow=head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 16,
+    "context": "ection public static boolean detectloop() { Node5 slow=head; Node5 fast=head; while(fast!=null && fast.next!=n",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "fast=head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 16,
+    "context": "tic boolean detectloop() { Node5 slow=head; Node5 fast=head; while(fast!=null && fast.next!=null) { slow=slow.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "slow=slow.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 16,
+    "context": "fast=head; while(fast!=null && fast.next!=null) { slow=slow.next; fast=fast.next.next; if(slow==fast) return true; ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "fast=fast.next.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 16,
+    "context": "(fast!=null && fast.next!=null) { slow=slow.next; fast=fast.next.next; if(slow==fast) return true; } return false; }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "slow==fast)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 16,
+    "context": "!=null) { slow=slow.next; fast=fast.next.next; if(slow==fast) return true; } return false; }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "p1=head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 17,
+    "context": "c boolean formcycle(int a,int b) { int x=1; Node5 p1=head; Node5 p2=head; while(p1.data!=a || x!=b) { if(p1.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "p2=head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 17,
+    "context": "ycle(int a,int b) { int x=1; Node5 p1=head; Node5 p2=head; while(p1.data!=a || x!=b) { if(p1.data!=a) { p1=p",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "p1=p1.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 17,
+    "context": "ead; while(p1.data!=a || x!=b) { if(p1.data!=a) { p1=p1.next; if(p1.next==null)return false; } if(x!=b) { p2=p2",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next==null)return false;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 17,
+    "context": "!=a || x!=b) { if(p1.data!=a) { p1=p1.next; if(p1.next==null)return false; } if(x!=b) { p2=p2.next; x++;  } } p2.next=p1; re",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "p2=p2.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 17,
+    "context": "next; if(p1.next==null)return false; } if(x!=b) { p2=p2.next; x++;  } } p2.next=p1; return true; }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1=head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 17,
+    "context": " boolean formcycle(int a,int b) { int x=1; Node5 p1=head; Node5 p2=head; while(p1.data!=a || x!=b) { if(p1.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2=head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 17,
+    "context": "cle(int a,int b) { int x=1; Node5 p1=head; Node5 p2=head; while(p1.data!=a || x!=b) { if(p1.data!=a) { p1=p",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1=p1.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 17,
+    "context": "ad; while(p1.data!=a || x!=b) { if(p1.data!=a) { p1=p1.next; if(p1.next==null)return false; } if(x!=b) { p2=p2",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2=p2.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 17,
+    "context": "ext; if(p1.next==null)return false; } if(x!=b) { p2=p2.next; x++;  } } p2.next=p1; return true; }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "data = data;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 18,
+    "context": " Node prev;  public Node(int data) {         this.data = data;         this.next = null;         this.prev = nul",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 18,
+    "context": "nt data) {         this.data = data;         this.next = null;         this.prev = null;     } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "prev = null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 18,
+    "context": "ta = data;         this.next = null;         this.prev = null;     } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "newNode = new Node(data);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 19,
+    "context": "public void addNode(int data) { Node newNode = new Node(data);   if(head == null) {            head = tail = newNo",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head == null) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 19,
+    "context": "e(int data) { Node newNode = new Node(data);   if(head == null) {            head = tail = newNode;             hea",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head = tail = newNode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 19,
+    "context": "= new Node(data);   if(head == null) {            head = tail = newNode;             head.previous = null;            tail.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "previous = null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 19,
+    "context": "          head = tail = newNode;             head.previous = null;            tail.next = null;           }  else { t",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 19,
+    "context": "            head.previous = null;            tail.next = null;           }  else { tail.next = newNode;           ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = newNode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 19,
+    "context": "       tail.next = null;           }  else { tail.next = newNode;              newNode.previous = tail;                        ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "previous = tail;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 19,
+    "context": " else { tail.next = newNode;              newNode.previous = tail;                         tail = newNode;    tail.next =",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tail = newNode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 19,
+    "context": " newNode.previous = tail;                         tail = newNode;    tail.next = null;           }       }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Node = new Node(data);  \nif(head == null) {\n           head = tail = newNode; \n           head.previous = null; \n          tail.next = null;  \n        }\n else {\ntail.next = newNode;            \n newNode.previous = tail;     \n                   tail = newNode;  \n tail.next = null;  \n        }  \n    }",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 19,
+    "context": "public void addNode(int data) { Node newNode = new Node(data);   if(head == null) {            head = tail = newNode;             head.previous = null;            tail.next = null;           }  else { tail.next = newNode;              newNode.previous = tail;                         tail = newNode;    tail.next = null;           }       }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head == null || head.next == null) return head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 20,
+    "context": "atic Node sortBitonicDLL(Node head) {         if (head == null || head.next == null) return head;          Node last = head;         while (last.ne",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "last = head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 20,
+    "context": " || head.next == null) return head;          Node last = head;         while (last.next != null) {             l",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "last = last.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 20,
+    "context": ";         while (last.next != null) {             last = last.next;         }          Node front = head;         Nod",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "front = head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 20,
+    "context": "        last = last.next;         }          Node front = head;         Node result = null;         Node tail = n",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "result = null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 20,
+    "context": "       }          Node front = head;         Node result = null;         Node tail = null;",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tail = null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 20,
+    "context": " = head;         Node result = null;         Node tail = null;",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "newNode = new Node(front.data);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 21,
+    "context": "    if (front.data < last.data) {                 newNode = new Node(front.data);                 front = front.next;             }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "front = front.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 21,
+    "context": "  newNode = new Node(front.data);                 front = front.next;             } else {                 newNode = ne",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "newNode = new Node(last.data);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 21,
+    "context": " front.next;             } else {                 newNode = new Node(last.data);                 last = last.prev;             }  ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "last = last.prev;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 21,
+    "context": "   newNode = new Node(last.data);                 last = last.prev;             }             if (result == null) {  ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "result == null) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 21,
+    "context": "  last = last.prev;             }             if (result == null) {                 result = newNode;                ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "result = newNode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 21,
+    "context": "            if (result == null) {                 result = newNode;                 tail = result;             } else",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tail = result;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 21,
+    "context": "                result = newNode;                 tail = result;             } else {                 tail.next = ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = newNode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 21,
+    "context": "result;             } else {                 tail.next = newNode;                 newNode.prev = tail;             ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "prev = tail;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 21,
+    "context": "     tail.next = newNode;                 newNode.prev = tail;                 tail = tail.next;             }  ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tail = tail.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 21,
+    "context": "             newNode.prev = tail;                 tail = tail.next;             }         }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Node = new Node(front.data);\n                front = front.next;\n            } else {\n                newNode = new Node(last.data);\n                last = last.prev;\n            }\n            if (result == null) {\n                result = newNode;\n                tail = result;\n            } else {\n                tail.next = newNode;\n                newNode.prev = tail;\n                tail = tail.next;\n            }\n        }",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 21,
+    "context": " if (front.data < last.data) {                 newNode = new Node(front.data);                 front = front.next;             } else {                 newNode = new Node(last.data);                 last = last.prev;             }             if (result == null) {                 result = newNode;                 tail = result;             } else {                 tail.next = newNode;                 newNode.prev = tail;                 tail = tail.next;             }         }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "newNode = new Node(front.data);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 22,
+    "context": "!= null && front != last.next) {             Node newNode = new Node(front.data);             front = front.next;             tail.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "front = front.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 22,
+    "context": " Node newNode = new Node(front.data);             front = front.next;             tail.next = newNode;             newN",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = newNode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 22,
+    "context": "             front = front.next;             tail.next = newNode;             newNode.prev = tail;             tail",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "prev = tail;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 22,
+    "context": "         tail.next = newNode;             newNode.prev = tail;             tail = tail.next;         }          ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tail = tail.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 22,
+    "context": "ode;             newNode.prev = tail;             tail = tail.next;         }          while (last != null && last.ne",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "newNode = new Node(last.data);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 22,
+    "context": "!= null && last.next != front) {             Node newNode = new Node(last.data);             last = last.prev;             tail.ne",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "last = last.prev;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 22,
+    "context": "  Node newNode = new Node(last.data);             last = last.prev;             tail.next = newNode;             newN",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Node = new Node(front.data);\n            front = front.next;\n            tail.next = newNode;\n            newNode.prev = tail;\n            tail = tail.next;\n        }\n\n        while (last != null && last.next != front) {\n            Node newNode = new Node(last.data);\n            last = last.prev;\n            tail.next = newNode;\n            newNode.prev = tail;\n            tail = tail.next;\n        }\n\n        return result;\n    }",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 22,
+    "context": "null && front != last.next) {             Node newNode = new Node(front.data);             front = front.next;             tail.next = newNode;             newNode.prev = tail;             tail = tail.next;         }          while (last != null && last.next != front) {             Node newNode = new Node(last.data);             last = last.prev;             tail.next = newNode;             newNode.prev = tail;             tail = tail.next;         }          return result;     }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "even_start=null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 23,
+    "context": "L public static void segregate() \t {        Node6 even_start=null;        Node6 even_end=null;        Node6 odd_star",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "even_end=null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 23,
+    "context": "() \t {        Node6 even_start=null;        Node6 even_end=null;        Node6 odd_start=null;        Node6 odd_end",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "odd_start=null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 23,
+    "context": "rt=null;        Node6 even_end=null;        Node6 odd_start=null;        Node6 odd_end=null; \t\t Node6 curr=head; \t\t",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "odd_end=null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 23,
+    "context": "d=null;        Node6 odd_start=null;        Node6 odd_end=null; \t\t Node6 curr=head; \t\t  \t\t while(curr!=null) \t\t {",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "curr=head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 23,
+    "context": "d_start=null;        Node6 odd_end=null; \t\t Node6 curr=head; \t\t  \t\t while(curr!=null) \t\t { \t\t\t int ele=curr.d;",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "ele=curr.d;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 23,
+    "context": " curr=head; \t\t  \t\t while(curr!=null) \t\t { \t\t\t int ele=curr.d;",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "even_start==null)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 24,
+    "context": "if(ele%2==0) \t\t\t { \t\t\t\t if(even_start==null) \t\t\t\t { \t\t\t\t\t even_start=curr; \t\t\t\t\t even_end=curr",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "even_start=curr;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 24,
+    "context": "==0) \t\t\t { \t\t\t\t if(even_start==null) \t\t\t\t { \t\t\t\t\t even_start=curr; \t\t\t\t\t even_end=curr; \t\t\t\t } \t\t\t\t else \t\t\t\t { \t\t\t\t",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "even_end=curr;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 24,
+    "context": "_start==null) \t\t\t\t { \t\t\t\t\t even_start=curr; \t\t\t\t\t even_end=curr; \t\t\t\t } \t\t\t\t else \t\t\t\t { \t\t\t\t\t even_end.next=curr;",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next=curr;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 24,
+    "context": "_end=curr; \t\t\t\t } \t\t\t\t else \t\t\t\t { \t\t\t\t\t even_end.next=curr; \t\t\t\t\t even_end=even_end.next; \t\t\t\t } \t\t\t }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "even_end=even_end.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 24,
+    "context": " \t\t\t\t else \t\t\t\t { \t\t\t\t\t even_end.next=curr; \t\t\t\t\t even_end=even_end.next; \t\t\t\t } \t\t\t }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2==0)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 24,
+    "context": "if(ele%2==0) \t\t\t { \t\t\t\t if(even_start==null) \t\t\t\t { \t\t\t\t\t even",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "odd_start==null)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 25,
+    "context": "else \t\t\t { \t\t\t\t if(odd_start==null) \t\t\t\t { \t\t\t\t\t odd_start=curr; \t\t\t\t\t odd_end=curr; ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "odd_start=curr;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 25,
+    "context": "else \t\t\t { \t\t\t\t if(odd_start==null) \t\t\t\t { \t\t\t\t\t odd_start=curr; \t\t\t\t\t odd_end=curr; \t\t\t\t } \t\t\t\t else \t\t\t\t { \t\t\t\t\t",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "odd_end=curr;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 25,
+    "context": "d_start==null) \t\t\t\t { \t\t\t\t\t odd_start=curr; \t\t\t\t\t odd_end=curr; \t\t\t\t } \t\t\t\t else \t\t\t\t { \t\t\t\t\t odd_end.next=curr; ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next=curr;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 25,
+    "context": "d_end=curr; \t\t\t\t } \t\t\t\t else \t\t\t\t { \t\t\t\t\t odd_end.next=curr; \t\t\t\t\t odd_end=odd_end.next; \t\t\t\t } \t\t\t } \t\t\t curr",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "odd_end=odd_end.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 25,
+    "context": "} \t\t\t\t else \t\t\t\t { \t\t\t\t\t odd_end.next=curr; \t\t\t\t\t odd_end=odd_end.next; \t\t\t\t } \t\t\t } \t\t\t curr=curr.next; \t\t }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "curr=curr.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 25,
+    "context": "urr; \t\t\t\t\t odd_end=odd_end.next; \t\t\t\t } \t\t\t } \t\t\t curr=curr.next; \t\t }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "odd_start==null || even_start==null)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 26,
+    "context": "if(odd_start==null || even_start==null) \t\t\t return; \t\t even_end.next=odd_start; \t\t odd_en",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next=odd_start;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 26,
+    "context": "null || even_start==null) \t\t\t return; \t\t even_end.next=odd_start; \t\t odd_end.next=null; \t\t head=even_start; \t }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next=null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 26,
+    "context": "\t\t return; \t\t even_end.next=odd_start; \t\t odd_end.next=null; \t\t head=even_start; \t }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head=even_start;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 26,
+    "context": "even_end.next=odd_start; \t\t odd_end.next=null; \t\t head=even_start; \t }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "10 <-> 8 <-> 4 <-> 2",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 29,
+    "context": "Merge Sort for Doubly Linked List Input: 10 <-> 8 <-> 4 <-> 2 Output: 2 <-> 4 <-> 8 <-> 10   Input: 5 <-> 3 <->",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 <-> 4 <-> 8 <-> 10",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 29,
+    "context": "y Linked List Input: 10 <-> 8 <-> 4 <-> 2 Output: 2 <-> 4 <-> 8 <-> 10   Input: 5 <-> 3 <-> 2 Output: 2 <-> 3 <-> 5",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "5 <-> 3 <-> 2",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 29,
+    "context": "<-> 4 <-> 2 Output: 2 <-> 4 <-> 8 <-> 10   Input: 5 <-> 3 <-> 2 Output: 2 <-> 3 <-> 5",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 <-> 3 <-> 5",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 29,
+    "context": "<-> 4 <-> 8 <-> 10   Input: 5 <-> 3 <-> 2 Output: 2 <-> 3 <-> 5",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head == null || head.next == null) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 30,
+    "context": "static Node MergeSort(Node head) {       if (head == null || head.next == null) {             return head;         }         Node s",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "second = split(head);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 30,
+    "context": "{             return head;         }         Node second = split(head);                  Node first = MergeSort(head);   ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "first = MergeSort(head);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 30,
+    "context": " Node second = split(head);                  Node first = MergeSort(head);         second = MergeSort(second);          retu",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "second = MergeSort(second);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 30,
+    "context": "            Node first = MergeSort(head);         second = MergeSort(second);          return merge(first, second);     }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "fast = head",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 31,
+    "context": "iding static Node split(Node head) {         Node fast = head,slow = head;   while (fast != null && fast.next !",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "slow = head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 31,
+    "context": " Node split(Node head) {         Node fast = head,slow = head;   while (fast != null && fast.next != null  && fa",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "fast = fast.next.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 31,
+    "context": "!= null  && fast.next.next != null) {             fast = fast.next.next;             slow = slow.next;         }         N",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "slow = slow.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 31,
+    "context": " {             fast = fast.next.next;             slow = slow.next;         }         Node temp = slow.next;         ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp = slow.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 31,
+    "context": "         slow = slow.next;         }         Node temp = slow.next;         slow.next = null;         if (temp != nul",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 31,
+    "context": "    }         Node temp = slow.next;         slow.next = null;         if (temp != null) {             temp.prev",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "prev = null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 31,
+    "context": "ull;         if (temp != null) {             temp.prev = null;         }         return temp;     }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "first == null)     return second;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 32,
+    "context": "Node merge(Node first, Node second) {         if (first == null)     return second;         if (second == null)  return first;   if (",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "second == null)  return first;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 32,
+    "context": "if (first == null)     return second;         if (second == null)  return first;   if (first.data < =second.data) {    first.next ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = merge(first.next",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 32,
+    "context": "irst;   if (first.data < =second.data) {    first.next = merge(first.next, second);             if (first.next != null) {  ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "prev = first;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 32,
+    "context": "(first.next != null) {                 first.next.prev = first;             }             first.prev = null;     ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "prev = null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 32,
+    "context": "ext.prev = first;             }             first.prev = null;             return first;         } else {       ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = merge(first",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 32,
+    "context": " return first;         } else {            second.next = merge(first, second.next);             if (second.next != nul",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "prev = second;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 32,
+    "context": "econd.next != null) {                 second.next.prev = second;             }             second.prev = null;    ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "maxcap=1000;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 36,
+    "context": "lass Stack_Array {  static int top=-1; static int maxcap=1000; static int arr[]=new int[maxcap];   static boolea",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "top==maxcap-1;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 36,
+    "context": "w int[maxcap];   static boolean isfull() { return top==maxcap-1; }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=top;i>=0;i--)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 39,
+    "context": " { System.out.println(\"stack contains:\"); for(int i=top;i>=0;i--) { System.out.print(arr[i]+\" \"); } } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc=new Scanner(System.in);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 40,
+    "context": "public static void main(String[] args) { Scanner sc=new Scanner(System.in); int n=sc.nextInt(); for(int i=0;i<n;i++) { int m=",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n=sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 40,
+    "context": "[] args) { Scanner sc=new Scanner(System.in); int n=sc.nextInt(); for(int i=0;i<n;i++) { int m=sc.nextInt(); push(m",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=0;i<n;i++)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 40,
+    "context": "w Scanner(System.in); int n=sc.nextInt(); for(int i=0;i<n;i++) { int m=sc.nextInt(); push(m); } top(); pop(); di",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "m=sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 40,
+    "context": "); int n=sc.nextInt(); for(int i=0;i<n;i++) { int m=sc.nextInt(); push(m); } top(); pop(); display(); pop(); pop();",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next=null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 41,
+    "context": "ata; Node3 next; Node3(int e) { this.data=e; this.next=null; } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "newnode=new Node3(e);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 42,
+    "context": "ode3 top;  public static void push(int e) { Node3 newnode=new Node3(e); if(top==null) top=newnode; else { newnode.next=to",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "top==null)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 42,
+    "context": "void push(int e) { Node3 newnode=new Node3(e); if(top==null) top=newnode; else { newnode.next=top; top=newnode",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "top=newnode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 42,
+    "context": "nt e) { Node3 newnode=new Node3(e); if(top==null) top=newnode; else { newnode.next=top; top=newnode; } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "top==null)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 43,
+    "context": "public static void pop() { if(top==null) { System.out.println(“No elements Stack Empty\"); ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "top=top.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 43,
+    "context": ".out.println(“No elements Stack Empty\"); } else { top=top.next; } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp=temp.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 44,
+    "context": "le(temp!=null) { System.out.print(temp.data+\" \"); temp=temp.next; } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc=new Scanner(System.in);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 45,
+    "context": "Scanner sc=new Scanner(System.in); while(true) { int n=sc.nextInt();    if(n!=-1)   ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n=sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 45,
+    "context": "nner sc=new Scanner(System.in); while(true) { int n=sc.nextInt();    if(n!=-1)           push(n);    else          ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "stk= new Stack<>();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 46,
+    "context": "c void main(String[] args)    {    Stack<Integer> stk= new Stack<>();   boolean result = stk.empty();   System.out.printl",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "result = stk.empty();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 46,
+    "context": "{    Stack<Integer> stk= new Stack<>();   boolean result = stk.empty();   System.out.println(\"Is the stack empty? \" + resul",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "st=new Stack<Integer>();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 48,
+    "context": "> mst;       Minimum_Stack()         {            st=new Stack<Integer>();            mst=new Stack<Integer>();         }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "mst=new Stack<Integer>();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 48,
+    "context": " {            st=new Stack<Integer>();            mst=new Stack<Integer>();         }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "t=st.pop();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 50,
+    "context": "void pop() { int t=st.pop();        if(t==mst.peek())             mst.pop(); }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "t==mst.peek())",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 50,
+    "context": "void pop() { int t=st.pop();        if(t==mst.peek())             mst.pop(); }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "m=new Minimum_Stack();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 52,
+    "context": "c static void main(String[] args) { Minimum_Stack m=new Minimum_Stack(); Scanner sc=new Scanner(System.in); int n=sc.nextI",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc=new Scanner(System.in);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 52,
+    "context": "s) { Minimum_Stack m=new Minimum_Stack(); Scanner sc=new Scanner(System.in); int n=sc.nextInt(); for(int i=0;i<n;i++) { int l=",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n=sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 52,
+    "context": "m_Stack(); Scanner sc=new Scanner(System.in); int n=sc.nextInt(); for(int i=0;i<n;i++) { int l=sc.nextInt(); m.push",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=0;i<n;i++)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 52,
+    "context": "w Scanner(System.in); int n=sc.nextInt(); for(int i=0;i<n;i++) { int l=sc.nextInt(); m.push(l); } m.getmin(); } ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "l=sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 52,
+    "context": "); int n=sc.nextInt(); for(int i=0;i<n;i++) { int l=sc.nextInt(); m.push(l); } m.getmin(); } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "st=new Stack<>();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 55,
+    "context": "rity(int n,int m[][]) {            Stack<Integer> st=new Stack<>();             int c;   for(int i=0;i<n;i++)        ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=0;i<n;i++)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 55,
+    "context": "r> st=new Stack<>();             int c;   for(int i=0;i<n;i++)           st.push(i);   while(st.size()>1)   {   ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "a=st.pop();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 55,
+    "context": "     st.push(i);   while(st.size()>1)   {     int a=st.pop();     int b=st.pop();         if(knows(a,b,m))     ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "b=st.pop();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 55,
+    "context": "hile(st.size()>1)   {     int a=st.pop();     int b=st.pop();         if(knows(a,b,m))               st.push(b)",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "c=st.pop();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 56,
+    "context": "c=st.pop(); for(int i=0;i<n;i++) { if((i!=c) &&( knows(c,i,m)",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=0;i<n;i++)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 56,
+    "context": "c=st.pop(); for(int i=0;i<n;i++) { if((i!=c) &&( knows(c,i,m) || !knows(i,c,m))) r",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 1 to total number of moves:",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 60,
+    "context": "hange destination pole and auxiliary pole. 3. for i = 1 to total number of moves:      if i%3 == 1:     legal movement of top disk ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 == 1:",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 60,
+    "context": " 3. for i = 1 to total number of moves:      if i%3 == 1:     legal movement of top disk between source pol",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 == 2:",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 60,
+    "context": "etween source pole and destination pole      if i%3 == 2:     legal movement top disk between source pole a",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 == 0:",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 60,
+    "context": "ween source pole and auxiliary pole          if i%3 == 0:         legal movement top disk between auxiliary",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc = new Scanner(System.in);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 61,
+    "context": "static void main(String[] args) {         Scanner sc = new Scanner(System.in);          System.out.print(\"Enter the number of di",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "numOfDisks = sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 61,
+    "context": "print(\"Enter the number of disks: \");         int numOfDisks = sc.nextInt();          if (numOfDisks <= 0)              System",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Disks = sc.nextInt();\n\n        if (numOfDisks <= 0) \n            System.out.println(\"The number of disks must be greater than 0.\");\n         else \n                 towerOfHanoi(numOfDisks);\n        \n}",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 61,
+    "context": "(\"Enter the number of disks: \");         int numOfDisks = sc.nextInt();          if (numOfDisks <= 0)              System.out.println(\"The number of disks must be greater than 0.\");          else                   towerOfHanoi(numOfDisks);          }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "source = new Stack<>();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 62,
+    "context": "rOfHanoi(int numOfDisks) {         Stack<Integer> source = new Stack<>();         Stack<Integer> auxiliary = new Stack<>();",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "auxiliary = new Stack<>();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 62,
+    "context": "r> source = new Stack<>();         Stack<Integer> auxiliary = new Stack<>();         Stack<Integer> destination = new Stack<>(",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "destination = new Stack<>();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 62,
+    "context": "auxiliary = new Stack<>();         Stack<Integer> destination = new Stack<>();          char s = 'S', a = 'A', d = 'D';         ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "d = 'D';",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 62,
+    "context": " = new Stack<>();          char s = 'S', a = 'A', d = 'D';          for (int i = numOfDisks; i >= 1; i--) { ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = numOfDisks; i >= 1; i--) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 62,
+    "context": "char s = 'S', a = 'A', d = 'D';          for (int i = numOfDisks; i >= 1; i--) {             source.push(i);         }          in",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "totalMoves = (int) Math.pow(2",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 62,
+    "context": "           source.push(i);         }          int totalMoves = (int) Math.pow(2, numOfDisks) - 1;          if (numOfDisks % 2 == ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "a = temp;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 62,
+    "context": "    char temp = d;             d = a;             a = temp;         }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 == 0) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 62,
+    "context": "pow(2, numOfDisks) - 1;          if (numOfDisks % 2 == 0) {             char temp = d;             d = a;    ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Moves = (int) Math.pow(2, numOfDisks) - 1;\n\n        if (numOfDisks % 2 == 0) {\n            char temp = d;\n            d = a;\n            a = temp;\n        }",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 62,
+    "context": "      source.push(i);         }          int totalMoves = (int) Math.pow(2, numOfDisks) - 1;          if (numOfDisks % 2 == 0) {             char temp = d;             d = a;             a = temp;         }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 1; i <= totalMoves; i++) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 63,
+    "context": "for (int i = 1; i <= totalMoves; i++) {             if (i % 3 == 1) {                 mov",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 == 1) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 63,
+    "context": " = 1; i <= totalMoves; i++) {             if (i % 3 == 1) {                 moveDisks(source, destination, s,",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 == 2) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 63,
+    "context": "e, destination, s, d);             } else if (i % 3 == 2) {                 moveDisks(source, auxiliary, s, a",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 == 0) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 63,
+    "context": "rce, auxiliary, s, a);             } else if (i % 3 == 0) {                 moveDisks(auxiliary, destination,",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "disk = destination.pop();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 64,
+    "context": "{         if (source.isEmpty()) {             int disk = destination.pop();             System.out.println(\"Move disk \" + dis",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "disk = source.pop();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 64,
+    "context": "else if (destination.isEmpty()) {             int disk = source.pop();             System.out.println(\"Move disk \" + dis",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "disk = destination.pop();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 65,
+    "context": "ce.peek() > destination.peek()) {             int disk = destination.pop();             System.out.println(\"Move disk \" + dis",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "disk = source.pop();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 65,
+    "context": "urce.push(disk);         } else {             int disk = source.pop();             System.out.println(\"Move disk \" + dis",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc=new Scanner(System.in);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 68,
+    "context": " public static void main(String[] args) { Scanner sc=new Scanner(System.in); int n=sc.nextInt(); int a[]=new int[n]; for(int i",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n=sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 68,
+    "context": "[] args) { Scanner sc=new Scanner(System.in); int n=sc.nextInt(); int a[]=new int[n]; for(int i=0;i<n;i++) a[i]=sc.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=0;i<n;i++)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 68,
+    "context": "; int n=sc.nextInt(); int a[]=new int[n]; for(int i=0;i<n;i++) a[i]=sc.nextInt(); int s[]=new int[n]; stockspan(",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "st=new Stack<>();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 69,
+    "context": "stockspan(int n,int a[],int s[]) { Stack<Integer> st=new Stack<>(); st.push(0); s[0]=1; for(int i=1;i<n;i++) { while(",
+    "is_numbered": true,
+    "equation_number": "0"
+  },
+  {
+    "content": "i=1;i<n;i++)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 69,
+    "context": "er> st=new Stack<>(); st.push(0); s[0]=1; for(int i=1;i<n;i++) { while(!st.isEmpty()&&a[st.peek()]<=a[i]) { st.p",
+    "is_numbered": true,
+    "equation_number": "0"
+  },
+  {
+    "content": "s=new Stack<Integer>();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 73,
+    "context": "ean check(int x[],int y[],int n) { Stack<Integer> s=new Stack<Integer>(); int j=0; for(int i=0;i<n;i++) { s.push(x[i]); whi",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=0;i<n;i++)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 73,
+    "context": "Integer> s=new Stack<Integer>(); int j=0; for(int i=0;i<n;i++) { s.push(x[i]); while(!s.isEmpty()&&y[j]==s.peek(",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc=new Scanner(System.in);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 74,
+    "context": "public static void main(String[] args) { Scanner sc=new Scanner(System.in); int n=sc.nextInt(); int a[]=new int[n]; int b[]=n",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n=sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 74,
+    "context": "[] args) { Scanner sc=new Scanner(System.in); int n=sc.nextInt(); int a[]=new int[n]; int b[]=new int[n]; for(int i",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=0;i<n;i++)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 74,
+    "context": "; int a[]=new int[n]; int b[]=new int[n]; for(int i=0;i<n;i++) a[i]=sc.nextInt(); for(int j=0;j<n;j++) b[j]=sc.n",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j=0;j<n;j++)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 74,
+    "context": "; for(int i=0;i<n;i++) a[i]=sc.nextInt(); for(int j=0;j<n;j++) b[j]=sc.nextInt(); if(check(a,b,n)) System.out.pr",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "maxcap = 1000;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 77,
+    "context": "sing Arrays public class Queue_Array { static int maxcap = 1000; static int[] a = new int[maxcap]; static int rear",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "a = new int[maxcap];",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 77,
+    "context": "ue_Array { static int maxcap = 1000; static int[] a = new int[maxcap]; static int rear = -1, front = -1;\u000b public static ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "front = -1;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 77,
+    "context": " int[] a = new int[maxcap]; static int rear = -1, front = -1;\u000b public static boolean isempty() { return front ==",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "front == -1;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 77,
+    "context": "t = -1;\u000b public static boolean isempty() { return front == -1; }  public static boolean isfull() { return rear =",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "rear == maxcap - 1;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 77,
+    "context": "== -1; }  public static boolean isfull() { return rear == maxcap - 1; }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "front == -1) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 78,
+    "context": "tln(\"Queue is full! Can't insert.\"); } else { if (front == -1) { front = 0;  } a[++rear] = e; }}",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = front; i <= rear; i++) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 80,
+    "context": " { System.out.print(\"Queue elements: \"); for (int i = front; i <= rear; i++) { System.out.print(a[i] + \" \"); } } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc = new Scanner(System.in);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 81,
+    "context": "public static void main(String[] args) { Scanner sc = new Scanner(System.in); System.out.print(\"Enter the number of elements to",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n = sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 81,
+    "context": "\"Enter the number of elements to enqueue: \"); int n = sc.nextInt(); System.out.println(\"Enter the elements:\"); for (i",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 0; i < n; i++) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 81,
+    "context": "stem.out.println(\"Enter the elements:\"); for (int i = 0; i < n; i++) { int m = sc.nextInt(); enqueue(m); } display(); Sy",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "m = sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 81,
+    "context": "he elements:\"); for (int i = 0; i < n; i++) { int m = sc.nextInt(); enqueue(m); } display(); System.out.println(\"Perf",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next=null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 82,
+    "context": "; Node next; Node(int v) {         data=v;        next=null; } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "rear==null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 83,
+    "context": "r,front;  public static boolean isempty(){ return rear==null; }  public static void enqueue(int ele){ Node newn",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "newnode=new Node(ele);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 83,
+    "context": "ull; }  public static void enqueue(int ele){ Node newnode=new Node(ele); if(rear==null)              front=rear=newnode; e",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "rear==null)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 83,
+    "context": " enqueue(int ele){ Node newnode=new Node(ele); if(rear==null)              front=rear=newnode; else {       rear",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "front=rear=newnode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 83,
+    "context": "ewnode=new Node(ele); if(rear==null)              front=rear=newnode; else {       rear.next=newnode;       rear=newnod",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next=newnode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 83,
+    "context": "            front=rear=newnode; else {       rear.next=newnode;       rear=newnode; }}",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "rear=newnode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 83,
+    "context": "ar=newnode; else {       rear.next=newnode;       rear=newnode; }}",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "front=front.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 84,
+    "context": "em.out.println(\"no elements to delete\"); else     front=front.next; }  public static void display(){ Node temp=front;",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp=front;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 84,
+    "context": "front.next; }  public static void display(){ Node temp=front; while(temp!=rear) { System.out.print(temp.data+\" ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp=temp.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 84,
+    "context": "temp!=rear) { System.out.print(temp.data+\" -> \"); temp=temp.next; } System.out.println(); }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc=new Scanner(System.in);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 85,
+    "context": "public static void main(String[] args) { Scanner sc=new Scanner(System.in); int n=sc.nextInt(); for(int i=0;i<n;i++) { int el",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n=sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 85,
+    "context": "[] args) { Scanner sc=new Scanner(System.in); int n=sc.nextInt(); for(int i=0;i<n;i++) { int ele=sc.nextInt(); enqu",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=0;i<n;i++)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 85,
+    "context": "w Scanner(System.in); int n=sc.nextInt(); for(int i=0;i<n;i++) { int ele=sc.nextInt(); enqueue(ele); } display()",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "ele=sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 85,
+    "context": "); int n=sc.nextInt(); for(int i=0;i<n;i++) { int ele=sc.nextInt(); enqueue(ele); } display(); dequeue(); dequeue(); ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "data = data;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 90,
+    "context": "c Node(int data, int priority) {             this.data = data;             this.priority = priority;         }  ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "priority = priority;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 90,
+    "context": " {             this.data = data;             this.priority = priority;         }     }     private static Node head = nu",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head = null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 90,
+    "context": "priority;         }     }     private static Node head = null; 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 2",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head == null) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 91,
+    "context": "e static void push(int data, int priority) { \tif (head == null) { \t\tNode newNode = new Node(data, priority);       ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "newNode = new Node(data",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 91,
+    "context": "data, int priority) { \tif (head == null) { \t\tNode newNode = new Node(data, priority);             head = newNode;          ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head = newNode;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 91,
+    "context": "e newNode = new Node(data, priority);             head = newNode;             return;   \t} \tNode node = new Node(da",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "node = new Node(data",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 91,
+    "context": "   head = newNode;             return;   \t} \tNode node = new Node(data, priority);         \tNode temp = head, parent = n",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp = head",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 91,
+    "context": "de node = new Node(data, priority);         \tNode temp = head, parent = null;         \twhile (temp != null && t",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "parent = null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 91,
+    "context": " Node(data, priority);         \tNode temp = head, parent = null;         \twhile (temp != null && temp.priority >= ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "parent = temp;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 91,
+    "context": "ull && temp.priority >= priority) {             \t\tparent = temp;             \t\ttemp = temp.next;         \t}       ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp = temp.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 91,
+    "context": "ity) {             \t\tparent = temp;             \t\ttemp = temp.next;         \t}        \tif (parent == null) {         ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "parent == null) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 91,
+    "context": "       \t\ttemp = temp.next;         \t}        \tif (parent == null) {             \t\tnode.next = head;             \t\thea",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = head;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 91,
+    "context": "        \tif (parent == null) {             \t\tnode.next = head;             \t\thead.prev = node;             \t\thea",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "prev = node;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 91,
+    "context": "           \t\tnode.next = head;             \t\thead.prev = node;             \t\thead = node; } 1 2 3 4 5 6 7 8 9 10",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head = node; }",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 91,
+    "context": "ad;             \t\thead.prev = node;             \t\thead = node; } 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 2",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Node = new Node(data, priority);\n            head = newNode;\n            return;  \n\t}\n\tNode node = new Node(data, priority);\n        \tNode temp = head, parent = null;\n        \twhile (temp != null && temp.priority >= priority) {\n            \t\tparent = temp;\n            \t\ttemp = temp.next;\n        \t}\n       \tif (parent == null) {\n            \t\tnode.next = head;\n            \t\thead.prev = node;\n            \t\thead = node; }\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 91,
+    "context": "a, int priority) { \tif (head == null) { \t\tNode newNode = new Node(data, priority);             head = newNode;             return;   \t} \tNode node = new Node(data, priority);         \tNode temp = head, parent = null;         \twhile (temp != null && temp.priority >= priority) {             \t\tparent = temp;             \t\ttemp = temp.next;         \t}        \tif (parent == null) {             \t\tnode.next = head;             \t\thead.prev = node;             \t\thead = node; } 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp == null) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 92,
+    "context": "else if (temp == null) {             parent.next = node;             node.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = node;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 92,
+    "context": "else if (temp == null) {             parent.next = node;             node.prev = parent; } else {         ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "prev = parent;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 92,
+    "context": "             parent.next = node;             node.prev = parent; } else {             parent.next = node;         ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "next = temp;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 92,
+    "context": "             node.prev = parent;             node.next = temp;             temp.prev = node;  }   }  private sta",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "prev = node;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 92,
+    "context": "t;             node.next = temp;             temp.prev = node;  }   }  private static int peek() {         \tif (",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "curr = head.data;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 93,
+    "context": "ate static int pop() { \tif (head != null) { \t\tint curr = head.data;          head = head.next; \t\tif (head != null) \t\t",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "head = head.next;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 93,
+    "context": "(head != null) { \t\tint curr = head.data;          head = head.next; \t\tif (head != null) \t\t\thead.prev = null;       re",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "prev = null;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 93,
+    "context": "    head = head.next; \t\tif (head != null) \t\t\thead.prev = null;       return curr; } return -1;   } public static",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc=new Scanner(System.in);",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 93,
+    "context": "static void main(String[] args) {         Scanner sc=new Scanner(System.in);         int n=sc.nextInt();         for(int i=0;i",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n=sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 93,
+    "context": "   Scanner sc=new Scanner(System.in);         int n=sc.nextInt();         for(int i=0;i<n;i++)         {           ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=0;i<n;i++)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 93,
+    "context": ".in);         int n=sc.nextInt();         for(int i=0;i<n;i++)         {             int data=sc.nextInt(); 1 2 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "data=sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 93,
+    "context": "   for(int i=0;i<n;i++)         {             int data=sc.nextInt(); 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 2",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "pri=sc.nextInt();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 94,
+    "context": "int pri=sc.nextInt();  \t\t\t\tpush(data, pri);         \t\t} \t\t\tSystem.out.pr",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "q = new LinkedList<Integer>();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 96,
+    "context": "atic void main (String[] args)  {  Queue<Integer> q = new LinkedList<Integer>();  q.add(3);  q.add(1);  q.add(4);  q.add(2); q.add(",
+    "is_numbered": true,
+    "equation_number": "3"
+  },
+  {
+    "content": "i = 1; i <= q.size(); i++)",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 97,
+    "context": "atic void sortQueue(Queue<Integer> q)  {  for(int i = 1; i <= q.size(); i++)  {  int min_index = minInd(q,q.size() - i);  inser",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "min_index = minInd(q",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 97,
+    "context": "q)  {  for(int i = 1; i <= q.size(); i++)  {  int min_index = minInd(q,q.size() - i);  insertMinToRear(q, min_index);  }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "min_index = -1;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 98,
+    "context": "nt minInd(Queue<Integer> q, int sortIndex) {  int min_index = -1;  int min_value = Integer.MAX_VALUE;  int s = q.siz",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "min_value = Integer.MAX_VALUE;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 98,
+    "context": "er> q, int sortIndex) {  int min_index = -1;  int min_value = Integer.MAX_VALUE;  int s = q.size();  for (int i = 0; i < s; i++) { ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "s = q.size();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 98,
+    "context": "ex = -1;  int min_value = Integer.MAX_VALUE;  int s = q.size();  for (int i = 0; i < s; i++) {  int current = q.po",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 0; i < s; i++) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 98,
+    "context": "= Integer.MAX_VALUE;  int s = q.size();  for (int i = 0; i < s; i++) {  int current = q.poll();  if (current <= min_value",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "current = q.poll();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 98,
+    "context": "s = q.size();  for (int i = 0; i < s; i++) {  int current = q.poll();  if (current <= min_value && i <= sortIndex) {  mi",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "min_value = current;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 98,
+    "context": "= min_value && i <= sortIndex) {  min_index = i;  min_value = current;  }  q.add(current);  }  return min_index;  }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "s = q.size();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 99,
+    "context": "er> q, int min_index)  {  int min_value = 0;  int s = q.size();  for (int i = 0; i < s; i++) {  int current = q.po",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 0; i < s; i++) {",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 99,
+    "context": "  int min_value = 0;  int s = q.size();  for (int i = 0; i < s; i++) {  int current = q.poll();  if (i != min_index)  q.a",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "current = q.poll();",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 99,
+    "context": "s = q.size();  for (int i = 0; i < s; i++) {  int current = q.poll();  if (i != min_index)  q.add(current);  else min_va",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "min_value = current;",
+    "source_file": "Module-1.pptx",
+    "page_or_slide": 99,
+    "context": "ll();  if (i != min_index)  q.add(current);  else min_value = current;  }  q.add(min_value);  }  }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc=new Scanner(System.in);",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": " public static void main(String args[]) { Scanner sc=new Scanner(System.in); int n=sc.nextInt(); int a[]=new int[n]; int suf=0",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n=sc.nextInt();",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": " args[]) { Scanner sc=new Scanner(System.in); int n=sc.nextInt(); int a[]=new int[n]; int suf=0; for(int i=0;i<n;i+",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=0;i<n;i++)",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "nextInt(); int a[]=new int[n]; int suf=0; for(int i=0;i<n;i++) { a[i]=sc.nextInt(); suf+=a[i]; } int pre=0; int ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "max=Integer.MIN_VALUE;",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": " { a[i]=sc.nextInt(); suf+=a[i]; } int pre=0; int max=Integer.MIN_VALUE; for(int i=0;i<n;i++) { pre+=a[i]; if(pre==suf) { ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "pre==suf)",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "r.MIN_VALUE; for(int i=0;i<n;i++) { pre+=a[i]; if(pre==suf) { System.out.println(pre+\" \"+i); max=Math.max(max",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "max=Math.max(max",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "i]; if(pre==suf) { System.out.println(pre+\" \"+i); max=Math.max(max,suf); } suf-=a[i]; } System.out.println(max); } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "sc = new Scanner(System.in);",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": " public static void main(String[] args) { Scanner sc = new Scanner(System.in); int n = sc.nextInt(); int[] a = new int[n]; for (",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "n = sc.nextInt();",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": " args) { Scanner sc = new Scanner(System.in); int n = sc.nextInt(); int[] a = new int[n]; for (int i = 0; i < n; i++)",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "a = new int[n];",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "w Scanner(System.in); int n = sc.nextInt(); int[] a = new int[n]; for (int i = 0; i < n; i++) { a[i] = sc.nextInt()",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 0; i < n; i++) {",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": " n = sc.nextInt(); int[] a = new int[n]; for (int i = 0; i < n; i++) { a[i] = sc.nextInt(); } int max = 0; for (int i = ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = n - 1; i >= 0; i--) {",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "+) { a[i] = sc.nextInt(); } int max = 0; for (int i = n - 1; i >= 0; i--) { if (a[i] > max) { System.out.print(a[i] + \" \"); m",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "max = a[i];",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "{ if (a[i] > max) { System.out.print(a[i] + \" \"); max = a[i]; } } } } Majority Element(Moore’s Voting Algorithm",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "ele=a[i];",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "c=0; int ele=0; for(int i=0;i<n;i++) { if(c==0) { ele=a[i]; c=1; } else if(a[i]==ele) { c++; } else{ c--; } }",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "loc=partition(arr",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "t(int arr[],int lb,int ub) { int loc; if(lb<ub) { loc=partition(arr,lb,ub); quicksort(arr,lb,loc-1); quicksort(arr,lo",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "pivot=arr[lb];",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "atic int partition(int arr[],int lb,int ub) { int pivot=arr[lb]; int start=lb; int end=ub; while(start<end) { whil",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp=arr[start];",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "{ start++; } while(arr[end]>pivot) { end--; } int temp=arr[start]; arr[start]=arr[end]; arr[end]=temp; } int temp=ar",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp=arr[lb];",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "start]; arr[start]=arr[end]; arr[end]=temp; } int temp=arr[lb]; arr[lb]=arr[end]; arr[end]=temp; return end; } } ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=0;i<n-1;i++)",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "r(int i=0;i<n;i++) { a[i]=sc.nextInt(); } for(int i=0;i<n-1;i++) { int min=i; int j=0; for(j=i+1;j<n;j++) { if(a[j",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j=i+1;j<n;j++)",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": " for(int i=0;i<n-1;i++) { int min=i; int j=0; for(j=i+1;j<n;j++) { if(a[j]<a[min]) { min=j; } } if(min!=i) { int t",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp=a[min];",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": ") { if(a[j]<a[min]) { min=j; } } if(min!=i) { int temp=a[min]; a[min]=a[i]; a[i]=temp; } } System.out.println(Ar",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j = 1; j < n; j++) {",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "elected\"); i = 0; System.out.print(i + \" \"); for (j = 1; j < n; j++) { if (s[j] >= f[i]) { System.out.print(j + \" \"); i ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "set = new TreeSet<>();",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "til.*; public class Main { static TreeSet<String> set = new TreeSet<>(); public static void swap(char[] a, int i, int j) {",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "temp = a[i];",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "c static void swap(char[] a, int i, int j) { char temp = a[i]; a[i] = a[j]; a[j] = temp; } public static void pe",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "fi == a.length - 1) {",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": " static void permutations(char[] a, int fi) { if (fi == a.length - 1) { set.add(new String(a)); return; } for (int i = fi",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = fi; i < a.length; i++) {",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "- 1) { set.add(new String(a)); return; } for (int i = fi; i < a.length; i++) { swap(a, fi, i); permutations(a, fi + 1); swap(a, ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "s = sc.next();",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "gs) { Scanner sc = new Scanner(System.in); String s = sc.next(); char[] a = s.toCharArray(); permutations(a, 0); f",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "a = s.toCharArray();",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": " Scanner(System.in); String s = sc.next(); char[] a = s.toCharArray(); permutations(a, 0); for (String perm : set) { Sys",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "x==r-1 && y==c-1 && m[x][y]==1)",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": " m[][],int x,int y,int r,int c,int path[][]) { if(x==r-1 && y==c-1 && m[x][y]==1) { path[x][y]=1; return true; } if(x>=0 && x<r &&y",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "r=sc.nextInt();",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "[] args) { Scanner sc=new Scanner(System.in); int r=sc.nextInt(); int c=sc.nextInt(); int m[][]=new int[r][c]; for(",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "c=sc.nextInt();",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "c=new Scanner(System.in); int r=sc.nextInt(); int c=sc.nextInt(); int m[][]=new int[r][c]; for(int i=0;i<r;i++) { f",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i=0;i<r;i++)",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": " c=sc.nextInt(); int m[][]=new int[r][c]; for(int i=0;i<r;i++) { for(int j=0;j<c;j++) { m[i][j]=sc.nextInt(); } ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j=0;j<c;j++)",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "][]=new int[r][c]; for(int i=0;i<r;i++) { for(int j=0;j<c;j++) { m[i][j]=sc.nextInt(); } } int path[][]=new int[",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "r==row-1 || c==col-1)",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": " static int man(int r,int c,int row,int col) { if(r==row-1 || c==col-1) { return 1; } return man(r+1,c,row,col)+man(r,c+1",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "k=sc.nextInt();",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "c=new Scanner(System.in); int n=sc.nextInt(); int k=sc.nextInt(); System.out.println(josh(n,k));//0 based indexing ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j=0;j<d;j++){",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "int s,int e,int ind,int d) { if(ind==d) { for(int j=0;j<d;j++){ System.out.print(c[j]+\" \"); } System.out.println(",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "j=s;j<=e;j++)",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "]+\" \"); } System.out.println(); return; } for(int j=s;j<=e;j++) { c[ind]=a[j]; com(a,c,j+1,e,ind+1,d); } } public",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "d=sc.nextInt();",
+    "source_file": "STS4005 CAT 01 CODES.docx",
+    "page_or_slide": 1,
+    "context": "; for(int i=0;i<n;i++) { a[i]=sc.nextInt(); } int d=sc.nextInt(); int c[]=new int[d]; com(a,c,0,n-1,0,d); } } ",
+    "is_numbered": false,
+    "equation_number": ""
+  }
+]
