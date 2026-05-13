@@ -1,0 +1,958 @@
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 1
+============================================================
+
+Low Power VLSI Design
+By
+
+Dr. Aruru Sai Kumar
+Assistant Professor Sr. Grade -2
+School of Electronics Engineering (SENSE)
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 2
+============================================================
+
+MODULE-5:Low-Voltage Low-Power Memories
+Basics of SRAM, Memory Cell, Precharge and Equalization Circuit, Low-PowerSRAM Technologies
+Basics of DRAM, Self-Refresh Circuit
+Basics of ROM, Low-Power ROMTechnology, Future Trend and Development of ROMs and DRAMs
+Basics of ROM, Low-Power ROMTechnology, Future Trend and Development of ROMs and DRAMs
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 3
+============================================================
+
+Outline
+SRAM
+DRAM
+ROM
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 4
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+Figure: Overview of the main memory
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 5
+============================================================
+
+5.1 Introduction
+Over the years, significant progress has been made in reducing the power consumption of Random-Access Memory (RAM).
+ Numerous circuit-level techniques have been developed to minimize both active and standby power in static as well as dynamic memory architectures.
+ This advancement has been driven by the rapid growth of compact, energy-efficient electronic devices such as mobile phones, laptops, and portable systems.
+ RAM is a read/write memory that allows data stored in its cells to be modified quickly and efficiently.
+ A key feature of RAM is that the time required for read or write operations remains constant, irrespective of the physical location of the data within the memory.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 6
+============================================================
+
+Introduction
+This is achieved through an organized addressing mechanism that enables direct access to any memory location. 
+Additionally, RAM is volatile in nature, meaning that it retains stored data only as long as power is supplied; once power is removed, the stored information is lost.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 7
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 8
+============================================================
+
+5.2 Basics of SRAM
+An SRAM chip consists of several important components, including address buffers, row decoders, column decoders, memory array, sense amplifiers, input/output buffers, and precharge circuits, all of which work together to perform read and write operations efficiently.
+The memory array is the core part of the SRAM, where data bits are stored in individual memory cells, and each cell is connected to a specific word line and a pair of complementary bit lines (BL and BL̅).
+The process of cell selection begins when the address is applied to the address buffers, which then drive the row and column decoders to activate a particular word line and bit line corresponding to the given address.
+The selected memory cell is determined by the intersection of the activated word line and bit line, which uniquely identifies the location of the data within the memory array.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 9
+============================================================
+
+Basics of SRAM
+During a read operation, the selected word line is enabled, allowing the stored data in the cell to create a small voltage difference on the bit lines, which is then detected and amplified by the sense amplifier to produce a full logic-level output.
+During a write operation, the input data is applied to the bit lines, and when the word line is activated, the data is forced into the selected memory cell, thereby updating its stored value.
+The access time of SRAM is defined as the time required for the data to propagate from the address input to the data output, and it is mainly influenced by delays in word-line decoding and bit-line sensing.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 10
+============================================================
+
+Basics of SRAM
+To minimize access time and improve performance, SRAM design typically uses small voltage swings on bit lines and highly sensitive sense amplifiers to enable faster detection of stored data. 
+SRAM operation is controlled by signals such as Write Enable (WE), Chip Select (CS), and Output Enable (OE), where WE determines whether the operation is read or write, CS selects a specific memory chip from a group of chips, and OE enables the output buffer during read operations.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 11
+============================================================
+
+Figure 1: Typical SRAM architecture.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 12
+============================================================
+
+Basics of SRAM : Read Cycle Timing
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 13
+============================================================
+
+Basics of SRAM : 	Write Cycle Timing
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 14
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+Figure 2: Typical timing of an SRAM: (a) read cycle; (b) write cycle
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 15
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+Figure 3:The six-transistor CMOS memory cell
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 16
+============================================================
+
+Basics of SRAM
+The cell has:
+Two cross-coupled inverters → store data (nodes A and B)
+Two access transistors (MN3, MN4) → connect cell to bit lines
+WL (Word Line) controls access
+BL and BL(bit lines) carry data
+Read Operation:
+Before reading, both bit lines (BL and BL) are precharged to same voltage (usually VDD).
+When WL = 1 (enabled):
+The cell connects to bit lines
+Suppose:
+A = 1, B = 0
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 17
+============================================================
+
+Basics of SRAM
+Then:
+BL slightly discharges (goes down) through NMOS path
+BL stays high (or slightly higher)
+This creates a small voltage difference between BL and BL
+Sense amplifier detects this difference and outputs:
+BL > BL → logic 1
+BL < BL→ logic 0
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 18
+============================================================
+
+Basics of SRAM
+Write Operation:
+To write data, we force values on bit lines:
+Writing ‘1’:
+BL = 1
+BL = 0
+When WL = 1:
+Access transistors turn ON
+These values are forced into nodes:
+A → becomes 1
+B → becomes 0
+Due to cross-coupled inverters (positive feedback):
+The cell quickly stabilizes
+Stores the new value strongly
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 19
+============================================================
+
+SRAM
+Advantages of SRAM:
+High Speed
+SRAM is very fast since it does not require refresh operations. Access time is much lower compared to DRAM.
+No Refresh Required
+Data is stored using bistable latches (flip-flops), so it remains stable as long as power is supplied.
+Low Dynamic Power (No Refresh Overhead)
+Absence of refresh cycles reduces unnecessary switching activity.
+Better Noise Margin
+SRAM cells (like 6T) have strong stability and are less susceptible to noise compared to DRAM.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 20
+============================================================
+
+SRAM
+Advantages of SRAM:
+Simple Control Logic
+No need for complex refresh control circuitry, simplifying memory controller design.
+Ideal for Cache Memory
+Due to high speed, SRAM is widely used in CPU caches (L1, L2, L3).
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 21
+============================================================
+
+SRAM
+Disadvantages of SRAM:
+Low Density
+SRAM cells require more transistors (typically 6T), leading to larger cell size and lower packing density.
+High Cost per Bit
+Due to larger area and complex structure, SRAM is more expensive than DRAM and Flash.
+Higher Static Power Consumption
+Continuous power is required to maintain data, leading to leakage power issues.
+Volatile Memory
+Data is lost when power is turned off.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 22
+============================================================
+
+SRAM
+Disadvantages of SRAM:
+Complex Cell Design
+Compared to DRAM (1T1C), SRAM cells are more complex and harder to scale.
+Limited Storage Capacity
+Due to low density, SRAM is not suitable for large memory applications like main memory.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 23
+============================================================
+
+Precharge and Equalization Circuit:
+Dr. Aruru Sai Kumar , VIT-AP
+Figure  (a) Bit-line precharge using nMOS loads. (b) Bit-line precharge using pMOS loads.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 24
+============================================================
+
+Precharge and Equalization Circuit:
+Purpose of Bit-Line Precharge
+Bit-line precharge is used in SRAM circuits to initialize the bit-lines (BL and BL to a known voltage level before every read operation, ensuring accurate and fast sensing).
+     Equalization Mechanism (Φ_eq)
+The equalization signal (Φ_eq) activates a transistor that connects BL and BL, forcing both lines to the same potential and eliminating any voltage difference before read.
+	nMOS Precharge Design (Figure a)
+In this configuration, nMOS transistors are used as load devices to precharge the bit-lines, typically pulling them toward a lower voltage level relative to VDD.
+Limitations of nMOS Loads
+nMOS-based precharge circuits suffer from threshold voltage (VT) drop, which prevents full voltage swing (cannot reach exact VDD), leading to reduced noise margin.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 25
+============================================================
+
+Precharge and Equalization Circuit:
+pMOS Precharge Design (Figure b)
+pMOS transistors are used to precharge bit-lines directly to VDD, providing a full voltage swing and improving reliability during sensing.
+Advantage of pMOS Precharge
+Since pMOS does not suffer from threshold drop when pulling high, it ensures that BL and BL are fully charged to VDD, enhancing read stability.
+Role of Word Line (WL)
+The word line controls access to the memory cell. During precharge, WL is kept low to isolate the memory cell from the bit-lines.
+Interaction with Memory Cell
+Once precharge is complete, WL is activated, and the stored data in the memory cell causes a slight voltage difference between BL and BL for sensing.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 26
+============================================================
+
+Precharge and Equalization Circuit:
+Power and Speed Considerations
+Precharging consumes dynamic power due to charging/discharging of large bit-line capacitances, but it significantly improves read speed and accuracy.
+Design Trade-offs
+nMOS precharge is simpler but less efficient, while pMOS precharge offers better performance at the cost of slightly higher area and design complexity.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 27
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+Figure: Precharge and equalization circuit using (a) nMOS and (b) pMOS.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 28
+============================================================
+
+Precharge and Equalization Circuit:
+Precharge and Equalization Circuits in SRAM:
+Purpose of Precharge Circuit:
+The precharge circuit initializes both bit-lines (BL and BL) to a predefined voltage (commonly VDD/2 or VDD).
+Equalizer Function
+The equalizer transistor connects BL and BL, forcing them to the same voltage level and removing any residual voltage difference from previous operations.
+Operation Phases
+The circuit operates in two phases:
+Precharge phase (Φ active) → bit-lines charged
+Evaluation phase (Φ inactive) → memory cell read
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 29
+============================================================
+
+Precharge and Equalization Circuit:
+Precharge and Equalization Circuits in SRAM:
+nMOS Precharge Circuit (Fig. a)
+In this design, nMOS transistors are used to charge the bit-lines to approximately VDD/2, often used in differential sensing schemes.
+Control Signal (Φn)
+The signal Φn enables the nMOS precharge transistors and equalizer simultaneously, ensuring both bit-lines are equalized and precharged.
+Limitations of nMOS Precharge
+Due to threshold voltage drop, nMOS cannot pass a strong logic ‘1’, leading to incomplete voltage levels and reduced sensing margin.
+pMOS Precharge Circuit (Fig. b)
+pMOS transistors are used to precharge bit-lines, typically pulling them up to, VDD, ensuring full voltage swing.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 30
+============================================================
+
+Precharge and Equalization Circuit:
+Precharge and Equalization Circuits in SRAM:
+Control Signal (Φp)
+The Φp signal activates the pMOS network, enabling both precharge and equalization for the bit-lines.
+Advantages of pMOS Design
+pMOS-based precharge provides better noise margin, full voltage swing, and improved read reliability compared to nMOS design.
+Design Trade-offs
+nMOS precharge circuits are simpler and may consume less area, while pMOS circuits offer superior performance at slightly higher complexity and power consumption.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 31
+============================================================
+
+5.2.1 Low-Power SRAM Technologies
+Sources of SRAM power: 
+The power present in an SRAM is categorized into two parts , active and standby (data retention) power.
+ The active power is the sum of the power consumed by the row and column decoders, memory array, sense amplifiers, and peripheral circuits such as the input/output buffers. 
+The effective data retention current of the unselected memory cells when the sense amplifiers are significantly disabled contributes to the standby power of an SRAM. 
+Static current from other sources is negligible.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 32
+============================================================
+
+Low Power SRAM Circuits
+SRAM chip development has been driven by low power circuit applications, although the emphasis has recently been on more enhanced speed.
+Partial activation of a multi-divided word line and pulse operation of word-line circuitry are typical examples of low power circuits, which drastically reduce the DC current that dominates total active current.
+Pulse operation of the column/sense circuitry is another example of low power techniques. The pulse operation is essential to reducing IDCP.
+ATD (Address Transition Detection) plays an important role in the pulse operations for word-line and column/sense circuitry.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 33
+============================================================
+
+DC Current Reduction:
+Partial Activation of Multi-divided Word Lines:
+
+The multiple row decoder scheme and double-word line scheme, which divides a word line into sub word lines, greatly reduces the static current of SRAMs. A more sophisticated word-line division, called DWL (Divided Word Line), adopts a two-stage hierarchical row decoder structure, as shown in Figure.
+The DWL scheme requires two levels of metal layers; one for a main word line and the other for a data line. The number of sub-word lines connected to one main word line in the data-line direction is generally four (at most eight), compromising an area to a main row decoder with an area to a local row decoder.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 34
+============================================================
+
+
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 35
+============================================================
+
+Pulse Operation of Word-Line Circuitry :
+The duration of the active duty cycle can be shortened by pulsing the word-line for the 	minimum time required  for reading and writing in a cell array. This reduces the power 	by the duty ratio of the pulse duration to the cycle time.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 36
+============================================================
+
+Operating Voltage Reduction:
+Low Voltage Sense Amplifier:
+For lower VDD  operation, however, if a resultant data-line signal voltage close to VDD is amplified, PMOS data-line loads without the VTh drop are more suitable. This is made possible by level-shifting the data-line voltages.
+
+Charging Capacitance Reduction:
+Charging capacitance reduction techniques, initially targeted at obtaining high speed in SRAMs, also contribute to power reduction, which is more of an issue in DRAMs. These techniques include data-line division, I/O line division, and pre-decoding scheme. Inserting a pre-decoding stage between an address buffer and a final decoder optimizes both speed and power, and has been used in most SRAMs.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 37
+============================================================
+
+Data Retention Power Reduction
+On-chip voltage converters in commercial SRAMs have not been widely used, although there have been many attempts which differ from the DRAM approach. 
+This is mainly due to an inherently wider voltage margin and a different operating principle of the SRAM cell. Thus, data retention current has been sufficiently reduced solely by the memory cell improvement.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 38
+============================================================
+
+5.3 Basics of DRAM
+Each DRAM memory cell consists of a single pair of nMOS transistor and capacitor. It is also commonly known as the one-transistor (1T) cell, which renders smaller chip size and lower cost.
+ It can perform both read and write operations.
+The word-line (WL) is the output signal from row decoder and controls the transistor gate running perpendicular to the Bit-Line (BL). In contrast to the SRAM cell where two BLs are used, DRAM utilizes only one BL. 
+Reading and writing is accomplished by turning on the access transistor with the word-line.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 39
+============================================================
+
+Basics of DRAM
+The storage capacitor Cs is used to store the data in the form of charge, whereas Cp, denotes the capacitance at the BL, including the parasitic load of the connected circuits. 
+The role of Cs to accumulate charge necessitates periodical refreshing of the cell to avoid information loss.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 40
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+Figure: Schematic diagram of 1T DRAM cell
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 41
+============================================================
+
+Basics of DRAM
+Read and Write Operation:
+Prior to the read operation, the bit-line parasitic capacitance (CBL) is precharged to logic half-VDD, where VDD is the power supply voltage.
+Subsequently, WL is pulled high in order to activate the nMOS-type access transistor. 
+Read “1” Operation.
+ When WL is asserted, the voltage at BL tends to increase slightly if the charge stored in Cs is an ideal logic “1.” 
+This implies that a logic “1” is stored in the memory cell. However,  the charge stored in Cs tends to leak off gradually. Therefore its charge is usually not at ideal logic “1.”
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 42
+============================================================
+
+Basics of DRAM
+Read “0” Operation. 
+The charge is shared by CBL and CS. As CBL discharges and CS charges up, the voltage at BL will decrease slightly, indicating that a logic “0” is being stored in the capacitor. 
+As for the write case, the data to be written is imprinted on the data I/O lines and then applied to the selected bit-line by using the column decoder. 
+When a particular memory cell is chosen, the data is written on the BL by forcing a high or a low value.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 43
+============================================================
+
+Basics of DRAM
+Write “1” Operation. 
+The bit-line potential is pulled to logic “1” by charging CBL to either VDD or (VDD -Vth) depending on the type of write circuitry used, while the selected word-line is pulled high by the row address decoder. 
+Vth, implies the threshold voltage of the nMOS transistor. 
+The access transistor will then turn on by asserting the WL, allowing the storage capacitor to be charged up to a logic “1” level.
+Write “0” Operation. 
+Bit-line is pulled to logic “0” by the write circuitry whereas the selected word-line is raised by the row address decoder.
+ The access transistor turns on and storage capacitor discharges if it is initially storing a logic “1” or remains unchanged if it is already storing a logic “0.”
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 44
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 45
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+Write Operation:
+Row Address Phase (T1) 
+Row address is placed on the address bus 
+RAS goes LOW → row is selected 
+Column Address Phase (T2) 
+Column address is applied 
+CAS goes LOW → column is selected 
+Write Enable (T3) 
+R/W = LOW → indicates write operation 
+Input data is placed on the data bus 
+Data Writing (T3–T4) 
+Data becomes valid 
+The selected memory cell capacitor is: 
+Charged → logic ‘1’ 
+Discharged → logic ‘0’ 
+End of Cycle (T4) 
+RAS and CAS return HIGH 
+Write operation completes 
+Total write time ≈ 75 ns
+Key Signals
+RAS (Row Address Strobe) → selects row 
+CAS (Column Address Strobe) → selects column 
+R/W → LOW → Write operation 
+Data input → data to be written
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 46
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+Read Operation:
+Row Address Phase (T1) 
+Row address is applied 
+RAS goes LOW → activates the row 
+Entire row is loaded into sense amplifiers 
+Column Address Phase (T2) 
+Column address is applied 
+CAS goes LOW → selects specific column 
+Read Enable (T3) 
+OE goes LOW → enables output 
+Data line was initially Hi-Z (high impedance) 
+Data Sensing (T3–T4) 
+Sense amplifier detects small charge 
+Amplifies and restores it (refresh happens here) 
+Data becomes valid at output 
+End of Cycle (T4) 
+Signals return HIGH 
+Output disabled 
+Total read time ≈ 65 ns
+Key Signals
+RAS → row selection
+CAS → column selection
+R/W = HIGH → Read operation
+Output Enable (OE) → enables output buffer
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 47
+============================================================
+
+DRAM
+Advantages of DRAM:
+High Density
+DRAM uses a simple 1T1C (one transistor + one capacitor) structure, allowing very high packing density.
+Low Cost per Bit
+Due to smaller cell size, DRAM is much cheaper compared to SRAM.
+Large Storage Capacity
+Suitable for main memory (RAM) in computers and systems due to its ability to store large amounts of data.
+Simple Cell Structure
+The basic memory cell is simple, making fabrication easier and more scalable.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 48
+============================================================
+
+DRAM
+Advantages of DRAM:
+Lower Leakage per Cell (Compared to SRAM cell complexity):
+Individual cells are simpler, reducing transistor-related leakage complexity.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 49
+============================================================
+
+DRAM
+Disadvantages of DRAM:
+Requires Refreshing
+Stored charge leaks over time, so periodic refresh cycles are necessary, increasing complexity.
+Slower Speed
+DRAM access is slower than SRAM due to refresh and sensing operations.
+Higher Power Consumption (Due to Refresh)
+Frequent refresh operations consume additional power.
+Destructive Read Operation
+Reading a cell destroys the stored charge, so data must be rewritten after every read.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 50
+============================================================
+
+DRAM
+Disadvantages of DRAM:
+Lower Noise Margin
+Charge-based storage makes DRAM more susceptible to noise and disturbances.
+Complex Peripheral Circuitry
+Requires sense amplifiers and refresh control logic, increasing design complexity.
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 51
+============================================================
+
+5.4.1 Self Refresh Circuit
+In DRAM, data is stored as charge in capacitors. 
+Due to leakage currents, this stored charge gradually decays with time. 
+If the voltage drops below a threshold, the stored data (0 or 1) becomes invalid. 
+ Therefore, refreshing is mandatory to restore the original charge before it degrades.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 52
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 53
+============================================================
+
+Self Refresh Circuit
+DRAM stores data as charge in capacitors, which leaks over time, so periodic refreshing is essential.
+ In self-refresh mode, the DRAM refreshes itself without external control using on-chip circuitry.
+Step-by-Step Operation:
+Entering Self-Refresh Mode
+Triggered by a control signal (e.g., clock disable in DDR).
+External clock and memory controller activity are halted.
+Internal Clock Generation
+A low-power internal oscillator generates periodic timing pulses.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 54
+============================================================
+
+Self Refresh Circuit
+Row Address Sequencing
+A refresh counter sequentially produces row addresses.
+Row Activation
+The row decoder activates one wordline at a time.
+Charge Sensing and Restoration
+Sense amplifiers read the weak stored charge, amplify it, and restore it back to full level (refresh action).
+Continuous Cycling
+The counter increments to refresh all rows within a fixed interval (typically 5–10 ms or per device spec).
+The process repeats autonomously.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 55
+============================================================
+
+Self Refresh Circuit
+Importance in Low-Power Memory Design
+Enables Standby / Sleep Modes
+During idle periods (mobile, laptops, embedded systems), the controller can power down. 
+Self-refresh ensures data retention without external intervention. 
+Reduces Power Consumption
+Uses a low-frequency internal oscillator instead of high-speed system clocks. 
+Minimizes switching activity → significant power savings. 
+Supports High-Density DRAM
+Large arrays require frequent refresh; self-timing provides efficient and scalable refresh management. 
+Temperature-Aware Operation
+Advanced designs adjust refresh rate with temperature to balance reliability and power.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 56
+============================================================
+
+Self Refresh Circuit
+Impact on Data Retention
+Ensures that all memory cells are periodically restored before charge decays below a critical level. 
+Prevents data loss in inactive rows, which are not accessed by normal read/write operations. 
+Maintains data integrity even when the system is in deep sleep.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 57
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 58
+============================================================
+
+Self Refresh Circuit
+The most important part is:
+RAS is held LOW for a long duration (> 100 µs) 
+Other signals remain inactive / don’t care (hatched region) 
+No data transfer happens
+Working:
+Entering Self-Refresh Mode
+Initially: 
+CAS goes LOW 
+WE goes LOW 
+This combination acts as a special command to DRAM: 
+“Enter self-refresh mode”
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 59
+============================================================
+
+Self Refresh Circuit
+RAS Goes LOW and Stays LOW
+After the command: 
+RAS transitions LOW and remains LOW 
+This indicates: 
+ DRAM is now in self-refresh state
+Internal Operation Starts
+External signals (Address, OE, Data) become irrelevant. 
+Internally: 
+Oscillator starts 
+Refresh counter runs 
+Rows are refreshed automatically 
+ No external clock or commands required
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 60
+============================================================
+
+Self Refresh Circuit
+Long Hold Time (>100 µs)
+The diagram shows: 
+ RAS held LOW for more than 100 µs
+Meaning:
+DRAM stays in low-power self-refresh mode 
+Continuous internal refresh is happening 
+Data Lines
+No input/output activity 
+Data bus remains idle 
+Because:
+Memory is not being accessed 
+Only internal refresh is active
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 61
+============================================================
+
+Self Refresh Circuit
+Exiting Self-Refresh Mode
+When: 
+RAS goes HIGH again 
+DRAM exits self-refresh mode 
+ Returns to normal operation
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 62
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+This diagram illustrates the difference between DRAM self-refresh mode, where all memory banks are internally refreshed to retain data, and deep power-down mode, where refresh is disabled to minimize power consumption, resulting in loss of stored data.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 63
+============================================================
+
+SDRAM (Synchronous DRAM)
+SDRAM is a type of DRAM that operates synchronously with the system clock, improving speed over conventional DRAM. 
+It transfers one data word per clock cycle (single data rate). 
+It introduced features like burst access and pipelining, making it widely used in early computers. 
+ DDR SDRAM (DDR1)
+DDR SDRAM improves SDRAM by transferring data on both rising and falling edges of the clock, effectively doubling data rate. 
+This provides higher bandwidth without increasing clock frequency. 
+It also operates at lower voltage and better efficiency than SDRAM.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 64
+============================================================
+
+5.5 Basics of ROM
+The fundamental architecture of a Read-Only Memory (ROM) consists of a memory cell array organized in a matrix form, along with row and column address decoders that are used to uniquely select one word from a total of 2n stored words based on an n-bit input address.
+The row decoder activates one specific word-line corresponding to the given address, while the column decoder selects the required bit-lines to access the desired data from the memory array efficiently.
+A conditioning circuit is employed to precharge the bit-lines prior to the read operation, thereby improving the speed and reliability of data sensing.
+The stored information is retrieved from the selected memory cells through bit-lines and is subsequently detected using sense amplifiers, which convert small voltage differences into valid digital logic levels.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 65
+============================================================
+
+Basics of ROM
+In many ROM designs, column decoders are utilized before the sensing stage to select a subset of bit-lines, reducing hardware complexity and improving overall performance.
+Once the data is ready, the output enable signal activates the output buffers, allowing the retrieved data to be transferred to the external output terminals.
+The chip select and output enable signals play a crucial role in memory expansion by enabling multiple memory chips to be combined, thereby increasing both the total number of words and the word size.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 66
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+Figure: Basic ROM architecture
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 67
+============================================================
+
+Basics of ROM
+1 Kbit ROM Organization:
+A typical 1 Kbit ROM can be organized as 256 words with 4 bits per word, requiring an 8-bit address input to uniquely identify each word.
+The 8-bit address is divided into a 5-bit row address and a 3-bit column address, resulting in 32 word-lines and a memory cell array structured as a 32 × 32 matrix.
+The row decoder selects one of the 32 rows, while four 8-to-1 column decoders act as data selectors to choose four specific columns corresponding to the required 4-bit output.
+The selected data is then passed through output buffers, which are enabled by the chip select signal, to produce the final 4-bit output word (D0–D3).
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 68
+============================================================
+
+Dr. Aruru Sai Kumar , VIT-AP
+Figure: A 1024-bit ROM architecture
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 69
+============================================================
+
+Low-Power ROM Technology
+Sources of power dissipation :
+The conventional architecture of a ROM consists of a memory core, also known as the memory bank, which is formed by an array of transistors arranged systematically to store binary information.
+Two primary types of ROM array organizations are the NAND array and the NOR array, where the pull-down transistors are connected in series in NAND structures and in parallel in NOR structures.
+Among these configurations, the NOR-based ROM is more widely used due to its higher access speed compared to the NAND-based ROM architecture.
+The address decoder plays a critical role by selecting one specific word-line in the ROM core at a time based on the applied input address.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 70
+============================================================
+
+Low-Power ROM Technology
+The column multiplexer, along with the driver circuitry, selects a particular column from the array and drives the corresponding data onto the data bus for output.
+The control logic block is responsible for generating essential internal signals such as precharge and read signals, which ensure proper timing and operation of the ROM.
+Power Dissipation in ROM:
+In a ROM system, a significant portion of power dissipation arises from highly capacitive components such as predecoder lines, word-lines, and bit-lines.
+A typical implementation example is a 2K × 18 ROM designed using 0.6 µm technology, operating at a supply voltage of 3.3 V and a clock frequency of 10 MHz.
+Among all sources of power consumption, the precharging of bit-lines in the ROM core contributes the largest share of total power dissipation.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 71
+============================================================
+
+Low-Power ROM Technology
+This high power consumption is mainly due to the large capacitance of bit-lines, which are connected to the drains of multiple transistors within the memory array.
+Additionally, during each memory access, multiple bit-lines are switched simultaneously, further increasing dynamic power consumption.
+The use of a column multiplexer with a 12:1 ratio results in unnecessary switching activity, where more bit-lines are activated than required for a single data read operation.
+Consequently, instead of switching only one bit-line, several additional bit-lines (at least four in this case) are also switched, leading to increased power loss.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 72
+============================================================
+
+Low-Power ROM Technology
+Low-power techniques at architecture level:
+
+Divided Hierarchical Word-Line Structure:
+The divided hierarchical word-line technique partitions the memory core into smaller subblocks to reduce power consumption.
+Global and local word-lines are implemented in different layers to enable efficient memory access.
+Only the selected subblock is activated during a read operation, reducing unnecessary switching activity.
+This approach can be applied to both SRAM and ROM architectures for power optimization.
+However, due to layout constraints, a minimum multiplexer ratio (e.g., 4:1) is still required.
+As a result, multiple bit-lines may still switch, leading to some remaining power loss.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 73
+============================================================
+
+Low-Power ROM Technology
+Low-power techniques at architecture level:
+ii) Selective Precharge:
+In conventional operation, all bit-lines are precharged to a high voltage at the beginning of each cycle.
+This results in large capacitance switching, as many bit-lines discharge even when they are not accessed.
+Consequently, unnecessary switching leads to excessive dynamic power dissipation.
+The selective precharge technique overcomes this by precharging only the bit-lines that are required for the read operation.
+This significantly reduces switching activity and improves power efficiency.
+The method is cost-effective since it uses existing control logic with minimal additional hardware overhead.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 74
+============================================================
+
+Low-Power ROM Technology
+Low-power techniques at architecture level:
+
+iii) Difference encoding:
+In applications such as digital filters, ROM data is accessed sequentially and adjacent values often change gradually.
+Instead of storing complete data values, only the difference between consecutive data values is stored, reducing memory size.
+This technique, known as difference encoding, helps minimize the overall ROM core area.
+The original data must be reconstructed using an adder, which introduces additional hardware complexity.
+A variation of this method stores differences relative to fixed constants (offsets) to further optimize storage.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 75
+============================================================
+
+Low-Power ROM Technology
+Low-power techniques at circuit level :
+i) nMOS precharge:
+ Voltage swing reduction is an effective technique to minimize power dissipation in ROM bit-lines.
+Using nMOS transistors for precharging limits the bit-line voltage to VDD – VT, where VT is the threshold voltage.
+As a result, bit-lines switch between VDD – VT   and ground, reducing voltage swing and dynamic power consumption.
+This leads to significant power savings due to lower capacitive switching.
+However, the technique degrades noise margin and is affected by body bias, which increases threshold voltage.
+Therefore, careful design of output drivers is required to ensure reliable operation.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 76
+============================================================
+
+Low-Power ROM Technology
+Low-power techniques at circuit level :
+ii) Voltage scaling:
+Voltage scaling is one of the most effective and widely used techniques for reducing power dissipation in digital circuits.
+ A quadratic reduction in dynamic power can be achieved by lowering the supply voltage. 
+Additionally, short-circuit power dissipation is significantly reduced as the supply voltage decreases, and several high-precision models have been proposed to estimate short-circuit currents . 
+However, these power savings come at the cost of degraded circuit performance, as reducing the supply voltage leads to increased propagation delay and reduced operating speed.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 77
+============================================================
+
+Low-Power ROM Technology
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 78
+============================================================
+
+5.6 Future Trend and Development of ROMs and DRAMs
+EPROM, EEPROM, and Flash memory differ in features that influence their commercial use.
+ UV-EPROM gained significant market share due to its high-density and field alterability, despite higher cost and limited flexibility. EEPROM is preferred in low-density applications (below 256 K) because of its high flexibility. 
+Flash memory is increasingly popular due to its high density, low cost, and strong system flexibility, making it dominant in modern memory markets.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 79
+============================================================
+
+Future Trend and Development of ROMs and DRAMs
+Comparison of EPROM and Flash Memory 
+
+
+
+
+
+
+Semiconductor technology is always marching ahead with over- whelming advancement. 
+Over the last two decades, process technology has marked a significant reduction of 12 percent in size each year.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 80
+============================================================
+
+Future Trend and Development of ROMs and DRAMs
+With increasing circuit density and functionality, advanced memory technologies are evolving. 
+The Flash+ concept integrates Flash memory and EEPROM on a single chip to combine their advantages. 
+Flash memory is ideal for storing microcontroller code due to its ability for dynamic updates, while EEPROM is preferred for storing parametric data because of its byte-level modification capability. 
+Thus, Flash+ offers both flexibility and efficient data handling.
+Earlier, DRAM dominated the memory market, but flash memory has now become the primary focus due to its lowest cost per bit, smaller cell size, and simpler manufacturing process.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 81
+============================================================
+
+Future Trend and Development of ROMs and DRAMs
+The rapid growth of wireless consumer devices , such as smartphones, digital cameras, and handheld electronics has significantly driven the demand and advancement of flash memory technology.
+To increase flash memory density, vendors are developing techniques to store multiple bits in a single memory cell.
+ Traditionally, memories such as DRAM, EPROM, EEPROM, and earlier flash devices store only one bit per cell, typically using a capacitor-based structure.
+In conventional memory cells, the stored charge determines whether the bit is 0 or 1.
+ Modern flash memory uses multiple charge levels within a single cell, enabling storage of two or more bits per cell. This increases storage density and further reduces the cost per bit, making flash memory more efficient and attractive.
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 82
+============================================================
+
+Future Trend and Development of ROMs and DRAMs
+Technology Roadmap
+
+============================================================
+[LPVLSI_MODULE-5.pptx] Page/Slide 83
+============================================================
+
+Thank You
+Dr. Aruru Sai Kumar, VIT-AP

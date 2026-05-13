@@ -1,0 +1,106 @@
+[
+  {
+    "content": "WL = 1 (enabled):",
+    "source_file": "LPVLSI_MODULE-5.pptx",
+    "page_or_slide": 16,
+    "context": "re precharged to same voltage (usually VDD). When WL = 1 (enabled): The cell connects to bit lines Suppose: A = 1, B ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "L = 1 (enabled):\nThe cell connects to bit lines\nSuppose:\nA = 1, B = 0\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-5.pptx",
+    "page_or_slide": 16,
+    "context": "e precharged to same voltage (usually VDD). When WL = 1 (enabled): The cell connects to bit lines Suppose: A = 1, B = 0 Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "L = 1\nBL = 0\nWhen WL = 1:\nAccess transistors turn ON\nThese values are forced into nodes:\nA → becomes 1\nB → becomes 0\nDue to cross-coupled inverters (positive feedback):\nThe cell quickly stabilizes\nStores the new value strongly\nDr. Aruru Sai Kumar , VIT-AP",
+    "source_file": "LPVLSI_MODULE-5.pptx",
+    "page_or_slide": 18,
+    "context": "data, we force values on bit lines: Writing ‘1’: BL = 1 BL = 0 When WL = 1: Access transistors turn ON These values are forced into nodes: A → becomes 1 B → becomes 0 Due to cross-coupled inverters (positive feedback): The cell quickly stabilizes Stores the new value strongly Dr. Aruru Sai Kumar , VIT-AP",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "W = LOW → indicates write operation",
+    "source_file": "LPVLSI_MODULE-5.pptx",
+    "page_or_slide": 45,
+    "context": "es LOW → column is selected  Write Enable (T3)  R/W = LOW → indicates write operation  Input data is placed on the data bus  Data Writin",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "W = LOW → indicates write operation \nInput data is placed on the data bus \nData Writing (T3–T4) \nData becomes valid \nThe selected memory cell capacitor is: \nCharged → logic ‘1’ \nDischarged → logic ‘0’ \nEnd of Cycle (T4) \nRAS and CAS return HIGH \nWrite operation completes \nTotal write time ≈ 75 ns\nKey Signals\nRAS (Row Address Strobe) → selects row \nCAS (Column Address Strobe) → selects column \nR/W → LOW → Write operation \nData input → data to be written",
+    "source_file": "LPVLSI_MODULE-5.pptx",
+    "page_or_slide": 45,
+    "context": "es LOW → column is selected  Write Enable (T3)  R/W = LOW → indicates write operation  Input data is placed on the data bus  Data Writing (T3–T4)  Data becomes valid  The selected memory cell capacitor is:  Charged → logic ‘1’  Discharged → logic ‘0’  End of Cycle (T4)  RAS and CAS return HIGH  Write operation completes  Total write time ≈ 75 ns Key Signals RAS (Row Address Strobe) → selects row  CAS (Column Address Strobe) → selects column  R/W → LOW → Write operation  Data input → data to be written",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "W = HIGH → Read operation",
+    "source_file": "LPVLSI_MODULE-5.pptx",
+    "page_or_slide": 46,
+    "context": "nals RAS → row selection CAS → column selection R/W = HIGH → Read operation Output Enable (OE) → enables output buffer",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "W = HIGH → Read operation\nOutput Enable (OE) → enables output buffer",
+    "source_file": "LPVLSI_MODULE-5.pptx",
+    "page_or_slide": 46,
+    "context": "nals RAS → row selection CAS → column selection R/W = HIGH → Read operation Output Enable (OE) → enables output buffer",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "8-bit address input to uniquely identify each word.",
+    "source_file": "LPVLSI_MODULE-5.pptx",
+    "page_or_slide": 67,
+    "context": "d as 256 words with 4 bits per word, requiring an 8-bit address input to uniquely identify each word. The 8-bit address is divided into a 5-bit row add",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "8-bit address is divided into a 5-bit row address and a 3-bit column address",
+    "source_file": "LPVLSI_MODULE-5.pptx",
+    "page_or_slide": 67,
+    "context": "address input to uniquely identify each word. The 8-bit address is divided into a 5-bit row address and a 3-bit column address, resulting in 32 word-lines and a memory cell arr",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "32 × 32 matrix.",
+    "source_file": "LPVLSI_MODULE-5.pptx",
+    "page_or_slide": 67,
+    "context": "ord-lines and a memory cell array structured as a 32 × 32 matrix. The row decoder selects one of the 32 rows, while",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "8-to-1 column decoders act as data selectors to choose four specific columns corresponding to the required 4-bit output.",
+    "source_file": "LPVLSI_MODULE-5.pptx",
+    "page_or_slide": 67,
+    "context": "ow decoder selects one of the 32 rows, while four 8-to-1 column decoders act as data selectors to choose four specific columns corresponding to the required 4-bit output. The selected data is then passed through output b",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-bit output word (D0–D3).",
+    "source_file": "LPVLSI_MODULE-5.pptx",
+    "page_or_slide": 67,
+    "context": "d by the chip select signal, to produce the final 4-bit output word (D0–D3).",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1024-bit ROM architecture",
+    "source_file": "LPVLSI_MODULE-5.pptx",
+    "page_or_slide": 68,
+    "context": "Dr. Aruru Sai Kumar , VIT-AP Figure: A 1024-bit ROM architecture",
+    "is_numbered": false,
+    "equation_number": ""
+  }
+]
