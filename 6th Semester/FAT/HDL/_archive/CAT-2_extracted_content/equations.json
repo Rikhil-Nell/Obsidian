@@ -1,0 +1,994 @@
+[
+  {
+    "content": "2-state (1",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 12,
+    "context": "Integer Data Type shortint 2-state (1, 0), 16 bit signed int 2-state, 32 bit signed lon",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2-state",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 12,
+    "context": "a Type shortint 2-state (1, 0), 16 bit signed int 2-state, 32 bit signed longint 2-state, 64 bit signed byt",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-state (1",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 12,
+    "context": "igned bit 2-state, user-defined vector size logic 4-state (1,0,x,z) user-def reg 4-state user-defined size int",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-state user-defined size",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 12,
+    "context": " vector size logic 4-state (1,0,x,z) user-def reg 4-state user-defined size integer 4-state, 32 bit signed time 4-state, 64 b",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-state",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 12,
+    "context": "z) user-def reg 4-state user-defined size integer 4-state, 32 bit signed time 4-state, 64 bit unsigned ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "void = function_call();",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 14,
+    "context": "rn type of functions to indicate no return value. void = function_call(); Void ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "a = 32'hffffffff;",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 15,
+    "context": "r, user has to specify them explicitly. reg[31:0] a = 32'hffffffff; Systemverilog Adds the ability to specify unsized",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "myName = \"TEST BENCH\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 17,
+    "context": "arbitrary length and no truncation occurs. string myName = \"TEST BENCH\"; ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Name = \"TEST BENCH\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 17,
+    "context": "bitrary length and no truncation occurs. string myName = \"TEST BENCH\"; ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\" %d \",A.len() );",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 20,
+    "context": "string B; initial begin A = \"TEST \"; B = \"Bench\"; $display(\" %d \",A.len() ); $display(\" %s \",A.getc(5) ); $display(\" %s \",A.tolo",
+    "is_numbered": true,
+    "equation_number": "5"
+  },
+  {
+    "content": "display(\" %s \",A.tolower);",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 20,
+    "context": "ay(\" %d \",A.len() ); $display(\" %s \",A.getc(5) ); $display(\" %s \",A.tolower); $display(\" %s \",B.toupper); $display(\" %d \",B.compa",
+    "is_numbered": true,
+    "equation_number": "5"
+  },
+  {
+    "content": "display(\" %d \",B.compare(A) );",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 20,
+    "context": "ay(\" %s \",A.tolower); $display(\" %s \",B.toupper); $display(\" %d \",B.compare(A) ); $display(\" %d \",A.compare(\"test\") ); $display(\" %s ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\" %s \",A.substr(2,3) ); A = \"111\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 20,
+    "context": "ompare(A) ); $display(\" %d \",A.compare(\"test\") ); $display(\" %s \",A.substr(2,3) ); A = \"111\"; $display(\" %d \",A.atoi() ); end endmodule RESULTS :",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "A = \"TEST \";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 20,
+    "context": "module str; string A; string B; initial begin A = \"TEST \"; B = \"Bench\"; $display(\" %d \",A.len() ); $display(",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "B = \"Bench\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 20,
+    "context": "r; string A; string B; initial begin A = \"TEST \"; B = \"Bench\"; $display(\" %d \",A.len() ); $display(\" %s \",A.getc",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "A = \"111\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 20,
+    "context": "mpare(\"test\") ); $display(\" %s \",A.substr(2,3) ); A = \"111\"; $display(\" %d \",A.atoi() ); end endmodule RESULTS",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "18\n-32",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 20,
+    "context": "A.atoi() ); end endmodule RESULTS : 5 test BENCH -18 -32 ST 111 String Methods  ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "A = \"TEST \";\nB = \"Bench\";\n$display(\" %d \",A.len() );\n$display(\" %s \",A.getc(5) );\n$display(\" %s \",A.tolower);\n$display(\" %s \",B.toupper);\n$display(\" %d \",B.compare(A) );\n$display(\" %d \",A.compare(\"test\") );\n$display(\" %s \",A.substr(2,3) ); A = \"111\";\n$display(\" %d \",A.atoi() );\nend\nendmodule\nRESULTS :\n5\ntest\nBENCH\n-18\n-32\nST\n111\nString Methods",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 20,
+    "context": "module str; string A; string B; initial begin A = \"TEST \"; B = \"Bench\"; $display(\" %d \",A.len() ); $display(\" %s \",A.getc(5) ); $display(\" %s \",A.tolower); $display(\" %s \",B.toupper); $display(\" %d \",B.compare(A) ); $display(\" %d \",A.compare(\"test\") ); $display(\" %s \",A.substr(2,3) ); A = \"111\"; $display(\" %d \",A.atoi() ); end endmodule RESULTS : 5 test BENCH -18 -32 ST 111 String Methods  ",
+    "is_numbered": true,
+    "equation_number": "5"
+  },
+  {
+    "content": "Str1 == Str2",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 21,
+    "context": "variables  and string literals. Equality Syntax : Str1 == Str2 Inequality. Syntax: Str1 != Str2 Comparison. Synt",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 == Str2",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 21,
+    "context": "iables  and string literals. Equality Syntax : Str1 == Str2 Inequality. Syntax: Str1 != Str2 Comparison. Synt",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 < Str2",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 21,
+    "context": "lity. Syntax: Str1 != Str2 Comparison. Syntax: Str1 < Str2 Str1 <= Str2 Str1 > Str2 Str1 >= Str2 Concatenati",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 <= Str2",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 21,
+    "context": ": Str1 != Str2 Comparison. Syntax: Str1 < Str2 Str1 <= Str2 Str1 > Str2 Str1 >= Str2 Concatenation. Syntax: {",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 > Str2",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 21,
+    "context": "2 Comparison. Syntax: Str1 < Str2 Str1 <= Str2 Str1 > Str2 Str1 >= Str2 Concatenation. Syntax: {Str1,Str2,..",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 >= Str2",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 21,
+    "context": ". Syntax: Str1 < Str2 Str1 <= Str2 Str1 > Str2 Str1 >= Str2 Concatenation. Syntax: {Str1,Str2,...,Strn} Repli",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\" Str1 and str2 are equal\");\nelse",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 22,
+    "context": "EST BENCH\"; str3 = \"test bench\"; if(str1 == str2) $display(\" Str1 and str2 are equal\"); else $display(\" Str1 and str2 are not equal\"); if(str1 =",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\" Str1 and str3 are equal\");\nelse",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 22,
+    "context": "\" Str1 and str2 are not equal\"); if(str1 == str3) $display(\" Str1 and str3 are equal\"); else $display(\" Str1 and str3 are not equal\"); end endpr",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "str1 = \"TEST BENCH\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 22,
+    "context": "rogram main; initial begin string str1,str2,str3; str1 = \"TEST BENCH\"; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "str2 = \"TEST BENCH\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 22,
+    "context": "begin string str1,str2,str3; str1 = \"TEST BENCH\"; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1 == str2) $display(\" ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "str3 = \"test bench\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 22,
+    "context": "2,str3; str1 = \"TEST BENCH\"; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1 == str2) $display(\" Str1 and str2 are equ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "str1 == str2)",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 22,
+    "context": "CH\"; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1 == str2) $display(\" Str1 and str2 are equal\"); else $displ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "str1 == str3)",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 22,
+    "context": "else $display(\" Str1 and str2 are not equal\"); if(str1 == str3) $display(\" Str1 and str3 are equal\"); else $displ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = \"TEST BENCH\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 22,
+    "context": "ram main; initial begin string str1,str2,str3; str1 = \"TEST BENCH\"; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 = \"TEST BENCH\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 22,
+    "context": "in string str1,str2,str3; str1 = \"TEST BENCH\"; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1 == str2) $display(\" ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 = \"test bench\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 22,
+    "context": "tr3; str1 = \"TEST BENCH\"; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1 == str2) $display(\" Str1 and str2 are equ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 == str2)",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 22,
+    "context": "; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1 == str2) $display(\" Str1 and str2 are equal\"); else $displ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 == str3)",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 22,
+    "context": "e $display(\" Str1 and str2 are not equal\"); if(str1 == str3) $display(\" Str1 and str3 are equal\"); else $displ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\" Str1 and str2 are not equal\");\nelse",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 23,
+    "context": "EST BENCH\"; str3 = \"test bench\"; if(str1 != str2) $display(\" Str1 and str2 are not equal\"); else $display(\" Str1 and str2 are equal\"); if(str1 != st",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\" Str1 and str3 are not equal\");\nelse",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 23,
+    "context": "lay(\" Str1 and str2 are equal\"); if(str1 != str3) $display(\" Str1 and str3 are not equal\"); else $display(\" Str1 and str3 are equal\"); end endprogra",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "str1 = \"TEST BENCH\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 23,
+    "context": "rogram main; initial begin string str1,str2,str3; str1 = \"TEST BENCH\"; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "str2 = \"TEST BENCH\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 23,
+    "context": "begin string str1,str2,str3; str1 = \"TEST BENCH\"; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1 != str2) $display(\" ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "str3 = \"test bench\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 23,
+    "context": "2,str3; str1 = \"TEST BENCH\"; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1 != str2) $display(\" Str1 and str2 are not",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = \"TEST BENCH\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 23,
+    "context": "ram main; initial begin string str1,str2,str3; str1 = \"TEST BENCH\"; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 = \"TEST BENCH\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 23,
+    "context": "in string str1,str2,str3; str1 = \"TEST BENCH\"; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1 != str2) $display(\" ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 = \"test bench\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 23,
+    "context": "tr3; str1 = \"TEST BENCH\"; str2 = \"TEST BENCH\"; str3 = \"test bench\"; if(str1 != str2) $display(\" Str1 and str2 are not",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\" Str1 < Str2 \");\nif(Str1 <= Str2)",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "r1 = \"c\"; Str2 = \"d\"; Str3 = \"e\"; if(Str1 < Str2) $display(\" Str1 < Str2 \"); if(Str1 <= Str2) $display(\" Str1 <= Str2 \"); if(Str3 > Str2) $displa",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\" Str3 > Str2\");\nif(Str3 >= Str2)",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "Str2) $display(\" Str1 <= Str2 \"); if(Str3 > Str2) $display(\" Str3 > Str2\"); if(Str3 >= Str2) $display(\" Str3 >= Str2\"); end endprogram RESULT St",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Str1 = \"c\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "rogram main; initial begin string Str1,Str2,Str3; Str1 = \"c\"; Str2 = \"d\"; Str3 = \"e\"; if(Str1 < Str2) $display(",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Str2 = \"d\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": " initial begin string Str1,Str2,Str3; Str1 = \"c\"; Str2 = \"d\"; Str3 = \"e\"; if(Str1 < Str2) $display(\" Str1 < Str",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Str3 = \"e\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "in string Str1,Str2,Str3; Str1 = \"c\"; Str2 = \"d\"; Str3 = \"e\"; if(Str1 < Str2) $display(\" Str1 < Str2 \"); if(Str",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = \"c\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "ram main; initial begin string Str1,Str2,Str3; Str1 = \"c\"; Str2 = \"d\"; Str3 = \"e\"; if(Str1 < Str2) $display(",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 = \"d\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "itial begin string Str1,Str2,Str3; Str1 = \"c\"; Str2 = \"d\"; Str3 = \"e\"; if(Str1 < Str2) $display(\" Str1 < Str",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 = \"e\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "string Str1,Str2,Str3; Str1 = \"c\"; Str2 = \"d\"; Str3 = \"e\"; if(Str1 < Str2) $display(\" Str1 < Str2 \"); if(Str",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 < Str2)",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "2,Str3; Str1 = \"c\"; Str2 = \"d\"; Str3 = \"e\"; if(Str1 < Str2) $display(\" Str1 < Str2 \"); if(Str1 <= Str2) $disp",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 < Str2 \");",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": " = \"d\"; Str3 = \"e\"; if(Str1 < Str2) $display(\" Str1 < Str2 \"); if(Str1 <= Str2) $display(\" Str1 <= Str2 \"); if(S",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 <= Str2)",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": " if(Str1 < Str2) $display(\" Str1 < Str2 \"); if(Str1 <= Str2) $display(\" Str1 <= Str2 \"); if(Str3 > Str2) $disp",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 <= Str2 \");",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "(\" Str1 < Str2 \"); if(Str1 <= Str2) $display(\" Str1 <= Str2 \"); if(Str3 > Str2) $display(\" Str3 > Str2\"); if(Str3",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 > Str2)",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "f(Str1 <= Str2) $display(\" Str1 <= Str2 \"); if(Str3 > Str2) $display(\" Str3 > Str2\"); if(Str3 >= Str2) $displ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 > Str2\");",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "(\" Str1 <= Str2 \"); if(Str3 > Str2) $display(\" Str3 > Str2\"); if(Str3 >= Str2) $display(\" Str3 >= Str2\"); end e",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 >= Str2)",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "; if(Str3 > Str2) $display(\" Str3 > Str2\"); if(Str3 >= Str2) $display(\" Str3 >= Str2\"); end endprogram RESULT ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 >= Str2\");",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "y(\" Str3 > Str2\"); if(Str3 >= Str2) $display(\" Str3 >= Str2\"); end endprogram RESULT Str1 < Str2 Str1 <= Str2 St",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 < Str2",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "isplay(\" Str3 >= Str2\"); end endprogram RESULT Str1 < Str2 Str1 <= Str2 Str3 > Str2 Str3 >= Str2 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 <= Str2",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "3 >= Str2\"); end endprogram RESULT Str1 < Str2 Str1 <= Str2 Str3 > Str2 Str3 >= Str2 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 > Str2",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "end endprogram RESULT Str1 < Str2 Str1 <= Str2 Str3 > Str2 Str3 >= Str2 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 >= Str2",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 24,
+    "context": "am RESULT Str1 < Str2 Str1 <= Str2 Str3 > Str2 Str3 >= Str2 ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Str1 = \"WWW.\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 25,
+    "context": "n; initial begin string Str1,Str2,Str3,Str4,Str5; Str1 = \"WWW.\"; Str2 = “VITAP\"; Str3 = \"\"; Str4 = “.AC\"; Str5 = \"",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Str2 = “VITAP\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 25,
+    "context": "n string Str1,Str2,Str3,Str4,Str5; Str1 = \"WWW.\"; Str2 = “VITAP\"; Str3 = \"\"; Str4 = “.AC\"; Str5 = \".IN\"; $display(\"",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Str4 = “.AC\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 25,
+    "context": "4,Str5; Str1 = \"WWW.\"; Str2 = “VITAP\"; Str3 = \"\"; Str4 = “.AC\"; Str5 = \".IN\"; $display(\" %s \",{Str1,Str2,Str3,Str",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Str5 = \".IN\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 25,
+    "context": " \"WWW.\"; Str2 = “VITAP\"; Str3 = \"\"; Str4 = “.AC\"; Str5 = \".IN\"; $display(\" %s \",{Str1,Str2,Str3,Str4,Str5}); end ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = \"WWW.\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 25,
+    "context": "initial begin string Str1,Str2,Str3,Str4,Str5; Str1 = \"WWW.\"; Str2 = “VITAP\"; Str3 = \"\"; Str4 = “.AC\"; Str5 = \"",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 = “VITAP\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 25,
+    "context": "tring Str1,Str2,Str3,Str4,Str5; Str1 = \"WWW.\"; Str2 = “VITAP\"; Str3 = \"\"; Str4 = “.AC\"; Str5 = \".IN\"; $display(\"",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3 = \"\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 25,
+    "context": "Str3,Str4,Str5; Str1 = \"WWW.\"; Str2 = “VITAP\"; Str3 = \"\"; Str4 = “.AC\"; Str5 = \".IN\"; $display(\" %s \",{Str1",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4 = “.AC\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 25,
+    "context": "tr5; Str1 = \"WWW.\"; Str2 = “VITAP\"; Str3 = \"\"; Str4 = “.AC\"; Str5 = \".IN\"; $display(\" %s \",{Str1,Str2,Str3,Str",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "5 = \".IN\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 25,
+    "context": "WW.\"; Str2 = “VITAP\"; Str3 = \"\"; Str4 = “.AC\"; Str5 = \".IN\"; $display(\" %s \",{Str1,Str2,Str3,Str4,Str5}); end ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Str1 = \"W\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 26,
+    "context": "program main; initial begin string Str1,Str2; Str1 = \"W\"; Str2 = \".VITAP.AC.IN\"; $display(\" %s \",{{3{Str1}}",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Str2 = \".VITAP.AC.IN\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 26,
+    "context": "main; initial begin string Str1,Str2; Str1 = \"W\"; Str2 = \".VITAP.AC.IN\"; $display(\" %s \",{{3{Str1}},Str2}); end endprogram",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = \"W\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 26,
+    "context": "program main; initial begin string Str1,Str2; Str1 = \"W\"; Str2 = \".VITAP.AC.IN\"; $display(\" %s \",{{3{Str1}}",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2 = \".VITAP.AC.IN\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 26,
+    "context": "n; initial begin string Str1,Str2; Str1 = \"W\"; Str2 = \".VITAP.AC.IN\"; $display(\" %s \",{{3{Str1}},Str2}); end endprogram",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Str1 = \"WWW.TESTBENCH.IN\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 27,
+    "context": "perators program main; initial begin string Str1; Str1 = \"WWW.TESTBENCH.IN\"; for(int i =0 ;i < 16 ; i++) $write(\"%s \",Str1[i])",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i =0 ;i < 16 ; i++)",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 27,
+    "context": "n string Str1; Str1 = \"WWW.TESTBENCH.IN\"; for(int i =0 ;i < 16 ; i++) $write(\"%s \",Str1[i]); end endprogram RESULT W W ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = \"WWW.TESTBENCH.IN\";",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 27,
+    "context": "ators program main; initial begin string Str1; Str1 = \"WWW.TESTBENCH.IN\"; for(int i =0 ;i < 16 ; i++) $write(\"%s \",Str1[i])",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\" %s \",c.name);\nc = c.next();",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 31,
+    "context": "n} colour; colour c; initial begin c = c.first(); $display(\" %s \",c.name); c = c.next(); $display(\" %s \",c.name); c = c.last(); $display(\" %",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\" %s \",c.name);\nc = c.prev();",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 31,
+    "context": " c.next(); $display(\" %s \",c.name); c = c.last(); $display(\" %s \",c.name); c = c.prev(); $display(\" %s \",c.name); end endmodule RESULTS : re",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "c = c.first();",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 31,
+    "context": " {red,blue,green} colour; colour c; initial begin c = c.first(); $display(\" %s \",c.name); c = c.next(); $display(\"",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "c = c.next();",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 31,
+    "context": "ial begin c = c.first(); $display(\" %s \",c.name); c = c.next(); $display(\" %s \",c.name); c = c.last(); $display(\"",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "c = c.last();",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 31,
+    "context": "\",c.name); c = c.next(); $display(\" %s \",c.name); c = c.last(); $display(\" %s \",c.name); c = c.prev(); $display(\"",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "c = c.prev();",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 31,
+    "context": "\",c.name); c = c.last(); $display(\" %s \",c.name); c = c.prev(); $display(\" %s \",c.name); end endmodule RESULTS : ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\"%s\",c.name());\nd = c;",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 32,
+    "context": "e,green} colour; colour c,d; int i; initial begin $display(\"%s\",c.name()); d = c; $display(\"%s\",d.name()); d = colour'(c + 1); // use",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\"%s\",d.name());\ni = d; // automatic casting",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 32,
+    "context": "%s\",d.name()); d = colour'(c + 1); // use casting $display(\"%s\",d.name()); i = d; // automatic casting $display(\"%0d\",i); c = colour'(i); $display(\"%s\",c.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "d = colour'(c + 1); // use casting",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 32,
+    "context": "y(\"%s\",c.name()); d = c; $display(\"%s\",d.name()); d = colour'(c + 1); // use casting $display(\"%s\",d.name()); i = d; // automatic cast",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = d; // automatic casting",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 32,
+    "context": "'(c + 1); // use casting $display(\"%s\",d.name()); i = d; // automatic casting $display(\"%0d\",i); c = colour'(i); $display(\"%s\",",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "c = colour'(i);",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 32,
+    "context": "); i = d; // automatic casting $display(\"%0d\",i); c = colour'(i); $display(\"%s\",c.name()); end endmodule RESULT red",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "S2='b10} state",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 32,
+    "context": "e explicitly. enum integer {IDLE, XX='x, S1='b01, S2='b10} state, next; ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-state data type explicitly.",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 32,
+    "context": " use X or Z as enum values, then define  it using 4-state data type explicitly. enum integer {IDLE, XX='x, S1='b01, S2='b10} stat",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1='b01",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 32,
+    "context": "data type explicitly. enum integer {IDLE, XX='x, S1='b01, S2='b10} state, next; ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2='b10} state",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 32,
+    "context": " explicitly. enum integer {IDLE, XX='x, S1='b01, S2='b10} state, next; ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "X='x, S1='b01, S2='b10} state, next;",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 32,
+    "context": "-state data type explicitly. enum integer {IDLE, XX='x, S1='b01, S2='b10} state, next; ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "a = 123;",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 33,
+    "context": "he variable name \"my_data_struct\". my_data_struct.a = 123; $display(\" a value is %d \",my_data_struct.a); ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "my_data_struct = `{1234",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 34,
+    "context": "r name and value, or data type and default value. my_data_struct = `{1234,8'b10,8'h20}; my_data_struct = `{a:1234,default:8",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "my_data_struct = `{a:1234",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 34,
+    "context": "ault value. my_data_struct = `{1234,8'b10,8'h20}; my_data_struct = `{a:1234,default:8'h20}; ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-bits",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 38,
+    "context": "Packed Arrays reg [0:10] vari; // packed array of 4-bits wire [31:0] [1:0] vari; // 2-dimensional packed a",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2-dimensional packed array",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 38,
+    "context": "packed array of 4-bits wire [31:0] [1:0] vari; // 2-dimensional packed array // Unpacked Arrays wire status [31:0]; // 1 dimen",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3-dimensional unpacked array of integers",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 38,
+    "context": "npacked array integer matrix[7:0][0:31][15:0]; // 3-dimensional unpacked array of integers integer matrix[8][32][16]; // 3-dimensional unpac",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "0-if",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 97,
+    "context": " 'unique’ and 'priority' if-else unique-if, unique0-if unique-if evaluates conditions in any order and d",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "cast(destination, source) method\n•With",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 166,
+    "context": "run-time error •Dynamic casting is done using the $cast(destination, source) method •With  $cast compatibility of the assignment will not be c",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "parent_class = child_class; //allowed",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 166,
+    "context": "compile time, it will be checked  during run-time parent_class = child_class; //allowed child_class = parent_class; //not-allowed parent_",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "child_class\n= parent_class; //not-allowed",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 166,
+    "context": "ng run-time parent_class = child_class; //allowed child_class = parent_class; //not-allowed parent_class = child_class ; child_class = parent",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "parent_class = child_class ;",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 166,
+    "context": "allowed child_class = parent_class; //not-allowed parent_class = child_class ; child_class = parent_class; //allowed because par",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "child_class\n= parent_class; //allowed because parent_class is pointing to child_class.",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 166,
+    "context": "class; //not-allowed parent_class = child_class ; child_class = parent_class; //allowed because parent_class is pointing to child_class. Though parent_class is pointing to the child_clas",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "cast(child_class,parent_class);\n• In the above parent class assignment with child class example. type of parent class is changing dynamically i.e\non declaration it is of parent class type, on child class assignment it is of child class type.\n• Parent class handle during",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 167,
+    "context": "$cast(child_class,parent_class); • In the above parent class assignment with child class example. type of parent class is changing dynamically i.e on declaration it is of parent class type, on child class assignment it is of child class type. • Parent class handle during $cast execution is considered for the assignment, s",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "urandom(),",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 190,
+    "context": " Constraints • Solve-Before Random System Methods $urandom(), $random and $urandom_range(); ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "4-bit unsigned integer with a range of 0 to 15. on randomization this variable shall be assigned any",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 192,
+    "context": "uniformly distributed over their range. addr is a 4-bit unsigned integer with a range of 0 to 15. on randomization this variable shall be assigned any  value in the range 0 to 15 with equal probability",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "urandom( )\nThe system function",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 223,
+    "context": "SystemVerilog Random System Methods $urandom( ) The system function $urandom provides a mechanism for generating pseudo",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "random( )",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 223,
+    "context": "enerated. The seed can be an integral expression. $random( ) $random() is same as $urandom() but it generates si",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "urandom() but it generates signed numbers.",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 223,
+    "context": "egral expression. $random( ) $random() is same as $urandom() but it generates signed numbers. $urandom_range( ) The $urandom_range() function ret",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "32-bit random number each time it is called.",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 223,
+    "context": " pseudorandom numbers. The function returns a new 32-bit random number each time it is called. The number shall be unsigned. The seed is an opti",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display (\"[%0t] Trying to get a room for id[%0d] ...\",",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 231,
+    "context": "nA (); join_none end task getRoom (bit [1:0] id); $display (\"[%0t] Trying to get a room for id[%0d] ...\", $time, id); key.get (1); $ display (\"[%0t] Room Key",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "display (\"[%0t] Room Key retrieved for id[%0d]\",",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 231,
+    "context": "a room for id[%0d] ...\", $time, id); key.get (1); $ display (\"[%0t] Room Key retrieved for id[%0d]\", $time, id); endtask task putRoom (bit [1:0] id); $d",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "display (\"[%0t] Leaving room id[%0d] ...\",",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 231,
+    "context": " $time, id); endtask task putRoom (bit [1:0] id); $display (\"[%0t] Leaving room id[%0d] ...\", $time, id); key.put (1); $display (\"[%0t] Room Key ",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "display (\"[%0t] Room Key put back id[%0d]\",",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 231,
+    "context": "aving room id[%0d] ...\", $time, id); key.put (1); $display (\"[%0t] Room Key put back id[%0d]\", $time, id); endtask task personA (); getRoom (1); #",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "key = new (1);",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 231,
+    "context": "module tb_top; semaphore key; initial begin key = new (1); forkpersonA (); personB (); #25 personA (); join_",
+    "is_numbered": true,
+    "equation_number": "1"
+  },
+  {
+    "content": "fatal is a run-time fatal.\n•",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 268,
+    "context": "g severity system tasks in the fail  statement: • $fatal is a run-time fatal. • $error is a run-time error. • $warning is a run-tim",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "warning is a run-time warning, which can be suppressed in a tool-specific manner.\n•",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 268,
+    "context": "a run-time fatal. • $error is a run-time error. • $warning is a run-time warning, which can be suppressed in a tool-specific manner. • $info indicates that the assertion failure carries ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "onehot(expression)\n•\nchecks that only one bit of the expression can be high on any given clock edge.\n•",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 297,
+    "context": "Built-in system functions •$onehot(expression) • checks that only one bit of the expression can be high on any given clock edge. •$onehot0(expression) • checks only one bit of the e",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "isunknown(expression)\n•\nchecks if any bit of the expression is X or Z.\n•",
+    "source_file": "VHDL.pdf",
+    "page_or_slide": 297,
+    "context": "f the bits can be high on any  given clock edge. •$isunknown(expression) • checks if any bit of the expression is X or Z. •$countones(expression) • counts the number of bits ",
+    "is_numbered": false,
+    "equation_number": ""
+  }
+]

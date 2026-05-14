@@ -1,0 +1,194 @@
+[
+  {
+    "content": "10.1007/978-3-319-59418-7_4",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 1,
+    "context": "hta, ASIC/SoC Functional Design Veri(cation,  DOI 10.1007/978-3-319-59418-7_4 Chapter 4 UVM (Universal Veri<cation Methodology)",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\"vehicle\");\n  endfunction\n  virtual task color();  // Virtual task",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 3,
+    "context": "nction vehicle_type();   // Virtual function      $display(\"vehicle\");   endfunction   virtual task color();  // Virtual task      $display(\"It has color\");   endtask endclass class ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "display(\"It’s a four wheeler\");\n   endfunction\n   task color();",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 3,
+    "context": "   //child class    function vehicle_type();      $display(\"It’s a four wheeler\");    endfunction    task color();      $display(\"It has different colors\");    endtask end",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Polymorphism = Inheritance + virtual method.",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 3,
+    "context": "e behavior of the function/task. So, we can  say, Polymorphism = Inheritance + virtual method. Example: class vehicle; // Parent class   virtual",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Polymorphism = Inheritance + virtual method.\nExample:\nclass vehicle; // Parent class\n  virtual function vehicle_type();   // Virtual function\n     $display(\"vehicle\");\n  endfunction\n  virtual task color();  // Virtual task\n     $display(\"It has color\");\n  endtask\nendclass\nclass four_wheeler extends vehicle;   //child class\n   function vehicle_type();\n     $display(\"It’s a four wheeler\");\n   endfunction\n   task color();\n     $display(\"It has different colors\");\n   endtask\nendclass\nclass BENZ extends four_wheeler;   // \"grand\" child class\n   function vehicle_type();\n     $display(\"It’s a BENZ\");\n   endfunction\n4.2 Polymorphism",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 3,
+    "context": "e behavior of the function/task. So, we can  say, Polymorphism = Inheritance + virtual method. Example: class vehicle; // Parent class   virtual function vehicle_type();   // Virtual function      $display(\"vehicle\");   endfunction   virtual task color();  // Virtual task      $display(\"It has color\");   endtask endclass class four_wheeler extends vehicle;   //child class    function vehicle_type();      $display(\"It’s a four wheeler\");    endfunction    task color();      $display(\"It has different colors\");    endtask endclass class BENZ extends four_wheeler;   // \"grand\" child class    function vehicle_type();      $display(\"It’s a BENZ\");    endfunction 4.2 Polymorphism ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "four_whlr=new ();",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 4,
+    "context": "l;     four_wheeler four_whlr;     BENZ benz;     four_whlr=new ();     benz=new ();     vehcl=four_whlr; // No need ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "benz=new ();",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 4,
+    "context": "ur_whlr;     BENZ benz;     four_whlr=new ();     benz=new ();     vehcl=four_whlr; // No need to create an obje",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "vehcl=four_whlr; // No need to create an object by calling a",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 4,
+    "context": " benz;     four_whlr=new ();     benz=new ();     vehcl=four_whlr; // No need to create an object by calling a  new method     vehcl.vehicle_type(); // accessing",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "vehcl=benz;",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 4,
+    "context": " child class method by calling  base class method vehcl=benz;     vehcl.vehicle_type(); // accessing \"grand\" ch",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "four_whlr=benz;",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 4,
+    "context": "g \"grand\" child by calling  base class method     four_whlr=benz;     four_whlr.color(); // accessing \"grand\" child",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "name=\"lpi_seq_item\");",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 9,
+    "context": "  //UVM Constructor          function new (string name=\"lpi_seq_item\");          super.new (name);          endfunction  ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "psprintf(\"in seq for count = \n%d\", i, ,UVM_LOW)\n          start_item(seq_item);\n          if(!seq_item.randomize())\n           begin\n             `uvm_error(\"body\",\"Randomization failed for seq_item\")\nend\n             `uvm_info(get_type_name(),",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 10,
+    "context": "        begin           `uvm_info(get_type_name(),$psprintf(\"in seq for count =  %d\", i, ,UVM_LOW)           start_item(seq_item);           if(!seq_item.randomize())            begin              `uvm_error(\"body\",\"Randomization failed for seq_item\") end              `uvm_info(get_type_name(),$psprintf(\"obj is req0 = %d,  req1 = %d, sleep0 = %",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "name=\"lpi_basic_seq\");",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 10,
+    "context": "d int num_of_trans;          function new (string name=\"lpi_basic_seq\");            super.new (name);           endfunctio",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "seq_item = lpi_seq_item::type_id::create(\"seq_item\");",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 10,
+    "context": "::body();          lpi_seq_itemseq_item;          seq_item = lpi_seq_item::type_id::create(\"seq_item\");          for (int i = 0; i < num_of_trans; i++)  ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 0; i < num_of_trans; i++)",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 10,
+    "context": "m::type_id::create(\"seq_item\");          for (int i = 0; i < num_of_trans; i++)          begin           `uvm_info(get_type_name(",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "0 = %d",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 10,
+    "context": "   `uvm_info(get_type_name(),$psprintf(\"obj is req0 = %d,  req1 = %d, sleep0 = %d, sleep1 = %d\", seq_item.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = %d",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 10,
+    "context": "(get_type_name(),$psprintf(\"obj is req0 = %d,  req1 = %d, sleep0 = %d, sleep1 = %d\", seq_item.wakeup_req0,",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 = %d\"",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 10,
+    "context": "(\"obj is req0 = %d,  req1 = %d, sleep0 = %d, sleep1 = %d\", seq_item.wakeup_req0, seq_item. wakeup_req1, seq",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "put_port = new (“put_port”",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 15,
+    "context": "(string name, uvm_component parent);              put_port = new (“put_port”, this);              ...              endfunction",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 0; i < N; i++) begin",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 15,
+    "context": "n();            my_trans myT;            for (int i = 0; i < N; i++) begin                      // Generate myT.            ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "get_port = new (“get_port”",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 16,
+    "context": "ing name, uvm_component parent);                  get_port = new (“get_port”, this);                  ...          endfunction",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "i = 0; i < N; i++) begin",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 16,
+    "context": "  my_trans myT;                          for (int i = 0; i < N; i++) begin                          // Generate t.          ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "tmp = new();",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 17,
+    "context": "33               simple_trans tmp = new();               // Assign values to tmp.           ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "t = tmp;",
+    "source_file": "UVM_module5_HVM.pdf",
+    "page_or_slide": 17,
+    "context": "           // Assign values to tmp.               t = tmp;          endtask endclass Note: In both these exa",
+    "is_numbered": false,
+    "equation_number": ""
+  }
+]
