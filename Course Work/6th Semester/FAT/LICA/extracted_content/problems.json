@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "Resolution is the smallest change in output corresponding to a 1-bit change (1 LSB).\n\n\nSettling Time: The time required for the output of a D/A converter to settle down to within ±(1/2) LSB of the final value for a given digital input is known as settling time. It depends on the switching time of the logic circuits, which in turn depends on the inevitable stray capacitances and inductances present in the converter circuit.\nTemperature sensitivity: Temperature sensitivity means the analog output changes slightly with temperature even if the digital input is fixed, due to components like reference voltage, resistors, and op-amp.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "problem_type": "Example"
+  },
+  {
+    "title": "Example",
+    "problem_text": "",
+    "solution_text": "is the smallest change in output corresponding to a 1-bit change (1 LSB).\n\n\nSettling Time: The time required for the output of a D/A converter to settle down to within ±(1/2) LSB of the final value for a given digital input is known as settling time. It depends on the switching time of the logic circuits, which in turn depends on the inevitable stray capacitances and inductances present in the converter circuit.\nTemperature sensitivity: Temperature sensitivity means the analog output changes slightly with temperature even if the digital input is fixed, due to components like reference voltage, resistors, and op-amp.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "problem_type": "Example"
+  }
+]

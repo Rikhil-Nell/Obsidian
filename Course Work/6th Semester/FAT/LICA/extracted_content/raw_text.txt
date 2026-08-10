@@ -1,0 +1,734 @@
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 1
+============================================================
+
+Unit 1: Operational Amplifier Characteristics
+Active Filters
+Pre – preparation: Lecture Materials and LIC Text book by ROY Choudhury, sixth edition, 2022.
+VIT-AP University                                              Linear Integrated Circuits                                      Dr. M. Sankush Krishna
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 2
+============================================================
+
+Unit 5: Introduction Filters
+A filter is a circuit that allows desired frequencies to pass and attenuates unwanted frequencies.
+Filters are of two types: analog and digital; analog filters are further classified as passive and active.
+Passive filters use R, L, C components, while active filters use op-amps with resistors and capacitors, reducing loading effects.
+Filters are widely used in communication and signal processing for noise reduction, interference suppression, bandwidth control, and signal shaping.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 3
+============================================================
+
+Unit 5: Limitations of Passive Filters
+In RLC networks, the practical inductors tend to deviate from the inductance realised.
+There is a power loss because of the dissipation in resistive and inductive elements of the passive network.
+For most practical inductors, the total dissipative losses tend to increase with frequency, since Q does not increase linearly with frequency.
+At low frequency (less than 1 kHz) applications such as control systems and analog computers, practical inductors of reasonable Q tend to become bulky and expensive.
+The magnetic coupling creates additional problem in the form of unwanted and stray field which is harmful for applications such as satellite instrumentation.
+The dissipative losses start increasing when an inductor is miniaturised. The Q of a lowfrequency inductor is roughly proportional to the square of the scaling factor.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 4
+============================================================
+
+Unit 5: Advantages of Active Filters
+The maximum value of the transfer function or gain may be greater than unity (passive<=1).
+The loading effect is minimal, which means that the output response of the filter is essentially independent of the load driven by the filter.
+The active filters do not exhibit insertion loss. Hence, the passband gain is equal to 0dB or higher.
+Active filters replace inductors with op-amps + RC networks.
+Inductors become impractical at low frequencies. Passive networks can only be practically realized for high frequencies. Active filters solve this.
+The active filters are easily tunable due to flexibility in gain and frequency adjustments.
+The op-amp has high input impedance and low output impedance. Hence, the active filters using op-amp do not cause loading effect on the source and load. Therefore, cascading of networks does not need buffer amplifier.
+Active filters can be made tunable using control voltage or variable components.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 5
+============================================================
+
+Unit 5: Limitations of Active Filters
+The high frequency response is limited by the gain-bandwidth product and slew rate of the practical op-amps, leading to comparatively lower bandwidth than the designed bandwidth.
+The design of active filters becomes costly for high frequencies. Require high slew rate Op-amps.
+Active filters require dual polarity dc power supply whereas passive filters do not. Passive filter works purely on input signal. Whereas, Op-amp needs external power supply to work.
+The active element is prone to the process parameter variations and they are sensitive to ambient conditions like temperature. Hence, the performance of the active filter deviates from the ideal response.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 6
+============================================================
+
+Unit 5: Comparison of Active and Passive Networks
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 7
+============================================================
+
+Unit 5: Comparison of Active and Passive Networks
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 8
+============================================================
+
+Unit 5: Active Filter Design
+The manner in which the behaviour of the filter varies with frequency is called its frequency response and it is expressed in terms of the transfer function H(jw)
+Low Pass Filter: A low-pass filter allows only low frequency signals up to a certain break-point fH to pass through, while suppressing high frequency components. Frequencies from 0 to fH is called passband and else is called stopband
+High Pass Filter: A high-pass filter allows only frequencies above a certain break-point fL to pass through and attenuates the low frequency components. Frequencies from 0 to fL is called stopband and else is called passband
+Bandpass Filter: The bandpass filter is the combination of high and low-pass filters, and this allows a specified range of frequencies to pass through.
+Band Reject Filter: The band-reject filter is the logical inverse of bandpass filter, which does not allow a specified range of frequencies to pass through.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 9
+============================================================
+
+Unit 5: Active Filter Design
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 10
+============================================================
+
+Unit 5: Active Filter Design
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 11
+============================================================
+
+Unit 5: First Order Low Pass Filters with Unity Gain
+The slope of the voltage gain magnitude curve outside the passband is 6 dB/octave or 20 dB/decade. This characteristic is called the roll-off. The roll-off becomes sharper or steeper with higher-order filters.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 12
+============================================================
+
+Unit 5: First Order Low Pass Filters with Variable Gain
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 13
+============================================================
+
+Unit 5: First Order Low Pass Filters with Variable gain
+At very low frequencies, i.e. f < fH, the gain is nearly A. When the frequency reaches the cut-off frequency, i.e. f = fH, the gain falls to 0.707 times the maximum gain A.
+At high frequencies, i.e. f > fH, the gain decreases at a constant rate of –20 dB/decade. The frequency range beyond fH is called stopband.
+Low pass filter Design:
+Choose the value of high cut-off frequency fH
+Select the value of capacitor C such that its value is <1 uF.
+When the values fH and C are known, the value of R can be calculated by using fH = 1/(2*pi*R*C).
+Finally, select the values of Ri and Rf depending on the desired passband gain by using
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 14
+============================================================
+
+Unit 5: First Order High Pass Filters with Unity Gain
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 15
+============================================================
+
+Unit 5: First Order High Pass Filters with Unity Gain
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 16
+============================================================
+
+Unit 5: First Order Low Pass Filters with Variable Gain
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 17
+============================================================
+
+Unit 5: First Order Band Pass Filters
+A band-pass filter is formed by cascading a low-pass and a high-pass filter.
+The low-pass section passes frequencies up to fH​, while the high-pass blocks below fL​
+Proper operation requires fH>fL​, typically fH≥10*fL for a clear passband.
+Both sections must have equal passband gain to ensure uniform response in the band fL​ to fH​.
+A ±20 dB/decade band-pass filter is realized using first-order high-pass and low-pass sections with op-amps.
+Higher roll-off (±40 dB/decade) is achieved by cascading second-order filter sections for sharper selectivity.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 18
+============================================================
+
+Unit 5: First Order Band Reject Filters
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 19
+============================================================
+
+Unit 5: First Order Band Reject Filters
+A band-reject (band-stop) filter is formed by connecting a low-pass and high-pass filter in parallel.
+The inputs are applied in parallel, and outputs are combined using a summing circuit to prevent loading.​
+The low-pass section blocks frequencies above fH, while the high-pass blocks below fL​.
+Proper operation requires fL​>fH​, creating a stopband​.
+The resulting output passes frequencies outside this range and rejects those within the stopband.
+A wideband band-reject filter is realized by paralleling HPF (fL​) and LPF (fH​) with a summing amplifier.
+The summing amplifier adds outputs of both sections to produce the final band-reject response.
+Equal passband gain in both HPF and LPF sections is necessary for proper filter performance.
+The frequency response shows attenuation in the band fH​ to fL​ and passbands on either side.
+For unity gain design, resistors satisfy 𝑅2=𝑅3=𝑅4	​.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 20
+============================================================
+
+Unit 5: Higher Order Filters
+A second-order active (Sallen-Key) filter uses admittances 𝑌1-Y4	​ with a voltage follower to eliminate loading due to high input and low output impedance.
+A non-inverting amplifier configuration can be added to increase gain while maintaining isolation between stages.
+KCL at node Va
+ ​.
+Applying KCL at node
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 21
+============================================================
+
+Unit 5: Higher Order Filters
+Applying KCL at node Va
+Applying KCL at node Vb
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 22
+============================================================
+
+Unit 5: Higher Order Filters
+Applying KCL at node Va
+Applying KCL at node Vb
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 23
+============================================================
+
+Unit 5: Second Order Low Pass Filters
+When s = 0, H(0) = A ; when s = ∞, H(∞) = 0, which indicates that this configuration is for low-pass active filters.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 24
+============================================================
+
+Unit 5: Second Order Low Pass Filters
+For second order physical systems such as electrical, mechanical, chemical and hydraulic, the transfer function can be expressed as
+The normalised expression for low-pass filter is given by
+Magnitude response is given by
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 25
+============================================================
+
+Unit 5: Second Order Low Pass Filters
+Higher order filters can be designed by adding additional RC networks, that is, by cascading a required number of first and second order filters. The transfer function of higher order filters will be of the type, as given by
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 26
+============================================================
+
+Unit 5: Second Order Low Pass Filters
+Substituting the admittance values in generalized expression we get
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 27
+============================================================
+
+Unit 5: Second Order Low Pass Filters
+Substituting the admittance values in generalized expression we get
+For unity gain system
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 28
+============================================================
+
+Unit 5: Frequency Transformations
+A low-pass filter is usually designed first and used as a prototype.
+Instead of designing every filter from scratch, frequency transformation is used. It helps convert the low-pass filter into other types easily.
+In analog frequency transformation, the prototype function 𝐻𝑝(𝑠) is modified. This gives a new function 𝐻(𝑠) for the required filter.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 29
+============================================================
+
+Unit 5:  Butterworth Filters
+The magnitude response of butterworth filter is given as
+
+
+
+The specifications for the filter response are as follows
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 30
+============================================================
+
+Unit 5: Frequency Transformations
+After deciding the order of filter. It is now time to decide the cutoff frequency.
+The general transfer function of a butterworth filter is given as
+or
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 31
+============================================================
+
+Unit 5: Frequency Transformations
+If pass band and stopband attenuation are given in dB then
+The general transfer function of a butterworth filter is given as
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 32
+============================================================
+
+Unit 5: Frequency Transformations
+The butterworth polynomial are given as:
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 33
+============================================================
+
+Unit 5: Chebyshev Filters
+It accepts a controlled amount of ripple (oscillation) in the passband in exchange for a significantly steeper transition from passband to stopband compared to a Butterworth filter of the same order.
+A Butterworth filter achieves a maximally flat passband (no ripple at all) but requires a higher order to achieve the same stopband attenuation as a Chebyshev.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 34
+============================================================
+
+Unit 5: Chebyshev Filters
+The Magnitude Response Equation:
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 35
+============================================================
+
+Unit 5: Chebyshev Filters
+How the Denominator Controls the Response Shape:
+Inside the Passband (ω ≤ ωc): C_N oscillates between −1 and +1, so C_N² is between 0 and 1. 
+Denominator oscillates between sqrt(1+0) = 1 and sqrt(1+ε²). Response oscillates between A (maximum) and A/sqrt(1+ε²) (minimum). 
+This bounded oscillation is the equiripple behaviour.
+Inside the Stopband (ω > ωc): C_N grows without bound (exponentially fast) as ω increases.
+Denominator becomes very large, driving |H| rapidly toward zero.
+This explosive growth is what gives Chebyshev its sharp roll-off.
+The larger N is, the faster C_N grows and the sharper the cut-off frequency roll off.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 36
+============================================================
+
+Unit 5: Chebyshev Filters
+The design parameters of the Chebyshev filter are obtained by considering the low-pass filter with the desired specifications as given by
+
+
+
+
+
+
+
+
+
+At cut-off frequency w=wc, Cn(1)=1
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 37
+============================================================
+
+Unit 5: Chebyshev Filters
+The order of the filter N can be obtained by takin wc=w1:
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 38
+============================================================
+
+Unit 5: Elliptic Filters
+Elliptic (Cauer) filters are filters with equiripple behavior in both passband and stopband, meaning controlled oscillations occur in both regions.
+The key objective of elliptic filters is to achieve the sharpest transition between passband and stopband.
+The magnitude response is given by
+
+
+
+The parameter 𝜖 determines the amount of passband ripple. A larger value increases ripple but also sharpens the cutoff.
+The function 𝑈𝑁(⋅) represents a Jacobian elliptic function, elliptic filters are mathematically advanced.
+Their major advantage is minimum order for given specifications. This reduces hardware complexity in many applications.
+Unlike Butterworth and Chebyshev filters, elliptic filters have both poles and transmission zeros. These zeros are typically placed on the imaginary axis.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 39
+============================================================
+
+Unit 5: All Pass Filters
+An all-pass filter allows all frequency components to pass with unity gain. It modifies only the phase response without affecting amplitude.
+The primary function is to introduce a controlled phase shift across frequencies. This makes it useful for phase alignment and signal timing correction.
+All-pass filters are also called delay equalisers, phase correctors, or constant delay filters.These names reflect their role in maintaining amplitude while altering phase.
+Basic phase lag and phase lead circuits act as simple all-pass filters. This occurs when feedback and input resistances are equal (Rf = R1).
+Unlike fixed-phase circuits (inverting amplifier, integrator, differentiator etc), all-pass filters provide adjustable phase shift.
+They are widely used in communication systems for phase equalization. This ensures signal integrity without altering amplitude characteristics.
+The transfer function typically has zeros that are mirror images of poles. This symmetry ensures constant magnitude response across all frequencies.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 40
+============================================================
+
+Unit 5: State Variable Filters
+State-variable filter (SVF) is a versatile second-order active filter. From one circuit, you can obtain high-pass, band-pass, low-pass, and notch outputs.
+It is also called a universal filter because the same topology gives multiple responses. The circuit uses two integrators and one summing amplifier.
+The resistors R and capacitors C are the timing elements. They mainly set the natural frequency of the filter.
+The feedback network controls the damping factor 𝑎. Equivalently, it controls Q, so tuning and selectivity can be adjusted separately.
+A major advantage is electronic tuning over a wide frequency range. You can change frequency without destroying the filter structure.
+Another advantage is independent adjustment of 𝑄 and 𝜔0​. That is a big practical advantage over many other second-order filters.
+The band-pass output is taken from the first integrator stage.
+The low-pass output is obtained after the second integrator.
+The notch output is formed by summing the high-pass and low-pass signals.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 41
+============================================================
+
+Unit 5: State Variable Filters
+A1 → Summing amplifier 
+A2 → First integrator 
+​A3 → Second integrator
+A4 → Final summer
+
+Output of first integrator:
+
+
+
+After normalization (RC=1):
+
+
+Output of second integrator:
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 42
+============================================================
+
+Unit 5: State Variable Filters
+Summing amplifier (A3) stage:
+
+
+
+Assuming Rf=R3:
+
+
+
+
+Replace
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 43
+============================================================
+
+Unit 5: State Variable Filters
+Standard response of high pass filter is 
+
+
+
+
+we get, A = -1 and wL = 1 for the high-pass filter operation of the state-variable filter.
+Low pass transfer functions can be obtained from high pass response as
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 44
+============================================================
+
+Unit 5: State Variable Filters
+Notch filter response is given as:
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 45
+============================================================
+
+Unit 5: Switched Capacitor Filters
+Switched capacitor (SC) filters are discrete-time filters that replace resistors using capacitors and switches.
+Earlier continuous-time filters relied on R, C, and op-amps. Their performance depended on absolute values of resistors and capacitors, which are inaccurate in CMOS.
+In CMOS technology, resistors occupy large chip area and have poor tolerance. Capacitors, however, have much better matching accuracy, making them preferable.
+The fundamental idea is that a switched capacitor behaves like a resistor.This equivalent resistance depends on clock frequency and capacitance.
+When a capacitor is switched between two nodes, it transfers charge periodically. This creates an average current equivalent to resistive current flow.
+This is the key principle of SC filters: resistors are replaced by capacitors + MOS switches + clock signals.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 46
+============================================================
+
+Unit 5: Switched Capacitor Filters
+In SC-I, a capacitor alternately connects between two nodes. It charges to one voltage and discharges to another.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 47
+============================================================
+
+The second form of switched capacitor is shown in Fig.
+In this arrangement, during the ON period of switch S1, the capacitor C is charged with respect to voltage V1. When S1 is OFF and S2 is ON, the effective charge C(V1 - V2) is transferred. This delivery of charge occurs for every sampling interval Tck. Thus, the average current i flowing through the capacitor C is given by,
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 48
+============================================================
+
+The
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 49
+============================================================
+
+To summarise the features of SC integrator,
+ (i) there are no resistors involved as necessitated for IC fabrication.
+ (ii) the unity gain frequency fo is determined by capacitance ratios, which are easier to control and maintain in present-day IC technology.
+ (iii) the unity gain frequency fo is proportional to the clock frequency fck , thus proving that the SC filters are of programmable type.
+The practical limitations of SC filters are as follows:
+ (i) The values of fck are not unlimited, which is controlled by the quality of MOS switches, and the speed of op-amp employed. Practical values of fck are in MHz range.
+ (ii) The lower limit of fck is dictated by the leakage currents in MOS switches and the input bias currents of op-amp. Hence, the minimum possible fck range is typically 100 Hz.
+ (iii) The SC filters are discrete-time operated.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx] Page/Slide 50
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 1
+============================================================
+
+Unit 1: Analog to Digital or Digital to Analog Converters
+Analog to Digital or Digital to Analog Converters
+Pre – preparation: Lecture Materials and LIC Text book by ROY Choudhury, sixth edition, 2022.
+VIT-AP University                                              Linear Integrated Circuits                                      Dr. M. Sankush Krishna
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 2
+============================================================
+
+Unit 6: Analog to Digital or Digital to Analog Converters
+A continuous-time signal whose amplitude can take any value; this is the natural form of real-world signals like sound or temperature.
+Sampling is a process of taking values of an analog signal at discrete time instants; it converts a continuous-time signal into a discrete-time signal..
+After sampling, amplitudes are rounded to a finite set of levels; this introduces quantisation error (noise).
+A signal whose amplitude can take only discrete values; it is no longer continuous in magnitude.
+Discrete time dignal is defined only at specific time instants; amplitude may still be continuous unless quantised (sampled-data signal case).
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 3
+============================================================
+
+Unit 6: Analog to Digital or Digital to Analog Converters
+A continuous-time signal from the output of a transducer is provided to the anti-aliasing filter.
+The anti-aliasing filter is low pass filter which makes sure the inout signal frequency is below the half of sampling frequency.
+The sample and hold circuit helps in holding the fixed value of continuously changing signal at sampling intervals.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 4
+============================================================
+
+Unit 6: Analog to Digital or Digital to Analog Converters
+The ADC converts the fixed analog signal amplitude into the digital form. The output is a digital sequence with discrete values.
+DSP block works for the digital signal processing like compression, filtering etc.
+The DAC block converts the digital data back to analog form with same sampling frequency.
+The deglitecher avoids the unwanted spikes in transition of digital data.
+A low-pass filter that smooths the staircase waveform into a continuous analog signal and reduces quantisation noise.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 5
+============================================================
+
+Unit 6: Specifications of DAC
+Accuracy: How far the actual DAC output deviates from the ideal expected value for a given digital input.
+
+In a data acquisition system, if DAC is used to generate reference signals, poor accuracy means wrong calibration → entire system becomes unreliable.
+For example: If VFS of 3-bit DAC is 8V and the output voltage for 101 is 5.9 V. Find the error.
+Stepsize= 8/7=1.14
+For 101=5, so analog voltage V0=5*1.14=5.7V
+Error =(5.9-5.7)/1.14 = 0.175 V.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 6
+============================================================
+
+Unit 6: Specifications of DAC
+Offset error: Ideally, the output of a D/A converter is 0V when all the bits of binary input word are 0s. In practice, however, there is a very small output voltage called offset voltage or offset error.
+The offset error is nullified by translating the actual A/D converter characteristics up or down so that it goes through the origin.
+Gain error: Gain error is the deviation in the slope of the DAC transfer characteristic from the ideal slope, after removing offset error.
+Gain_error=Fullscale_error-                         offset error.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 7
+============================================================
+
+Unit 6: Specifications of DAC
+Linearity: The most common dynamic errors are full-scale error and linearity error. Full-scale error is the maximum deviation of the output value from its expected or ideal value, expressed in percentage of full-scale. Linearity error is the maximum deviation in step size from the ideal step size.
+Linearity means how evenly the analog output increases for each equal step in digital input (ideal DAC gives perfectly equal steps).
+In real DACs, resistor imperfections cause gain and offset errors, so the output deviates from a straight line (non-linear).
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 8
+============================================================
+
+Unit 6: Specifications of DAC
+Integral Non linearity error is the maximum deviation of actual DAC output from an ideal straight line, after correcting offset and gain errors.
+Differential non linearity error is the difference between actual step size and ideal 1 LSB step size.
+
+Monotonocity: A monotonic DAC has increasing values of analog outputs with increase in digital input data. It means as digital data is incremented the output analog data also increments with respect to increase in step size.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 9
+============================================================
+
+Unit 6: Analog to Digital or Digital to Analog Converters
+Non-monotonic
+Monotonic
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 10
+============================================================
+
+Unit 6: Specifications of DAC
+Resolution: Resolution is the smallest change in output corresponding to a 1-bit change (1 LSB).
+
+
+Settling Time: The time required for the output of a D/A converter to settle down to within ±(1/2) LSB of the final value for a given digital input is known as settling time. It depends on the switching time of the logic circuits, which in turn depends on the inevitable stray capacitances and inductances present in the converter circuit.
+Temperature sensitivity: Temperature sensitivity means the analog output changes slightly with temperature even if the digital input is fixed, due to components like reference voltage, resistors, and op-amp.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 11
+============================================================
+
+Unit 6: DAC
+A DAC converts an n-bit binary number into a proportional analog voltage or current using a reference voltage. 
+The binary input D is made of bits b1	​ (MSB) to bn	​ (LSB), each having decreasing weights 2−1,2−2,…,2−n.
+
+Each bit carries either 0 or 1. Adding together you can get binary fractional number.
+For example: 101=1⋅2−1+0⋅2−2+1⋅2−3=(1/2)+0+(1/8)​=0.625
+DAC converts this fractional number D into a scaled analog value using a reference voltage VR (VFS)​:
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 12
+============================================================
+
+Unit 6: DAC
+The MSB contributes the largest portion (VFS/2), while the LSB contributes the smallest (VFS​/2n).
+The output voltage is the sum of all bit contributions, scaled by a factor K (usually 1).
+So, the analog output is directly proportional to the digital input value.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 13
+============================================================
+
+For a full scale output voltage of 8 V find the analog output voltage of the binary data 101. Assume scaling factor of 1.
+
+
+
+
+
+For a full scale output voltage of 16 V find the analog output voltage of the binary data 1101.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 14
+============================================================
+
+Unit 6: Weighted resistor DAC
+A binary-weighted resistor DAC is one of the simplest ways to convert digital data into an analog signal.
+It converts each bit of a digital input into a proportional analog contribution, and then adds all contributions together to form the final output.
+Instead of doing digital multiplication, the circuit uses resistors since I=V/R
+The circuit assigns different resistor values to different bits so that each bit creates a different current contribution.
+LSB gets the largest resistor. Each more significant bit gets half the resistor. therefore, each more significant bit contributes twice the effect of the next lower bit.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 15
+============================================================
+
+Unit 6: Weihted resistor DAC
+Each bit controls a switch. The switch has two positions: If the bit is 1, it connects to the reference voltage −VR else it connects to ground. 
+So each bit either contributes a weighted current from the reference, or no contribution at all.
+The Op-amp is used as the summing amplifier. The currents are all added at the inverting terminal of Op-amp.
+The Op-amp converts this 
+Current into voltage as the 
+Drop across the resistor Rf.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 16
+============================================================
+
+Unit 6: Weihted resistor DAC
+Considering an ideal Op-amp the current I0 is given as:
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 17
+============================================================
+
+Unit 6: Drawbacks of Weighted resistor DAC
+Binary weighted DAC needs a wide range of resistor values; as bit count increases, resistor ratios become very large (e.g., 128:1 for 8-bit).
+Such large resistors are hard to fabricate accurately and cause errors due to bias currents, reducing accuracy.
+Because of this, weighted DACs are usually limited to low resolutions (below 8-bit).
+R-2R ladder DAC avoids this by using only two resistor values, making it more practical and accurate.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 18
+============================================================
+
+Unit 6: R-2R Ladder DAC
+Simple two values of resistances are used as a ladder network.
+The resistance remains same no matter how many bit system is designed.
+Simpler to fabricate as the range of resistances is tremendously reduced for higher order bits.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 19
+============================================================
+
+Unit 6: R-2R Ladder DAC
+Simple two values of resistances are used as a ladder network.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 20
+============================================================
+
+Unit 6: R-2R Ladder DAC
+Simple two values of resistances are used as a ladder network.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 21
+============================================================
+
+Unit 6: R-2R Ladder DAC
+Simple two values of resistances are used as a ladder network.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 22
+============================================================
+
+Unit 6: R-2R Ladder DAC
+Simple two values of resistances are used as a ladder network.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 23
+============================================================
+
+Unit 6: R-2R Ladder DAC
+Simple two values of resistances are used as a ladder network.
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 24
+============================================================
+
+
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 25
+============================================================
+
+Unit 6: Flash Type ADC
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 26
+============================================================
+
+Unit 6: Successive Approximation Type ADC
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 27
+============================================================
+
+Unit 6: Single slope Type ADC
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 28
+============================================================
+
+Unit 6: Single slope Type ADC
+
+============================================================
+[WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx] Page/Slide 29
+============================================================
+
+Unit 6: Single slope Type ADC

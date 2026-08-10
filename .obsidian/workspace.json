@@ -4,37 +4,98 @@
     "type": "split",
     "children": [
       {
-        "id": "3666b9b1621350b6",
+        "id": "dbc565ab8a8aedc7",
         "type": "tabs",
         "children": [
           {
-            "id": "f1b016d8218406c5",
+            "id": "aa7be1333a65794c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6th Semester/FAT/CMOS/study_guide/01_fabrication_processes.md",
+                "file": "Jobs/Companies/Pax.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "01_fabrication_processes"
+              "title": "Pax"
             }
           },
           {
-            "id": "eb0f9d2d4960a6ce",
+            "id": "5548712a41f89f76",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.13.4"
+            }
+          },
+          {
+            "id": "1cb426cb31097c13",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6th Semester/FAT/CMOS/study_guide/02_mos_capacitor_and_operating_modes.md",
+                "file": "Education/Networking/001 Network Devices & Communication Basics.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "02_mos_capacitor_and_operating_modes"
+              "title": "001 Network Devices & Communication Basics"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "11747887f8e1efd3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2a501de3ac781d4c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Education/Networking/002 OSI (Open Systems Interconnection) Model.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "002 OSI (Open Systems Interconnection) Model"
+            }
+          },
+          {
+            "id": "4bb6acb75991abd4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Education/System Design/003 Fundamentals of Data Engineering/Joe Reis, Matt Housley - Fundamentals of Data Engineering_ Plan and Build Robust Data Systems (2022, O'Reilly Media) - libgen.li.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Joe Reis, Matt Housley - Fundamentals of Data Engineering_ Plan and Build Robust Data Systems (2022, O'Reilly Media) - libgen.li"
+            }
+          },
+          {
+            "id": "f7cb5efdbbe6fd03",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Education/cs-336-language-modelling-from-scratch-notes/001-Lecture-1.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "001-Lecture-1"
             }
           }
         ]
@@ -57,7 +118,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -69,10 +132,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "accord",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -104,7 +167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5086555480957
+    "width": 292.5,
+    "collapsed": true
   },
   "right": {
     "id": "65917c39ac0d31e7",
@@ -120,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6th Semester/CAT - 1/Low Power VLSI/07_short_channel_effects.md",
+                "file": "Course Work/CMOS LAB/CMOS VLSI LAB NOTES.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +194,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 07_short_channel_effects"
+              "title": "Backlinks for CMOS VLSI LAB NOTES"
             }
           },
           {
@@ -218,53 +282,54 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f1b016d8218406c5",
+  "active": "2a501de3ac781d4c",
   "lastOpenFiles": [
-    "6th Semester/FAT/CMOS/study_guide/17_worked_problems.md",
-    "6th Semester/FAT/CMOS/study_guide/01_fabrication_processes.md",
-    "6th Semester/FAT/CMOS/study_guide/02_mos_capacitor_and_operating_modes.md",
-    "6th Semester/FAT/CMOS/Materials/~$E3005_CMOS-VLSI-DESIGN_ETH_1.0_2_ECE3005.docx",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s9_img1.png",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s8_img1.png",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s6_img1.png",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s7_img1.png",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s5_img3.png",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s4_img1.wmf",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s5_img2.png",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s47_img1.png",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s5_img1.png",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s48_img1.png",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s44_img1.png",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s3_img1.wmf",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s3_img2.wmf",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s37_img2.wmf",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s23_img2.wmf",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-13_Reference-Material-I_s23_img1.wmf",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-10_Reference-Material-I_s3_img1.wmf",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-10_Reference-Material-I_s32_img1.wmf",
-    "6th Semester/FAT/CMOS/extracted_content/Images/WINSEM2025-26_ECE3005_ETH_AP2025264001051_2026-01-10_Reference-Material-I_s31_img1.wmf",
-    "6th Semester/FAT/CMOS/study_guide/18_formula_sheet.md",
-    "6th Semester/FAT/CMOS/study_guide/13_dynamic_and_domino_logic.md",
-    "6th Semester/FAT/CMOS/study_guide/16_design_for_testability.md",
-    "6th Semester/FAT/CMOS/study_guide/15_memory.md",
-    "6th Semester/FAT/CMOS/study_guide/14_sequential_circuits.md",
-    "6th Semester/CAT - 1/CMOS/12_ultimate_formula_sheet.md",
-    "6th Semester/FAT/CMOS/study_guide/12_pass_transistor_and_transmission_gate_logic.md",
-    "6th Semester/FAT/CMOS/study_guide/11_static_cmos_logic.md",
-    "6th Semester/FAT/CMOS/study_guide/10_logical_effort.md",
-    "6th Semester/FAT/CMOS/study_guide/09_power_dissipation.md",
-    "6th Semester/FAT/CMOS/study_guide/08_cmos_inverter_dynamic_behavior.md",
-    "6th Semester/FAT/CMOS/study_guide/07_cmos_inverter_vtc_and_noise_margins.md",
-    "6th Semester/FAT/CMOS/study_guide/06_scaling_and_short_channel_effects.md",
-    "6th Semester/FAT/CMOS/study_guide/05_mosfet_capacitances_and_resistances.md",
-    "6th Semester/FAT/CMOS/study_guide/04_mosfet_iv_characteristics.md",
-    "6th Semester/FAT/CMOS/study_guide/03_threshold_voltage_and_body_effect.md",
-    "6th Semester/CAT - 1/CMOS/01_foundation_semiconductor_physics.md",
-    "6th Semester/CAT - 2/CMOS/study_guide/10_formula_sheet_ultimate.md",
-    "6th Semester/CAT - 2/CMOS/study_guide/09_worked_problems.md",
-    "6th Semester/CAT - 2/CMOS/study_guide/08_logical_effort.md",
-    "6th Semester/CAT - 2/CMOS/study_guide/07_rc_delay_and_elmore.md",
-    "6th Semester/CAT - 2/CMOS/study_guide/06_inverter_sizing.md",
+    "Education/Networking/001 Network Devices & Communication Basics.md",
+    "Education/System Design/002 Streaming Systems/Streaming Systems{Tyler Akidau}(2018, O&_039_Reilly Media){114821386} libgen.li.pdf",
+    "Education/System Design/001 Site Reliability Engineerin/Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy - Site Reliability Engineering_ How Google Runs Production Systems (2016, O’Reilly Media) - libgen.li.pdf",
+    "TODO's/Todo (Personal).md",
+    "TODO's/Todo (Coursework).md",
+    "TODO's/Todo (Personal) 1.md",
+    "Education/cs-336-language-modelling-from-scratch-notes/001-Lecture-1.md",
+    "TODO's/Untitled Kanban.md",
+    "Course Work/6th Semester/CAT - 1/HDL/Lab Codes/Lab Record.md",
+    "Jobs/Companies/Deepgram.md",
+    "Jobs/Companies/Vela.md",
+    "Jobs/Companies/ShortLoop.md",
+    "Jobs/Companies/AnswerThis.md",
+    "Education/cs-336-language-modelling-from-scratch-notes/010-Lecture-10.md",
+    "Course Work/6th Semester/FAT/Schedule and Patterns.md",
+    "Education/Transformers/002 Attention.md",
+    "Education/Transformers/001 Embedding.md",
+    "Education/cs-336-language-modelling-from-scratch-notes/005-Lecture-5.md",
+    "Jobs/Companies/Pax.md",
+    "Jobs/Companies/Valve.md",
+    "Education/cs-336-language-modelling-from-scratch-notes/008-Lecture-8.md",
+    "Education/cs-336-language-modelling-from-scratch-notes/006-Lecture-6.md",
+    "Education/cs-336-language-modelling-from-scratch-notes/007-Lecture-7.md",
+    "Education/Inference Engineering/Inference Engineering.pdf",
+    "Education/Inference Engineering/Chapter-3 (Hardware).md",
+    "Jobs/Job Applications Tracker.md",
+    "Jobs/Companies/Newton Research.md",
+    "Jobs/Companies/Orthogonal.md",
+    "Jobs/Companies/Periodic Labs.md",
+    "Jobs/Jobs CRM.base",
+    "Education/cs-336-language-modelling-from-scratch-notes/_extract_lecture_09.txt",
+    "Education/cs-336-language-modelling-from-scratch-notes/_extract_lecture_08.txt",
+    "Course Work/6th Semester/FAT/HDL/07_Lab_Codes/desktop.ini",
+    "Course Work/6th Semester/FAT/HDL/05_Formula_Sheets/desktop.ini",
+    "Course Work/6th Semester/FAT/HDL/Images/desktop.ini",
+    "Course Work/6th Semester/FAT/HDL/04_Practice_Problems/desktop.ini",
+    "Misc/hindi-paper/assets/matching/lion.jpg",
+    "Misc/hindi-paper/assets/matching/nest.jpg",
+    "Misc/hindi-paper/assets/matching/fish.jpg",
+    "Misc/hindi-paper/assets/matching/kennel.jpg",
+    "Misc/hindi-paper/assets/matching/lake.jpg",
+    "Misc/hindi-paper/assets/matching/bee.jpg",
+    "Misc/hindi-paper/assets/matching/den.jpg",
+    "Misc/hindi-paper/assets/matching/dog.jpg",
+    "Misc/hindi-paper/assets/matching/beehive.jpg",
+    "Misc/hindi-paper/assets/matching/bird.jpg",
     "Untitled.canvas",
     "C/Untitled.canvas",
     "Untitled 1.canvas"

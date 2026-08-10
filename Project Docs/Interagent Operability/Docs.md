@@ -1,0 +1,7 @@
+# v0.0.1
+
+- we plan on using contracts as json files between agents, we haven't yet figured out what triggers the message ingestion, is it a hook or a polling endpoint
+- much of the discussions related to the memory and context engineering have not been considered and are to be scrutinized thoroughly as avoiding agent context deterioration is a paramount
+- we haven't considered a failure case for contracts where conversation is required for eg: when a contract is requested, it isn't necessary that it is correct, and if the other agent choose to act upon the said contract and catches this mistake, for eg: frontend requests for an endpoint under /users/me/ but it was actually already available through /me, how does the backend communicate this? at this point isn't a conversation necessary?
+- we haven't considered whether this will be a plugin or a skill, only place where it seems it can inherently work is hermes agent because it has a built in /steer feature, allowing us to inject context in the middle of a one request.
+- I am also of the opinion that, it is necessary that there be sub agent delegation when an agent receives a task from another so that it doesn't overlap with what its doing and can save on token usage by giving it a very fixed scope of what is to be done and which agent this problem was raised from and what to communicate back to them

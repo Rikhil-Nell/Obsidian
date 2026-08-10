@@ -6,37 +6,32 @@ kanban-plugin: board
 
 ## To-do
 
-- [ ] WebDNN project
-- [ ] Screen Tracking Inference chatbot
-- [ ] GPT TARS
 - [ ] Learning Triton
+- [ ] Making a proper enterprise grade RAG with deployment and good ingestion
+- [ ] Complete bitlinear accelerator project on fpga capstone
+- [ ] Complete reading through vllm and make inference engine
+- [ ] complete reading codex and hermes and pi codebase and implemnt own harness
 
 
 ## In Progress
 
-- [x] Multi Agent Village
 - [x] Build Agentic framework
-- [ ] Learning Deep Learning again
-- [ ] Learning Accelerated computing
-- [ ] Learning Iot and VLSI
+- [x] Learning Deep Learning again
+- [x] Learning Accelerated computing
+- [ ] Learning Inference Engineering
+- [ ] Learning Kernel Engineering
+- [ ] Complete Inference Engineering book
+- [ ] complete making projects on deep-ml and tensortonic
 
 
-## Completed-1
+## Completed-3
 
-- [x] Complete Hugging face Agent and NLP course
-- [x] Basic Networking
-- [x] Discord langgraph bot
-- [x] Terminal Chat Assistant Project
-- [x] Finetune medical chatbot
-- [x] Exploring and Explaining Mind Studio
-- [x] Mind Studio demo (Medical)
-- [x] Bulk Sentiment Analysis
-- [x] Learn Langraph
-- [x] Learn Pydantic_AI
-- [x] Getting better at python
-- [x] Prepare to conduct an ML/LLM boot camp
-- [x] Learn dunder and decorators
-- [x] Learn Docker
+- [x] Internship: Smart Speech customer response
+- [x] Internship: Clink
+- [x] Internship: Voice Agent
+- [x] Iternship: CastLink
+- [x] MCP servers
+- [x] Learning Iot and VLSI
 
 
 ## Completed-2
@@ -57,20 +52,33 @@ kanban-plugin: board
 - [x] VISU Robot
 
 
-## Completed-3
+## Completed-1
 
-- [x] Internship: Smart Speech customer response
-- [x] Internship: Clink
-- [x] Internship: Voice Agent
-- [x] Iternship: CastLink
-- [x] MCP servers
+- [x] Complete Hugging face Agent and NLP course
+- [x] Basic Networking
+- [x] Discord langgraph bot
+- [x] Terminal Chat Assistant Project
+- [x] Finetune medical chatbot
+- [x] Exploring and Explaining Mind Studio
+- [x] Mind Studio demo (Medical)
+- [x] Bulk Sentiment Analysis
+- [x] Learn Langraph
+- [x] Learn Pydantic_AI
+- [x] Getting better at python
+- [x] Prepare to conduct an ML/LLM boot camp
+- [x] Learn dunder and decorators
+- [x] Learn Docker
 
 
 ## Failed
 
+- [ ] WebDNN project
+- [ ] Screen Tracking Inference chatbot
+- [x] Multi Agent Village
 - [ ] Amazon Sambhav Hackathon
 - [ ] Complete Job Finder
 - [ ] Behavioral Biometric Project [Priority]
+- [ ] GPT TARS
 - [x] Read the Chemistry Project Documentation
 - [x] Toycathon
 - [x] Semen Analysis Project

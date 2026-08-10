@@ -1,0 +1,191 @@
+formulas:
+  days_until_followup: if(follow_up, (date(follow_up) - today()).days, "")
+  followup_overdue: if(follow_up, date(follow_up) < today(), false)
+properties:
+  file.name:
+    displayName: Note
+  company:
+    displayName: Company
+  role:
+    displayName: Role
+  status:
+    displayName: Status
+  stage:
+    displayName: Stage
+  priority:
+    displayName: Priority
+  interestingness:
+    displayName: Interest
+  compensation:
+    displayName: Compensation
+  domain:
+    displayName: Domain
+  applied:
+    displayName: Applied
+  last_contact:
+    displayName: Last Contact
+  follow_up:
+    displayName: Follow Up
+  next_step:
+    displayName: Next Step
+  founder:
+    displayName: Founder
+  date:
+    displayName: Date
+  interviewer:
+    displayName: Interviewer
+  outcome:
+    displayName: Outcome
+  skill:
+    displayName: Skill
+  source:
+    displayName: Source
+  formula.days_until_followup:
+    displayName: Days Until
+  formula.followup_overdue:
+    displayName: Overdue
+views:
+  - type: table
+    name: Active Pipeline
+    filters:
+      and:
+        - file.inFolder("Jobs/Companies")
+        - status != "Rejected"
+        - status != "Offer"
+    groupBy:
+      property: priority
+      direction: DESC
+    order:
+      - file.name
+      - role
+      - stage
+      - priority
+      - compensation
+      - next_step
+    sort:
+      - property: file.name
+        direction: DESC
+      - property: role
+        direction: DESC
+      - property: next_step
+        direction: ASC
+    columnSize:
+      file.name: 203
+      note.role: 371
+      note.stage: 106
+      note.priority: 121
+      note.compensation: 155
+      note.next_step: 148
+  - type: table
+    name: Waiting For Response
+    filters:
+      and:
+        - file.inFolder("Jobs/Companies")
+        - status == "Applied"
+    groupBy:
+      property: applied
+      direction: DESC
+    order:
+      - file.name
+      - applied
+      - last_contact
+      - next_step
+  - type: table
+    name: Follow Ups Due
+    filters:
+      and:
+        - file.inFolder("Jobs/Companies")
+        - follow_up
+        - status != "Rejected"
+    order:
+      - follow_up
+      - file.name
+      - formula.days_until_followup
+      - next_step
+  - type: table
+    name: Interviews
+    filters:
+      and:
+        - file.inFolder("Jobs/Interviews")
+    order:
+      - date
+      - file.name
+      - company
+      - stage
+      - outcome
+      - interviewer
+  - type: table
+    name: Most Interesting
+    filters:
+      and:
+        - file.inFolder("Jobs/Companies")
+    order:
+      - interestingness
+      - file.name
+      - compensation
+      - stage
+      - status
+    limit: 10
+  - type: table
+    name: Rejections
+    filters:
+      and:
+        - file.inFolder("Jobs/Rejections")
+    order:
+      - date
+      - file.name
+      - company
+      - role
+      - stage
+      - interestingness
+    columnSize:
+      file.name: 96
+      note.role: 168
+      note.stage: 127
+      note.interestingness: 164
+  - type: table
+    name: Skills To Learn
+    filters:
+      and:
+        - file.inFolder("Jobs/Learn")
+    groupBy:
+      property: priority
+      direction: DESC
+    order:
+      - priority
+      - file.name
+      - status
+      - source
+  - type: table
+    name: High Priority Skills
+    filters:
+      and:
+        - file.inFolder("Jobs/Learn")
+        - priority == "High"
+    order:
+      - file.name
+      - status
+      - source
+  - type: table
+    name: Researching
+    filters:
+      and:
+        - file.inFolder("Jobs/Companies")
+        - status == "Researching"
+    order:
+      - interestingness
+      - file.name
+      - domain
+  - type: cards
+    name: Pipeline Cards
+    filters:
+      and:
+        - file.inFolder("Jobs/Companies")
+        - status != "Rejected"
+        - status != "Offer"
+    order:
+      - file.name
+      - role
+      - stage
+      - interestingness
+      - compensation

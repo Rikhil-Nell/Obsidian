@@ -1,0 +1,234 @@
+[
+  {
+    "content": "fH = 1/(2*pi*R*C).",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 13,
+    "context": " known, the value of R can be calculated by using fH = 1/(2*pi*R*C). Finally, select the values of Ri and Rf depending",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/(2*pi*R*C).",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 13,
+    "context": "n, the value of R can be calculated by using fH = 1/(2*pi*R*C). Finally, select the values of Ri and Rf depending",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "H = 1/(2*pi*R*C).\nFinally, select the values of Ri and Rf depending on the desired passband gain by using",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 13,
+    "context": "known, the value of R can be calculated by using fH = 1/(2*pi*R*C). Finally, select the values of Ri and Rf depending on the desired passband gain by using",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "10*fL for a clear passband.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 17,
+    "context": "L​ Proper operation requires fH>fL​, typically fH≥10*fL for a clear passband. Both sections must have equal passband gain to en",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "2=𝑅3=𝑅4\t​.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 19,
+    "context": "r side. For unity gain design, resistors satisfy 𝑅2=𝑅3=𝑅4\t​.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1-Y4\t​ with a voltage follower to eliminate loading due to high input and low output impedance.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 20,
+    "context": "rder active (Sallen-Key) filter uses admittances 𝑌1-Y4\t​ with a voltage follower to eliminate loading due to high input and low output impedance. A non-inverting amplifier configuration can be ad",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1+0) = 1 and sqrt(1+ε²). Response oscillates between A (maximum) and A/sqrt(1+ε²) (minimum).",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 35,
+    "context": "een 0 and 1.  Denominator oscillates between sqrt(1+0) = 1 and sqrt(1+ε²). Response oscillates between A (maximum) and A/sqrt(1+ε²) (minimum).  This bounded oscillation is the equiripple behavi",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Rf = R1).",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 39,
+    "context": "rs when feedback and input resistances are equal (Rf = R1). Unlike fixed-phase circuits (inverting amplifier,",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Rf = R1).\nUnlike fixed-phase circuits (inverting amplifier, integrator, differentiator etc), all-pass filters provide adjustable phase shift.\nThey are widely used in communication systems for phase equalization. This ensures signal integrity without altering amplitude characteristics.\nThe transfer function typically has zeros that are mirror images of poles. This symmetry ensures constant magnitude response across all frequencies.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 39,
+    "context": "rs when feedback and input resistances are equal (Rf = R1). Unlike fixed-phase circuits (inverting amplifier, integrator, differentiator etc), all-pass filters provide adjustable phase shift. They are widely used in communication systems for phase equalization. This ensures signal integrity without altering amplitude characteristics. The transfer function typically has zeros that are mirror images of poles. This symmetry ensures constant magnitude response across all frequencies.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "C=1):\n\n\nOutput of second integrator:",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 41,
+    "context": "put of first integrator:    After normalization (RC=1):   Output of second integrator:",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Rf=R3:\n\n\n\n\nReplace",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 42,
+    "context": "Filters Summing amplifier (A3) stage:    Assuming Rf=R3:     Replace",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "A = -1 and wL = 1 for the high-pass filter operation of the state-variable filter.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 43,
+    "context": "dard response of high pass filter is      we get, A = -1 and wL = 1 for the high-pass filter operation of the state-variable filter. Low pass transfer functions can be obtained from ",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "A = -1 and wL = 1 for the high-pass filter operation of the state-variable filter.\nLow pass transfer functions can be obtained from high pass response as",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 43,
+    "context": "dard response of high pass filter is      we get, A = -1 and wL = 1 for the high-pass filter operation of the state-variable filter. Low pass transfer functions can be obtained from high pass response as",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1 - V2) is transferred. This delivery of charge occurs for every sampling interval Tck. Thus",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-07_Reference-Material-I.pptx",
+    "page_or_slide": 47,
+    "context": "n S1 is OFF and S2 is ON, the effective charge C(V1 - V2) is transferred. This delivery of charge occurs for every sampling interval Tck. Thus, the average current i flowing through the capaci",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Stepsize= 8/7=1.14",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": " output voltage for 101 is 5.9 V. Find the error. Stepsize= 8/7=1.14 For 101=5, so analog voltage V0=5*1.14=5.7V Error",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "V0=5*1.14=5.7V",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": ". Stepsize= 8/7=1.14 For 101=5, so analog voltage V0=5*1.14=5.7V Error =(5.9-5.7)/1.14 = 0.175 V.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Error =(5.9-5.7)/1.14 = 0.175 V.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": "=1.14 For 101=5, so analog voltage V0=5*1.14=5.7V Error =(5.9-5.7)/1.14 = 0.175 V.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "3-bit DAC is 8V and the output voltage for 101 is 5.9 V. Find the error.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": "system becomes unreliable. For example: If VFS of 3-bit DAC is 8V and the output voltage for 101 is 5.9 V. Find the error. Stepsize= 8/7=1.14 For 101=5, so analog voltage V",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "8/7=1.14",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": "ltage for 101 is 5.9 V. Find the error. Stepsize= 8/7=1.14 For 101=5, so analog voltage V0=5*1.14=5.7V Error",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "101=5",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": " is 5.9 V. Find the error. Stepsize= 8/7=1.14 For 101=5, so analog voltage V0=5*1.14=5.7V Error =(5.9-5.7",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "0=5*1.14=5.7V",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": " Stepsize= 8/7=1.14 For 101=5, so analog voltage V0=5*1.14=5.7V Error =(5.9-5.7)/1.14 = 0.175 V.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "5.9-5.7)/1.14 = 0.175 V.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": "r 101=5, so analog voltage V0=5*1.14=5.7V Error =(5.9-5.7)/1.14 = 0.175 V.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Stepsize= 8/7=1.14\nFor 101=5, so analog voltage V0=5*1.14=5.7V\nError =(5.9-5.7)/1.14 = 0.175 V.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 5,
+    "context": " output voltage for 101 is 5.9 V. Find the error. Stepsize= 8/7=1.14 For 101=5, so analog voltage V0=5*1.14=5.7V Error =(5.9-5.7)/1.14 = 0.175 V.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "Gain_error=Fullscale_error-                         offset error.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 6,
+    "context": "rom the ideal slope, after removing offset error. Gain_error=Fullscale_error-                         offset error.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1-bit change (1 LSB).",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": " the smallest change in output corresponding to a 1-bit change (1 LSB).   Settling Time: The time required for the output",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "1/2) LSB of the final value for a given digital input is known as settling time. It depends on the switching time of the logic circuits",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 10,
+    "context": "put of a D/A converter to settle down to within ±(1/2) LSB of the final value for a given digital input is known as settling time. It depends on the switching time of the logic circuits, which in turn depends on the inevitable stray ca",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "101=1⋅2−1+0⋅2−2+1⋅2−3=(1/2)+0+(1/8)​=0.625",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 11,
+    "context": "ou can get binary fractional number. For example: 101=1⋅2−1+0⋅2−2+1⋅2−3=(1/2)+0+(1/8)​=0.625 DAC converts this fractional number D into a scal",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "I=V/R\nThe circuit assigns different resistor values to different bits so that each bit creates a different current contribution.\nLSB gets the largest resistor. Each more significant bit gets half the resistor. therefore, each more significant bit contributes twice the effect of the next lower bit.",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 14,
+    "context": " multiplication, the circuit uses resistors since I=V/R The circuit assigns different resistor values to different bits so that each bit creates a different current contribution. LSB gets the largest resistor. Each more significant bit gets half the resistor. therefore, each more significant bit contributes twice the effect of the next lower bit.",
+    "is_numbered": false,
+    "equation_number": ""
+  },
+  {
+    "content": "8-bit).",
+    "source_file": "WINSEM2025-26_ECE3001_ETH_AP2025264001037_2026-04-08_Reference-Material-I.pptx",
+    "page_or_slide": 17,
+    "context": "esistor ratios become very large (e.g., 128:1 for 8-bit). Such large resistors are hard to fabricate accura",
+    "is_numbered": false,
+    "equation_number": ""
+  }
+]

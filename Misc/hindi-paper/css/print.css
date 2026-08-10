@@ -1,0 +1,43 @@
+@page {
+  size: A4 portrait;
+  margin: 12mm;
+}
+
+@media print {
+  html,
+  body {
+    width: 100%;
+    background: #fff;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  #app {
+    border: none;
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+  }
+
+  .paper {
+    padding: 5mm 7mm;
+  }
+
+  /* Repeats on every printed page — aligned to the page box edge */
+  .page-frame {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid var(--color-border);
+    pointer-events: none;
+  }
+
+  .section-head {
+    padding-top: 4mm;
+  }
+}
