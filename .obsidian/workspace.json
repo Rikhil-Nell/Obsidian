@@ -4,98 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "dbc565ab8a8aedc7",
+        "id": "315d5e50244165ae",
         "type": "tabs",
         "children": [
           {
-            "id": "aa7be1333a65794c",
+            "id": "e76050d8f3ee745f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jobs/Companies/Pax.md",
+                "file": "DFT_Exam_Master_Notes.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Pax"
-            }
-          },
-          {
-            "id": "5548712a41f89f76",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.13.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.13.4"
-            }
-          },
-          {
-            "id": "1cb426cb31097c13",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Education/Networking/001 Network Devices & Communication Basics.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "001 Network Devices & Communication Basics"
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "11747887f8e1efd3",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2a501de3ac781d4c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Education/Networking/002 OSI (Open Systems Interconnection) Model.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "002 OSI (Open Systems Interconnection) Model"
-            }
-          },
-          {
-            "id": "4bb6acb75991abd4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Education/System Design/003 Fundamentals of Data Engineering/Joe Reis, Matt Housley - Fundamentals of Data Engineering_ Plan and Build Robust Data Systems (2022, O'Reilly Media) - libgen.li.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Joe Reis, Matt Housley - Fundamentals of Data Engineering_ Plan and Build Robust Data Systems (2022, O'Reilly Media) - libgen.li"
-            }
-          },
-          {
-            "id": "f7cb5efdbbe6fd03",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Education/cs-336-language-modelling-from-scratch-notes/001-Lecture-1.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "001-Lecture-1"
+              "title": "DFT_Exam_Master_Notes"
             }
           }
         ]
@@ -167,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5,
-    "collapsed": true
+    "width": 292.5
   },
   "right": {
     "id": "65917c39ac0d31e7",
@@ -282,15 +205,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2a501de3ac781d4c",
+  "active": "e76050d8f3ee745f",
   "lastOpenFiles": [
+    "Course Work/6th Semester/CAT - 1/CMOS/03_threshold_voltage_mastery.md",
+    "Course Work/6th Semester/CAT - 1/CMOS/02_mos_structure_fundamentals.md",
+    "Course Work/6th Semester/CAT - 1/CMOS/01_foundation_semiconductor_physics.md",
+    "Course Work/6th Semester/CAT - 1/CMOS/11_latchup_and_reliability.md",
+    "Course Work/6th Semester/CAT - 1/CMOS/09_scaling_summary.md",
+    "Course Work/6th Semester/CAT - 1/CMOS/07_exam_logic_flowchart.md",
+    "Course Work/6th Semester/CAT - 1/CMOS/05_formula_sheet_unified.md",
+    "Jobs/Companies/Pax.md",
     "Education/Networking/001 Network Devices & Communication Basics.md",
+    "Education/Networking/002 OSI (Open Systems Interconnection) Model.md",
+    "Education/cs-336-language-modelling-from-scratch-notes/001-Lecture-1.md",
+    "Education/System Design/003 Fundamentals of Data Engineering/Joe Reis, Matt Housley - Fundamentals of Data Engineering_ Plan and Build Robust Data Systems (2022, O'Reilly Media) - libgen.li.pdf",
     "Education/System Design/002 Streaming Systems/Streaming Systems{Tyler Akidau}(2018, O&_039_Reilly Media){114821386} libgen.li.pdf",
     "Education/System Design/001 Site Reliability Engineerin/Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy - Site Reliability Engineering_ How Google Runs Production Systems (2016, O’Reilly Media) - libgen.li.pdf",
     "TODO's/Todo (Personal).md",
     "TODO's/Todo (Coursework).md",
     "TODO's/Todo (Personal) 1.md",
-    "Education/cs-336-language-modelling-from-scratch-notes/001-Lecture-1.md",
     "TODO's/Untitled Kanban.md",
     "Course Work/6th Semester/CAT - 1/HDL/Lab Codes/Lab Record.md",
     "Jobs/Companies/Deepgram.md",
@@ -302,24 +235,14 @@
     "Education/Transformers/002 Attention.md",
     "Education/Transformers/001 Embedding.md",
     "Education/cs-336-language-modelling-from-scratch-notes/005-Lecture-5.md",
-    "Jobs/Companies/Pax.md",
     "Jobs/Companies/Valve.md",
-    "Education/cs-336-language-modelling-from-scratch-notes/008-Lecture-8.md",
-    "Education/cs-336-language-modelling-from-scratch-notes/006-Lecture-6.md",
-    "Education/cs-336-language-modelling-from-scratch-notes/007-Lecture-7.md",
     "Education/Inference Engineering/Inference Engineering.pdf",
-    "Education/Inference Engineering/Chapter-3 (Hardware).md",
-    "Jobs/Job Applications Tracker.md",
-    "Jobs/Companies/Newton Research.md",
-    "Jobs/Companies/Orthogonal.md",
-    "Jobs/Companies/Periodic Labs.md",
     "Jobs/Jobs CRM.base",
     "Education/cs-336-language-modelling-from-scratch-notes/_extract_lecture_09.txt",
     "Education/cs-336-language-modelling-from-scratch-notes/_extract_lecture_08.txt",
     "Course Work/6th Semester/FAT/HDL/07_Lab_Codes/desktop.ini",
     "Course Work/6th Semester/FAT/HDL/05_Formula_Sheets/desktop.ini",
     "Course Work/6th Semester/FAT/HDL/Images/desktop.ini",
-    "Course Work/6th Semester/FAT/HDL/04_Practice_Problems/desktop.ini",
     "Misc/hindi-paper/assets/matching/lion.jpg",
     "Misc/hindi-paper/assets/matching/nest.jpg",
     "Misc/hindi-paper/assets/matching/fish.jpg",
